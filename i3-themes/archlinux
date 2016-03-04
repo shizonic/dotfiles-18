@@ -1,0 +1,46 @@
+# vim: filetype=yaml
+# TODO: use color aliases to make the theme more readable
+---
+meta:
+  description: 'Arc theme by MohaBaks'
+window_colors:
+  focused:
+    border:           '#383C4A'
+    background:       '#383C4A'
+    text:             '#B5B4A4'
+    indicator:        '#dddddd'
+  focused_inactive:
+    border:           '#444444'
+    background:       '#444444'
+    text:             '#888888'
+    indicator:        '#292d2e'
+  unfocused:
+    border:           '#444444'
+    background:       '#444444'
+    text:             '#888888'
+    indicator:        '#292d2e'
+  urgent:
+    border:           '#2F343F'
+    background:       '#900000'
+    text:             '#383C4A'
+    indicator:        '#900000'
+bar_colors:
+  separator:          '#666666'
+  background:         '#2F343F'
+  statusline:         '#dddddd'
+  focused_workspace:
+    border:           '#383C4A'
+    background:       '#383C4A'
+    text:             '#C0C0C0'
+  active_workspace:
+    border:           '#2F343F'
+    background:       '#2F343F'
+    text:             '#B5B4A4'
+  inactive_workspace:
+    border:           '#2F343F'
+    background:       '#2F343F'
+    text:             '#B5B4A4'
+  urgent_workspace:
+    border:           '#2F343F'
+    background:       '#2F343F'
+    text:             '#C0C0C0'

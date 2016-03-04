@@ -1,0 +1,107 @@
+!----------------------------------------------------------------------------
+!           Author: mohabaks
+!           github: github:https://github.com/mohabaks/
+!-----------------------------------------------------------------------------
+
+
+!-------------------------------------------------------------------------------
+!           Xft settings
+!-------------------------------------------------------------------------------
+
+Xft.dpi:                96
+Xft.antialias:          true
+Xft.rgba:               rgb
+Xft.hinting:            true
+Xft.hintstyle:          hintslight
+
+
+!-------------------------------------------------------------------------------
+!         URxvt settings 
+!-------------------------------------------------------------------------------
+
+!URxvt.internalBorder:   3
+!URxvt.externalBorder:   3
+!URxvt.lineSpace:       0
+!urxvt*shading:         30
+URxvt.depth: 32
+URxvt.saveLines:        10000
+URxvt.geometry:         106x32
+
+! Scrollbar
+!URxvt.scrollStyle:          rxvt
+URxvt.scrollBar:            false
+URxvt*scrollTtyOutput: false
+URxvt*scrollWithBuffer: true
+URxvt*scrollTtyKeypress: true
+
+! Fonts
+!URxvt.allow_bold:           false
+URxvt*font:                  xft:Monaco for Powerline:hinting=true:pixelsize=12:antialias=False,\
+                             xft:Symbola hinting=true:pixelsize=12:
+URxvt*boldFont:              xft:Monaco for Powerline:style=bold:hinting=true:pixelsize=12:antialias=False,\
+                             xft:Symbola hinting=true:pixelsize=12:
+URxvt*italicFont:            xft:Monaco for Powerline:style=italic:hinting=true:pixelsize=12:antialias=False,\
+                             xft:Symbola hinting=true:pixelsize=12:
+URxvt*boldItalicFont:        xft:Monaco for Powerline:style=bolditalic:hinting=true:pixelsize=12:antialias=False,\
+                             xft:Symbola hinting=true:pixelsize=12
+                                                
+! Fix font space
+!URxvt*letterSpace: -1
+
+
+!keybinding
+URxvt.keysym.C-Up:     perl:font-size:increase
+URxvt.keysym.C-Down:   perl:font-size:decrease
+URxvt.keysym.C-S-Up:   perl:font-size:incglobal
+URxvt.keysym.C-S-Down: perl:font-size:decglobal
+
+! tabs
+URxvt.tabbed.tabbar-bg: -1
+URxvt.tabbed.tabbar-fg: -2
+URxvt.tabbed.tab-bg: -2
+URxvt.tabbed.tab-fg: -1
+URxvt.tabbed.title-bg: -1
+URxvt.tabbed.title-fg: -2
+URxvt.tabbed.autohide: true
+URxvt.tabbed.new-button: false
+URxvt.tabbed.title: true
+
+! Perl extensions
+! url-select (part of urxvt-perls package)
+URxvt.perl-ext-common:default,clipboard,matcher,keyboard-select
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.url-select.autocopy:  true
+URxvt.url-select.button:    2
+URxvt.url-select.underline: true
+URxvt.url-launcher:/usr/bin/luakit
+URxvt.matcher.button: 1
+
+! CopyPaste Keys
+URxvt.keysym.Shift-Control-V:   perl:clipboard:paste
+URxvt.keysym.Shift-Control-C:   perl:clipboard:copy
+
+! disable the stupid ctrl+shift 'feature'
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+! Cursor
+!URxvt.cursorBlink:          true
+URxvt.cursorUnderline:      false
+!URxvt.cursorColor:  #c5c8c6
+!URxvt.borderColor: #101010
+URxvt.colorUL: #c5c8c6
+Xcursor.theme: Paper
+
+! Pointer
+!URxvt.pointerBlank:         true
+
+!for true transparency
+!urxvt*depth: 32
+!urxvt*background: rgba:0000/0000/0200/c800
+URxvt.background:  [90]#101010
+URxvt.foreground:  #919191
+URxvt.cursorColor: #919191
+!:URxvt.borderColor: #101010
+
+! colours
+#include "/home/mohabaks/.colors/sourcerer"

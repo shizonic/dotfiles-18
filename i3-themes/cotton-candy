@@ -1,0 +1,46 @@
+# vim: filetype=yaml
+# TODO: use color aliases to make the theme more readable
+---
+meta:
+  description: 'Debian theme by lasers'
+window_colors:
+  focused:
+    border:           '#EC145E'
+    background:       '#EC145E'
+    text:             '#ffffff'
+    indicator:        '#8c0333'
+  focused_inactive:
+    border:           '#333333'
+    background:       '#333333'
+    text:             '#888888'
+    indicator:        '#333333'
+  unfocused:
+    border:           '#333333'
+    background:       '#333333'
+    text:             '#888888'
+    indicator:        '#333333'
+  urgent:
+    border:           '#1092C5'
+    background:       '#1092C5'
+    text:             '#101010'
+    indicator:        '#EC145E'
+bar_colors:
+  separator:          '#444444'
+  background:         '#222222'
+  statusline:         '#666666'
+  focused_workspace:
+    border:           '#333333'
+    background:       '#222222'
+    text:             '#EC145E'
+  active_workspace:
+    border:           '#333333'
+    background:       '#222222'
+    text:             '#888888'
+  inactive_workspace:
+    border:           '#333333'
+    background:       '#222222'
+    text:             '#888888'
+  urgent_workspace:
+    border:           '#1092C5'
+    background:       '#1092C5'
+    text:             '#101010'
