@@ -8,6 +8,8 @@
 ####Busy
 ![alt busy](https://raw.github.com/mohabaks/dotfiles/master/images/busy.png)
 
+####Vim
 ![alt busy](https://raw.github.com/mohabaks/dotfiles/master/images/code.png)
 
+####luakit
 ![alt busy](https://raw.github.com/mohabaks/dotfiles/master/images/browser.png)
