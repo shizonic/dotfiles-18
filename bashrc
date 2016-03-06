@@ -1,6 +1,7 @@
 ###################################################
 # 
 #  Author: Mohammed Bakari
+#  Github: https://github.com/mohabaks
 #
 ###################################################
 
@@ -89,7 +90,6 @@ alias bashrc='vim .bashrc'
 alias xdefaults='vim ~/.Xdefaults'
 alias reload='source ~/.bashrc'
 alias htop='htop -u mohabaks'
-
 
 
 #----------------------------------------------------------------------------

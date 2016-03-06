@@ -233,7 +233,7 @@ bar {
           position top
           mode dock
           workspace_buttons yes
-          font xft:Sans 8
+          font xft:Droid Sans Mono 8
           strip_workspace_numbers yes 
           # height of the bar in pixels
           # height 20
