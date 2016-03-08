@@ -104,4 +104,4 @@ URxvt.cursorColor: #919191
 !:URxvt.borderColor: #101010
 
 ! colours
-#include "/home/mohabaks/.colors/sourcerer"
+#include "~/.colors/sourcerer"
