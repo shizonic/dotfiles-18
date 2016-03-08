@@ -211,7 +211,7 @@ bindsym Print exec scrot -e 'mv $f ~/Pictures/screenshots'
 
 #My apps shortcurt
 bindsym $mod+p exec pcmanfm 
-bindsym $mod+b exec luakit
+bindsym $mod+b exec qutebrowser
 bindsym $mod+q exec quickswitch.py
 
 #Gotham Color
