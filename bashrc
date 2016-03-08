@@ -84,6 +84,7 @@ PS1='┌─[\e[1;33m\W\e[0m]\n└─$(__git_ps1 "[\e[1;32m%s\e[0m]")> \e[1;35m'
 
 alias ls='ls -hFX --color=auto --group-directories-first'
 alias islam='cd ~/Videos/Islam'
+alias dotfiles='cd ~/dotfiles/'
 alias i3config='vim ~/.i3/config'
 alias vimrc='vim ~/.vimrc'
 alias bashrc='vim .bashrc'
