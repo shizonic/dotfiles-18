@@ -1,4 +1,4 @@
-# vim: filetype=yaml
+
 
 ---
 meta:
@@ -22,7 +22,7 @@ window_colors:
   urgent:
     border:           '#b1d631'
     background:       '#b1d631'
-    text:             '#000000'
+    text:             '#101010'
     indicator:        '#C0C0C0'
 bar_colors:
   separator:          '#444444'
@@ -44,3 +44,5 @@ bar_colors:
     border:           '#333333'
     background:       '#101010'
     text:             '#b1d631'
+
+# vim: filetype=yaml
