@@ -19,7 +19,7 @@ bindsym $mod+Shift+q kill
 #bindsym $mod+d exec  dmenu_run -b -nf dimgray -sb orangered -sf black -nb gray4
 
 # Start Rofi (a program launcher, ssh, window switcher)
-bindsym $mod+d exec rofi -show run -font "snap 10" -fg "#505050" -bg "#000000" -hlfg "#ffb964" -hlbg "#000000" -o 85
+bindsym $mod+d exec rofi -show run -font "snap 10" -fg "#505050" -bg "#000000" -hlfg "#ff9800" -hlbg "#000000" -o 85
 
 # Change focus
 bindsym $mod+j focus left
@@ -305,6 +305,7 @@ assign [class="^luakit$"] $2
 assign [class="^Gimp$"] $4
 assign [class="^Openshot$"] $4
 assign [class="^Blender$"]  $4
+assign [class="^mpv$"] $4
 assign [class="^VirtualBox$"] $5
 assign [class="^Filezilla$"] $5
 assign [class="^Nmapfe"] $7
