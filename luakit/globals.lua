@@ -71,7 +71,7 @@ domain_props = { --[[
         enable_scripts          = false,
         enable_plugins          = false,
         enable_private_browsing = false,
-        user_stylesheet_uri     = "",
+        user_stylesheet_uri     = "file://" .. luakit.data_dir .. "/styles/dark.css",
     },
     ["youtube.com"] = {
         enable_scripts = true,
