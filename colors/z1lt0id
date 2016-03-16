@@ -2,8 +2,9 @@
 ! URxvt Colors
 
 
-*background: [80]#161212
-*foreground: #c0b18b
+*background:  [80]#161212
+*foreground:  #c0b18b
+
 
 !black
 *color0:#4A3637
