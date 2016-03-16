@@ -13,3 +13,5 @@
 
 ####luakit
 ![alt busy](https://raw.github.com/mohabaks/dotfiles/master/images/browser.png)
+
+[more screenshots](http://imgur.com/a/LPyKb) for up to date customization.
