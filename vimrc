@@ -11,7 +11,7 @@ call pathogen#infect()                    " use pathogen
 "colors {{{
 """"""""""""""
   set background=dark
-  colorscheme hybrid
+  "colorscheme hybrid
   
 " }}}
 
@@ -162,8 +162,8 @@ nnoremap <silent> <Leader>Q <C-w>c
 set t_Co=16 "256
 set laststatus=2 
 let g:airline_theme='term'
-let g:hybrid_custom_term_colors = 1
-let g:hybrid_reduced_contrast = 1
+"let g:hybrid_custom_term_colors = 1
+"let g:hybrid_reduced_contrast = 1
 let g:airline_powerline_fonts = 2 " show powerline symbols
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_alt_sep = '|'
