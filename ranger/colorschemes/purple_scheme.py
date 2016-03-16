@@ -21,10 +21,10 @@ class Default(ColorScheme):
             if context.empty or context.error:
                 bg = red
             if context.border:
-                fg = default
+                fg = magenta
             if context.media:
                 if context.image:
-                    fg = yellow
+                    fg = blue
                 else:
                     fg = magenta
             if context.container:
@@ -58,9 +58,10 @@ class Default(ColorScheme):
             if context.main_column:
                 if context.selected:
                     attr |= bold
+                    fg = yellow
                 if context.marked:
                     attr |= bold
-                    fg = yellow
+                    fg = red
             if context.badinfo:
                 if attr & reverse:
                     bg = magenta
@@ -72,7 +73,7 @@ class Default(ColorScheme):
             if context.hostname:
                 fg = context.bad and red or green
             elif context.directory:
-                fg = blue
+                fg = yellow
             elif context.tab:
                 if context.good:
                     bg = green
