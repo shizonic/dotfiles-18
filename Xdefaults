@@ -35,14 +35,14 @@ URxvt*scrollTtyKeypress: true
 
 ! Fonts
 !URxvt.allow_bold:       false
-URxvt*font:              xft:Monaco for Powerline:hinting=true:pixelsize=11:antialias=False,\
-                         xft:Symbola hinting=true:pixelsize=11:
-URxvt*boldFont:          xft:Monaco for Powerline:style=bold:hinting=true:pixelsize=11:antialias=False,\
-                         xft:Symbola hinting=true:pixelsize=11:
-URxvt*italicFont:        xft:Monaco for Powerline:style=italic:hinting=true:pixelsize=11:antialias=False,\
-                         xft:Symbola hinting=true:pixelsize=11:
-URxvt*boldItalicFont:    xft:Monaco for Powerline:style=bolditalic:hinting=true:pixelsize=11:antialias=False,\
-                         xft:Symbola hinting=true:pixelsize=11
+URxvt*font:              xft:Monofur for Powerline:hinting=true:pixelsize=14:antialias=False,\
+                         xft:Symbola hinting=true:pixelsize=14:
+URxvt*boldFont:          xft:Monofur for Powerline:style=bold:hinting=true:pixelsize=14:antialias=False,\
+                         xft:Symbola hinting=true:pixelsize=14:
+URxvt*italicFont:        xft:Monofur for Powerline:style=italic:hinting=true:pixelsize=14:antialias=False,\
+                         xft:Symbola hinting=true:pixelsize=14:
+URxvt*boldItalicFont:    xft:Monofur for Powerline:style=bolditalic:hinting=true:pixelsize=14:antialias=False,\
+                         xft:Symbola hinting=true:pixelsize=14
                                                 
 ! Fix font space
 !URxvt*letterSpace:      -1
@@ -97,10 +97,10 @@ Xcursor.theme:              Paper
 !for true transparency
 !urxvt*depth:               32
 !urxvt*background:          rgba:0000/0000/0200/c800
-URxvt.background:           [90]#101010
-URxvt.foreground:           #919191
-URxvt.cursorColor:          #919191
-!:URxvt.borderColor:        #101010
+!URxvt.background:          [90]#101010#1F1F1F
+!URxvt.foreground:          #818181
+!URxvt.cursorColor:         #818181
+!URxvt.borderColor:         #151515
 
 ! colours
-#include "/home/mohabaks/.colors/sourcerer"
+#include "/home/mohabaks/.colors/z1lt0id"
