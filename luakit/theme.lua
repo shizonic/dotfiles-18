@@ -5,7 +5,7 @@
 local theme = {}
 
 -- Default settings
-theme.font = "Droid Sans 9"
+theme.font = "Monofur 9"
 theme.fg   = "#fff"
 theme.bg   = "#161212"
 
@@ -54,7 +54,7 @@ theme.ibar_bg           = "#000"
 -- Tab label
 theme.tab_fg            = "#c0b18b"
 theme.tab_bg            = "#222"
-theme.tab_ntheme        = "#4A3637"
+theme.tab_ntheme        = "#7b8748"
 theme.selected_fg       = "#775759"
 theme.selected_bg       = "#161212"
 theme.selected_ntheme   = "#4A3637"
