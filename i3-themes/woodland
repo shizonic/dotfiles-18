@@ -4,8 +4,8 @@ meta:
   description: 'woodland Theme by mohabaks'
 window_colors:
   focused:
-    border:           '#c0b18b'
-    background:       '#c0b18b'
+    border:           '#775759'
+    background:       '#775759'
     text:             '#161212'
     indicator:        '#8c0333'
   focused_inactive:
@@ -28,19 +28,19 @@ bar_colors:
   background:         '#161212'
   statusline:         '#666666'
   focused_workspace:
-    border:           '#333333'
+    border:           '#161212'
     background:       '#161212'
-    text:             '#c0b18b'
+    text:             '#775759'
   active_workspace:
-    border:           '#333333'
+    border:           '#161212'
     background:       '#161212'
     text:             '#9E9ECB'
   inactive_workspace:
-    border:           '#333333'
+    border:           '#161212'
     background:       '#161212'
-    text:             '#919191'
+    text:             '#c0b18b'
   urgent_workspace:
-    border:           '#333333'
+    border:           '#161212'
     background:       '#161212'
     text:             '#7b8748'
 
