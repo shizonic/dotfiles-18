@@ -24,13 +24,13 @@ theme.notif_fg = "#444"
 theme.notif_bg = "#FFF"
 
 -- Menu colours
-theme.menu_fg                   = "#4A3637"
-theme.menu_bg                   = "#151515"
-theme.menu_selected_fg          = "#c0b18b"
-theme.menu_selected_bg          = "#775759"
-theme.menu_title_bg             = "#161212"
-theme.menu_primary_title_fg     = "#f00"
-theme.menu_secondary_title_fg   = "#666"
+theme.menu_fg                   = "#c0b18b"
+theme.menu_bg                   = "#000000"
+theme.menu_selected_fg          = "#775759"
+theme.menu_selected_bg          = "#000000"
+theme.menu_title_bg             = "#000000"
+theme.menu_primary_title_fg     = "#d17b49"
+theme.menu_secondary_title_fg   = "#d17b49"
 
 -- Proxy manager
 theme.proxy_active_menu_fg      = '#000'
@@ -52,10 +52,10 @@ theme.ibar_fg           = "#d17b49"
 theme.ibar_bg           = "#000"
 
 -- Tab label
-theme.tab_fg            = "#919191"
+theme.tab_fg            = "#c0b18b"
 theme.tab_bg            = "#222"
 theme.tab_ntheme        = "#4A3637"
-theme.selected_fg       = "#c0b18b"
+theme.selected_fg       = "#775759"
 theme.selected_bg       = "#161212"
 theme.selected_ntheme   = "#4A3637"
 theme.loading_fg        = "#33AADD"
