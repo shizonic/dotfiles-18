@@ -21,7 +21,7 @@ class Default(ColorScheme):
             if context.empty or context.error:
                 bg = red
             if context.border:
-                fg = magenta
+                fg = yellow
             if context.media:
                 if context.image:
                     fg = blue
@@ -31,7 +31,7 @@ class Default(ColorScheme):
                 fg = red
             if context.directory:
                 attr |= bold
-                fg = magenta
+                fg = black
             elif context.executable and not \
                     any((context.media, context.container,
                         context.fifo, context.socket)):
@@ -58,7 +58,7 @@ class Default(ColorScheme):
             if context.main_column:
                 if context.selected:
                     attr |= bold
-                    fg = yellow
+                    fg = black
                 if context.marked:
                     attr |= bold
                     fg = red
@@ -88,7 +88,7 @@ class Default(ColorScheme):
                     fg = magenta
             if context.marked:
                 attr |= bold | reverse
-                fg = yellow
+                fg = red
             if context.message:
                 if context.bad:
                     attr |= bold
