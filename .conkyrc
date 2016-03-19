@@ -17,16 +17,16 @@ TEXT
 #{"full_text":"${kernel}","color":"\#525252","separator":false,"separator_block_width":6},\
 #[${execi 1 ~/.conky/conky-mpd/cover.sh}]}
 #mail
-{"full_text":"","color":"\#451159","separator":false,"separator_block_width":6},\
+{"full_text":"","color":"\#c0b18b","separator":false,"separator_block_width":6},\
 {"full_text":"[${execi 300 python ~/scripts/gmail.py}] ","color":"\#C0C0C0","separator":false,"separator_block_width":6},\
 #Finds current volume. May need modified depending on your setup"
-{"full_text":" ","color":"\#BF4D80","separator":false,"separator_block_width":6},\
+{"full_text":" ","color":"\#c0b18b","separator":false,"separator_block_width":6},\
 {"full_text":"${exec amixer -c 0 get Master | grep Mono: | cut -d " " -f6} ","color":"\#C0C0C0","separator":false,"separator_block_width":0},\
 #Brighness
-{"full_text":"","color":"\#9E9ECB","separator":false,"separator_block_width":6},\
+{"full_text":"","color":"\#c0b18b","separator":false,"separator_block_width":6},\
 {"full_text":"${exec xbacklight| awk '{printf("%d\n",$1 + 0.5)}'}% ","color":"\#C0C0C0","separator":false,"separator_block_width":0},\
 # Download:
-{"full_text":"","color":"\#53A6A6","separator":false,"separator_block_width":6},\
+{"full_text":"","color":"\#c0b18b","separator":false,"separator_block_width":6},\
 {"full_text":"${if_match ${downspeedf enp2s0}<100}${downspeed enp2s0}","color":"\#C0C0C0","separator":false,"separator_block_width":6},\
 {"full_text":"${else}"},\
 {"full_text":"${if_match ${downspeedf enp2s0}<300}${downspeed enp2s0}","color":"\#8b0000","separator":false,"separator_block_width":6},\
@@ -38,7 +38,7 @@ TEXT
 {"full_text":"${if_match ${downspeedf enp2s0}>=1000}${downspeed enp2s0}","color":"\#FF3333","separator":false,"separator_block_width":6},\
 {"full_text":"${endif}${endif}${endif}${endif}${endif}"},\
 # Upload:
-{"full_text":"","color":"\#7E62B3","separator":false,"separator_block_width":6},\
+{"full_text":"","color":"\#c0b18b","separator":false,"separator_block_width":6},\
 {"full_text":"${if_match ${upspeedf enp2s0}<15}${upspeed enp2s0}","color":"\#C0C0C0","separator":false,"separator_block_width":6},\
 {"full_text":"${else}"},\
 {"full_text":"${if_match ${upspeedf enp2s0}<35}${upspeed enp2s0}","color":"\#0e2f44","separator":false,"separator_block_width":6},\
@@ -59,12 +59,12 @@ TEXT
 #{"full_text":"%","color":"\#C0C0C0 ","separator":false,"separator_block_width":6},\
 
 #Battery 
-{"full_text":"","color":"\#477AB3","separator":false,"separator_block_width":6},\
+{"full_text":"","color":"\#c0b18b","separator":false,"separator_block_width":6},\
 {"full_text":"${battery_percent BAT1}%","color":"\#C0C0C0","separator":false,"separator_block_width":6},\
 # Date:
-{"full_text":"","color":"\#6096BF","separator":false,"separator_block_width":6},\
+{"full_text":"","color":"\#c0b18b","separator":false,"separator_block_width":6},\
 {"full_text":"${time %D}","color":"\#C0C0C0","separator":false,"separator_block_width":6},\
 # Time:
-{"full_text":"","color":"\#A37079","separator":false,"separator_block_width":6},\
+{"full_text":"","color":"\#c0b18b","separator":false,"separator_block_width":6},\
 {"full_text":"${time %r}","color":"\#C0C0C0","separator":false}\
 ]
