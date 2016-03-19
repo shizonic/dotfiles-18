@@ -74,10 +74,10 @@ alias clock='tty-clock -csbBD -C 3'
 #                       COLORS FOR MAN PAGES 
 #-----------------------------------------------------------------------
 
-export LESS_TERMCAP_mb=$'\e[1;34m'
-export LESS_TERMCAP_md=$'\e[1;33m'
+export LESS_TERMCAP_mb=$'\e[0;32m'
+export LESS_TERMCAP_md=$'\e[0;33m'
 export LESS_TERMCAP_me=$'\e[0m'
 export LESS_TERMCAP_se=$'\e[0m'
-export LESS_TERMCAP_so=$'\e[1;40;32m'
+export LESS_TERMCAP_so=$'\e[1;34;31m'
 export LESS_TERMCAP_ue=$'\e[0m'
-export LESS_TERMCAP_us=$'\e[0;32m'
+export LESS_TERMCAP_us=$'\e[0;30m'

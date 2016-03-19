@@ -135,10 +135,6 @@ require "introspector"
 -- Add command completion
 require "completion"
 
--- Adblock functionality
-require  "adblock"
-require  "adblock_chrome"
-
 -- NoScript plugin, toggle scripts and or plugins on a per-domain basis.
 -- `,ts` to toggle scripts, `,tp` to toggle plugins, `,tr` to reset.
 -- Remove all "enable_scripts" & "enable_plugins" lines from your
@@ -149,6 +145,10 @@ require "follow_selected"
 require "go_input"
 require "go_next_prev"
 require "go_up"
+
+-- Adblock functionality
+require  "adblock"
+require  "adblock_chrome"
 
 -----------------------------
 -- End user script loading --

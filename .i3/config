@@ -74,16 +74,16 @@ bindsym $mod+a focus parent
 
 # Initialise workspace
 # 
-set $1   1:
-set $2   2: 
-set $3   3: 
-set $4   4: 
-set $5   5: 
-set $6   6: 
-set $7   7: 
-set $8   8: 
-set $9   9: 
-set $10  10: 
+set $1   1: home
+set $2   2: surf
+set $3   3: code
+set $4   4: media
+set $5   5: netw
+set $6   6: term
+set $7   7: conf
+set $8   8: chat
+set $9   9: news
+set $10  10: read
  
 # Switch to workspace
 bindsym $mod+1 workspace $1
@@ -218,16 +218,11 @@ bindsym $mod+b exec luakit
 # Colors themes
 # Currently am using i3-style to switch to different colors
 # Window colors         border  background text    indicator
-client.focused          #775759 #775759    #161212 #8c0333
-client.focused_inactive #333333 #333333    #ff6a6a #333333
-client.unfocused        #333333 #333333    #90b9d1 #333333
-client.urgent           #7b8748 #7b8748    #161212 #C0C0C0
 
 # Start i3bar to display a workspace bar
 # (plus the system information i3status# finds out, if available)
 bar {
-     
-     status_command  $HOME/bin/conkyi3.sh
+  status_command  $HOME/bin/conkyi3.sh
           i3bar_command   i3bar 
           position top
           mode dock
@@ -236,15 +231,14 @@ bar {
           strip_workspace_numbers yes 
           # height of the bar in pixels
           # height 20
-  
-     colors {
-          separator  #444444
-          background #161212
-          statusline #666666
-          focused_workspace  #161212 #161212 #775759
-          active_workspace   #161212 #161212 #9E9ECB
-          inactive_workspace #161212 #161212 #c0b18b
-          urgent_workspace   #161212 #161212 #7b8748
+  colors {
+    separator #444444
+    background #161212
+    statusline #666666
+    focused_workspace #333333 #161212 #775759
+    active_workspace #333333 #161212 #9E9ECB
+    inactive_workspace #333333 #161212 #c0b18b
+    urgent_workspace #333333 #161212 #535C5C
   }
 }
 
@@ -295,9 +289,13 @@ assign [class="^Blender$"]  $4
 assign [class="^mpv$"] $4
 assign [class="^VirtualBox$"] $5
 assign [class="^Filezilla$"] $5
-assign [class="^Nmapfe"] $7
-assign [class="^Wireshark"] $7
-assign [class="^dukto"] $7
+assign [class="^Nmapfe"] $5
+assign [class="^Wireshark"] $5
 
 
 # vim:filetype=i3
+
+client.focused #775759 #775759 #161212 #8c0333
+client.focused_inactive #333333 #333333 #ff6a6a #333333
+client.unfocused #333333 #333333 #90b9d1 #333333
+client.urgent #535C5C #535C5C #161212 #C0C0C0
