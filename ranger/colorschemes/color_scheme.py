@@ -19,23 +19,23 @@ class Default(ColorScheme):
             else:
                 attr = normal
             if context.empty or context.error:
-                bg = red
+                bg = 5
             if context.border:
-                fg = magenta
+                fg = yellow
             if context.media:
                 if context.image:
-                    fg = blue
+                    fg = red
                 else:
-                    fg = magenta
+                    fg = blue
             if context.container:
                 fg = red
             if context.directory:
-                attr |= bold
-                fg = black
+                # attr |= bold
+                fg = yellow
             elif context.executable and not \
                     any((context.media, context.container,
                         context.fifo, context.socket)):
-                attr |= bold
+                # attr |= bold
                 fg = green
             if context.socket:
                 fg = magenta
@@ -57,8 +57,8 @@ class Default(ColorScheme):
                 attr |= bold
             if context.main_column:
                 if context.selected:
-                    attr |= bold
-                    fg = black
+                    # attr |= bold
+                    fg = yellow
                 if context.marked:
                     attr |= bold
                     fg = red
@@ -71,9 +71,9 @@ class Default(ColorScheme):
         elif context.in_titlebar:
             attr |= bold
             if context.hostname:
-                fg = context.bad and red or green
+                fg = context.bad and red or yellow
             elif context.directory:
-                fg = yellow
+                fg = 2
             elif context.tab:
                 if context.good:
                     bg = green

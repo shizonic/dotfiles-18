@@ -17,7 +17,7 @@ bindsym $mod+Shift+q kill
 # bindsym $mod+d exec  dmenu_run -b -nf dimgray -sb orangered -sf black -nb gray4
 
 # Start Rofi (a program launcher, ssh, window switcher)
-bindsym $mod+d exec rofi -show run -font "Monofur 10" -fg "#505050" -bg "#161212" -bc "#775759" -hlfg "#c0b18b" -hlbg "#161212" -o 85
+bindsym $mod+d exec rofi -show run -font "Droid Sans Mono 10" -fg "#919191" -bg "#12171d" -bc "#879ebb" -hlfg "#879ebb" -hlbg "#12171d" -o 85
 
 # Change focus
 bindsym $mod+j focus left
@@ -218,7 +218,10 @@ bindsym $mod+b exec luakit
 # Colors themes
 # Currently am using i3-style to switch to different colors
 # Window colors         border  background text    indicator
-
+client.focused          #879ebb #879ebb    #101010 #8c0333
+client.focused_inactive #333333 #333333    #ff6a6a #333333
+client.unfocused        #919191 #919191    #90b9d1 #333333
+client.urgent           #b1d631 #b1d631    #101010 #C0C0C0
 # Start i3bar to display a workspace bar
 # (plus the system information i3status# finds out, if available)
 bar {
@@ -227,18 +230,18 @@ bar {
           position top
           mode dock
           workspace_buttons yes
-          font xft:Monofur 9
+          font xft:Droid Sans Mono 9
           strip_workspace_numbers yes 
           # height of the bar in pixels
           # height 20
   colors {
     separator #444444
-    background #161212
+    background #12171d
     statusline #666666
-    focused_workspace #333333 #161212 #775759
-    active_workspace #333333 #161212 #9E9ECB
-    inactive_workspace #333333 #161212 #c0b18b
-    urgent_workspace #333333 #161212 #535C5C
+    focused_workspace #333333 #12171d #879ebb
+    active_workspace #333333 #12171d #C0C0C0
+    inactive_workspace #333333 #12171d #C0C0C0
+    urgent_workspace #333333 #12171d #528c8a
   }
 }
 
@@ -294,8 +297,3 @@ assign [class="^Wireshark"] $5
 
 
 # vim:filetype=i3
-
-client.focused #775759 #775759 #161212 #8c0333
-client.focused_inactive #333333 #333333 #ff6a6a #333333
-client.unfocused #333333 #333333 #90b9d1 #333333
-client.urgent #535C5C #535C5C #161212 #C0C0C0

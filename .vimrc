@@ -10,6 +10,7 @@ call pathogen#infect()                    " use pathogen
 
 "colors {{{
 """"""""""""""
+  
   set background=dark
   "colorscheme hybrid
   

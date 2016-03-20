@@ -5,9 +5,9 @@
 local theme = {}
 
 -- Default settings
-theme.font = "Monofur 9"
+theme.font = "Monofur 10"
 theme.fg   = "#fff"
-theme.bg   = "#161212"
+theme.bg   = "#101010"
 
 -- Genaral colours
 theme.success_fg = "#0f0"
@@ -24,13 +24,13 @@ theme.notif_fg = "#444"
 theme.notif_bg = "#FFF"
 
 -- Menu colours
-theme.menu_fg                   = "#c0b18b"
-theme.menu_bg                   = "#000000"
-theme.menu_selected_fg          = "#775759"
-theme.menu_selected_bg          = "#000000"
-theme.menu_title_bg             = "#000000"
-theme.menu_primary_title_fg     = "#d17b49"
-theme.menu_secondary_title_fg   = "#d17b49"
+theme.menu_fg                   = "#919191"
+theme.menu_bg                   = "#101010"
+theme.menu_selected_fg          = "#879ebb"
+theme.menu_selected_bg          = "#101010"
+theme.menu_title_bg             = "#101010"
+theme.menu_primary_title_fg     = "#8299df"
+theme.menu_secondary_title_fg   = "#8299df"
 
 -- Proxy manager
 theme.proxy_active_menu_fg      = '#000'
@@ -39,7 +39,7 @@ theme.proxy_inactive_menu_fg    = '#888'
 theme.proxy_inactive_menu_bg    = '#FFF'
 
 -- Statusbar specific
-theme.sbar_fg         = "#768748"
+theme.sbar_fg         = "#87ceeb"
 theme.sbar_bg         = "#000"
 
 -- Downloadbar specific
@@ -48,16 +48,16 @@ theme.dbar_bg         = "#000"
 theme.dbar_error_fg   = "#F00"
 
 -- Input bar specific
-theme.ibar_fg           = "#d17b49"
+theme.ibar_fg           = "#b1d631"
 theme.ibar_bg           = "#000"
 
 -- Tab label
-theme.tab_fg            = "#c0b18b"
+theme.tab_fg            = "#C0C0C0"
 theme.tab_bg            = "#222"
-theme.tab_ntheme        = "#7b8748"
-theme.selected_fg       = "#775759"
-theme.selected_bg       = "#101010"
-theme.selected_ntheme   = "#4A3637"
+theme.tab_ntheme        = "#C0C0C0"
+theme.selected_fg       = "#879ebb"
+theme.selected_bg       = "#151515"
+theme.selected_ntheme   = "#879ebb"
 theme.loading_fg        = "#33AADD"
 theme.loading_bg        = "#000"
 

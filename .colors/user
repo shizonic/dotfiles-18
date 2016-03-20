@@ -1,6 +1,6 @@
 !user 77 - Mashup colors
 *foreground:        #B2A191
-*background:        #171717
+*background:        [80]#171717
 *borderColor:       #171717
 *cursorColor:       #C7A551
 !black

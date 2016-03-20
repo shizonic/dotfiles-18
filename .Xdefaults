@@ -97,10 +97,10 @@ Xcursor.theme:              Paper
 !for true transparency
 !urxvt*depth:               32
 !urxvt*background:          rgba:0000/0000/0200/c800
-!URxvt.background:          [90]#101010#1F1F1F
-!URxvt.foreground:          #818181
-!URxvt.cursorColor:         #818181
+!URxvt.background:          [90]#101010
+!URxvt.foreground:          #919191
+!URxvt.cursorColor:         #919191
 !URxvt.borderColor:         #151515
 
 ! colours
-#include "/home/mohabaks/.colors/woodforest"
+#include "/home/mohabaks/.colors/dotshare2"
