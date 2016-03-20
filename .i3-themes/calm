@@ -1,0 +1,47 @@
+
+---
+meta:
+  description: 'Calm theme  by mohabaks'
+window_colors:
+  focused:
+    border:           '#879ebb'
+    background:       '#879ebb'
+    text:             '#101010'
+    indicator:        '#8c0333'
+  focused_inactive:
+    border:           '#333333'
+    background:       '#333333'
+    text:             '#ff6a6a'
+    indicator:        '#333333'
+  unfocused:
+    border:           '#919191'
+    background:       '#919191'
+    text:             '#90b9d1'
+    indicator:        '#333333'
+  urgent:
+    border:           '#b1d631'
+    background:       '#b1d631'
+    text:             '#101010'
+    indicator:        '#C0C0C0'
+bar_colors:
+  separator:          '#444444'
+  background:         '#12171d'
+  statusline:         '#666666'
+  focused_workspace:
+    border:           '#333333'
+    background:       '#12171d'
+    text:             '#879ebb'
+  active_workspace:
+    border:           '#333333'
+    background:       '#12171d'
+    text:             '#C0C0C0'
+  inactive_workspace:
+    border:           '#333333'
+    background:       '#12171d'
+    text:             '#C0C0C0'
+  urgent_workspace:
+    border:           '#333333'
+    background:       '#12171d'
+    text:             '#528c8a'
+
+# vim: filetype=yaml
