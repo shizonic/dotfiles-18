@@ -18,7 +18,7 @@ TEXT
 #[${execi 1 ~/.conky/conky-mpd/cover.sh}]}
 
 #mail
-{"full_text":"","color":"\#528c8a","separator":false,"separator_block_width":6},\
+{"full_text":"","color":"\#87afd7","separator":false,"separator_block_width":6},\
 {"full_text":"[${execi 300 python ~/scripts/gmail.py}] ","color":"\#C0C0C0","separator":false,"separator_block_width":6},\
 
 #Finds current volume. May need modified depending on your setup"
@@ -26,11 +26,11 @@ TEXT
 {"full_text":"${exec amixer -c 0 get Master | grep Mono: | cut -d " " -f6} ","color":"\#C0C0C0","separator":false,"separator_block_width":0},\
 
 #Brighness
-{"full_text":"","color":"\#c6dee0","separator":false,"separator_block_width":6},\
+{"full_text":"","color":"\#ffaf5f","separator":false,"separator_block_width":6},\
 {"full_text":"${exec xbacklight| awk '{printf("%d\n",$1 + 0.5)}'}% ","color":"\#C0C0C0","separator":false,"separator_block_width":0},\
 
 # Download:
-{"full_text":"","color":"\#a8bfcd","separator":false,"separator_block_width":6},\
+{"full_text":"","color":"\#87af5f","separator":false,"separator_block_width":6},\
 {"full_text":"${if_match ${downspeedf enp2s0}<100}${downspeed enp2s0}","color":"\#C0C0C0","separator":false,"separator_block_width":6},\
 {"full_text":"${else}"},\
 {"full_text":"${if_match ${downspeedf enp2s0}<300}${downspeed enp2s0}","color":"\#8b0000","separator":false,"separator_block_width":6},\
@@ -43,7 +43,7 @@ TEXT
 {"full_text":"${endif}${endif}${endif}${endif}${endif}"},\
 
 # Upload:
-{"full_text":"","color":"\#8299df","separator":false,"separator_block_width":6},\
+{"full_text":"","color":"\#EA8484","separator":false,"separator_block_width":6},\
 {"full_text":"${if_match ${upspeedf enp2s0}<15}${upspeed enp2s0}","color":"\#C0C0C0","separator":false,"separator_block_width":6},\
 {"full_text":"${else}"},\
 {"full_text":"${if_match ${upspeedf enp2s0}<35}${upspeed enp2s0}","color":"\#0e2f44","separator":false,"separator_block_width":6},\
@@ -64,14 +64,14 @@ TEXT
 #{"full_text":"%","color":"\#C0C0C0 ","separator":false,"separator_block_width":6},\
 
 #Battery 
-{"full_text":"","color":"\#a8bfcd","separator":false,"separator_block_width":6},\
+{"full_text":"","color":"\#8787af","separator":false,"separator_block_width":6},\
 {"full_text":"${battery_percent BAT1}%","color":"\#C0C0C0","separator":false,"separator_block_width":6},\
 
 # Date:
-{"full_text":"","color":"\#c6dee0","separator":false,"separator_block_width":6},\
+{"full_text":"","color":"\#d7d7d7","separator":false,"separator_block_width":6},\
 {"full_text":"${time %D}","color":"\#C0C0C0","separator":false,"separator_block_width":6},\
 
 # Time:
-{"full_text":"","color":"\#8299df","separator":false,"separator_block_width":6},\
+{"full_text":"","color":"\#5f8787","separator":false,"separator_block_width":6},\
 {"full_text":"${time %r}","color":"\#C0C0C0","separator":false}\
 ]
