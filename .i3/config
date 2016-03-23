@@ -218,10 +218,10 @@ bindsym $mod+b exec luakit
 # Colors themes
 # Currently am using i3-style to switch to different colors
 # Window colors         border  background text    indicator
-client.focused          #d7d7d7 #d7d7d7   #000000 #8c0333
-client.focused_inactive #333333 #333333   #ff6a6a #333333
-client.unfocused        #333333 #333333   #90b9d1 #333333
-client.urgent           #333333 #333333   #080808 #C0C0C0
+client.focused          #d7d7d7 #d7d7d7    #000000 #8c0333
+client.focused_inactive #333333 #333333    #ff6a6a #333333
+client.unfocused        #333333 #333333    #90b9d1 #333333
+client.urgent           #333333 #333333    #080808 #C0C0C0
 
 # Start i3bar to display a workspace bar
 # (plus the system information i3status# finds out, if available)
