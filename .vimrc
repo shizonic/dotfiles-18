@@ -1,22 +1,39 @@
-"""""""""""""""""""""""""""""""""""""""""""""""""
-" Author:Mohammed Bakari
-" github:https://github.com/mohabaks/
+" Description{{{
+" 
+" Github:https://github.com/mohabaks/dotfiles
 "
-"""""""""""""""""""""""""""""""""""""""""""""""""
-
+"}}}
 "Launch Config {{{
-call pathogen#infect()                    " use pathogen
+call pathogen#infect()
+
 " }}}
 
-"colors {{{
-""""""""""""""
+" Set Colorscheme {{{
   
   set background=dark
-  "colorscheme hybrid
+  colorscheme jellybeans " https://github.com/nanotech/jellybeans.vim
+  " If you prefer slightly different colors from what Jellybeans provides
+  " customize highlighting parameters.
+  " let g:jellybeans_overrides = {
+  " \    'Todo': { 'guifg': '303030', 'guibg': 'f0f000',
+  " \              'ctermfg': 'Black', 'ctermbg': 'Yellow',
+  " \              'attr': 'bold' },
+  " \}
+  " Italics for terminal with full support. It's disable by default
+  let g:jellybeans_use_term_italics = 1
   
 " }}}
 
-"Spaces & Tabs {{{
+" VimAirLine {{{
+set t_Co=256 " 16, 18, and 256
+set laststatus=2 
+let g:airline_theme='term'
+let g:airline_powerline_fonts = 2 " show powerline symbols
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_alt_sep = '|'
+" }}}
+
+" Spaces & Tabs {{{
 set tabstop=4       " number of visual spaces per TAB
 set softtabstop=4   " number of spaces in tab when editing
 set expandtab       " tabs are spaces
@@ -134,7 +151,6 @@ let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
 let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 " }}}
 
-
 " File Browsing {{{
 """"""""""""""""""""""
 " Open NERDTree when no files are specified
@@ -159,18 +175,7 @@ nnoremap <silent> <Leader>q :Bclose<CR>
 nnoremap <silent> <Leader>Q <C-w>c
 " }}}
 
-" VimAirLine {{{
-set t_Co=16 "256
-set laststatus=2 
-let g:airline_theme='term'
-"let g:hybrid_custom_term_colors = 1
-"let g:hybrid_reduced_contrast = 1
-let g:airline_powerline_fonts = 2 " show powerline symbols
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#left_alt_sep = '|'
-" }}}
-
-" Commenting blocks of code.}}}
+" Commenting blocks of code{{{
 autocmd FileType c,cpp,java,scala let b:comment_leader = '// '
 autocmd FileType sh,ruby,python   let b:comment_leader = '# '
 autocmd FileType conf,fstab       let b:comment_leader = '# '
@@ -192,10 +197,7 @@ set writebackup
 " Git Integration {{{
 """""""""""""""""""""""""
 "}}}
-
-
-""""""""""""""""""""""""""""" 
-" 
+ 
 " Python/Django IDE Setup {{{
 "
 """"""""""""""""""""""""""""" 
