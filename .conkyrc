@@ -19,19 +19,19 @@ TEXT
 
 #mail
 {"full_text":"","color":"\#87afd7","separator":false,"separator_block_width":6},\
-{"full_text":"[${execi 300 python ~/scripts/gmail.py}] ","color":"\#C0C0C0","separator":false,"separator_block_width":6},\
+{"full_text":"[${execi 300 python ~/scripts/gmail.py}] ","color":"\#919191","separator":false,"separator_block_width":6},\
 
 #Finds current volume. May need modified depending on your setup"
-{"full_text":" ","color":"\#93908b","separator":false,"separator_block_width":6},\
-{"full_text":"${exec amixer -c 0 get Master | grep Mono: | cut -d " " -f6} ","color":"\#C0C0C0","separator":false,"separator_block_width":0},\
+{"full_text":" ","color":"\#444444","separator":false,"separator_block_width":6},\
+{"full_text":"${exec amixer -c 0 get Master | grep Mono: | cut -d " " -f6} ","color":"\#919191","separator":false,"separator_block_width":0},\
 
 #Brighness
 {"full_text":"","color":"\#ffaf5f","separator":false,"separator_block_width":6},\
-{"full_text":"${exec xbacklight| awk '{printf("%d\n",$1 + 0.5)}'}% ","color":"\#C0C0C0","separator":false,"separator_block_width":0},\
+{"full_text":"${exec xbacklight| awk '{printf("%d\n",$1 + 0.5)}'}% ","color":"\#919191","separator":false,"separator_block_width":0},\
 
 # Download:
 {"full_text":"","color":"\#87af5f","separator":false,"separator_block_width":6},\
-{"full_text":"${if_match ${downspeedf enp2s0}<100}${downspeed enp2s0}","color":"\#C0C0C0","separator":false,"separator_block_width":6},\
+{"full_text":"${if_match ${downspeedf enp2s0}<100}${downspeed enp2s0}","color":"\#919191","separator":false,"separator_block_width":6},\
 {"full_text":"${else}"},\
 {"full_text":"${if_match ${downspeedf enp2s0}<300}${downspeed enp2s0}","color":"\#8b0000","separator":false,"separator_block_width":6},\
 {"full_text":"${else}"},\
@@ -44,7 +44,7 @@ TEXT
 
 # Upload:
 {"full_text":"","color":"\#EA8484","separator":false,"separator_block_width":6},\
-{"full_text":"${if_match ${upspeedf enp2s0}<15}${upspeed enp2s0}","color":"\#C0C0C0","separator":false,"separator_block_width":6},\
+{"full_text":"${if_match ${upspeedf enp2s0}<15}${upspeed enp2s0}","color":"\#919191","separator":false,"separator_block_width":6},\
 {"full_text":"${else}"},\
 {"full_text":"${if_match ${upspeedf enp2s0}<35}${upspeed enp2s0}","color":"\#0e2f44","separator":false,"separator_block_width":6},\
 {"full_text":"${else}"},\
@@ -53,7 +53,7 @@ TEXT
 
 # CPU:
 #{"full_text":"cpu","color":"\#395573","separator":false,"separator_block_width":6},\
-#{"full_text":"${if_match ${cpu cpu0}<25}${cpu cpu0}","color":"\#C0C0C0","separator":false,"separator_block_width":0},\
+#{"full_text":"${if_match ${cpu cpu0}<25}${cpu cpu0}","color":"\#919191","separator":false,"separator_block_width":0},\
 #{"full_text":"${else}"},\
 #{"full_text":"${if_match ${cpu cpu0}<50}${cpu cpu0}","color":"\#008000","separator":false,"separator_block_width":0},\
 #{"full_text":"${else}"},\
@@ -61,17 +61,17 @@ TEXT
 #{"full_text":"${else}"},\
 #{"full_text":"${if_match ${cpu cpu0}<=100}${cpu cpu0}","color":"\#FF3333","separator":false,"separator_block_width":0},\
 #{"full_text":"${endif}${endif}${endif}${endif}"},\
-#{"full_text":"%","color":"\#C0C0C0 ","separator":false,"separator_block_width":6},\
+#{"full_text":"%","color":"\#919191 ","separator":false,"separator_block_width":6},\
 
 #Battery 
 {"full_text":"","color":"\#8787af","separator":false,"separator_block_width":6},\
-{"full_text":"${battery_percent BAT1}%","color":"\#C0C0C0","separator":false,"separator_block_width":6},\
+{"full_text":"${battery_percent BAT1}%","color":"\#919191","separator":false,"separator_block_width":6},\
 
 # Date:
 {"full_text":"","color":"\#d7d7d7","separator":false,"separator_block_width":6},\
-{"full_text":"${time %D}","color":"\#C0C0C0","separator":false,"separator_block_width":6},\
+{"full_text":"${time %D}","color":"\#919191","separator":false,"separator_block_width":6},\
 
 # Time:
 {"full_text":"","color":"\#5f8787","separator":false,"separator_block_width":6},\
-{"full_text":"${time %r}","color":"\#C0C0C0","separator":false}\
+{"full_text":"${time %r}","color":"\#919191","separator":false}\
 ]
