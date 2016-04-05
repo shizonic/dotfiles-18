@@ -17,7 +17,7 @@ bindsym $mod+Shift+q kill
 # bindsym $mod+d exec  dmenu_run -b -nf dimgray -sb orangered -sf black -nb gray4
 
 # Start Rofi (a program launcher, ssh, window switcher)
-bindsym $mod+d exec rofi -show run -font "Monofur 10" -fg "#919191" -bg "#080808" -bc "#888888" -hlfg "#87afd7" -hlbg "#080808" -o 85
+bindsym $mod+d exec rofi -show run -font "Fira Code 10" -fg "#919191" -bg "#080808" -bc "#444444" -hlfg "#ffaf5f" -hlbg "#080808" -o 85
 
 # Change focus
 bindsym $mod+j focus left
@@ -81,9 +81,9 @@ set $4   4: media
 set $5   5: netw
 set $6   6: term
 set $7   7: conf
-set $8   8: chat
+set $8   8: chat
 set $9   9: news
-set $10  10: read
+set $10  10: misc
  
 # Switch to workspace
 bindsym $mod+1 workspace $1
@@ -142,7 +142,7 @@ mode "resize" {
 #  i3-gaps settings 
 #  More info visit: https://github.com/Airblader/i3
 
-smart_gaps on # when only one container is in use
+# smart_gaps on # when only one container is in use
 smart_borders on # no borders when on app is in use also no_gaps
 set $mode_gaps Gaps: (o) outer, (i) inner
 set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
@@ -218,7 +218,7 @@ bindsym $mod+b exec luakit
 # Colors themes
 # Currently am using i3-style to switch to different colors
 # Window colors         border  background text    indicator
-client.focused          #d7d7d7 #d7d7d7    #000000 #8c0333
+client.focused          #ffaf5f #ffaf5f    #080808 #8c0333
 client.focused_inactive #333333 #333333    #ff6a6a #333333
 client.unfocused        #333333 #333333    #90b9d1 #333333
 client.urgent           #333333 #333333    #080808 #C0C0C0
@@ -231,18 +231,18 @@ bar {
           position top
           mode dock
           workspace_buttons yes
-          font xft:Monofur 10
+          font xft:Fira Code 10
           strip_workspace_numbers yes 
           # height of the bar in pixels
           # height 20
   colors {
     separator #444444
-    background #000000
+    background #080808
     statusline #666666
-    focused_workspace #333333 #000000 #d7d7d7
-    active_workspace #333333 #000000 #EA8484
-    inactive_workspace #333333 #000000 #808080
-    urgent_workspace #333333 #000000 #87afd7
+    focused_workspace #333333 #080808 #ffaf5f
+    active_workspace #333333 #080808 #EA8484
+    inactive_workspace #333333 #080808 #555555
+    urgent_workspace #333333 #080808 #A6A6DE
   }
 }
 
@@ -296,5 +296,6 @@ assign [class="^Filezilla$"] $5
 assign [class="^Nmapfe"] $5
 assign [class="^Wireshark"] $5
 assign [class="^Zathura"] $10
+assign [class="^LibreOffice"] $10
 
 # vim:filetype=i3
