@@ -20,7 +20,7 @@ call pathogen#infect()
   " \              'attr': 'bold' },
   " \}
   " Italics for terminal with full support. It's disable by default
-  let g:jellybeans_use_term_italics = 1
+  "let g:jellybeans_use_term_italics = 1
   
 " }}}
 
