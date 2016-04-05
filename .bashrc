@@ -50,8 +50,8 @@ bakcyn='\e[46m'   # Cyan
 bakwht='\e[47m'   # White
 txtrst='\e[0m'    # Text Reset
 
-PS1='┌─(\e[1;33m\W\e[0m)$(__git_ps1 "[\e[1;34m%s\e[0m]")\n└─ \e[0;32m>>\e[0m '
-
+#PS1='┌─(\e[0;33m\W\e[0m)$(__git_ps1 "[\e[0;31m%s\e[0m]")\n└─ '
+PS1='\[\e[1;33m\]»\e[0m \[\e[1;30m\][\[\e[0m\]\W\[\e[1;30m\]]\[\e[1;34m\]\[\e[0m\]\[\e[m \]$(__git_ps1 "\n \e[0;35m╺─╸\e[0m\[\e[1;30m\][\[\e[0m\]\e[0;31m%s\e[0m\e[1;30m\]]\[\e[1;34m\]") '
 #-----------------------------------------------------------------------
 #                                           
 #                       ALIASES
@@ -63,6 +63,7 @@ alias dotfiles='cd ~/dotfiles/'
 alias i3config='vim ~/.i3/config'
 alias vimrc='vim ~/.vimrc'
 alias bashrc='vim ~/.bashrc'
+alias cava=' cava -c green -i  fifo -p /tmp/mpd.fifo'
 alias xdefaults='vim ~/.Xdefaults'
 alias reload='source ~/.bashrc'
 alias htop='htop -u mohabaks'
@@ -74,10 +75,10 @@ alias clock='tty-clock -csbBD -C 3'
 #                       COLORS FOR MAN PAGES 
 #-----------------------------------------------------------------------
 
-export LESS_TERMCAP_mb=$'\e[0;33m'
+export LESS_TERMCAP_mb=$'\e[0;31m'
 export LESS_TERMCAP_md=$'\e[0;34m'
 export LESS_TERMCAP_me=$'\e[0m'
 export LESS_TERMCAP_se=$'\e[0m'
-export LESS_TERMCAP_so=$'\e[0;34;32m'
+export LESS_TERMCAP_so=$'\e[0;34;33m'
 export LESS_TERMCAP_ue=$'\e[0m'
 export LESS_TERMCAP_us=$'\e[0;35m'
