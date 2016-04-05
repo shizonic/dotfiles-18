@@ -1,0 +1,11 @@
+To change the theme of the launcher and make the background completely transparent, pursue the following steps:
+1 make a backup of the following files:
+'/usr/share/unity/icons/launcher_icon_back_54.svg'
+'/usr/share/unity/icons/launcher_icon_edge_54.svg'
+'/usr/share/unity/icons/launcher_icon_glow_62.svg'
+'/usr/share/unity/icons/launcher_icon_shadow_62.svg'
+'/usr/share/unity/icons/launcher_icon_shine_54.svg'
+
+2 Replace the originals with the files included here
+
+3 Restart your system
