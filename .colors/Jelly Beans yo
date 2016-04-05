@@ -1,6 +1,6 @@
 !! jellybeans colors
 ! 8 8 8
- *background: [80]#080808
+ *background: #080808
 ! 128 128 128
  *foreground: #808080
 ! black
