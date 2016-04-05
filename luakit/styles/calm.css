@@ -3,17 +3,17 @@
  * link: https://github.com/mohabaks/dotfiles
 */ 
 
-*,div,pre,textarea,body,input,td,tr,p,select {
-    background-color: #12171d !important;
+,div,pre,textarea,body,input,td,tr,p,select {
+   /* background-color: #12171d !important;
     background-image: none !important;
-    color: #bbbbbb !important;
-    font-family: Monofur !important;
+    color: #bbbbbb !important;*/
+    font-family: Fira Mono !important;
 }
 h1,h2,h3,h4 {
-    background-color: #12171d !important;
-    font-family: Monofur !important;
-    color: #8299df!important;
-}
+    /*background-color: #12171d !important;*/
+    font-family: Fira Mono !important;
+    /*color: #8299df!important;*/
+}/*
 a {
     color: #528c8a !important;
 }
@@ -42,3 +42,4 @@ img:hover {
 ._hintElem._hintFocus img {
     opacity: 1;
 }
+*/

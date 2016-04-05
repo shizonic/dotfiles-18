@@ -5,7 +5,7 @@
 local theme = {}
 
 -- Default settings
-theme.font = "Monofur 10"
+theme.font = "Fira Code 10"
 theme.fg   = "#fff"
 theme.bg   = "#101010"
 
