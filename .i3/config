@@ -17,7 +17,7 @@ bindsym $mod+Shift+q kill
 # bindsym $mod+d exec  dmenu_run -b -nf dimgray -sb orangered -sf black -nb gray4
 
 # Start Rofi (a program launcher, ssh, window switcher)
-bindsym $mod+d exec rofi -show run -font "Fira Code 10" -fg "#919191" -bg "#080808" -bc "#444444" -hlfg "#ffaf5f" -hlbg "#080808" -o 85
+bindsym $mod+d exec rofi -show run -font "Monofur 12" -fg "#919191" -bg "#080808" -bc "#444444" -hlfg "#ffaf5f" -hlbg "#080808" -o 85
 
 # Change focus
 bindsym $mod+j focus left
@@ -231,7 +231,7 @@ bar {
           position top
           mode dock
           workspace_buttons yes
-          font xft:Fira Code 10
+          font xft:Monofur 10
           strip_workspace_numbers yes 
           # height of the bar in pixels
           # height 20

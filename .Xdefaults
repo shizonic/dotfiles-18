@@ -35,14 +35,14 @@ URxvt*scrollTtyKeypress: true
 
 ! Fonts
 !URxvt.allow_bold:       false
-URxvt*font:              xft:Fira Code:hinting=true:pixelsize=12:antialias=False,\
-                         xft:Symbola hinting=true:pixelsize=12:
-URxvt*boldFont:          xft:Fira Code:style=bold:hinting=true:pixelsize=12:antialias=False,\
-                         xft:Symbola hinting=true:pixelsize=12:
-URxvt*italicFont:        xft:Fira Code:style=italic:hinting=true:pixelsize=12:antialias=False,\
-                         xft:Symbola hinting=true:pixelsize=12:
-URxvt*boldItalicFont:    xft:Fira Code:style=bolditalic:hinting=true:pixelsize=12:antialias=False,\
-                         xft:Symbola hinting=true:pixelsize=12
+URxvt*font:              xft:Monofur for Powerline:hinting=true:pixelsize=14:antialias=True,\
+                         xft:Symbola hinting=true:pixelsize=14:
+URxvt*boldFont:          xft:Monofur for Powerline:style=bold:hinting=true:pixelsize=14:antialias=True,\
+                         xft:Symbola hinting=true:pixelsize=14:
+URxvt*italicFont:        xft:Monofur for Powerline:style=italic:hinting=true:pixelsize=14:antialias=True,\
+                         xft:Symbola hinting=true:pixelsize=14:
+URxvt*boldItalicFont:    xft:Monofur for Powerline:style=bolditalic:hinting=true:pixelsize=14:antialias=True,\
+                         xft:Symbola hinting=true:pixelsize=14
                                                 
 ! Fix font space
 !URxvt*letterSpace:      -1
