@@ -17,7 +17,7 @@ bindsym $mod+Shift+q kill
 # bindsym $mod+d exec  dmenu_run -b -nf dimgray -sb orangered -sf black -nb gray4
 
 # Start Rofi (a program launcher, ssh, window switcher)
-bindsym $mod+d exec rofi -show run -font "Monofur 12" -fg "#919191" -bg "#080808" -bc "#444444" -hlfg "#ffaf5f" -hlbg "#080808" -o 85
+bindsym $mod+d exec rofi -show run  -opacity 90 -font "Monofur 11" -fg "#888888" -bg "#080808" -bc "#444444" -hlfg "#ffaf5f" -hlbg "#080808" -o 85
 
 # Change focus
 bindsym $mod+j focus left
@@ -73,17 +73,17 @@ bindsym $mod+a focus parent
 #exec --no-startup-id i3-msg 'workspace 1: ;exec firefox;workspace 2: Files;exec urxvt;workspace 1: '
 
 # Initialise workspace
-# 
-set $1   1: home
-set $2   2: surf
-set $3   3: code
-set $4   4: media
-set $5   5: netw
-set $6   6: term
-set $7   7: conf
-set $8   8: chat
-set $9   9: news
-set $10  10: misc
+# 
+set $1   1:HOME
+set $2   2:SURF
+set $3   3:CODE
+set $4   4:MEDI
+set $5   5:VBOX
+set $6   6:TERM
+set $7   7:CONF
+set $8   8:CHAT
+set $9   9:NEWS
+set $10  10:MISC
  
 # Switch to workspace
 bindsym $mod+1 workspace $1
@@ -142,7 +142,7 @@ mode "resize" {
 #  i3-gaps settings 
 #  More info visit: https://github.com/Airblader/i3
 
-# smart_gaps on # when only one container is in use
+#smart_gaps on # when only one container is in use
 smart_borders on # no borders when on app is in use also no_gaps
 set $mode_gaps Gaps: (o) outer, (i) inner
 set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
@@ -184,7 +184,7 @@ mode "$mode_gaps_outer" {
 bindsym $mod+r mode "resize"
 
 # Lock screen
-set $Locker i3lock && sleep 1
+set $Locker i3lock-fancy
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
     bindsym l exec --no-startup-id $Locker, mode "default"
@@ -219,31 +219,31 @@ bindsym $mod+b exec luakit
 # Currently am using i3-style to switch to different colors
 # Window colors         border  background text    indicator
 client.focused          #ffaf5f #ffaf5f    #080808 #8c0333
-client.focused_inactive #333333 #333333    #ff6a6a #333333
-client.unfocused        #333333 #333333    #90b9d1 #333333
-client.urgent           #333333 #333333    #080808 #C0C0C0
+client.focused_inactive #555555 #555555    #ff6a6a #555555
+client.unfocused        #555555 #555555    #90b9d1 #555555
+client.urgent           #555555 #555555    #080808 #C0C0C0
 
 # Start i3bar to display a workspace bar
 # (plus the system information i3status# finds out, if available)
-bar {
-  status_command  $HOME/bin/conkyi3.sh
-          i3bar_command   i3bar 
+bar{
+
+          status_command  $HOME/bin/conkyi3.sh
+          i3bar_command i3bar 
           position top
           mode dock
           workspace_buttons yes
-          font xft:Monofur 10
+          font xft:Roboto 8
           strip_workspace_numbers yes 
-          # height of the bar in pixels
-          # height 20
-  colors {
-    separator #444444
-    background #080808
-    statusline #666666
-    focused_workspace #333333 #080808 #ffaf5f
-    active_workspace #333333 #080808 #EA8484
-    inactive_workspace #333333 #080808 #555555
-    urgent_workspace #333333 #080808 #A6A6DE
-  }
+        
+    colors {
+          separator #444444
+          background #080808
+          statusline #666666
+          focused_workspace #ffaf5f #ffaf5f #080808
+          active_workspace #555555 #080808 #EA8484
+          inactive_workspace #080808 #080808 #555555
+          urgent_workspace #A6A6DE #A6A6DE #080808
+   }
 }
 
 
@@ -286,6 +286,7 @@ for_window [class="DB Browser for SQLite"] floating enable
 # Starting apps on aspecific workspace
 assign [class="^Tor Browser$"] $2
 assign [class="^Firefox$"] $2
+assign [class="^qutebrowser$"] $2
 assign [class="^luakit$"] $2
 assign [class="^Gimp$"] $4
 assign [class="^Openshot$"] $4

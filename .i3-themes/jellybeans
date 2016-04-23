@@ -9,18 +9,18 @@ window_colors:
     text:             '#080808'
     indicator:        '#8c0333'
   focused_inactive:
-    border:           '#333333'
-    background:       '#333333'
+    border:           '#555555'
+    background:       '#555555'
     text:             '#ff6a6a'
-    indicator:        '#333333'
+    indicator:        '#555555'
   unfocused:
-    border:           '#333333'
-    background:       '#333333'
+    border:           '#555555'
+    background:       '#555555'
     text:             '#90b9d1'
-    indicator:        '#333333'
+    indicator:        '#555555'
   urgent:
-    border:           '#333333'
-    background:       '#333333'
+    border:           '#555555'
+    background:       '#555555'
     text:             '#080808'
     indicator:        '#C0C0C0'
 bar_colors:
@@ -28,20 +28,20 @@ bar_colors:
   background:         '#080808'
   statusline:         '#666666'
   focused_workspace:
-    border:           '#333333'
-    background:       '#080808'
-    text:             '#ffaf5f'
+    border:           '#ffaf5f'
+    background:       '#ffaf5f'
+    text:             '#080808'
   active_workspace:
-    border:           '#333333'
+    border:           '#555555'
     background:       '#080808'
     text:             '#EA8484'
   inactive_workspace:
-    border:           '#333333'
+    border:           '#080808'
     background:       '#080808'
     text:             '#555555'
   urgent_workspace:
-    border:           '#333333'
-    background:       '#080808'
-    text:             '#A6A6DE'
+    border:           '#A6A6DE'
+    background:       '#A6A6DE'
+    text:             '#080808'
 
 # vim: filetype=yaml

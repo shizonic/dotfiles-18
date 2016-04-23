@@ -58,7 +58,7 @@ class Default(ColorScheme):
             if context.main_column:
                 if context.selected:
                     # attr |= bold
-                    fg = blue
+                    fg = yellow
                 if context.marked:
                     attr |= bold
                     fg = red

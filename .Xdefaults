@@ -1,5 +1,5 @@
 !-----------------------------------------------------------------------
-!           Github:https://github.com/mohabaks/dotfiles
+!           Github: https://github.com/mohabaks/dotfiles
 !-----------------------------------------------------------------------
 
 
@@ -25,6 +25,7 @@ Xft.hintstyle:          hintslight
 URxvt.depth:             32
 URxvt.saveLines:         10000
 URxvt.geometry:          106x32
+URxvt*termName:          rxvt-unicode-256color
 
 ! Scrollbar
 !URxvt.scrollStyle:      rxvt
@@ -34,19 +35,13 @@ URxvt*scrollWithBuffer:  true
 URxvt*scrollTtyKeypress: true
 
 ! Fonts
-!URxvt.allow_bold:       false
-URxvt*font:              xft:Monofur for Powerline:hinting=true:pixelsize=14:antialias=True,\
-                         xft:Symbola hinting=true:pixelsize=14:
-URxvt*boldFont:          xft:Monofur for Powerline:style=bold:hinting=true:pixelsize=14:antialias=True,\
-                         xft:Symbola hinting=true:pixelsize=14:
-URxvt*italicFont:        xft:Monofur for Powerline:style=italic:hinting=true:pixelsize=14:antialias=True,\
-                         xft:Symbola hinting=true:pixelsize=14:
-URxvt*boldItalicFont:    xft:Monofur for Powerline:style=bolditalic:hinting=true:pixelsize=14:antialias=True,\
-                         xft:Symbola hinting=true:pixelsize=14
+URxvt*font:                                     xft:Monofur for Powerline:hinting=true:pixelsize=14:antialias=True
+URxvt*boldFont:                                 xft:Monofur for Powerline:style=bold:hinting=true:pixelsize=14:antialias=True
+URxvt*italicFont:                               xft:Monofur for Powerline:style=italic:hinting=true:pixelsize=14:antialias=True
+URxvt*boldItalicFont:                           xft:Monofur for Powerline:style=bolditalic:hinting=true:pixelsize=14:antialias=True                        xft:Symbola hinting=true:pixelsize=14
                                                 
 ! Fix font space
-!URxvt*letterSpace:      -1
-
+URxvt.letterSpace:       true
 
 !keybinding
 URxvt.keysym.C-Up:       perl:font-size:increase
@@ -99,4 +94,4 @@ URxvt.iso14755_52:         false
 
 
 ! colours
-#include "/home/mohabaks/.colors/Jelly Beans yo"
+#include "/home/mohabaks/.colors/jellybeans"

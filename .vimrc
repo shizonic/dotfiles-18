@@ -80,6 +80,7 @@ set visualbell           " don't beep
 set noerrorbells         " don't beep
 set autowrite  "Save on buffer switch
 set mouse+=a
+set encoding=utf8
 set cursorline " highlight current line
 filetype indent on " load filetype-specific indent files
 set wildmenu " visual autocomplete for command menu

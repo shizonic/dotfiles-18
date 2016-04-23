@@ -1,13 +1,13 @@
 --------------------------
+--Default
 -- Default luakit theme --
 --------------------------
 
 local theme = {}
 
 -- Default settings
-theme.font = "Fira Code 10"
-theme.fg   = "#fff"
-theme.bg   = "#101010"
+theme.font = "Fira Mono 10"
+theme.bg   = "#080808"
 
 -- Genaral colours
 theme.success_fg = "#0f0"
@@ -25,10 +25,10 @@ theme.notif_bg = "#FFF"
 
 -- Menu colours
 theme.menu_fg                   = "#919191"
-theme.menu_bg                   = "#101010"
-theme.menu_selected_fg          = "#a5caef"
-theme.menu_selected_bg          = "#101010"
-theme.menu_title_bg             = "#101010"
+theme.menu_bg                   = "#080808"
+theme.menu_selected_fg          = "#ffaf5f"
+theme.menu_selected_bg          = "#080808"
+theme.menu_title_bg             = "#080808"
 theme.menu_primary_title_fg     = "#EA8484"
 theme.menu_secondary_title_fg   = "#EA8484"
 
@@ -55,7 +55,7 @@ theme.ibar_bg           = "#000"
 theme.tab_fg            = "#C0C0C0"
 theme.tab_bg            = "#222"
 theme.tab_ntheme        = "#C0C0C0"
-theme.selected_fg       = "#a5caef"
+theme.selected_fg       = "#ffaf5f"
 theme.selected_bg       = "#151515"
 theme.selected_ntheme   = "#a5caef"
 theme.loading_fg        = "#33AADD"

@@ -1,6 +1,6 @@
 -- Global variables for luakit
 globals = {
-    homepage            = "https://archlinux.org",
+    homepage            = "https://archlinux.org/",
  -- homepage            = "http://github.com/mason-larobina/luakit",
     scroll_step         = 40,
     zoom_step           = 0.1,
@@ -71,27 +71,36 @@ domain_props = {
         enable_scripts          = false,
         enable_plugins          = false,
         enable_private_browsing = false,
-        user_stylesheet_uri     = "file://" .. luakit.data_dir .. "/styles/calm.css",
-    }
-    --[[
+       
+    },
+    
     ["archlinux.org"] = {
-        enable_scripts          = true,
-        enable_plugins          = true,
-        enable_private_browsing = true,
-        user_stylesheet_uri     = "file://" .. luakit.data_dir .. "/styles/jellybeans.css",
-    }, 
+        enable_scripts          = false,
+        enable_plugins          = false,
+        enable_private_browsing = false,
+        user_stylesheet_uri     = "file://" .. luakit.data_dir .. "/styles/custom.css",
+    } ,
+    
+    ["wiki.archlinux.org"] = {
+        enable_scripts          = false,
+        enable_plugins          = false,
+        enable_private_browsing = false,
+        user_stylesheet_uri     = "file://" .. luakit.data_dir .. "/styles/custom.css",
+    } ,
+    
     ["en.wikipedia.org"] = {
         enable_scripts          = true,
         enable_plugins          = true,
         enable_private_browsing = true,
-        user_stylesheet_uri     = "file://" .. luakit.data_dir .. "/styles/jellybeans.css",
+        user_stylesheet_uri     = "file://" .. luakit.data_dir .. "/styles/custom.css",
     },
+    
     ["github.com"] = {
         enable_scripts          = false,
         enable_plugins          = false,
         enable_private_browsing = false,
-        user_stylesheet_uri     = "file://" .. luakit.data_dir .. "/styles/jellybeans.css",
-    },,]]
+        user_stylesheet_uri     = "file://" .. luakit.data_dir .. "/styles/custom.css",
+    },
 }
 
 -- vim: et:sw=4:ts=8:sts=4:tw=80
