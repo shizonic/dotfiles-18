@@ -35,10 +35,10 @@ URxvt*scrollWithBuffer:  true
 URxvt*scrollTtyKeypress: true
 
 ! Fonts
-URxvt*font:                                     xft:Monofur for Powerline:hinting=true:pixelsize=14:antialias=True
+URxvt*font:                                     xft:Monofur for Powerline:style=regular:hinting=true:pixelsize=14:antialias=True
 URxvt*boldFont:                                 xft:Monofur for Powerline:style=bold:hinting=true:pixelsize=14:antialias=True
 URxvt*italicFont:                               xft:Monofur for Powerline:style=italic:hinting=true:pixelsize=14:antialias=True
-URxvt*boldItalicFont:                           xft:Monofur for Powerline:style=bolditalic:hinting=true:pixelsize=14:antialias=True                        xft:Symbola hinting=true:pixelsize=14
+URxvt*boldItalicFont:                           xft:Monofur for Powerline:style=bolditalic:hinting=true:pixelsize=14:antialias=True                        
                                                 
 ! Fix font space
 URxvt.letterSpace:       true

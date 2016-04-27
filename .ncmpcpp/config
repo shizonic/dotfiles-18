@@ -45,7 +45,7 @@ visualizer_color = blue, cyan, green, yellow, magenta, red
 
 ##### delays #####
 playlist_disable_highlight_delay = 5
-message_delay_time = 5
+message_delay_time = 10
 
 
 ##### song format #####

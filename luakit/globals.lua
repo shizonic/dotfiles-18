@@ -1,6 +1,6 @@
 -- Global variables for luakit
 globals = {
-    homepage            = "https://archlinux.org/",
+    homepage            = "file:///home/mohabaks/dotfiles/luakit/Homepage/start.html",
  -- homepage            = "http://github.com/mason-larobina/luakit",
     scroll_step         = 40,
     zoom_step           = 0.1,
@@ -95,12 +95,6 @@ domain_props = {
         user_stylesheet_uri     = "file://" .. luakit.data_dir .. "/styles/custom.css",
     },
     
-    ["github.com"] = {
-        enable_scripts          = false,
-        enable_plugins          = false,
-        enable_private_browsing = false,
-        user_stylesheet_uri     = "file://" .. luakit.data_dir .. "/styles/custom.css",
-    },
 }
 
 -- vim: et:sw=4:ts=8:sts=4:tw=80
