@@ -17,7 +17,7 @@ bindsym $mod+Shift+q kill
 # bindsym $mod+d exec  dmenu_run -b -nf dimgray -sb orangered -sf black -nb gray4
 
 # Start Rofi (a program launcher, ssh, window switcher)
-bindsym $mod+d exec rofi -show run  -opacity 80 -font "Monofur 11" -fg "#888888" -bg "#080808" -bc "#444444" -hlfg "#ffaf5f" -hlbg "#080808" -o 85
+bindsym $mod+d exec rofi -show run  -opacity 80 -font "ProFont 11" -fg "#888888" -bg "#080808" -bc "#222222" -hlfg "#ffaf5f" -hlbg "#080808" -o 85
 
 # Change focus
 bindsym $mod+j focus left
@@ -73,17 +73,17 @@ bindsym $mod+a focus parent
 #exec --no-startup-id i3-msg 'workspace 1: ;exec firefox;workspace 2: Files;exec urxvt;workspace 1: '
 
 # Initialise workspace
-# 
-set $1   1:HOME
-set $2   2:SURF
-set $3   3:CODE
-set $4   4:MEDI
-set $5   5:VBOX
-set $6   6:TERM
-set $7   7:CONF
-set $8   8:CHAT
-set $9   9:NEWS
-set $10  10:MISC
+# 
+set $1   1: HOME
+set $2   2: SURF
+set $3   3: CODE
+set $4   4: MEDI
+set $5   5: NETW
+set $6   6: TERM
+set $7   7: CONF
+set $8   8: CHAT
+set $9   9: SUBS
+set $10  10: MISC
  
 # Switch to workspace
 bindsym $mod+1 workspace $1
@@ -218,28 +218,28 @@ bindsym $mod+b exec luakit
 # Colors themes
 # Currently am using i3-style to switch to different colors
 # Window colors         border  background text    indicator
-client.focused          #ffaf5f #ffaf5f    #080808 #8c0333
-client.focused_inactive #101010 #101010    #ff6a6a #101010
-client.unfocused        #333333 #333333    #90b9d1 #101010
-client.urgent           #101010 #101010    #080808 #C0C0C0
+client.focused          #ffaf5f #ffaf5f    #000000 #8c0333
+client.focused_inactive #222222 #222222    #c0c0c0 #101010
+client.unfocused        #222222 #222222    #EA8484 #101010
+client.urgent           #222222 #222222    #A6A6DE #C0C0C0
 
 # Start i3bar to display a workspace bar
 # (plus the system information i3status# finds out, if available)
 bar {
-          status_command  $HOME/bin/conkyi3.sh
-          position top
+  # status_command  $HOME/bin/conkyi3.sh
+          position bottom
           mode dock
           workspace_buttons yes
-          font xft:Terminus 8
+          font xft:ProFont 9
           strip_workspace_numbers yes
   colors {
-    separator  #444444
+    separator  #222222
     background #000000
     statusline #666666
-    focused_workspace  #000000 #000000 #ffaf5f
-    active_workspace   #555555 #000000 #EA8484
-    inactive_workspace #000000 #000000 #555555
-    urgent_workspace   #000000 #000000 #A6A6DE
+    focused_workspace  #ffaf5f #ffaf5f #000000
+    active_workspace   #EA8484 #EA8484 #000000
+    inactive_workspace #080808 #000000 #888888
+    urgent_workspace   #A6A6DE #A6A6DE #000000
   }
 }
 
@@ -250,6 +250,7 @@ bar {
 exec --no-startup-id "devmon --no-gui"
 exec --no-startup-id nitrogen --restore 
 exec --no-startup-id nm-applet
+exec --no-startup-id $HOME/.conky/conky-startup.sh
 
 # Set per-application border
 # for_window [class="Firefox" instance="Navigator"] border 1pixel
@@ -297,5 +298,3 @@ assign [class="^Zathura"] $10
 assign [class="^LibreOffice"] $10
 
 # vim:filetype=i3
-
-

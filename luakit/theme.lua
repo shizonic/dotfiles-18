@@ -6,7 +6,7 @@
 local theme = {}
 
 -- Default settings
-theme.font = "Fira Mono 10"
+theme.font = "ProFont 11"
 theme.bg   = "#000000"
 
 -- Genaral colours

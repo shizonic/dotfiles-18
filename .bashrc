@@ -1,6 +1,8 @@
-#*************************************
-# Github: https://github.com/mohabaks
-#*************************************
+#***********************************************************************
+#
+#                  Github: https://github.com/mohabaks
+#
+#***********************************************************************
 
 export PROJECT_HOME=$HOME/Code/Projects/
 export PATH=$HOME/bin:$PATH
@@ -14,7 +16,7 @@ source ~/.git-prompt.sh
 
 #-----------------------------------------------------------------------
 #
-#                      PROMPT
+#                           PROMPT
 #-----------------------------------------------------------------------
 
 # Syntactic sugar for ANSI escape sequences
@@ -53,10 +55,12 @@ bakwht='\e[47m'   # White
 txtrst='\e[0m'    # Text Reset
 
 #PS1='┌─(\e[0;33m\W\e[0m)$(__git_ps1 "[\e[0;31m%s\e[0m]")\n└─ '
-PS1='\[\e[1;33m\]»\e[0m \[\e[1;30m\][\[\e[0m\]\W\[\e[1;30m\]]\[\e[1;34m\]\[\e[0m\]\[\e[m \]$(__git_ps1 "\n \e[0;35m╺─╸\e[0m\[\e[1;30m\][\[\e[0m\]\e[0;31m%s\e[0m\e[1;30m\]]\[\e[1;34m\]") '
+PS1='\[\e[1;33m\]>>\e[0m \[\e[1;30m\][\[\e[0m\]\W\[\e[1;30m\]]\[\e[1;34m\]\[\e[0m\]\[\e[m \]$(__git_ps1 "\n \e[0;35m╺─╸\e[0m\[\e[1;30m\][\[\e[0m\]\e[0;31m%s\e[0m\e[1;30m\]]\[\e[1;34m\]") '
+
+
 #-----------------------------------------------------------------------
 #                                           
-#                       ALIASES
+#                           ALIASES
 #-----------------------------------------------------------------------
 
 alias ls='ls -hFX --color=auto --group-directories-first'
@@ -74,13 +78,13 @@ alias clock='tty-clock -csbBD -C 3'
 
 #-----------------------------------------------------------------------
 #  
-#                       COLORS FOR MAN PAGES 
+#                      COLORS FOR MAN PAGES 
 #-----------------------------------------------------------------------
 
 export LESS_TERMCAP_mb=$'\e[0;31m'
 export LESS_TERMCAP_md=$'\e[0;33m'
 export LESS_TERMCAP_me=$'\e[0m'
 export LESS_TERMCAP_se=$'\e[0m'
-export LESS_TERMCAP_so=$'\e[0;34;34m'
+export LESS_TERMCAP_so=$'\e[0;34;31m'
 export LESS_TERMCAP_ue=$'\e[0m'
 export LESS_TERMCAP_us=$'\e[0;35m'

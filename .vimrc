@@ -1,9 +1,32 @@
-" Description{{{
+" Description {{{
 " 
 " Github:https://github.com/mohabaks/dotfiles
+" This config contains various settings for different programming env
+" e.g python, django, java, ruby e.t.c
+" feel free to edit it for your own preferences
 "
-"}}}
+" }}}
+
+" Plugins I use {{{
+" You may need the following plugins.
+" 1. pathogen  
+" 2. emmet-vim/html5-vim for html 
+" 3. htmldjango-vim work with django
+" 4. surrond for easy wrapping of tags
+" 5. utlisnips
+" 6. nerdtree navigation for files 
+" 7. vim-fugitive for git support within the vim
+" 8. vim-django
+" 7. vim-airline
+" 8. vim-commentary for easy code commet e.g c,python,java,php etc
+" 9. vim-colorscheme-switcher to switch to different colorscheme
+" 10. supertab
+" 11. python mode
+"
+" }}}
+
 "Launch Config {{{
+
 call pathogen#infect()
 
 " }}}
@@ -20,40 +43,46 @@ call pathogen#infect()
   " \              'attr': 'bold' },
   " \}
   " Italics for terminal with full support. It's disable by default
-  "let g:jellybeans_use_term_italics = 1
+  let g:jellybeans_use_term_italics = 1
   
 " }}}
 
 " VimAirLine {{{
+
 set t_Co=256 " 16, 18, and 256
 set laststatus=2 
 let g:airline_theme='term'
 let g:airline_powerline_fonts = 2 " show powerline symbols
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_alt_sep = '|'
+
 " }}}
 
 " Spaces & Tabs {{{
+
 set tabstop=4       " number of visual spaces per TAB
 set softtabstop=4   " number of spaces in tab when editing
 set expandtab       " tabs are spaces
+
 "}}}
 
 " System clipboard {{{
-"""""""""""""""""""""""
+
 "cut/copy/paste to/from other application
 set clipboard=unnamed " access your system clipboard
+
 " }}}
 
 " Quicksave command {{{
-"""""""""""""""""""""""""""""
+
 noremap <C-Z> :update<CR>
 vnoremap <C-Z> <C-C>:update<CR>
 inoremap <C-Z> <C-O>:update<CR>
+
 " }}}
 
 ""  Split Layouts {{{
-"""""""""""""""
+
 "specify different areas of the screen
 set splitbelow
 set splitright
@@ -62,10 +91,11 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
 " }}}
 
-"UI Config {{{
-""""""""""""""""""""""""""""
+" UI Config {{{
+
 "These are options that changes random visuals in Vim
 set number " show line numbers
 set showcmd " show command in bottom bar
@@ -86,18 +116,20 @@ filetype indent on " load filetype-specific indent files
 set wildmenu " visual autocomplete for command menu
 set lazyredraw " redraw only when we need to
 set showmatch  " highlight matching [{()}]
+
 " }}}
 
-"Searching {{{
-"""""""""""""""""""""""
+" Searching {{{
+
 set incsearch " search as characters are entered
 set hlsearch  " highight matches
 " turn off search highlight
 nnoremap <leader><space> :nohlsearch<CR> 
+
 " }}}
 
 "" Folding {{{
-"""""""""""""""
+
 set foldenable  " enable folding
 set foldlevelstart=10 " open most folds by default
 set foldlevel=99
@@ -105,10 +137,11 @@ set foldnestmax=10 " 10 nested fold max
 " space open/closes folds
 nnoremap <space> za
 set foldmethod=indent " fold based on indent level
+
 " }}}
 
 "Movement {{{
-""""""""""""""""
+
 " move vertically by visual line
 nnoremap j gj
 nnoremap k gk
@@ -126,9 +159,11 @@ nnoremap gV `[v`]
 " then press ``>`` several times.
 vnoremap < <gv  " better indentation
 vnoremap > >gv  " better indentation
+
 " }}}
 
 " Leader Shortcuts {{{
+
 let mapleader="," " leader is comma
 "jk is escape
 inoremap jk <esc>
@@ -142,27 +177,32 @@ nnoremap <leader>sv :source $MYVIMRC<CR>
 nnoremap <leader>s :mksession<CR>
 " open ag.vim a.k.a the_silver_searcher
 nnoremap <leader>a :Ag
+
 " }}}
 
 " CtrlP settings {{{
+
 let g:ctrlp_match_window = 'bottom,order:ttb'
 let g:ctrlp_switch_buffer = 0
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
 let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+
 " }}}
 
 " File Browsing {{{
-""""""""""""""""""""""
+
 " Open NERDTree when no files are specified
 "autocmd StdinReadPre * let s:std_in=1
 "autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 map <C-n> :NERDTreeToggle<CR>
 " hide .pyc files
 let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
+
 " }}}
 
 "Buffer Navigation {{{
+
 " Ctrl Left/h & Right/l cycle between buffers
 noremap <silent> <C-left> :bprev<CR>
 noremap <silent> <C-h> :bprev<CR>
@@ -174,9 +214,11 @@ nnoremap <silent> <Leader>q :Bclose<CR>
 
 " <Leader>Q Closes the current window
 nnoremap <silent> <Leader>Q <C-w>c
+
 " }}}
 
 " Commenting blocks of code{{{
+
 autocmd FileType c,cpp,java,scala let b:comment_leader = '// '
 autocmd FileType sh,ruby,python   let b:comment_leader = '# '
 autocmd FileType conf,fstab       let b:comment_leader = '# '
@@ -185,23 +227,26 @@ autocmd FileType mail             let b:comment_leader = '> '
 autocmd FileType vim              let b:comment_leader = '" '
 noremap <silent> ,cc :<C-B>silent <C-E>s/^/<C-R>=escape(b:comment_leader,'\/')<CR>/<CR>:nohlsearch<CR>
 noremap <silent> ,cu :<C-B>silent <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>//e<CR>:nohlsearch<CR>
+
 "}}}
 
 " Backups {{{
+
 set backup
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set backupskip=/tmp/*,/private/tmp/*
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set writebackup
+
 " }}}
 
 " Git Integration {{{
-"""""""""""""""""""""""""
+
+
 "}}}
  
 " Python/Django IDE Setup {{{
-"
-""""""""""""""""""""""""""""" 
+ 
 "Tab Settings
 autocmd FileType python set sw=4
 autocmd FileType python set ts=4
@@ -209,10 +254,8 @@ autocmd FileType python set sts=4
 
 " UTF8 Support
 set encoding=utf-8
-" python-mode {{{
 
-
-
+" python-mode 
 let g:pymode_doc = 1
 let g:pymode_doc_key = 'M'
 let g:pydoc = 'pydoc'
@@ -221,14 +264,10 @@ let g:pymode_syntax_all = 0
 let g:pymode_syntax_builtin_objs = 1
 let g:pymode_syntax_print_as_function = 0
 let g:pymode_syntax_space_errors = 0
-
 let g:pymode_run = 0
 let g:pymode_breakpoint = 0
-
 let g:pymode_folding = 0
-
 let g:pymode_options_indent = 0
-
 let g:pymode_lint_ignore = "E501"
 
 " YCM
@@ -239,14 +278,13 @@ autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
-
-"Ultisnips.vim
+" Ultisnips.vim
 let g:UltiSnipsExpandTrigger       = "<c-j>"
 let g:UltiSnipsJumpForwardTrigger  = "<c-j>"
 let g:UltiSnipsJumpBackwardTrigger = "<c-p>"
 let g:UltiSnipsListSnippets        = "<c-k>" "List possible snippets based on current file
 
-"python with virtualenv support
+" python with virtualenv support
 
 py << EOF
 import os.path
@@ -259,7 +297,7 @@ if 'VIRTUAL_ENV' in os.environ:
     execfile(activate_this, dict(__file__=activate_this))
 EOF
 
-"Django Settings
+" Django Settings
 if filereadable($VIRTUAL_ENV . '/.vimrc')
          source $VIRTUAL_ENV/.vimrc
     endif
@@ -321,22 +359,21 @@ autocmd BufEnter *.py call SetAppDir()
 inoremap <Tab> <C-R>=SuperCleverTab()<cr>
     
 " Syntax Checking/Highlighting
+
 let python_highlight_all=1
 syntax on
 
-
  " }}}
+ 
 
-""""""""""""""""""""""""""""" 
-" 
 " Java IDE Settings {{{
-"
-""""""""""""""""""""""""""""" 
+
 let g:EclimCompletionMethod = 'omnifunc'
 
 " }}}
 
 
 " Organization {{{
+
 set modelines=1
 " vim:foldmethod=marker:foldlevel=0

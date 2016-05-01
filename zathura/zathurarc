@@ -5,29 +5,29 @@
 set adjust_open width
 set width 636
 set height 382
-set font "Monofur 10"
+set font "ProFont 11"
 set show_inputbar false
 
 
 ###### Colorscheme ############
-set completion_bgcolor     #101010
+set completion_bgcolor     #080808
 set completion_fgcolor     #999999
-set completion_g_bgcolor   #101010
+set completion_g_bgcolor   #080808
 set completion_g_fgcolor   #999999
 set completion_hl_bgcolor  #999999
-set_completion_hl_fgcolor  #101010
-set default_bgcolor        #101010
+set_completion_hl_fgcolor  #080808
+set default_bgcolor        #080808
 set default_fgcolor        #999999
-set statusbar_bgcolor      #101010
+set statusbar_bgcolor      #080808
 set statusbar_fgcolor      #999999
-set inputbar_bgcolor       #101010
+set inputbar_bgcolor       #080808
 set inputbar_fgcolor       #999999
-set notification_e_bgcolor #101010
+set notification_e_bgcolor #080808
 set notification_e_fgcolor #8C4665
-set notification_w_bgcolor #101010
+set notification_w_bgcolor #080808
 set notification_w_fgcolor #287373
-set recolor-lightcolor     "#080808" #00
-set recolor-darkcolor      "#E0E0E0" #06
+set recolor-lightcolor     #080808 
+set recolor-darkcolor      #E0E0E0 
 set recolor                "true"
 # setting recolor-keep true will keep any color your pdf has.
 # if it is false, it'll just be black and white

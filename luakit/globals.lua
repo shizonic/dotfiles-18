@@ -1,6 +1,6 @@
 -- Global variables for luakit
 globals = {
-    homepage            = "file:///home/mohabaks/dotfiles/luakit/Homepage/start.html",
+    homepage            = "file:///home/mohabaks/Homepage/start.html",
  -- homepage            = "http://github.com/mason-larobina/luakit",
     scroll_step         = 40,
     zoom_step           = 0.1,
@@ -68,9 +68,9 @@ search_engines.default = search_engines.gg
 -- See http://webkitgtk.org/reference/webkitgtk/stable/WebKitWebSettings.html
 domain_props = { 
      ["all"] = {
-        enable_scripts          = false,
-        enable_plugins          = false,
-        enable_private_browsing = false,
+        enable_scripts          = true,
+        enable_plugins          = true,
+        enable_private_browsing = true,
        
     },
     

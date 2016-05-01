@@ -35,12 +35,16 @@ URxvt*scrollWithBuffer:  true
 URxvt*scrollTtyKeypress: true
 
 ! Fonts
-URxvt*font:                                     xft:Monofur for Powerline:style=regular:hinting=true:pixelsize=14:antialias=True
-URxvt*boldFont:                                 xft:Monofur for Powerline:style=bold:hinting=true:pixelsize=14:antialias=True
-URxvt*italicFont:                               xft:Monofur for Powerline:style=italic:hinting=true:pixelsize=14:antialias=True
-URxvt*boldItalicFont:                           xft:Monofur for Powerline:style=bolditalic:hinting=true:pixelsize=14:antialias=True                        
-                                                
-! Fix font space
+Rxvt*font:                                     xft:ProFont:style=regular:hinting=true:pixelsize=14:antialias=True
+Rxvt*boldFont:                                 xft:ProFont:style=normal:hinting=true:pixelsize=14:antialias=True
+Rxvt*italicFont:                               xft:ProFont:style=italic:hinting=true:pixelsize=14:antialias=True
+Rxvt*boldItalicFont:                           xft:ProFont:style=bolditalic:hinting=true:pixelsize=14:antialias=True                        
+ 
+!urxvt*font: -*-tewi-medium-r-*-*-11-*-*-*-*-*-*-*
+!urxvt*boldFont: -*-tewi-medium-r-*-*-11-*-*-*-*-*-*-*
+!urxvt*italicFont: -*-tewi-medium-r-*-*-11-*-*-*-*-*-*-*
+!urxvt*bolditalicFont: -*-tewi-medium-r-*-*-11-*-*-*-*-*-*-*                                              
+
 URxvt.letterSpace:       true
 
 !keybinding
@@ -93,5 +97,5 @@ URxvt.iso14755_52:         false
 !urxvt*depth:               32
 
 
-! colours
+! colors
 #include "/home/mohabaks/.colors/jellybeans"
