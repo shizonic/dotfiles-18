@@ -225,7 +225,7 @@ Dark colorscheme can be found here [zathura.].
 <a name="inspiration-and-special-thanks"></a>	
 ## Inspiration and special thanks
 - [Cronosse] thanks for the bar conky.
-- [ObliviousGmn] thanks for the Homepage idea for the laukit.
+- [ObliviousGmn] thanks for the start page that I use with luakit.
 
 
 
