@@ -203,11 +203,11 @@ ncmpcpp, ranger and htop in action.
 current colorscheme [jellybeans].
 ![alt busy](https://raw.github.com/mohabaks/dotfiles/master/images/vim.png)
 
-####Video playe - Mpv
+####Video player - Mpv
 ![alt busy](https://raw.github.com/mohabaks/dotfiles/master/images/mpv.png)
 
 ####Zathura
-Dark colorscheme can be found here [zathura].
+Dark colorscheme can be found here [zathura.].
 ![alt busy](https://raw.github.com/mohabaks/dotfiles/master/images/zathura.png)
 
 ####IRC - Weechat
@@ -247,7 +247,7 @@ Link References
 [luakit]:https://github.com/mohabaks/dotfiles/tree/master/luakit
 [ranger]:https://github.com/mohabaks/dotfiles/tree/master/ranger
 [scripts]:https://github.com/mohabaks/dotfiles/tree/master/scripts
-[zathura]:https://github.com/mohabaks/dotfiles/tree/master/zathura
+[zathura.]:https://github.com/mohabaks/dotfiles/tree/master/zathura
 
 [i3-gaps]:https://github.com/Airblader/i3
 [Arch Linux]:https://wiki.archlinux.org/
