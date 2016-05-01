@@ -52,9 +52,14 @@ call pathogen#infect()
 set t_Co=256 " 16, 18, and 256
 set laststatus=2 
 let g:airline_theme='term'
-let g:airline_powerline_fonts = 2 " show powerline symbols
+let g:airline_powerline_fonts = 1 " show powerline symbols
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+endif
+let g:airline_symbols.space = "\ua0"
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:bufferline_echo = 0
 
 " }}}
 
