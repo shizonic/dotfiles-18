@@ -241,7 +241,7 @@ Link References
 [.weechat]:https://github.com/mohabaks/dotfiles/tree/master/.weechat
 [.fonts]:https://github.com/mohabaks/dotfiles/tree/master/.fonts
 [.ncmpcpp]:https://github.com/mohabaks/dotfiles/tree/master/.ncmpcpp
-[.themes/Mire v2_Grey]:https://github.com/mohabaks/dotfiles/tree/master/.themes/Mire%20v2_Grey
+[.theme]:https://github.com/mohabaks/dotfiles/tree/master/.themes/Mire%20v2_Grey
 [Homepage]:https://github.com/mohabaks/dotfiles/tree/master/Homepage
 [images]:https://github.com/mohabaks/dotfiles/tree/master/images
 [luakit]:https://github.com/mohabaks/dotfiles/tree/master/luakit
