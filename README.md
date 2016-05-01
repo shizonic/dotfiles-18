@@ -213,7 +213,7 @@ Dark colorscheme can be found here [zathura.].
 ####IRC - Weechat
 ![alt busy](https://raw.github.com/mohabaks/dotfiles/master/images/weechat.png)
 
-####Application Laucher - Rofi
+####Application Launcher - Rofi
 ![alt busy](https://raw.github.com/mohabaks/dotfiles/master/images/rofi.png)
 
 ####Screen Lock  [i3lock-fancy]
