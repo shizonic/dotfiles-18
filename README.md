@@ -33,12 +33,12 @@ files and list of applications I use that suits my preferences.
 | [.ncmpcpp]    | config file can be found here.                                             |
 | [.themes]    | currently only using Mire gtk theme though I have modified it.             |
 | [.weechat]    | contains weechat.conf file.                                                |
-| [Homepage]    | conatin my start page that I use with luakit browser.                      |
+| [Homepage]    | contains my start page that I use with luakit browser.                     |
 | [images]      | all current screenshots are here for old rice visit [here].                |
 | [luakit]      | all the luakit config and custom stylesheet can be found here.             |
 | [ranger]      | simply contain the current colorscheme and config file.                    |
-| [scripts]     | conatins some list of scripts I use e.g showcolor etc.                     |
-| [zathura]     | conatin dark colorscheme.                                                  |
+| [scripts]     | contains some list of scripts I use e.g showcolor etc.                     |
+| [zathura]     | contain dark colorscheme.                                                  |
 
 <a name="apps"></a>	
 ## List of Applications I use
