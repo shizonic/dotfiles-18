@@ -1,0 +1,48 @@
+
+
+---
+meta:
+  description: 'Theme by mohabaks'
+window_colors:
+  focused:
+    border:           '#ff9800'
+    background:       '#ff9800'
+    text:             '#101010'
+    indicator:        '#8c0333'
+  focused_inactive:
+    border:           '#333333'
+    background:       '#333333'
+    text:             '#ff6a6a'
+    indicator:        '#333333'
+  unfocused:
+    border:           '#333333'
+    background:       '#333333'
+    text:             '#90b9d1'
+    indicator:        '#333333'
+  urgent:
+    border:           '#b1d631'
+    background:       '#b1d631'
+    text:             '#101010'
+    indicator:        '#C0C0C0'
+bar_colors:
+  separator:          '#444444'
+  background:         '#101010'
+  statusline:         '#666666'
+  focused_workspace:
+    border:           '#333333'
+    background:       '#101010'
+    text:             '#ff9800'
+  active_workspace:
+    border:           '#333333'
+    background:       '#101010'
+    text:             '#9E9ECB'
+  inactive_workspace:
+    border:           '#333333'
+    background:       '#101010'
+    text:             '#919191'
+  urgent_workspace:
+    border:           '#333333'
+    background:       '#101010'
+    text:             '#b1d631'
+
+# vim: filetype=yaml

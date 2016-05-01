@@ -1,0 +1,47 @@
+
+---
+meta:
+  description: 'woodland Theme by mohabaks'
+window_colors:
+  focused:
+    border:           '#af865a'
+    background:       '#af865a'
+    text:             '#161212'
+    indicator:        '#8c0333'
+  focused_inactive:
+    border:           '#333333'
+    background:       '#333333'
+    text:             '#ff6a6a'
+    indicator:        '#333333'
+  unfocused:
+    border:           '#775759'
+    background:       '#775759'
+    text:             '#90b9d1'
+    indicator:        '#333333'
+  urgent:
+    border:           '#535C5C'
+    background:       '#535C5C'
+    text:             '#161212'
+    indicator:        '#C0C0C0'
+bar_colors:
+  separator:          '#444444'
+  background:         '#101010'
+  statusline:         '#666666'
+  focused_workspace:
+    border:           '#333333'
+    background:       '#101010'
+    text:             '#af865a'
+  active_workspace:
+    border:           '#333333'
+    background:       '#101010'
+    text:             '#9E9ECB'
+  inactive_workspace:
+    border:           '#333333'
+    background:       '#101010'
+    text:             '#775759'
+  urgent_workspace:
+    border:           '#333333'
+    background:       '#101010'
+    text:             '#7b8748'
+
+# vim: filetype=yaml

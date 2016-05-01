@@ -1,0 +1,46 @@
+# vim: filetype=yaml
+# TODO: use color aliases to make the theme more readable
+---
+meta:
+  description: 'Crimson theme by mohabaks'
+window_colors:
+  focused:
+    border:           '#e72d6a'
+    background:       '#e72d6a'
+    text:             '#ffffff'
+    indicator:        '#8c0333'
+  focused_inactive:
+    border:           '#333333'
+    background:       '#333333'
+    text:             '#888888'
+    indicator:        '#333333'
+  unfocused:
+    border:           '#333333'
+    background:       '#333333'
+    text:             '#888888'
+    indicator:        '#333333'
+  urgent:
+    border:           'e72d6a'
+    background:       'e72d6a'
+    text:             '#ffffff'
+    indicator:        'e72d6a'
+bar_colors:
+  separator:          '#444444'
+  background:         '#151515'
+  statusline:         '#666666'
+  focused_workspace:
+    border:           '#282a2e'
+    background:       '#151515'
+    text:             '#cf275f'
+  active_workspace:
+    border:           '#333333'
+    background:       '#333333'
+    text:             '#888888'
+  inactive_workspace:
+    border:           '#282a2e'
+    background:       '#151515'
+    text:             '#adadad'
+  urgent_workspace:
+    border:           '#282a2e'
+    background:       '#151515'
+    text:             '#27b3cf'

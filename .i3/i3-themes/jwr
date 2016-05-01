@@ -1,0 +1,46 @@
+# vim: filetype=yaml
+# TODO: use color aliases to make the theme more readable
+---
+meta:
+  description: 'Theme by Mohammed Bakari'
+window_colors:
+  focused:
+    border:           '#C0C0C0'
+    background:       '#C0C0C0'
+    text:             '#000000'
+    indicator:        '#8c0333'
+  focused_inactive:
+    border:           '#333333'
+    background:       '#333333'
+    text:             '#C0C0C0'
+    indicator:        '#333333'
+  unfocused:
+    border:           '#333333'
+    background:       '#333333'
+    text:             '#C0C0C0'
+    indicator:        '#333333'
+  urgent:
+    border:           '#C0C0C0'
+    background:       '#000000'
+    text:             '#5E468C'
+    indicator:        '#C0C0C0'
+bar_colors:
+  separator:          '#444444'
+  background:         '#000000'
+  statusline:         '#666666'
+  focused_workspace:
+    border:           '#C0C0C0'
+    background:       '#000000'
+    text:             '#C0C0C0'
+  active_workspace:
+    border:           '#333333'
+    background:       '#000000'
+    text:             '#9E9ECB'
+  inactive_workspace:
+    border:           '#333333'
+    background:       '#000000'
+    text:             '#C0C0C0'
+  urgent_workspace:
+    border:           '#333333'
+    background:       '#000000'
+    text:             '#53A6A6'
