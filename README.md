@@ -20,7 +20,7 @@ something different this time that I'll stick to and follows the **KISS**
 principle(Keep It Simple, Stupid).Therefore I ended up using [Arch Linux] 
 and [i3wm] as my window manager.
 
-To cut the story short this dotfiles contains some of the configuration
+To cut a long story short this dotfiles contains some of the configuration
 files and list of applications I use that suits my preferences.
 
 | Directory     |                       Description                                          |
