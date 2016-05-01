@@ -33,13 +33,9 @@ Dotfiles
 
 <a name="screenshots"></a>	
 ## Screenshots
-Everyone loves screenshots; so here is my current rice.
-
-####Clean
-![alt Clean](https://raw.github.com/mohabaks/dotfiles/master/images/Clean.png)
 
 ####Busy
-ncmpcpp, ranger and htop in action.
+ncmpcpp,ranger and htop in action.
 ![alt busy](https://raw.github.com/mohabaks/dotfiles/master/images/Busy.png)
 
 ####Luakit with custom homepage.
@@ -49,21 +45,13 @@ ncmpcpp, ranger and htop in action.
 current colorscheme [jellybeans].
 ![alt busy](https://raw.github.com/mohabaks/dotfiles/master/images/vim.png)
 
-####Video player - Mpv
-![alt busy](https://raw.github.com/mohabaks/dotfiles/master/images/mpv.png)
-
 ####Zathura
-Dark colorscheme can be found here [zathura.].
+Dark colorscheme can be found here [zathura]
 ![alt busy](https://raw.github.com/mohabaks/dotfiles/master/images/zathura.png)
 
 ####IRC - Weechat
 ![alt busy](https://raw.github.com/mohabaks/dotfiles/master/images/weechat.png)
 
-####Application Launcher - Rofi
-![alt busy](https://raw.github.com/mohabaks/dotfiles/master/images/rofi.png)
-
-####Screen Lock  [i3lock-fancy]
-![alt busy](https://raw.github.com/mohabaks/dotfiles/master/images/screenlock.jpg)
 
 [more screenshots](http://imgur.com/a/LPyKb) for old rice.
 
