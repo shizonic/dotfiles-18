@@ -183,7 +183,7 @@ principles.
            - [lxappearance] lightweight switcher for gtk themes, icons, 
            fonts etc.
       - **Display manager**
-          - [lightdm]
+          - [lightdm] is a cross-desktop display manager.
 
 <a name="screenshots"></a>	
 ## Screenshots
@@ -297,7 +297,7 @@ Link References
 [the Arch Way]:https://wiki.archlinux.org/index.php/Arch_Linux#Principles
 [mpd]:https://github.com/sol/mpd
 [lxappearance]:http://wiki.lxde.org/en/LXAppearance
-[ligtdm]:https://wiki.archlinux.org/index.php/LightDM
+[lightdm]:https://wiki.archlinux.org/index.php/LightDM
 [Cronosse]:http://cronosse.deviantart.com/art/Bottom-bar-conky-config-201410602
 [ObliviousGmn]:http://obliviousgmn.deviantart.com/art/Reborn-525604184?q=gallery%3AObliviousGmn%2F14083002&qo=2
 [Zathura]:https://pwmt.org/projects/zathura/
