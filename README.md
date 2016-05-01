@@ -189,14 +189,14 @@ principles.
 Everyone loves screenshots; so here is my current rice.
 
 ####Clean
-![alt Clean](https://raw.github.com/mohabaks/dotfiles/master/images/clean.png)
+![alt Clean](https://raw.github.com/mohabaks/dotfiles/master/images/Clean.png)
 
 ####Busy
 ncmpcpp, ranger and htop in action.
-![alt busy](https://raw.github.com/mohabaks/dotfiles/master/images/busy.png)
+![alt busy](https://raw.github.com/mohabaks/dotfiles/master/images/Busy.png)
 
 ####Luakit with custom homepage.
-![alt busy](https://raw.github.com/mohabaks/dotfiles/master/images/mpv.png)
+![alt busy](https://raw.github.com/mohabaks/dotfiles/master/images/Luakit.png)
 
 ####Vim and Manpage
 current colorscheme [jellybeans].
@@ -213,10 +213,10 @@ Dark colorscheme can be found here [zathura].
 ![alt busy](https://raw.github.com/mohabaks/dotfiles/master/images/weechat.png)
 
 ####Application Laucher - Rofi
-![alt busy](https://raw.github.com/mohabaks/dotfiles/master/images/weechat.png)
+![alt busy](https://raw.github.com/mohabaks/dotfiles/master/images/rofi.png)
 
 ####Screen Lock  [i3lock-fancy]
-![alt busy](https://raw.github.com/mohabaks/dotfiles/master/images/weechat.png)
+![alt busy](https://raw.github.com/mohabaks/dotfiles/master/images/screenlock.jpg)
 
 [more screenshots](http://imgur.com/a/LPyKb) for old rice.
 
@@ -234,19 +234,19 @@ Link References
 -->
 
 [.colors]:https://github.com/mohabaks/dotfiles/tree/master/.colors
-[.i3]:
-[.conky]:
-[.icons]:
-[.weechat]:
-[.fonts]:
-[.ncmpcpp]:
-[.themes/Mire v2_Grey]:
-[Homepage]:
-[images]:
-[luakit]:
-[ranger]:
-[scripts]:
-[zathura]:
+[.i3]:https://github.com/mohabaks/dotfiles/tree/master/.i3
+[.conky]:https://github.com/mohabaks/dotfiles/tree/master/.conky
+[.icons]:https://github.com/mohabaks/dotfiles/tree/master/.icons
+[.weechat]:https://github.com/mohabaks/dotfiles/tree/master/.weechat
+[.fonts]:https://github.com/mohabaks/dotfiles/tree/master/.fonts
+[.ncmpcpp]:https://github.com/mohabaks/dotfiles/tree/master/.ncmpcpp
+[.themes/Mire v2_Grey]:https://github.com/mohabaks/dotfiles/tree/master/.themes/Mire%20v2_Grey
+[Homepage]:https://github.com/mohabaks/dotfiles/tree/master/Homepage
+[images]:https://github.com/mohabaks/dotfiles/tree/master/images
+[luakit]:https://github.com/mohabaks/dotfiles/tree/master/luakit
+[ranger]:https://github.com/mohabaks/dotfiles/tree/master/ranger
+[scripts]:https://github.com/mohabaks/dotfiles/tree/master/scripts
+[zathura]:https://github.com/mohabaks/dotfiles/tree/master/zathura
 
 [i3-gaps]:https://github.com/Airblader/i3
 [Arch Linux]:https://wiki.archlinux.org/
