@@ -23,22 +23,23 @@ and [i3wm] as my window manager.
 To cut the story short this dotfiles contains some of the configuration
 files and list of applications I use that suits my preferences.
 
-| Directory     | Description   |
-| ------------- |:-------------:|
-| [.colors]     | right-aligned |
-| [.conky]      | centered      |
-| [.fonts] | are neat      |
-| [.i3 ] |      |
-| [.icons] |  |
-| [.ncmpcpp] | |
-| [.themes ]  |  |
-| [.weechat]  |  |
-| [Homepage]  |  |
-| [images]  |  |
-| [luakit]  |  |
-| [ranger]  |  |
-| [scripts] |   |
-| [zathura] |   |
+| Directory     |                       Description                                          |
+| ------------- |:--------------------------------------------------------------------------:|
+| [.colors]     | This directory contains all my colorschemes for vim, urxvt and vimperator. |
+| [.conky]      | contains all my conkyrc e.g the top bar conkyrc that am currently using.   |
+| [.fonts]      | contains all my favourite fonts.                                           |
+| [.i3 ]        | contains config file for i3 and i3-theme and a conkyrc for i3bar.          |
+| [.icons]      | my favourite icons resides here.                                           |
+| [.ncmpcpp]    | config file can be found here.                                             |
+| [.themes ]    | currently only using Mire gtk theme though I have modified it.             |
+| [.weechat]    | contains weechat.conf file.                                                |
+| [Homepage]    | conatin my start page that I use with luakit browser.                      |
+| [images]      | all current screenshots are here for old rice visit [here].                |
+| [luakit]      | all the luakit config and custom stylesheet can be found here.             |
+| [ranger]      | simply contain the current colorscheme and config file.                    |
+| [scripts]     | conatins some list of scripts I use e.g showcolor etc.                     |
+| [zathura]     | conatin dark colorscheme.                                                  |
+
 <a name="apps"></a>	
 ## List of Applications I use
 
@@ -301,3 +302,4 @@ Link References
 [ObliviousGmn]:http://obliviousgmn.deviantart.com/art/Reborn-525604184?q=gallery%3AObliviousGmn%2F14083002&qo=2
 [Zathura]:https://pwmt.org/projects/zathura/
 [jellybeans]:https://github.com/nanotech/jellybeans.vim
+[here]:http://imgur.com/a/LPyKb
