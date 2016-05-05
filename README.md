@@ -15,13 +15,15 @@ Dotfiles
 
 | Directory     |                       Description                                          |
 | ------------- |:--------------------------------------------------------------------------:|
-| [.colors]     | This directory contains all my colorschemes for vim, urxvt and vimperator. |
+| [.colors]     | colorschemes for urxvt . |
 | [.conky]      | contains all my conkyrc e.g the top bar conkyrc that am currently using.   |
 | [.fonts]      | contains all my favourite fonts.                                           |
 | [.i3]        | contains config file for i3 and i3-theme and a conkyrc for i3bar.          |
 | [.icons]      | my favourite icons resides here.                                           |
 | [.ncmpcpp]    | config file can be found here.                                             |
 | [.themes]    | currently only using Mire gtk theme though I have modified it.             |
+| [.vim]        | colorscheme for vim.  |
+| [.vimperator] | colorscheme for vimperator | 
 | [.weechat]    | contains weechat.conf file.                                                |
 | [Homepage]    | contains my start page that I use with luakit browser.                     |
 | [images]      | all current screenshots are here for old rice visit [here].                |
