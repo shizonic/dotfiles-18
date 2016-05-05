@@ -1,0 +1,47 @@
+
+---
+meta:
+  description: 'Monokai-remix theme  by mohabaks'
+window_colors:
+  focused:
+    border:           '#f92672'
+    background:       '#f92672'
+    text:             '#000000'
+    indicator:        '#8c0333'
+  focused_inactive:
+    border:           '#080808'
+    background:       '#080808'
+    text:             '#f9f8f5'
+    indicator:        '#101010'
+  unfocused:
+    border:           '#222222'
+    background:       '#222222'
+    text:             '#a6e22e'
+    indicator:        '#101010'
+  urgent:
+    border:           '#222222'
+    background:       '#222222'
+    text:             '#66d9ef'
+    indicator:        '#C0C0C0'
+bar_colors:
+  separator:          '#222222'
+  background:         '#000000'
+  statusline:         '#666666'
+  focused_workspace:
+    border:           '#101010'
+    background:       '#111111'
+    text:             '#f92672'
+  active_workspace:
+    border:           '#101010'
+    background:       '#000000'
+    text:             '#66d9ef'
+  inactive_workspace:
+    border:           '#080808'
+    background:       '#000000'
+    text:             '#f9f8f5'
+  urgent_workspace:
+    border:           '#101010'
+    background:       '#000000'
+    text:             '#a6e22e'
+
+# vim: filetype=yaml
