@@ -5,7 +5,7 @@
 set adjust_open width
 set width 636
 set height 382
-set font "ProFont 11"
+set font "Monofur 11"
 set show_inputbar false
 
 

@@ -7,21 +7,27 @@
     background-color: #080808 !important;
     background-image: none !important;
     color: #bbbbbb !important;
-   /* font-family: Monaco  !important;*/
+    font-family: Monofur  !important;
 }
 h1,h2,h3,h4 {
     background-color: #080808 !important;
-    /*font-family: Monaco !important;*/
-    color: #ffaf5f!important;
+    font-family: Monofur !important;
+    color: #f8f8f2!important;
+}
+ul li{
+   color: #a6e22e !important;
 }
 a {
-    color: #ffaf5f !important;
+    color: #66d9ef !important;
 }
-a:hover,a:focus {
-    color: #A6A6DE !important;
+a:hover{
+    color: #a6e22e !important;
+}
+a:focus {
+    color: #fd971f !important;
 }
 a:visited {
-    color: #EA8484 !important;
+    color: #f92672 !important;
 }
 img {
     opacity: .5;

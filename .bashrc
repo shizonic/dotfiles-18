@@ -8,6 +8,7 @@ export PROJECT_HOME=$HOME/Code/Projects/
 export PATH=$HOME/bin:$PATH
 export EDITOR=vim
 export BROWSER=luakit
+export TERM="rxvt-unicode-256color"
 export TZ=Africa/Nairobi
 
 source virtualenvwrapper.sh
@@ -54,8 +55,8 @@ bakcyn='\e[46m'   # Cyan
 bakwht='\e[47m'   # White
 txtrst='\e[0m'    # Text Reset
 
-#PS1='┌─(\e[0;33m\W\e[0m)$(__git_ps1 "[\e[0;31m%s\e[0m]")\n└─ '
-PS1='\[\e[1;33m\]>>\e[0m \[\e[1;30m\][\[\e[0m\]\W\[\e[1;30m\]]\[\e[1;34m\]\[\e[0m\]\[\e[m \]$(__git_ps1 "\n \e[0;35m╺─╸\e[0m\[\e[1;30m\][\[\e[0m\]\e[0;31m%s\e[0m\e[1;30m\]]\[\e[1;34m\]") '
+#PS1='┌─(\e[0;32m\W\e[0m)$(__git_ps1 "[\e[0;34m%s\e[0m]")\n└─ '
+PS1='\[\e[1;31m\]▲\e[0m\[\e[1;30m\] \[\e[0m\]\e[0;32m\W\[\e[1;33m\] ☗\[\e[1;34m\]\[\e[0m\]\[\e[m \]$(__git_ps1 "\e[0;33m\e[0m\[\e[1;30m\]\[\e[0m\]\e[0;34m\e[5m%s\e[25m\e[0m\e[1;35m\] ♦\[\e[1;37m\]") '
 
 
 #-----------------------------------------------------------------------
@@ -81,7 +82,7 @@ alias clock='tty-clock -csbBD -C 3'
 #                      COLORS FOR MAN PAGES 
 #-----------------------------------------------------------------------
 
-export LESS_TERMCAP_mb=$'\e[0;31m'
+export LESS_TERMCAP_mb=$'\e[0;32m'
 export LESS_TERMCAP_md=$'\e[0;33m'
 export LESS_TERMCAP_me=$'\e[0m'
 export LESS_TERMCAP_se=$'\e[0m'

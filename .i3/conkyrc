@@ -1,3 +1,6 @@
+# conky to work with i3bar
+
+
 out_to_x no
 out_to_console yes
 own_window no
@@ -12,26 +15,35 @@ cpu_avg_samples 2
 
 TEXT
 ,[
-# Kernel:
+
+# Kernel
 #{"full_text":"","color":"\#e3e3e3","separator":false,"separator_block_width":6},\
 #{"full_text":"${kernel}","color":"\#525252","separator":false,"separator_block_width":6},\
 #[${execi 1 ~/.conky/conky-mpd/cover.sh}]}
 
-#mail
+# Mpd
+{"full_text":"","color":"\#EA8484","separator":false,"separator_block_width":6},\
+{"full_text":"${if_mpd_playing}"},\
+{"full_text":"${scroll 36 ${mpd_title}}","color":"\#888888","separator":false,"separator_block_width":6},\
+{"full_text":"${else}"},\
+{"full_text":"..:: MPD not running ::..","color":"\#888888","separator":false,"separator_block_width":6},\
+{"full_text":"${endif}"},\
+
+# Mail
 {"full_text":"","color":"\#87afd7","separator":false,"separator_block_width":6},\
-{"full_text":"${execi 300 python ~/scripts/gmail.py} ","color":"\#555555","separator":false,"separator_block_width":6},\
+{"full_text":"${execi 300 python ~/bin/gmail.py} ","color":"\#888888","separator":false,"separator_block_width":6},\
 
-#Finds current volume. May need modified depending on your setup"
-{"full_text":" ","color":"\#cc0000","separator":false,"separator_block_width":6},\
-{"full_text":"${exec amixer -c 0 get Master | grep Mono: | cut -d " " -f6} ","color":"\#555555","separator":false,"separator_block_width":0},\
+# Finds current volume. May need modified depending on your setup"
+{"full_text":"","color":"\#83332b","separator":false,"separator_block_width":6},\
+{"full_text":"${exec amixer -c 0 get Master | grep Mono: | cut -d " " -f6} ","color":"\#888888","separator":false,"separator_block_width":0},\
 
-#Brighness
-{"full_text":"","color":"\#ffaf5f","separator":false,"separator_block_width":6},\
-{"full_text":"${exec xbacklight| awk '{printf("%d\n",$1 + 0.5)}'}% ","color":"\#555555","separator":false,"separator_block_width":0},\
+# Brighness
+{"full_text":"","color":"\#f0aa48","separator":false,"separator_block_width":6},\
+{"full_text":"${exec xbacklight| awk '{printf("%d\n",$1 + 0.5)}'}% ","color":"\#888888","separator":false,"separator_block_width":0},\
 
-# Download:
+# Download
 {"full_text":"","color":"\#87af5f","separator":false,"separator_block_width":6},\
-{"full_text":"${if_match ${downspeedf enp2s0}<100}${downspeed enp2s0}","color":"\#555555","separator":false,"separator_block_width":6},\
+{"full_text":"${if_match ${downspeedf enp2s0}<100}${downspeed enp2s0}","color":"\#888888","separator":false,"separator_block_width":6},\
 {"full_text":"${else}"},\
 {"full_text":"${if_match ${downspeedf enp2s0}<300}${downspeed enp2s0}","color":"\#8b0000","separator":false,"separator_block_width":6},\
 {"full_text":"${else}"},\
@@ -42,36 +54,40 @@ TEXT
 {"full_text":"${if_match ${downspeedf enp2s0}>=1000}${downspeed enp2s0}","color":"\#FF3333","separator":false,"separator_block_width":6},\
 {"full_text":"${endif}${endif}${endif}${endif}${endif}"},\
 
-# Upload:
+# Upload
 {"full_text":"","color":"\#EA8484","separator":false,"separator_block_width":6},\
-{"full_text":"${if_match ${upspeedf enp2s0}<15}${upspeed enp2s0}","color":"\#555555","separator":false,"separator_block_width":6},\
+{"full_text":"${if_match ${upspeedf enp2s0}<15}${upspeed enp2s0}","color":"\#888888","separator":false,"separator_block_width":6},\
 {"full_text":"${else}"},\
 {"full_text":"${if_match ${upspeedf enp2s0}<35}${upspeed enp2s0}","color":"\#0e2f44","separator":false,"separator_block_width":6},\
 {"full_text":"${else}"},\
 {"full_text":"${if_match ${upspeedf enp2s0}>=35}${upspeed enp2s0}","color":"\#FF3333","separator":false,"separator_block_width":6},\
 {"full_text":"${endif}${endif}${endif}"},\
 
-# CPU:
-#{"full_text":"cpu","color":"\#395573","separator":false,"separator_block_width":6},\
-#{"full_text":"${if_match ${cpu cpu0}<25}${cpu cpu0}","color":"\#919191","separator":false,"separator_block_width":0},\
-#{"full_text":"${else}"},\
-#{"full_text":"${if_match ${cpu cpu0}<50}${cpu cpu0}","color":"\#008000","separator":false,"separator_block_width":0},\
-#{"full_text":"${else}"},\
-#{"full_text":"${if_match ${cpu cpu0}<75}${cpu cpu0}","color":"\#ff2500","separator":false,"separator_block_width":0},\
-#{"full_text":"${else}"},\
-#{"full_text":"${if_match ${cpu cpu0}<=100}${cpu cpu0}","color":"\#FF3333","separator":false,"separator_block_width":0},\
-#{"full_text":"${endif}${endif}${endif}${endif}"},\
-#{"full_text":"%","color":"\#919191 ","separator":false,"separator_block_width":6},\
+# Cpu
+{"full_text":"","color":"\#395573","separator":false,"separator_block_width":6},\
+{"full_text":"${if_match ${cpu cpu0}<25}${cpu cpu0}","color":"\#919191","separator":false,"separator_block_width":0},\
+{"full_text":"${else}"},\
+{"full_text":"${if_match ${cpu cpu0}<50}${cpu cpu0}","color":"\#008000","separator":false,"separator_block_width":0},\
+{"full_text":"${else}"},\
+{"full_text":"${if_match ${cpu cpu0}<75}${cpu cpu0}","color":"\#ff2500","separator":false,"separator_block_width":0},\
+{"full_text":"${else}"},\
+{"full_text":"${if_match ${cpu cpu0}<=100}${cpu cpu0}","color":"\#FF3333","separator":false,"separator_block_width":0},\
+{"full_text":"${endif}${endif}${endif}${endif}"},\
+{"full_text":"%","color":"\#919191 ","separator":false,"separator_block_width":6},\
+
+# Ram
+{"full_text":"","color":"\#a5caef","separator":false,"separator_block_width":6},\
+{"full_text":"${mem}","color":"\#888888","separator":false,"separator_block_width":6},\
 
 #Battery 
-{"full_text":"","color":"\#8787af","separator":false,"separator_block_width":6},\
-{"full_text":"${battery_percent BAT1}%","color":"\#555555","separator":false,"separator_block_width":6},\
+{"full_text":"","color":"\#8787af","separator":false,"separator_block_width":6},\
+{"full_text":"${battery_percent BAT1}%","color":"\#888888","separator":false,"separator_block_width":6},\
 
-# Date:
-{"full_text":"","color":"\#d7d7d7","separator":false,"separator_block_width":6},\
-{"full_text":"${time %D}","color":"\#555555","separator":false,"separator_block_width":6},\
+# Date
+{"full_text":"","color":"\#5f8787","separator":false,"separator_block_width":6},\
+{"full_text":"${time %D}","color":"\#888888","separator":false,"separator_block_width":6},\
 
 # Time:
-{"full_text":"","color":"\#5f8787","separator":false,"separator_block_width":6},\
-{"full_text":"${time %r}","color":"\#555555","separator":false}\
+{"full_text":"","color":"\#d7d7d7","separator":false,"separator_block_width":6},\
+{"full_text":"${time %R}","color":"\#888888","separator":false}\
 ]

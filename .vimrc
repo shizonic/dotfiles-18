@@ -5,25 +5,7 @@
 " e.g python, django, java, ruby e.t.c
 " feel free to edit it for your own preferences
 "
-" }}}
-
-" Plugins I use {{{
-" You may need the following plugins.
-" 1. pathogen  
-" 2. emmet-vim/html5-vim for html 
-" 3. htmldjango-vim work with django
-" 4. surrond for easy wrapping of tags
-" 5. utlisnips
-" 6. nerdtree navigation for files 
-" 7. vim-fugitive for git support within the vim
-" 8. vim-django
-" 7. vim-airline
-" 8. vim-commentary for easy code commet e.g c,python,java,php etc
-" 9. vim-colorscheme-switcher to switch to different colorscheme
-" 10. supertab
-" 11. python mode
-"
-" }}}
+"{{{
 
 "Launch Config {{{
 
@@ -33,18 +15,15 @@ call pathogen#infect()
 
 " Set Colorscheme {{{
   
-  set background=dark
-  colorscheme jellybeans " https://github.com/nanotech/jellybeans.vim
-  " If you prefer slightly different colors from what Jellybeans provides
-  " customize highlighting parameters.
-  " let g:jellybeans_overrides = {
-  " \    'Todo': { 'guifg': '303030', 'guibg': 'f0f000',
-  " \              'ctermfg': 'Black', 'ctermbg': 'Yellow',
-  " \              'attr': 'bold' },
-  " \}
-  " Italics for terminal with full support. It's disable by default
-  let g:jellybeans_use_term_italics = 1
-  
+set background=dark
+colorscheme jellybeans
+" let g:jellybeans_overrides = {
+" \    'Todo': { 'guifg': '303030', 'guibg': 'f0f000',
+" \              'ctermfg': 'Black', 'ctermbg': 'Yellow',
+" \              'attr': 'bold' },
+" \}
+let g:jellybeans_use_term_italics = 1
+
 " }}}
 
 " VimAirLine {{{
@@ -53,10 +32,6 @@ set t_Co=256 " 16, 18, and 256
 set laststatus=2 
 let g:airline_theme='term'
 let g:airline_powerline_fonts = 1 " show powerline symbols
-if !exists('g:airline_symbols')
-  let g:airline_symbols = {}
-endif
-let g:airline_symbols.space = "\ua0"
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:bufferline_echo = 0

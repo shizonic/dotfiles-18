@@ -117,7 +117,7 @@ alternative_header_second_line_format = {{$2%a$/b$9}{ - $7%b$9}{ ($4%y$9)}}|{%D}
 
 
 ##### columns settings #####
-song_columns_list_format = (20)[white]{a} (6f)[green]{NE} (40)[yellow]{t|f:Title} (30)[red]{b} (7f)[magenta]{l}
+song_columns_list_format = (20)[white]{a} (6f)[green]{NE} (40)[magenta]{t|f:Title} (30)[red]{b} (7f)[blue]{l}
 
 ##### various settings #####
 #execute_on_song_change = ""
@@ -187,7 +187,7 @@ external_editor = vim
 ##### colors definitions #####
 colors_enabled = yes
 empty_tag_color = red
-header_window_color = magenta
+header_window_color = yellow
 volume_color = green
 state_line_color = default
 state_flags_color = default
@@ -196,7 +196,7 @@ color1 = white
 color2 = green
 main_window_highlight_color = yellow
 progressbar_color = black
-progressbar_elapsed_color = red
+progressbar_elapsed_color = yellow
 statusbar_color = default
 alternative_ui_separator_color = black
 active_column_color = red

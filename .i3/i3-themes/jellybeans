@@ -4,8 +4,8 @@ meta:
   description: 'Jellybeans theme  by mohabaks'
 window_colors:
   focused:
-    border:           '#ffaf5f'
-    background:       '#ffaf5f'
+    border:           '#8c0333'
+    background:       '#8c0333'
     text:             '#000000'
     indicator:        '#8c0333'
   focused_inactive:
@@ -28,20 +28,20 @@ bar_colors:
   background:         '#000000'
   statusline:         '#666666'
   focused_workspace:
-    border:           '#ffaf5f'
-    background:       '#ffaf5f'
-    text:             '#000000'
+    border:           '#222222'
+    background:       '#111111'
+    text:             '#8c0333'
   active_workspace:
-    border:           '#EA8484'
-    background:       '#EA8484'
-    text:             '#000000'
+    border:           '#101010'
+    background:       '#000000'
+    text:             '#EA8484'
   inactive_workspace:
     border:           '#080808'
     background:       '#000000'
     text:             '#888888'
   urgent_workspace:
-    border:           '#A6A6DE'
-    background:       '#A6A6DE'
-    text:             '#000000'
+    border:           '#101010'
+    background:       '#000000'
+    text:             '#A6A6DE'
 
 # vim: filetype=yaml

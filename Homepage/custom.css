@@ -1,5 +1,6 @@
 body {
-	background-image: url('https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-75129.jpg');
+	#background-image: url('https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-209400.jpg');
+	background-color: #080808;
 	background-size: cover;
 }
 
@@ -59,7 +60,7 @@ body {
 
 .linksbox a {
 	display: block;
-	color: #6673BF;
+	color: #888888;
 }
 
 h3 {
@@ -67,7 +68,7 @@ h3 {
 	margin-bottom: 2px;
 	margin-top: 0;
 	padding: 0;
-	color: rgb(255, 175, 95);
+	color: #f0aa48;
 }
 
 a {
@@ -76,13 +77,13 @@ a {
 	margin-left: 2px;
 	margin-bottom: 0.5%;
 }
-
+/*
 a:link, a:visited {
-	color: rgba(255,255,255,0.3);
-} 
+	color: #d75f5f;
+} */
 
 a:hover { 
-	color: rgba(155, 41, 43,0.45);
+	color: #8787af;
 }
 
 
