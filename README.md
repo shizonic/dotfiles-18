@@ -74,8 +74,13 @@ Link References
 [.i3]:https://github.com/mohabaks/dotfiles/tree/master/.i3
 [.conky]:https://github.com/mohabaks/dotfiles/tree/master/.conky
 [.icons]:https://github.com/mohabaks/dotfiles/tree/master/.icons
+<<<<<<< HEAD
 [.vim]:https://github.com/mohabaks/dotfiles/tree/master/.vim
 [.vimperator]:https://github.com/mohabaks/dotfiles/tree/master/.vimperator
+=======
+[.vimperator]:https://github.com/mohabaks/dotfiles/tree/master/.vimperator/colors
+[.vim]:https://github.com/mohabaks/dotfiles/tree/master/.vim/colors
+>>>>>>> 9539914139a5b7ea64eba83f96ec546d8bca6c89
 [.weechat]:https://github.com/mohabaks/dotfiles/tree/master/.weechat
 [.fonts]:https://github.com/mohabaks/dotfiles/tree/master/.fonts
 [.ncmpcpp]:https://github.com/mohabaks/dotfiles/tree/master/.ncmpcpp
