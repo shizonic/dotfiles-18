@@ -14,15 +14,15 @@ call pathogen#infect()
 " }}}
 
 " Set Colorscheme {{{
-  
+
 set background=dark
 colorscheme jellybeans
-" let g:jellybeans_overrides = {
-" \    'Todo': { 'guifg': '303030', 'guibg': 'f0f000',
-" \              'ctermfg': 'Black', 'ctermbg': 'Yellow',
-" \              'attr': 'bold' },
-" \}
 let g:jellybeans_use_term_italics = 1
+
+"colorscheme gruvbox
+"let g:gruvbox_termcolors=256
+"let g:gruvbox_italic=1
+"let g:gruvbox_contrast_dark="hard"
 
 " }}}
 
@@ -30,7 +30,7 @@ let g:jellybeans_use_term_italics = 1
 
 set t_Co=256 " 16, 18, and 256
 set laststatus=2 
-let g:airline_theme='term'
+let g:airline_theme='monochrome'
 let g:airline_powerline_fonts = 1 " show powerline symbols
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_alt_sep = '|'

@@ -21,12 +21,12 @@ class Default(ColorScheme):
             if context.empty or context.error:
                 bg = 5
             if context.border:
-                fg = 233
+                fg = 8
             if context.media:
                 if context.image:
-                    fg = red
-                else:
                     fg = white
+                else:
+                    fg = blue
             if context.container:
                 fg = red
             if context.directory:
@@ -58,7 +58,7 @@ class Default(ColorScheme):
             if context.main_column:
                 if context.selected:
                     # attr |= bold
-                    fg = 3
+                    fg = white
                 if context.marked:
                     attr |= bold
                     fg = red
@@ -71,7 +71,7 @@ class Default(ColorScheme):
         elif context.in_titlebar:
             # attr |= bold
             if context.hostname:
-                fg = context.bad and red or blue
+                fg = context.bad and red or yellow
             elif context.directory:
                 fg = green
             elif context.tab:

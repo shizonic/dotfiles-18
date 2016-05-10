@@ -10,6 +10,9 @@
 ! sourcerer by xero harrison (http://sourcerer.xero.nu)
 !  ├─ based on sorcerer by Jeet Sukumaran (http://jeetworks.org)
 !  └─ based on mustang by Henrique C. Alves (hcarvalhoalves@gmail.com)
+*background: #080808
+*foreground: #d0dada
+*.cursorColor:  #d0dada
 
 ! black
 *.color0:       #101010

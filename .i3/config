@@ -17,7 +17,7 @@ bindsym $mod+Shift+q kill
 # bindsym $mod+d exec  dmenu_run -b -nf dimgray -sb orangered -sf black -nb gray4
 
 # Start Rofi (a program launcher, ssh, window switcher)
-bindsym $mod+d exec rofi -show run
+bindsym $mod+d exec --no-startup-id rofi -show run
 
 # Change focus
 bindsym $mod+j focus left
@@ -73,41 +73,41 @@ bindsym $mod+a focus parent
 #exec --no-startup-id i3-msg 'workspace 1: ;exec firefox;workspace 2: Files;exec urxvt;workspace 1: '
 
 # Initialise workspace
-# 
-set $1   1: Home
-set $2   2: Surf
-set $3   3: Code
-set $4   4: Medi
-set $5   5: Net
-set $6   6: Term
-set $7   7: Conf
-set $8   8: Chat
-set $9   9: Feed
-set $10  10: Misc
+# 
+set $w1   1:Surf
+set $w2   2:Code 
+set $w3   3:Conf
+set $w4   4:Medi
+set $w5   5:Core
+set $w6   6:Term
+set $w7   7:Netw
+set $w8   8:Chat
+set $w9   9:Read
+set $w10  10:Misc
  
 # Switch to workspace
-bindsym $mod+1 workspace $1
-bindsym $mod+2 workspace $2
-bindsym $mod+3 workspace $3
-bindsym $mod+4 workspace $4
-bindsym $mod+5 workspace $5
-bindsym $mod+6 workspace $6
-bindsym $mod+7 workspace $7
-bindsym $mod+8 workspace $8
-bindsym $mod+9 workspace $9 
-bindsym $mod+0 workspace $10
+bindsym $mod+1 workspace $w1
+bindsym $mod+2 workspace $w2
+bindsym $mod+3 workspace $w3
+bindsym $mod+4 workspace $w4
+bindsym $mod+5 workspace $w5
+bindsym $mod+6 workspace $w6
+bindsym $mod+7 workspace $w7
+bindsym $mod+8 workspace $w8
+bindsym $mod+9 workspace $w9 
+bindsym $mod+0 workspace $w10
 
 # Move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace $1
-bindsym $mod+Shift+2 move container to workspace $2
-bindsym $mod+Shift+3 move container to workspace $3
-bindsym $mod+Shift+4 move container to workspace $4
-bindsym $mod+Shift+5 move container to workspace $5
-bindsym $mod+Shift+6 move container to workspace $6  
-bindsym $mod+Shift+7 move container to workspace $7
-bindsym $mod+Shift+8 move container to workspace $8
-bindsym $mod+Shift+9 move container to workspace $9
-bindsym $mod+Shift+0 move container to workspace $10
+bindsym $mod+Shift+1 move container to workspace $w1
+bindsym $mod+Shift+2 move container to workspace $w2
+bindsym $mod+Shift+3 move container to workspace $w3
+bindsym $mod+Shift+4 move container to workspace $w4
+bindsym $mod+Shift+5 move container to workspace $w5
+bindsym $mod+Shift+6 move container to workspace $w6  
+bindsym $mod+Shift+7 move container to workspace $w7
+bindsym $mod+Shift+8 move container to workspace $w8
+bindsym $mod+Shift+9 move container to workspace $w9
+bindsym $mod+Shift+0 move container to workspace $w10
 
 # Reload the configuration file
 bindsym $mod+Shift+c reload
@@ -139,11 +139,16 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
+# Make the currently focused window a scratchpad
+bindsym $mod+Shift+minus move scratchpad
+
+# Show the first scratchpad window
+bindsym $mod+minus scratchpad show
+
 #  i3-gaps settings 
 #  More info visit: https://github.com/Airblader/i3
-
-smart_gaps on # when only one container is in use
-smart_borders on # no borders when on app is in use also no_gaps
+#smart_gaps on # when only one container is in use no_gaps
+smart_borders on # no borders when one app is in use
 set $mode_gaps Gaps: (o) outer, (i) inner
 set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
 set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
@@ -213,33 +218,32 @@ bindsym Print exec scrot -e 'mv $f ~/Pictures/screenshots'
 
 # My apps shortcurt
 bindsym $mod+p exec pcmanfm 
-bindsym $mod+b exec luakit
+bindsym $mod+b exec qutebrowser
 
 # Colors themes
-# Currently am using i3-style to switch to different colors
+# Currently am using i3-style to switch to different colors.
+# Gruvbox colors
 # Window colors         border  background text    indicator
-client.focused          #f0aa48 #f0aa48    #000000 #8c0333
-client.focused_inactive #222222 #222222    #c0c0c0 #101010
-client.unfocused        #222222 #222222    #EA8484 #101010
-client.urgent           #222222 #222222    #A6A6DE #C0C0C0
+client.focused          #808080 #808080    #000000 #ffaf5f
+client.focused_inactive #1a1a1a #1a1a1a    #c0c0c0 #101010
+client.unfocused        #1a1a1a #1a1a1a    #EA8484 #101010
+client.urgent #080808   #080808 #A6A6DE    #C0C0C0
 
 # Start i3bar to display a workspace bar
 # (plus the system information i3status# finds out, if available)
 bar {
-          status_command  $HOME/bin/conkyi3.sh
+  status_command  $HOME/bin/conkyi3.sh
           position top
-          mode dock
-          workspace_buttons yes
-          font xft:Bitstream Vera Sans 8
+          font xft:tewi, FontAwesome 8
           strip_workspace_numbers yes
   colors {
-    separator  #222222
-    background #000000
+    separator  #1a1a1a
+    background #080808
     statusline #666666
-    focused_workspace  #1c1c1e #1c1c1e #f0aa48
-    active_workspace   #101010 #000000 #EA8484
-    inactive_workspace #080808 #000000 #888888
-    urgent_workspace   #101010 #000000 #A6A6DE
+    focused_workspace   #1a1a1a #1a1a1a #d7d7d7
+    active_workspace    #1a1a1a #080808 #EA8484
+    inactive_workspace  #080808 #080808 #808080
+    urgent_workspace    #1a1a1a #1a1a1a #A6A6DE
   }
 }
 
@@ -263,9 +267,10 @@ exec --no-startup-id compton --config ~/.config/compton.conf -b
 # for_window [class="feh"] border 1pixel
 # for_window [class="Pcmanfm"] border 1pixel
 # for_window [class="VirtualBox"] border 1pixel
-# Set all apps border to 1pixel for i3-gaps to work
-for_window [class="^.*"] border 1pixel 
-  
+# Set all apps border to pixel 1 for i3-gaps to work
+for_window [class="^.*"] border pixel 0
+for_window [class="(?i)urxvt"] border pixel 3
+
 # Enable or disable floating
 for_window [class="Arandr"] floating enable
 for_window [class="Nagstamon"] floating enable
@@ -281,22 +286,29 @@ for_window [class="feh"] floating enable
 for_window [class="Zenmap"] floating enable
 for_window [class="Angry IP Scanner"] floating enable
 for_window [class="DB Browser for SQLite"] floating enable
+for_window [window_role="pop-up"] floating enable
+for_window [window_role="bubble"] floating enable
+for_window [window_role="task_dialog"] floating enable
+for_window [window_role="Preferences"] floating enable
+for_window [window_type="dialog"] floating enable
+for_window [window_type="menu"] floating enable
 
 # Starting apps on aspecific workspace
-assign [class="^Tor Browser$"] $2
-assign [class="^Firefox$"] $2
-assign [class="^qutebrowser$"] $2
-assign [class="^luakit$"] $2
-assign [class="^Gimp$"] $4
-assign [class="^Openshot$"] $4
-assign [class="^Blender$"]  $4
-assign [class="^mpv$"] $4
-assign [class="^Geany$"] $7
-assign [class="^VirtualBox$"] $5
-assign [class="^Filezilla$"] $5
-assign [class="^Nmapfe"] $5
-assign [class="^Wireshark"] $5
-assign [class="^Zathura"] $10
-assign [class="^LibreOffice"] $10
+assign [class="^Tor Browser$"] $w1
+assign [class="^Firefox$"] $w1
+assign [class="^qutebrowser$"] $w1
+assign [class="^luakit$"] $w1
+assign [class="^Gimp$"] $w4
+assign [class="^Openshot$"] $w4
+assign [class="^Blender$"]  $w4
+assign [class="^mpv$"] $w4
+assign [class="^Geany$"] $w3
+assign [class="^VirtualBox$"] $w7
+assign [class="^Filezilla$"] $w7
+assign [class="^Nmapfe"] $w7
+assign [class="^Wireshark"] $w7
+assign [class="^Zathura"] $w9
+assign [class="^TexMaker"] $w9
+assign [class="^LibreOffice"] $w9
 
 # vim:filetype=i3

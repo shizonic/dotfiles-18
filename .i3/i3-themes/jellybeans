@@ -4,44 +4,44 @@ meta:
   description: 'Jellybeans theme  by mohabaks'
 window_colors:
   focused:
-    border:           '#8c0333'
-    background:       '#8c0333'
+    border:           '#808080'
+    background:       '#808080'
     text:             '#000000'
-    indicator:        '#8c0333'
+    indicator:        '#ffaf5f'
   focused_inactive:
-    border:           '#222222'
-    background:       '#222222'
+    border:           '#404040'
+    background:       '#404040'
     text:             '#c0c0c0'
     indicator:        '#101010'
   unfocused:
-    border:           '#222222'
-    background:       '#222222'
+    border:           '#1a1a1a'
+    background:       '#1a1a1a'
     text:             '#EA8484'
     indicator:        '#101010'
   urgent:
-    border:           '#222222'
-    background:       '#222222'
+    border:           '#080808'
+    background:       '#080808'
     text:             '#A6A6DE'
     indicator:        '#C0C0C0'
 bar_colors:
-  separator:          '#222222'
-  background:         '#000000'
+  separator:          '#1a1a1a'
+  background:         '#080808'
   statusline:         '#666666'
   focused_workspace:
-    border:           '#222222'
-    background:       '#111111'
-    text:             '#8c0333'
+    border:           '#1a1a1a'
+    background:       '#1a1a1a'
+    text:             '#d7d7d7'
   active_workspace:
-    border:           '#101010'
-    background:       '#000000'
+    border:           '#1a1a1a'
+    background:       '#080808'
     text:             '#EA8484'
   inactive_workspace:
     border:           '#080808'
-    background:       '#000000'
-    text:             '#888888'
+    background:       '#080808'
+    text:             '#808080'
   urgent_workspace:
-    border:           '#101010'
-    background:       '#000000'
+    border:           '#1a1a1a'
+    background:       '#080808'
     text:             '#A6A6DE'
 
 # vim: filetype=yaml

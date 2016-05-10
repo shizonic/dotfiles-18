@@ -69,7 +69,7 @@ endif
 " - g:jellybeans_use_term_background_color
 " - g:jellybeans_use_term_italics
 
-let s:background_color = "080808"
+let s:background_color = "151515"
 
 " Backwards compatibility
 if exists("g:jellybeans_background_color") || exists("g:jellybeans_background_color_256")
@@ -386,7 +386,7 @@ call s:X("Visual","","404040","","",s:termBlack)
 call s:X("Cursor",s:background_color,"b0d0f0","","","")
 
 call s:X("LineNr","605958",s:background_color,"none",s:termBlack,"")
-call s:X("CursorLineNr","ffaf5f","","none","White","")
+call s:X("CursorLineNr","ccc5c4","","none","White","")
 call s:X("Comment","888888","","italic","Grey","")
 call s:X("Todo","c7c7c7","","bold","White",s:termBlack)
 
@@ -578,7 +578,6 @@ call s:X("IndentGuidesEven","","1b1b1b","","","")
 
 hi! link TagListFileName Directory
 call s:X("PreciseJumpTarget","B9ED67","405026","","White","Green")
-
 
 " Manual overrides for 256-color terminals. Dark colors auto-map badly.
 if !s:low_color
