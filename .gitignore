@@ -1,7 +1,0 @@
-.vimperator/info/*
-*.pyc
-*.log
-.gitignore
-!ranger/colorsheme/*
-!ranger/rc.conf
-!.weechat/weechat.conf
