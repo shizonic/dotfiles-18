@@ -24,7 +24,7 @@ class Default(ColorScheme):
                 fg = 8
             if context.media:
                 if context.image:
-                    fg = white
+                    fg = red
                 else:
                     fg = blue
             if context.container:
@@ -58,10 +58,10 @@ class Default(ColorScheme):
             if context.main_column:
                 if context.selected:
                     # attr |= bold
-                    fg = white
+                    fg = magenta
                 if context.marked:
                     attr |= bold
-                    fg = red
+                    fg = yellow
             if context.badinfo:
                 if attr & reverse:
                     bg = magenta
