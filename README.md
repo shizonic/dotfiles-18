@@ -74,7 +74,6 @@ Link References
 [.i3]:https://github.com/mohabaks/dotfiles/tree/master/.i3
 [.conky]:https://github.com/mohabaks/dotfiles/tree/master/.conky
 [.icons]:https://github.com/mohabaks/dotfiles/tree/master/.icons
-<<<<<<< HEAD
 [.vim]:https://github.com/mohabaks/dotfiles/tree/master/.vim
 [.vimperator]:https://github.com/mohabaks/dotfiles/tree/master/.vimperator
 =======
