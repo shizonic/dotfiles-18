@@ -22,28 +22,28 @@ TEXT
 #[${execi 1 ~/.conky/conky-mpd/cover.sh}]}
 
 # Mpd
-#{"full_text":"","color":"\#d3869b","separator":false,"separator_block_width":6},\
-#{"full_text":"${if_mpd_playing}"},\
-#{"full_text":"${scroll 36 ${mpd_title}}","color":"\#928374","separator":false,"separator_block_width":6},\
-#{"full_text":"${else}"},\
-#{"full_text":"..:: MPD not running ::..","color":"\#928374","separator":false,"separator_block_width":6},\
-#{"full_text":"${endif}"},\
+{"full_text":"","color":"\#414E54","separator":false,"separator_block_width":6},\
+{"full_text":"${if_mpd_playing}"},\
+{"full_text":"${scroll 36 ${mpd_title}}","color":"\#837e6a","separator":false,"separator_block_width":6},\
+{"full_text":"${else}"},\
+{"full_text":"..:: MPD not running ::..","color":"\#928374","separator":false,"separator_block_width":6},\
+{"full_text":"${endif}"},\
 
 # Mail
-{"full_text":"  ","color":"\#d75f5f","separator":false,"separator_block_width":6},\
-{"full_text":"${execi 300 python ~/bin/gmail.py} ","color":"\#808080","background":"\#1a1a1a","separator":false,"separator_block_width":6},\
+{"full_text":"  ","color":"\#573627","separator":false,"separator_block_width":6},\
+{"full_text":"${execi 300 python ~/bin/gmail.py} ","color":"\#837e6a","background":"\#1a1a1a","separator":false,"separator_block_width":6},\
 
 # Finds current volume. May need modified depending on your setup"
-{"full_text":"  ","color":"\#87af5f","separator":false,"separator_block_width":6},\
-{"full_text":"${exec amixer -c 0 get Master | grep Mono: | cut -d " " -f6} ","color":"\#808080","background":"\#1a1a1a","separator":false,"separator_block_width":0},\
+{"full_text":"  ","color":"\#5C5044","separator":false,"separator_block_width":6},\
+{"full_text":"${exec amixer -c 0 get Master | grep Mono: | cut -d " " -f6} ","color":"\#837e6a","background":"\#1a1a1a","separator":false,"separator_block_width":0},\
 
 # Brighness
-{"full_text":"  ","color":"\#ffaf5f","separator":false,"separator_block_width":6},\
-{"full_text":"${exec xbacklight| awk '{printf("%d\n",$1 + 0.5)}'}% ","color":"\#808080","background":"\#1a1a1a","separator":false,"separator_block_width":0},\
+{"full_text":"  ","color":"\#ca814c","separator":false,"separator_block_width":6},\
+{"full_text":"${exec xbacklight| awk '{printf("%d\n",$1 + 0.5)}'}% ","color":"\#837e6a","background":"\#1a1a1a","separator":false,"separator_block_width":0},\
 
 # Download
-{"full_text":"  ","color":"\#87afd7","separator":false,"separator_block_width":6},\
-{"full_text":"${if_match ${downspeedf enp2s0}<100}${downspeed enp2s0}","color":"\#808080","background":"\#1a1a1a","separator":false,"separator_block_width":6},\
+{"full_text":"  ","color":"\#44392f","separator":false,"separator_block_width":6},\
+{"full_text":"${if_match ${downspeedf enp2s0}<100}${downspeed enp2s0}","color":"\#837e6a","background":"\#1a1a1a","separator":false,"separator_block_width":6},\
 {"full_text":"${else}"},\
 {"full_text":"${if_match ${downspeedf enp2s0}<300}${downspeed enp2s0}","color":"\#8b0000","background":"\#1a1a1a","separator":false,"separator_block_width":6},\
 {"full_text":"${else}"},\
@@ -55,8 +55,8 @@ TEXT
 {"full_text":"${endif}${endif}${endif}${endif}${endif}"},\
 
 # Upload
-{"full_text":"  ","color":"\#8787af","separator":false,"separator_block_width":6},\
-{"full_text":"${if_match ${upspeedf enp2s0}<15}${upspeed enp2s0}","background":"\#1a1a1a","color":"\#808080","separator":false,"separator_block_width":6},\
+{"full_text":"  ","color":"\#454239","separator":false,"separator_block_width":6},\
+{"full_text":"${if_match ${upspeedf enp2s0}<15}${upspeed enp2s0}","background":"\#1a1a1a","color":"\#837e6a","separator":false,"separator_block_width":6},\
 {"full_text":"${else}"},\
 {"full_text":"${if_match ${upspeedf enp2s0}<35}${upspeed enp2s0}","background":"\#1a1a1a","color":"\#0e2f44","separator":false,"separator_block_width":6},\
 {"full_text":"${else}"},\
@@ -64,7 +64,7 @@ TEXT
 {"full_text":"${endif}${endif}${endif}"},\
 
 # Cpu
-{"full_text":"  ","color":"\#5f8787","separator":false,"separator_block_width":6},\
+{"full_text":"  ","color":"\#9b6c52","separator":false,"separator_block_width":6},\
 {"full_text":"${if_match ${cpu cpu0}<25}${cpu cpu0}","color":"\#919191","background":"\#1a1a1a","separator":false,"separator_block_width":0},\
 {"full_text":"${else}"},\
 {"full_text":"${if_match ${cpu cpu0}<50}${cpu cpu0}","color":"\#008000","background":"\#1a1a1a","separator":false,"separator_block_width":0},\
@@ -76,15 +76,15 @@ TEXT
 {"full_text":"%","color":"\#919191 ","background":"\#1a1a1a","separator":false,"separator_block_width":6},\
 
 # Ram
-{"full_text":"  ","color":"\#EA8484","separator":false,"separator_block_width":6},\
-{"full_text":"${mem}","color":"\#808080","background":"\#1a1a1a","separator":false,"separator_block_width":6},\
+{"full_text":"  ","color":"\#573627","separator":false,"separator_block_width":6},\
+{"full_text":"${mem}","color":"\#837e6a","background":"\#1a1a1a","separator":false,"separator_block_width":6},\
 
 #Battery 
-{"full_text":"  ","color":"\#d7d7d7","separator":false,"separator_block_width":6},\
-{"full_text":"${battery_percent BAT1}%","color":"\#808080","background":"\#1a1a1a","separator":false,"separator_block_width":6},\
+{"full_text":"  ","color":"\#625745","separator":false,"separator_block_width":6},\
+{"full_text":"${battery_percent BAT1}%","color":"\#837e6a","background":"\#1a1a1a","separator":false,"separator_block_width":6},\
 
 # Date
-{"full_text":"  ","color":"\#d65d0e","separator":false,"separator_block_width":6},\
-{"full_text":"${time %A %d %B %R}","color":"\#808080","background":"\#1a1a1a","separator":false,"separator_block_width":6}\
+{"full_text":"  ","color":"\#6a5e48","separator":false,"separator_block_width":6},\
+{"full_text":"${time %A %d %B %R}","color":"\#837e6a","background":"\#1a1a1a","separator":false,"separator_block_width":6}\
 
 ]
