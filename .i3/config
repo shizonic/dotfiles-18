@@ -17,6 +17,7 @@ bindsym $mod+Shift+q kill
 # bindsym $mod+d exec  dmenu_run -b -nf dimgray -sb orangered -sf black -nb gray4
 
 # Start Rofi (a program launcher, ssh, window switcher)
+# davedavenport.github.io/rofi/
 bindsym $mod+d exec --no-startup-id rofi -show run
 
 # Change focus
@@ -68,9 +69,6 @@ bindsym $mod+a focus parent
 
 # Focus the child container
 #bindsym $mod+d focus child
-
-# Auto_Start Workspace specific
-#exec --no-startup-id i3-msg 'workspace 1: ;exec firefox;workspace 2: Files;exec urxvt;workspace 1: '
 
 # Initialise workspace
 # 
@@ -147,8 +145,8 @@ bindsym $mod+minus scratchpad show
 
 #  i3-gaps settings 
 #  More info visit: https://github.com/Airblader/i3
-#smart_gaps on # when only one container is in use no_gaps
-smart_borders on # no borders when one app is in use
+smart_gaps on     # when only one container is in use no_gaps
+smart_borders on  # no borders when one app is in use
 set $mode_gaps Gaps: (o) outer, (i) inner
 set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
 set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
@@ -190,6 +188,8 @@ bindsym $mod+r mode "resize"
 
 # Lock screen
 set $Locker i3lock-fancy
+
+# Shutdwon, Restart, Logout, Suspend, Hibernate, Reboot, Lock
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
     bindsym l exec --no-startup-id $Locker, mode "default"
@@ -220,31 +220,30 @@ bindsym Print exec scrot -e 'mv $f ~/Pictures/screenshots'
 bindsym $mod+p exec pcmanfm 
 bindsym $mod+b exec qutebrowser
 
-# Colors themes
+# Colors themes ( to match my mywood Xresources colors)
 # Currently am using i3-style to switch to different colors.
-# Gruvbox colors
-# Window colors         border  background text    indicator
-client.focused          #444444 #444444    #000000 #ffaf5f
-client.focused_inactive #1a1a1a #1a1a1a    #c0c0c0 #101010
-client.unfocused        #1a1a1a #1a1a1a    #EA8484 #101010
-client.urgent #080808   #080808 #A6A6DE    #C0C0C0
+# Window colors           border    background    text      indicator
+client.focused            #1a1a1a   #1a1a1a       #100f0d   #ffaf5f
+client.focused_inactive   #1a1a1a   #1a1a1a       #c0c0c0   #101010
+client.unfocused          #1a1a1a   #1a1a1a       #ca814c   #101010
+client.urgent             #1a1a1a   #1a1a1a       #454239   #C0C0C0
 
 # Start i3bar to display a workspace bar
-# (plus the system information i3status# finds out, if available)
 bar {
           status_command  $HOME/bin/conkyi3.sh
           position top
           font xft:tewi, FontAwesome 8
           strip_workspace_numbers yes
-  colors {
-    separator  #1a1a1a
-    background #080808
-    statusline #666666
-    focused_workspace   #1a1a1a #1a1a1a #d7d7d7
-    active_workspace    #1a1a1a #080808 #EA8484
-    inactive_workspace  #080808 #080808 #808080
-    urgent_workspace    #1a1a1a #1a1a1a #A6A6DE
-  }
+          colors {
+              separator  #1a1a1a
+              background #100f0d
+              statusline #666666
+              # Window colors    border    background    text 
+              focused_workspace  #1a1a1a   #1a1a1a       #ca814c
+              active_workspace   #1a1a1a   #100f0d       #ca814c
+              inactive_workspace #100f0d   #100f0d       #837e6a
+              urgent_workspace   #100f0d   #100f0d       #414E54
+         }
 }
 
 
@@ -253,20 +252,20 @@ bar {
 # Start apps during startup
 exec --no-startup-id "devmon --no-gui"
 exec --no-startup-id nitrogen --restore 
-exec --no-startup-id nm-applet
+#exec --no-startup-id nm-applet
 exec --no-startup-id compton --config ~/.compton.conf -b
 #exec --no-startup-id $HOME/.conky/conky-startup.sh
 
 # Set per-application border
-# for_window [class="Firefox" instance="Navigator"] border 1pixel
-# for_window [class="Tor Browser"] border 1pixel
-# for_window [class="qutebrowser"] border 1pixel
-# for_window [instance="urxvt"] border 1pixel
-# for_window [instance="zathura"] border 1pixel
-# for_window [class="mpv"] border 1pixel
-# for_window [class="feh"] border 1pixel
-# for_window [class="Pcmanfm"] border 1pixel
-# for_window [class="VirtualBox"] border 1pixel
+#for_window [class="Firefox" instance="Navigator"] border 1pixel
+#for_window [class="Tor Browser"] border 1pixel
+#for_window [class="qutebrowser"] border 1pixel
+#for_window [instance="urxvt"] border 1pixel
+#for_window [instance="zathura"] border 1pixel
+#for_window [class="mpv"] border 1pixel
+#for_window [class="feh"] border 1pixel
+#for_window [class="Pcmanfm"] border 1pixel
+#for_window [class="VirtualBox"] border 1pixel
 # Set all apps border to pixel 1 for i3-gaps to work
 for_window [class="^.*"] border pixel 0
 for_window [class="(?i)urxvt"] border pixel 3
