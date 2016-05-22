@@ -1,0 +1,44 @@
+!********************************************************************
+!  Author: mohabaks
+!  github: https://github.com/mohabaks/dotfiles/
+!    tool: https://terminal.sexy
+!
+!********************************************************************
+
+
+! special
+*.foreground:   #89816a
+*.background:   #100f0d
+*.cursorColor:  #89816a
+
+! black
+*.color0:       #100f0d
+*.color8:       #414E54
+
+! red
+*.color1:       #573627
+*.color9:       #573627
+
+! green
+*.color2:       #5C5044
+*.color10:      #5C5044
+
+! yellow
+*.color3:       #ca814c
+*.color11:      #ca814c
+
+! blue
+*.color4:       #44392f
+*.color12:      #44392f
+
+! magenta
+*.color5:       #454239
+*.color13:      #454239
+
+! cyan
+*.color6:       #6a5e48
+*.color14:      #6a5e48
+
+! white
+*.color7:       #837e6a
+*.color15:      #837e6a
