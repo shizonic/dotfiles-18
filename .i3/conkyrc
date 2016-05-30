@@ -24,9 +24,9 @@ TEXT
 # Mpd
 {"full_text":"","color":"\#414E54","separator":false,"separator_block_width":6},\
 {"full_text":"${if_mpd_playing}"},\
-{"full_text":"${scroll 36 ${mpd_title}}","color":"\#837e6a","separator":false,"separator_block_width":6},\
+{"full_text":"${scroll 36 ${mpd_title}}","color":"\#837e6a","background":"\#1a1a1a","separator":false,"separator_block_width":6},\
 {"full_text":"${else}"},\
-{"full_text":"..:: MPD not running ::..","color":"\#928374","separator":false,"separator_block_width":6},\
+{"full_text":"..:: MPD not running ::..","color":"\#928374","background":"\#1a1a1a","separator":false,"separator_block_width":6},\
 {"full_text":"${endif}"},\
 
 # Mail
@@ -45,35 +45,35 @@ TEXT
 {"full_text":"  ","color":"\#44392f","separator":false,"separator_block_width":6},\
 {"full_text":"${if_match ${downspeedf enp2s0}<100}${downspeed enp2s0}","color":"\#837e6a","background":"\#1a1a1a","separator":false,"separator_block_width":6},\
 {"full_text":"${else}"},\
-{"full_text":"${if_match ${downspeedf enp2s0}<300}${downspeed enp2s0}","color":"\#8b0000","background":"\#1a1a1a","separator":false,"separator_block_width":6},\
+{"full_text":"${if_match ${downspeedf enp2s0}<300}${downspeed enp2s0}","color":"\#5C5044","background":"\#1a1a1a","separator":false,"separator_block_width":6},\
 {"full_text":"${else}"},\
-{"full_text":"${if_match ${downspeedf enp2s0}<700}${downspeed enp2s0}","color":"\#DB70B8","background":"\#1a1a1a","separator":false,"separator_block_width":6},\
+{"full_text":"${if_match ${downspeedf enp2s0}<700}${downspeed enp2s0}","color":"\#454239","background":"\#1a1a1a","separator":false,"separator_block_width":6},\
 {"full_text":"${else}"},\
-{"full_text":"${if_match ${downspeedf enp2s0}<1000}${downspeed enp2s0}","color":"\#794044","background":"\#1a1a1a","separator":false,"separator_block_width":6},\
+{"full_text":"${if_match ${downspeedf enp2s0}<1000}${downspeed enp2s0}","color":"\#414E54","background":"\#1a1a1a","separator":false,"separator_block_width":6},\
 {"full_text":"${else}"},\
-{"full_text":"${if_match ${downspeedf enp2s0}>=1000}${downspeed enp2s0}","color":"\#FF3333","background":"\#1a1a1a","separator":false,"separator_block_width":6},\
+{"full_text":"${if_match ${downspeedf enp2s0}>=1000}${downspeed enp2s0}","color":"\#6a5e48","background":"\#1a1a1a","separator":false,"separator_block_width":6},\
 {"full_text":"${endif}${endif}${endif}${endif}${endif}"},\
 
 # Upload
 {"full_text":"  ","color":"\#454239","separator":false,"separator_block_width":6},\
 {"full_text":"${if_match ${upspeedf enp2s0}<15}${upspeed enp2s0}","background":"\#1a1a1a","color":"\#837e6a","separator":false,"separator_block_width":6},\
 {"full_text":"${else}"},\
-{"full_text":"${if_match ${upspeedf enp2s0}<35}${upspeed enp2s0}","background":"\#1a1a1a","color":"\#0e2f44","separator":false,"separator_block_width":6},\
+{"full_text":"${if_match ${upspeedf enp2s0}<35}${upspeed enp2s0}","background":"\#1a1a1a","color":"\#5C5044","separator":false,"separator_block_width":6},\
 {"full_text":"${else}"},\
-{"full_text":"${if_match ${upspeedf enp2s0}>=35}${upspeed enp2s0}","background":"\#1a1a1a","color":"\#FF3333","separator":false,"separator_block_width":6},\
+{"full_text":"${if_match ${upspeedf enp2s0}>=35}${upspeed enp2s0}","background":"\#1a1a1a","color":"\#414E54","separator":false,"separator_block_width":6},\
 {"full_text":"${endif}${endif}${endif}"},\
 
 # Cpu
 {"full_text":"  ","color":"\#9b6c52","separator":false,"separator_block_width":6},\
-{"full_text":"${if_match ${cpu cpu0}<25}${cpu cpu0}","color":"\#919191","background":"\#1a1a1a","separator":false,"separator_block_width":0},\
+{"full_text":"${if_match ${cpu cpu0}<25}${cpu cpu0}","color":"\#837e6a","background":"\#1a1a1a","separator":false,"separator_block_width":0},\
 {"full_text":"${else}"},\
-{"full_text":"${if_match ${cpu cpu0}<50}${cpu cpu0}","color":"\#008000","background":"\#1a1a1a","separator":false,"separator_block_width":0},\
+{"full_text":"${if_match ${cpu cpu0}<50}${cpu cpu0}","color":"\#414E54","background":"\#1a1a1a","separator":false,"separator_block_width":0},\
 {"full_text":"${else}"},\
-{"full_text":"${if_match ${cpu cpu0}<75}${cpu cpu0}","color":"\#ff2500","background":"\#1a1a1a","separator":false,"separator_block_width":0},\
+{"full_text":"${if_match ${cpu cpu0}<75}${cpu cpu0}","color":"\#573627","background":"\#1a1a1a","separator":false,"separator_block_width":0},\
 {"full_text":"${else}"},\
-{"full_text":"${if_match ${cpu cpu0}<=100}${cpu cpu0}","color":"\#FF3333","background":"\#1a1a1a","separator":false,"separator_block_width":0},\
+{"full_text":"${if_match ${cpu cpu0}<=100}${cpu cpu0}","color":"\#454239","background":"\#1a1a1a","separator":false,"separator_block_width":0},\
 {"full_text":"${endif}${endif}${endif}${endif}"},\
-{"full_text":"%","color":"\#919191 ","background":"\#1a1a1a","separator":false,"separator_block_width":6},\
+{"full_text":"%","color":"\#6a5e48 ","background":"\#1a1a1a","separator":false,"separator_block_width":6},\
 
 # Ram
 {"full_text":"  ","color":"\#573627","separator":false,"separator_block_width":6},\

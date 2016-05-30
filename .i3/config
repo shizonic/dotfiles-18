@@ -73,14 +73,14 @@ bindsym $mod+a focus parent
 # Initialise workspace
 # 
 set $w1   1:Surf
-set $w2   2:Code 
+set $w2   2:Code
 set $w3   3:Conf
 set $w4   4:Medi
 set $w5   5:Core
 set $w6   6:Term
-set $w7   7:Netw
+set $w7   7:Read
 set $w8   8:Chat
-set $w9   9:Read
+set $w9   9:Netw
 set $w10  10:Misc
  
 # Switch to workspace
@@ -218,19 +218,19 @@ bindsym Print exec scrot -e 'mv $f ~/Pictures/screenshots'
 
 # My apps shortcurt
 bindsym $mod+p exec pcmanfm 
-bindsym $mod+b exec qutebrowser
+bindsym $mod+b exec luakit
 
 # Colors themes ( to match my mywood Xresources colors)
 # Currently am using i3-style to switch to different colors.
 # Window colors           border    background    text      indicator
-client.focused            #1a1a1a   #1a1a1a       #100f0d   #ffaf5f
+client.focused            #573627   #573627       #100f0d   #ffaf5f
 client.focused_inactive   #1a1a1a   #1a1a1a       #c0c0c0   #101010
-client.unfocused          #1a1a1a   #1a1a1a       #ca814c   #101010
-client.urgent             #1a1a1a   #1a1a1a       #454239   #C0C0C0
+client.unfocused          #1a1a1a   #1a1a1a       #837e6a   #101010
+client.urgent             #454239   #454239       #100f0d   #C0C0C0
 
 # Start i3bar to display a workspace bar
 bar {
-          status_command  $HOME/bin/conkyi3.sh
+          status_command  $HOME/scripts/conkyi3.sh
           position top
           font xft:tewi, FontAwesome 8
           strip_workspace_numbers yes
@@ -239,10 +239,10 @@ bar {
               background #100f0d
               statusline #666666
               # Window colors    border    background    text 
-              focused_workspace  #1a1a1a   #1a1a1a       #ca814c
-              active_workspace   #1a1a1a   #100f0d       #ca814c
-              inactive_workspace #100f0d   #100f0d       #837e6a
-              urgent_workspace   #100f0d   #100f0d       #414E54
+              focused_workspace  #573627   #573627       #100f0d
+              active_workspace   #100f0d   #100f0d       #ca814c
+              inactive_workspace #1a1a1a   #1a1a1a       #837e6a
+              urgent_workspace   #454239   #454239       #100f0d 
          }
 }
 
@@ -302,12 +302,12 @@ assign [class="^Openshot$"] $w4
 assign [class="^Blender$"]  $w4
 assign [class="^mpv$"] $w4
 assign [class="^Geany$"] $w3
-assign [class="^VirtualBox$"] $w7
-assign [class="^Filezilla$"] $w7
-assign [class="^Nmapfe"] $w7
-assign [class="^Wireshark"] $w7
-assign [class="^Zathura"] $w9
-assign [class="^TexMaker"] $w9
-assign [class="^LibreOffice"] $w9
+assign [class="^VirtualBox$"] $w9
+assign [class="^Filezilla$"] $w9
+assign [class="^Nmapfe"] $w9
+assign [class="^Wireshark"] $w9
+assign [class="^Zathura"] $w7
+assign [class="^TexMaker"] $w7
+assign [class="^LibreOffice"] $w7
 
 # vim:filetype=i3

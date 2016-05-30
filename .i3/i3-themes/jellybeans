@@ -4,8 +4,8 @@ meta:
   description: 'Jellybeans theme  by mohabaks'
 window_colors:
   focused:
-    border:           '#808080'
-    background:       '#808080'
+    border:           '#1a1a1a'
+    background:       '#1a1a1a'
     text:             '#000000'
     indicator:        '#ffaf5f'
   focused_inactive:
@@ -19,8 +19,8 @@ window_colors:
     text:             '#EA8484'
     indicator:        '#101010'
   urgent:
-    border:           '#080808'
-    background:       '#080808'
+    border:           '#1a1a1a'
+    background:       '#1a1a1a'
     text:             '#A6A6DE'
     indicator:        '#C0C0C0'
 bar_colors:

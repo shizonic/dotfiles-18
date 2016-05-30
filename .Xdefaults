@@ -91,7 +91,7 @@ URxvt.keysym.M-u: perl:     url-select:select_next
 URxvt.url-select.autocopy:  true
 URxvt.url-select.button:    2
 URxvt.url-select.underline: true
-URxvt.url-launcher:         /usr/bin/qutebrowser
+URxvt.url-launcher:         /usr/bin/luakit
 URxvt.matcher.button:       1
 
 ! CopyPaste Keys

@@ -40,7 +40,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-scripts/UltiSnips'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'mattn/emmet-vim'
-Plugin 'vim-scripts/vim-django'
+Plugin 'cwood/vim-django'
 Plugin 'nvie/vim-flake8'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'jmcomets/vim-pony'
@@ -48,6 +48,10 @@ Plugin 'mjbrownie/vim-htmldjango_omnicomplete'
 Plugin 'othree/html5.vim'
 Plugin 'PotatoesMaster/i3-vim-syntax'
 "Plugin 'itchyny/lightline.vim'
+Plugin 'twe4ked/vim-colorscheme-switcher'
+Plugin 'jmcantrell/vim-virtualenv'
+Plugin 'ervandew/supertab'
+Plugin 'SirVer/ultisnips'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -70,8 +74,9 @@ filetype plugin indent on    " required
 " Set Colorscheme {{{
 
 set background=dark
-colorscheme jellybeans
-let g:jellybeans_use_term_italics = 1
+colorscheme mywood
+"let g:hybrid_custom_term_colors = 1
+"let g:jellybeans_use_term_italics = 1
 
 "colorscheme gruvbox
 "let g:gruvbox_termcolors=256
@@ -82,13 +87,13 @@ let g:jellybeans_use_term_italics = 1
 
 " VimAirLine  {{{
 
-set t_Co=256 " 16, 18, and 256
-set laststatus=2 
-let g:airline_theme='monochrome'
-let g:airline_powerline_fonts = 1 " show powerline symbols
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#left_alt_sep = '|'
-let g:bufferline_echo = 0
+set t_Co=16 " 16, 18, and 256
+"set laststatus=2 
+"let g:airline_theme='term'
+"let g:airline_powerline_fonts = 2 " show powerline symbols
+"let g:airline#extensions#tabline#enabled = 1
+"let g:airline#extensions#tabline#left_alt_sep = '|'
+"let g:bufferline_echo = 0
 
 " }}}
 
@@ -289,28 +294,12 @@ autocmd FileType python set sts=4
 " UTF8 Support
 set encoding=utf-8
 
-" python-mode 
-let g:pymode_doc = 1
-let g:pymode_doc_key = 'M'
-let g:pydoc = 'pydoc'
-let g:pymode_syntax = 1
-let g:pymode_syntax_all = 0
-let g:pymode_syntax_builtin_objs = 1
-let g:pymode_syntax_print_as_function = 0
-let g:pymode_syntax_space_errors = 0
-let g:pymode_run = 0
-let g:pymode_breakpoint = 0
-let g:pymode_folding = 0
-let g:pymode_options_indent = 0
-let g:pymode_lint_ignore = "E501"
-
-" YCM
+" Omnicompletion functions
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
-autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
-autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+let g:ycm_python_binary_path = '/usr/bin/python3'
 
 " Ultisnips.vim
 let g:UltiSnipsExpandTrigger       = "<c-j>"
@@ -319,22 +308,20 @@ let g:UltiSnipsJumpBackwardTrigger = "<c-p>"
 let g:UltiSnipsListSnippets        = "<c-k>" "List possible snippets based on current file
 
 " python with virtualenv support
-
 py << EOF
-import os.path
+import os
 import sys
-import vim
 if 'VIRTUAL_ENV' in os.environ:
-    project_base_dir = os.environ['VIRTUAL_ENV']
-    sys.path.insert(0, project_base_dir)
-    activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
-    execfile(activate_this, dict(__file__=activate_this))
+  project_base_dir = os.environ['VIRTUAL_ENV']
+  activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
+  execfile(activate_this, dict(__file__=activate_this))
 EOF
+
 
 " Django Settings
 if filereadable($VIRTUAL_ENV . '/.vimrc')
          source $VIRTUAL_ENV/.vimrc
-    endif
+endif
 au FileType htmldjango set omnifunc=htmldjangocomplete#CompleteDjango
 let g:htmldjangocomplete_html_flavour = 'html5'
 let g:django_projects = '~/Code/Projects/Django' "Sets all projects under django

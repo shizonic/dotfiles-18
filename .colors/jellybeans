@@ -5,9 +5,9 @@
  *foreground: #808080
 ! black
 ! 26 26 26
-*color0:  #1a1a1a
+*color0:  #080808
 ! 64 64 64
-*color8:  #404040
+*color8:  #202020
 ! red
 ! 215 95 95
 *color1:  #d75f5f
@@ -20,7 +20,7 @@
 *color10: #C7F09F
 ! yellow
 ! 255 175 95
-*color3:  #ffaf5f
+*color3:  #FEA63C
 ! 255 204 154
 *color11: #FFCC9A
 ! blue

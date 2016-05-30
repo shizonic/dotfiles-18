@@ -1,16 +1,16 @@
 own_window yes 
 own_window_type panel
-own_window_colour 000000
+own_window_colour 100F0D
 own_window_transparent no
 own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
 double_buffer yes
 use_spacer right 
 use_xft yes
 #font snap-7
-xftfont tewi:size=5
+xftfont tewi:size=8
 xftalpha 1
 text_buffer_size 2048 
-alignment top_left
+alignment bottom_left
 gap_x 5
 gap_y 3
 
