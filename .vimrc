@@ -1,25 +1,35 @@
-" Description {{{
+"*********************** Description **********************************
 " 
-" Github:https://github.com/mohabaks/dotfiles
-" This config contains various settings for different programming env
-" e.g python, django, java, ruby e.t.c
-" 
+"           Github:https://github.com/mohabaks/dotfiles
+"           SpecialThanks:https://github.com/dougblack/dotfiles/.vimrc
+"           This config is a modification of dougblack.
 "
-"{{{
+"**********************************************************************
+python << EOF
+import os
+import re
+path = os.environ['PATH'].split(';')
 
+def contains_msvcr_lib(folder):
+    try:
+        for item in os.listdir(folder):
+            if re.match(r'msvcr\d+\.dll', item):
+                return True
+    except:
+        pass
+    return False
 
-" Vundle Settings {{{
+path = [folder for folder in path if not contains_msvcr_lib(folder)]
+os.environ['PATH'] = ';'.join(path)
+EOF
 
-set nocompatible           " be iMproved, required
-filetype off               " required
+" Vundle Settings{{{
 
-" set the runtime path to include Vundle and initialize
+"" set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
 
-" let Vundle manage Vundle, required
+"" let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
@@ -33,11 +43,10 @@ Plugin 'tpope/vim-repeat'
 Plugin 'groenewege/vim-less'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'tpope/vim-markdown'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
+"Plugin 'vim-airline/vim-airline'
+"Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/syntastic'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'vim-scripts/UltiSnips'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'mattn/emmet-vim'
 Plugin 'cwood/vim-django'
@@ -47,13 +56,20 @@ Plugin 'jmcomets/vim-pony'
 Plugin 'mjbrownie/vim-htmldjango_omnicomplete'
 Plugin 'othree/html5.vim'
 Plugin 'PotatoesMaster/i3-vim-syntax'
-"Plugin 'itchyny/lightline.vim'
 Plugin 'twe4ked/vim-colorscheme-switcher'
 Plugin 'jmcantrell/vim-virtualenv'
 Plugin 'ervandew/supertab'
 Plugin 'SirVer/ultisnips'
+Plugin 'itchyny/lightline.vim'
+Plugin 'rdnetto/YCM-Generator'
+Plugin 'sukima/xmledit'
+Plugin 'klen/python-mode'
+Plugin 'Raimondi/delimitMate'
+Plugin 'xolox/vim-easytags'
+Plugin 'xolox/vim-misc'
+Plugin 'jez/vim-superman'
 
-" All of your Plugins must be added before the following line
+"" All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
@@ -66,160 +82,154 @@ filetype plugin indent on    " required
 " :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
 "
 " see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
 
-" }}}
+"}}}
 
 
-" Set Colorscheme {{{
+" Set Colorscheme and Statusline{{{
 
 set background=dark
-colorscheme mywood
-"let g:hybrid_custom_term_colors = 1
-"let g:jellybeans_use_term_italics = 1
+colorscheme autumn
 
-"colorscheme gruvbox
-"let g:gruvbox_termcolors=256
-"let g:gruvbox_italic=1
-"let g:gruvbox_contrast_dark="hard"
-
-" }}}
-
-" VimAirLine  {{{
-
-set t_Co=16 " 16, 18, and 256
+"" Status line
+set t_Co=256 " 16, 18, and 256
 "set laststatus=2 
-"let g:airline_theme='term'
+let g:lightline = {
+      \ 'colorscheme': 'autumn',
+      \ }
+      
+"" Vim-airline
+"let g:airline_theme='gruvbox'
 "let g:airline_powerline_fonts = 2 " show powerline symbols
 "let g:airline#extensions#tabline#enabled = 1
 "let g:airline#extensions#tabline#left_alt_sep = '|'
 "let g:bufferline_echo = 0
 
-" }}}
+"}}}
 
-" Spaces & Tabs {{{
 
-set tabstop=4       " number of visual spaces per TAB
-set softtabstop=4   " number of spaces in tab when editing
-set expandtab       " tabs are spaces
+" Spaces & Tabs{{{
+
+set tabstop=4             " number of visual spaces per TAB
+set softtabstop=4         " number of spaces in tab when editing
+set expandtab             " tabs are spaces
 
 "}}}
 
-" System clipboard {{{
 
-"cut/copy/paste to/from other application
-set clipboard=unnamed " access your system clipboard
+" System clipboard{{{
 
-" }}}
+"" cut/copy/paste to/from other application
+set clipboard=unnamed     " access your system clipboard
 
-" Quicksave command {{{
+"}}}
 
-noremap <C-Z> :update<CR>
-vnoremap <C-Z> <C-C>:update<CR>
-inoremap <C-Z> <C-O>:update<CR>
 
-" }}}
+" Split Layouts{{{
 
-""  Split Layouts {{{
-
-"specify different areas of the screen
+"" specify different areas of the screen
 set splitbelow
 set splitright
-"split navigations
+"" split navigations
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-" }}}
+"}}}
+
 
 " UI Config {{{
 
-"These are options that changes random visuals in Vim
-set number " show line numbers
-set showcmd " show command in bottom bar
-set tw=79   " width of document (used by gd)
-set nowrap  " don't automatically wrap on load
-set colorcolumn=80
-highlight ColorColumn ctermbg=233
+"" These are options that changes random visuals in Vim
+set number                       " show line numbers
+set showcmd                      " show command in bottom bar
+set tw=79                        " width of document (used by gd)
+set nowrap                       " don't automatically wrap on load
 set smartindent
-filetype plugin on     " try to detect filetypes
-filetype plugin indent on  " enable loading indent file for filetype
-set visualbell           " don't beep
-set noerrorbells         " don't beep
-set autowrite  "Save on buffer switch
+set colorcolumn=80
+set visualbell                   " don't beep
+set noerrorbells                 " don't beep
+set autowrite                    " Save on buffer switch
 set mouse+=a
 set encoding=utf8
-set cursorline " highlight current line
-filetype indent on " load filetype-specific indent files
-set wildmenu " visual autocomplete for command menu
-set lazyredraw " redraw only when we need to
-set showmatch  " highlight matching [{()}]
+set cursorline                   " highlight current line
+filetype indent on               " load filetype-specific indent files
+set wildmenu                     " visual autocomplete for command menu
+set lazyredraw                   " redraw only when we need to
+set showmatch                    " highlight matching [{()}]
 
-" }}}
+"}}}
 
-" Searching {{{
 
-set incsearch " search as characters are entered
-set hlsearch  " highight matches
-" turn off search highlight
+" Searching{{{
+
+set incsearch             " search as characters are entered
+set hlsearch              " highight matches
+
+"" turn off search highlight
 nnoremap <leader><space> :nohlsearch<CR> 
 
-" }}}
+"}}}
 
-"" Folding {{{
 
-set foldenable  " enable folding
-set foldlevelstart=10 " open most folds by default
+"" Folding{{{
+
+set foldenable            " enable folding
+set foldlevelstart=10     " open most folds by default
 set foldlevel=99
-set foldnestmax=10 " 10 nested fold max
-" space open/closes folds
+set foldnestmax=10        " 10 nested fold max
+
+"" space open/closes folds
 nnoremap <space> za
-set foldmethod=indent " fold based on indent level
+set foldmethod=indent     " fold based on indent level
 
-" }}}
+"}}}
 
-"Movement {{{
 
-" move vertically by visual line
+" Movement{{{
+
+"" move vertically by visual line
 nnoremap j gj
 nnoremap k gk
-" move to beginning/end of line
+
+"" move to beginning/end of line
 nnoremap B ^
 nnoremap E $
-" $/^ doesn't do anything
+
+"" $/^ doesn't do anything
 nnoremap $ <nop>
 nnoremap ^ <nop>
-" highlight last inserted text
+
+"" highlight last inserted text
 nnoremap gV `[v`]
 
-" easier moving of code blocks
-" Try to go into visual mode (v), thenselect several lines of code here and
-" then press ``>`` several times.
-vnoremap < <gv  " better indentation
-vnoremap > >gv  " better indentation
 
-" }}}
+"" easier moving of code blocks
+"" Try to go into visual mode (v), thenselect several lines of code here and
+"" then press ``>`` several times.
+vnoremap < <gv              " better indentation
+vnoremap > >gv              " better indentation
 
-" Leader Shortcuts {{{
+"}}
 
-let mapleader="," " leader is comma
-"jk is escape
+
+" Leader Shortcuts and Shortcuts{{{
+
+let mapleader=","           " leader is comma
+
+"" jk is escape
 inoremap jk <esc>
-" toggle gundo
-nnoremap <leader>u :GundoToggle<CR>
-" edit vimrc/zshrc and load vimrc bindings
-nnoremap <leader>ev :vsp $MYVIMRC<CR>
-nnoremap <leader>ez :vsp ~/.zshrc<CR>
-nnoremap <leader>sv :source $MYVIMRC<CR>
-" save session
-nnoremap <leader>s :mksession<CR>
-" open ag.vim a.k.a the_silver_searcher
-nnoremap <leader>a :Ag
 
-" }}}
+"" quicksave command
+noremap  <C-Z> :update<CR>
+vnoremap <C-Z> <C-C>:update<CR>
+inoremap <C-Z> <C-O>:update<CR>
 
-" CtrlP settings {{{
+"}}}
+
+
+" CtrlP settings{{{
 
 let g:ctrlp_match_window = 'bottom,order:ttb'
 let g:ctrlp_switch_buffer = 0
@@ -227,34 +237,38 @@ let g:ctrlp_working_path_mode = 0
 let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
 let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 
-" }}}
+"}}}
 
-" File Browsing {{{
 
-" Open NERDTree when no files are specified
-"autocmd StdinReadPre * let s:std_in=1
-"autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+" File Browsing{{{
+
+"" Open NERDTree when no files are specified
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 map <C-n> :NERDTreeToggle<CR>
-" hide .pyc files
+
+"" hide .pyc files
 let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 
-" }}}
+"}}}
+
 
 "Buffer Navigation {{{
 
-" Ctrl Left/h & Right/l cycle between buffers
+"" Ctrl Left/h & Right/l cycle between buffers
 noremap <silent> <C-left> :bprev<CR>
 noremap <silent> <C-h> :bprev<CR>
 noremap <silent> <C-right> :bnext<CR>
 noremap <silent> <C-l> :bnext<CR>
 
-" <Leader>q Closes the current buffer
+"" <Leader>q Closes the current buffer
 nnoremap <silent> <Leader>q :Bclose<CR>
 
-" <Leader>Q Closes the current window
+"" <Leader>Q Closes the current window
 nnoremap <silent> <Leader>Q <C-w>c
 
 " }}}
+
 
 " Commenting blocks of code{{{
 
@@ -269,7 +283,8 @@ noremap <silent> ,cu :<C-B>silent <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<
 
 "}}}
 
-" Backups {{{
+
+" Backups{{{
 
 set backup
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
@@ -277,37 +292,49 @@ set backupskip=/tmp/*,/private/tmp/*
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set writebackup
 
-" }}}
+"}}}
+
 
 " Git Integration {{{
 
 
 "}}}
  
+ 
 " Python/Django IDE Setup {{{
  
-"Tab Settings
+"" Tab Settings
 autocmd FileType python set sw=4
 autocmd FileType python set ts=4
 autocmd FileType python set sts=4
 
-" UTF8 Support
-set encoding=utf-8
+"" enable all Python syntax highlighting feautures
+syntax on
+let python_highlight_all = 1
 
-" Omnicompletion functions
+"" omnicompletion functions
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
-let g:ycm_python_binary_path = '/usr/bin/python3'
 
-" Ultisnips.vim
+"" YouCompleteMe
+let g:ycm_collect_identifiers_from_tags_files = 1       " Let YCM read tags from Ctags file
+let g:ycm_use_ultisnips_completer = 1                   " Default 1, just ensure
+let g:ycm_seed_identifiers_with_syntax = 1              " Completion for programming language's keyword
+let g:ycm_complete_in_comments = 1                      " Completion in comments
+let g:ycm_complete_in_strings = 1                       " Completion in string
+let g:ycm_global_ycm_extra_conf = '~/Code/.ycm_extra_conf.py'
+let g:ycm_confirm_extra_conf = 0
+"let g:ycm_python_binary_path = '/usr/bin/python3'
+
+"" Ultisnips.vim
 let g:UltiSnipsExpandTrigger       = "<c-j>"
 let g:UltiSnipsJumpForwardTrigger  = "<c-j>"
 let g:UltiSnipsJumpBackwardTrigger = "<c-p>"
-let g:UltiSnipsListSnippets        = "<c-k>" "List possible snippets based on current file
+let g:UltiSnipsListSnippets        = "<c-k>"             "List possible snippets based on current file
 
-" python with virtualenv support
+"" python with virtualenv support
 py << EOF
 import os
 import sys
@@ -317,8 +344,7 @@ if 'VIRTUAL_ENV' in os.environ:
   execfile(activate_this, dict(__file__=activate_this))
 EOF
 
-
-" Django Settings
+"" Django Settings
 if filereadable($VIRTUAL_ENV . '/.vimrc')
          source $VIRTUAL_ENV/.vimrc
 endif
@@ -344,6 +370,7 @@ function! SuperCleverTab()
         endif
     endif
 endfunction
+
 let g:last_relative_dir = ''
 nnoremap \1 :call RelatedFile ("models.py")<cr>
 nnoremap \2 :call RelatedFile ("views.py")<cr>
@@ -353,6 +380,7 @@ nnoremap \5 :call RelatedFile ("tests.py")<cr>
 nnoremap \6 :call RelatedFile ( "templates/" )<cr>
 nnoremap \7 :call RelatedFile ( "templatetags/" )<cr>
 nnoremap \8 :call RelatedFile ( "management/" )<cr>
+nnoremap \T :e templates/<cr>
 nnoremap \0 :e settings.py<cr>
 nnoremap \9 :e urls.py<cr>
 
@@ -378,24 +406,19 @@ fun SetAppDir()
     endif
 endfun
 autocmd BufEnter *.py call SetAppDir()
+
 inoremap <Tab> <C-R>=SuperCleverTab()<cr>
     
-" Syntax Checking/Highlighting
-
-let python_highlight_all=1
-syntax on
-
- " }}}
+ "}}}
  
 
-" Java IDE Settings {{{
+" Java IDE Settings{{{
 
 let g:EclimCompletionMethod = 'omnifunc'
 
-" }}}
+"}}}
 
 
-" Organization {{{
-
+" Organization{{{
 set modelines=1
 " vim:foldmethod=marker:foldlevel=0

@@ -4,13 +4,13 @@
 " ==Darkness_Colorscheme_Settings==
 
 "StatusLine settings
-hi StatusLine             color: #ffffff; background: #000000; "font-size: 8pt;
-" hi StatusLineBroken     color: #000000; background: #afafff; "font-size: 8pt;
-" hi StatusLineSecure     color: #000000; background: #afffaf; "font-size: 8pt;
+hi StatusLine             color: #ffffff; background: #100f0d; "font-size: 8pt;
+" hi StatusLineBroken     color: #100f0d; background: #afafff; "font-size: 8pt;
+" hi StatusLineSecure     color: #100f0d; background: #afffaf; "font-size: 8pt;
 
 "CmdLine settings excluding Gradient
-hi Normal               color: #afafaf; background: #080808;
-hi CmdLine              background: #080808; color: #afafaf; font-size: 9pt;
+hi Normal               color: #afafaf; background: #100f0d;
+hi CmdLine              background: #100f0d; color: #afafaf; font-size: 9pt;
 hi CompDesc             color: #c6c6c6; width: 50%; font-size: 9pt;
 hi CompIcon             width: 16px; min-width: 16px; display: inline-block; margin-right: .5ex;
 hi CompItem[selected]   background: #101010; color: #afafaf; 
@@ -18,19 +18,19 @@ hi CompItem[selected]   background: #101010; color: #afafaf;
 " hi CompMore             text-align: center; height: .5ex; line-height: .5ex; margin-bottom: -.5ex;
 hi CompMsg              font-style: italic; margin-left: 16px;
 hi CompResult           width: 45%; overflow: hidden;font-size: 10pt; font-family: monospace; font-weight: normal;
-hi CompTitle            color: #afafaf; background: #080808; font-weight: bold;
+hi CompTitle            color: #afafaf; background: #100f0d; font-weight: bold;
 hi CompTitle>*          padding: 0 .5ex;
 hi Filter               font-weight: bold;color: #afafaf;
 
 "When using tab complete in CmdLine, line separating Title from function and description
 " hi Gradient             height: 1px; margin-bottom: -1px; margin-top: -1px;
 " hi GradientLeft         background-color: #00bbff;
-" hi GradientRight        background-color: #080808;
+" hi GradientRight        background-color: #100f0d;
 
 "Used with ]f and [f
-hi FrameIndicator       background-color: #080808; opacity: 0.5; z-index: 999; position: fixed; top: 0; bottom: 0; left: 0; right: 0;
+hi FrameIndicator       background-color: #100f0d; opacity: 0.5; z-index: 999; position: fixed; top: 0; bottom: 0; left: 0; right: 0;
 
-hi Bell                 border: 0 none; background-color: #080808;
+hi Bell                 border: 0 none; background-color: #100f0d;
 hi ErrorMsg             color: #ffffff; background: red; font-weight: bold;
 
 
@@ -39,26 +39,26 @@ hi ErrorMsg             color: #ffffff; background: red; font-weight: bold;
 hi Hint               	font-family: Sans; font-size: 10px; font-weight: bold; color: white; background-color: rgba(0, 0, 0, 0.5); border: solid 1px LightGray;
 hi Hint::after          content: attr(number);
 hi HintActive           background: blue; color: #f6e9e9;
-hi HintElem             background-color: #080808; color: #f6e9e9;
+hi HintElem             background-color: #100f0d; color: #f6e9e9;
 hi HintImage            opacity: .5;
 
 "Other important stuff
-hi InfoMsg              color: #afafaf; background: #080808;
+hi InfoMsg              color: #afafaf; background: #100f0d;
 hi Message              white-space: normal; min-width: 100%; padding-left: 2em; text-indent: -2em; display: block;
-hi WarningMsg           color: red; background: #080808;
-hi ModeMsg              color: #afafaf; background: #080808; "CmdLine when Not in Use
-hi MoreMsg              color: #afafaf; background: #080808;
+hi WarningMsg           color: red; background: #100f0d;
+hi ModeMsg              color: #afafaf; background: #100f0d; "CmdLine when Not in Use
+hi MoreMsg              color: #afafaf; background: #100f0d;
 hi NonText              color: lightblue; min-height: 16px; padding-left: 2px;
-hi Question             color: #ffffff; background: #080808; font-weight: bold;
-" hi Search               font-size: inherit; padding: 0; color: #080808; background-color: yellow; padding: 0;
-hi Function             color: lightgreen; background: #080808;
-hi Number               color: tan; background: #080808
-hi String               color: #080808; background: #afafaf;
-hi Tag                  color: #080808; background: #afafaf;
-hi Title                color: #080808; background: #afafaf; font-weight: bold;
+hi Question             color: #ffffff; background: #100f0d; font-weight: bold;
+" hi Search               font-size: inherit; padding: 0; color: #100f0d; background-color: yellow; padding: 0;
+hi Function             color: lightgreen; background: #100f0d;
+hi Number               color: tan; background: #100f0d
+hi String               color: #100f0d; background: #afafaf;
+hi Tag                  color: #100f0d; background: #afafaf;
+hi Title                color: #100f0d; background: #afafaf; font-weight: bold;
 hi URL                  text-decoration: none; color: lightblue; background: inherit;
 hi URL:hover            text-decoration: underline; cursor: pointer;
-hi LineNr               color: #afafaf; background: #080808;
+hi LineNr               color: #afafaf; background: #100f0d;
 
 "style -name statusbar chrome://* <<EOM
 "#status-bar statusbarpanel { padding: 0 1px !important; }

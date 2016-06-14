@@ -1,4 +1,4 @@
-own_window yes 
+own_window no
 own_window_type panel
 own_window_colour 100F0D
 own_window_transparent no
@@ -25,4 +25,4 @@ own_window_argb_value 0
 own_window_argb_visual no
 minimum_size 0 0
 TEXT
-${alignc}${color a6e22e} >> MohaBaks ${color 888888}- ${color f92672}Arch Linux ${color 888888} | ${color fd971f} Uptime ${color 888888} $uptime ${color 888888} | ${color ff669d}Kernel${color 888888} $kernel | ${color 87afd7} Mail: ${color 888888}${execi 300 python ~/scripts/gmail.py} ${color 888888} | ${color cc0000} Vol: ${color 888888} ${exec amixer -c 0 get Master | grep Mono: | cut -d " " -f6} | ${color ffaf5f}Cpu: ${color 888888}${cpu}% | ${color 00CBEE}Ram: ${color 888888}${mem} | ${color f92672}Home: ${color 888888}${font}${fs_free /} |  ${color 87af5f} Down: ${color 888888} ${downspeed enp2s0} Kb/s   | ${color EA8484} Up: ${color 888888} ${upspeed enp2s0} Kb/s | ${color 8787af}Bat: ${color 888888} ${battery_percent BAT1}% ${color 888888} | ${color 5f8787}Time: ${color 888888} ${time %r} ${color fd971f} - <<
+${alignc}${color a6e22e} >>    ${color 888888}- ${color f92672}Arch Linux ${color 888888} | ${color fd971f} Uptime ${color 888888} $uptime ${color 888888} | ${color ff669d}Kernel${color 888888} $kernel | ${color 87afd7} Mail: ${color 888888}${execi 300 python ~/scripts/gmail.py} ${color 888888} | ${color cc0000} Vol: ${color 888888} ${exec amixer -c 0 get Master | grep Mono: | cut -d " " -f6} | ${color ffaf5f}Cpu: ${color 888888}${cpu}% | ${color 00CBEE}Ram: ${color 888888}${mem} | ${color f92672}Home: ${color 888888}${font}${fs_free /} |  ${color 87af5f} Down: ${color 888888} ${downspeed enp2s0} Kb/s   | ${color EA8484} Up: ${color 888888} ${upspeed enp2s0} Kb/s | ${color 8787af}Bat: ${color 888888} ${battery_percent BAT1}% ${color 888888} | ${color 5f8787}Time: ${color 888888} ${time %r} ${color fd971f} - <<

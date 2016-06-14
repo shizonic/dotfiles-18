@@ -21,7 +21,7 @@ class Default(ColorScheme):
             if context.empty or context.error:
                 bg = 5
             if context.border:
-                fg = 8
+                fg = 234
             if context.media:
                 if context.image:
                     fg = red
@@ -57,7 +57,7 @@ class Default(ColorScheme):
                 attr |= bold
             if context.main_column:
                 if context.selected:
-                    # attr |= bold
+                    attr |= bold
                     fg = magenta
                 if context.marked:
                     attr |= bold
@@ -73,7 +73,7 @@ class Default(ColorScheme):
             if context.hostname:
                 fg = context.bad and red or yellow
             elif context.directory:
-                fg = green
+                fg = red
             elif context.tab:
                 if context.good:
                     bg = yellow

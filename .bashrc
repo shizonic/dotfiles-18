@@ -11,7 +11,7 @@ export BROWSER=luakit
 export TERM="rxvt-unicode-256color"
 export TZ=Africa/Nairobi
 
-#source $HOME/.vim/bundle/gruvbox/gruvbox_256palette.sh
+source $HOME/.vim/bundle/gruvbox/gruvbox_256palette.sh
 source virtualenvwrapper.sh
 #source ~/.shell_prompt.sh
 source ~/.git-prompt.sh
@@ -60,7 +60,7 @@ bakcyn='\e[46m'   # Cyan
 bakwht='\e[47m'   # White
 txtrst='\e[0m'    # Text Reset
 
-PS1='\[\e[0;35m\]>>> \[\e[0m\e[0;36m\] \W\[\e[0m\] $(__git_ps1 "\[\e[0;31m\]@\[\e[0m\]\[\e[0;33m\]\[\e[5m \]%s\[\e[25m\]\[\e[0m\]") \[\e[0;35m▲\e[0m\] '
+PS1='\[\e[1;30m\]>>> \[\e[0m\e[0;36m\] \W\[\e[0m\] $(__git_ps1 "\[\e[0;31m\]@\[\e[0m\]\[\e[0;33m\]\[\e[5m \]%s\[\e[25m\]\[\e[0m\]") \[\e[0;35m▲\e[0m\] '
 #PS1='\[\e[0;35m┌─▲\e[0m\e[0;36m \W\e[0m \e[0;31m▲\e[0m $(__git_ps1 "\e[0;34m\e[5m%s\e[25m\e[0m \e[0;36m☗\e[0m")\]\n\[\e[0;33m\]└─♦\[\e[0m\] '
 #PS1='\[\e[1;31m\]▲\e[0m\[\e[1;30m\] \[\e[0m\]\e[0;32m\W\[\e[1;33m\] ☗\[\e[1;34m\]\[\e[0m\]\[\e[m \]$(__git_ps1 "\e[0;33m\e[0m\[\e[1;30m\]\[\e[0m\]\e[0;34m\e[5m%s\e[25m\e[0m\e[1;35m\] ♦\[\e[1;37m\]") '
 #PS1="\[\e[01;31m\]┌─[\t]──[\[\e[01;31m\u\e[01;31m\]]──[\[\e[00;31m\]${HOSTNAME%%.*}\[\e[01;31m\]]:\w$\[\e[01;31m\]\n\[\e[01;37m\]└──\[\e[01;37m\](\[\e[32;1m\]\$(/bin/ls -1 | /usr/bin/wc -l | /bin/sed 's: ::g') files, \$(/usr/bin/ls -lah | /usr/bin/grep -m 1 total | /usr/bin/sed 's/total //')b\[\e[01;37m\])>>\[\e[0m\]"
@@ -77,7 +77,6 @@ alias vimrc='vim ~/.vimrc'
 alias bashrc='vim ~/.bashrc'
 alias xdefaults='vim ~/.Xdefaults'
 alias reload='source ~/.bashrc'
-alias xrdb='xrdb -merge ~/.Xdefaults && xrdb -load ~/.Xdefaults'
 alias htop='htop -u mohabaks'
 alias clock='tty-clock -csbBD -C 3'
 alias ls='ls --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto -hFX'
@@ -94,14 +93,26 @@ alias wifi_off="nmcli nm wifi off"
 
 
 #-----------------------------------------------------------------------
+#
+#                      MISC FUNCTIONS
+#-----------------------------------------------------------------------
+vman() {
+  vim -c "SuperMan $*"
+
+  if [ "$?" != "0" ]; then
+    echo "No manual entry for $*"
+  fi
+}
+
+#-----------------------------------------------------------------------
 #  
 #                      COLORS FOR MAN PAGES 
 #-----------------------------------------------------------------------
 
-export LESS_TERMCAP_mb=$'\e[0;34m'
-export LESS_TERMCAP_md=$'\e[0;31m'
+export LESS_TERMCAP_mb=$'\e[0;33m'
+export LESS_TERMCAP_md=$'\e[0;35m'
 export LESS_TERMCAP_me=$'\e[0m'
 export LESS_TERMCAP_se=$'\e[0m'
-export LESS_TERMCAP_so=$'\e[0;34;33m'
+export LESS_TERMCAP_so=$'\e[1;34;30m'
 export LESS_TERMCAP_ue=$'\e[0m'
-export LESS_TERMCAP_us=$'\e[0;35m'
+export LESS_TERMCAP_us=$'\e[0;31m'
