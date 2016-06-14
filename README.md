@@ -20,7 +20,7 @@ Dotfiles
 
 ## Screenshots
 
-![alt busy](https://raw.github.com/mohabaks/dotfiles/master/images/Busy.png)
+![alt](https://raw.github.com/mohabaks/dotfiles/master/images/Busy.png)
 
 
 
@@ -31,10 +31,7 @@ Link References
 [.colors]:https://github.com/mohabaks/dotfiles/tree/master/.colors
 [.i3]:https://github.com/mohabaks/dotfiles/tree/master/.i3
 [.conky]:https://github.com/mohabaks/dotfiles/tree/master/.conky
-<<<<<<< HEAD
-=======
 [.icons]:https://github.com/mohabaks/dotfiles/tree/master/.icons
->>>>>>> origin/master
 [.vim]:https://github.com/mohabaks/dotfiles/tree/master/.vim
 [.vimperator]:https://github.com/mohabaks/dotfiles/tree/master/.vimperator/colors
 [.vim]:https://github.com/mohabaks/dotfiles/tree/master/.vim/colors
