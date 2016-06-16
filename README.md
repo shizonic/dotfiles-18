@@ -5,7 +5,7 @@ Screenshots
 ![Clean](http://i.imgur.com/iT6Z0fL.png)
 
 #### Busy
-[ranger], htop, [ncmpcpp], pipes, [slurm] and [cava] in action.
+[ranger], htop, [ncmpcpp], pipes, slurm and [cava] in action.
 ![Busy](http://imgur.com/ijbZLqr.png)
 
 #### Browser
