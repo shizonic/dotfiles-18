@@ -4,7 +4,7 @@ Screenshots
 #### Clean
 ![Clean](http://i.imgur.com/iT6Z0fL.png)
 
-#### Core
+#### Busy
 [ranger], htop, [ncmpcpp], pipes, [slurm] and [cava] in action.
 ![Busy](http://imgur.com/ijbZLqr.png)
 
