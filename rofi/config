@@ -22,7 +22,7 @@ rofi.sidebar-mode:       true
 ! ------------------------------------------------------------------------------
 rofi.color-enabled:      true
 ! State                  'bg'     'fg'     'bgalt'  'hlbg'   'hlfg'
-rofi.color-normal:       #100f0d, #837e6a, #100f0d, #595548, #100f0d
+rofi.color-normal:       #100f0d, #837e6a, #100f0d, #44392f, #100f0d
 rofi.color-active:       #100f0d, #8787af, #100f0d, #100f0d, #8787af
 rofi.color-urgent:       #100f0d, #5f8787, #100f0d, #573627, #5f8787
 !                        'bg'     'bc'
