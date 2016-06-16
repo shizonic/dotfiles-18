@@ -1,0 +1,11 @@
+@define-color white #89816a;
+@define-color slate #100f0d;
+@define-color dkgray #89816a;
+@define-color gray #89816a;
+@define-color silver #555555;
+@define-color grey #101010;
+@define-color dkgrey #222222;
+@define-color black #1a1a1a;
+@define-color transparent rgba (0, 0, 0, 0);
+
+@import url("gtk-widgets.css");
