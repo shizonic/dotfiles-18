@@ -92,7 +92,7 @@ set background=dark
 colorscheme autumn
 
 "" Status line
-set t_Co=256 " 16, 18, and 256
+set t_Co=16 " 16, 18, and 256
 "set laststatus=2 
 let g:lightline = {
       \ 'colorscheme': 'autumn',
@@ -142,6 +142,7 @@ nnoremap <C-H> <C-W><C-H>
 " UI Config {{{
 
 "" These are options that changes random visuals in Vim
+syntax on
 set number                       " show line numbers
 set showcmd                      " show command in bottom bar
 set tw=79                        " width of document (used by gd)
@@ -309,7 +310,6 @@ autocmd FileType python set ts=4
 autocmd FileType python set sts=4
 
 "" enable all Python syntax highlighting feautures
-syntax on
 let python_highlight_all = 1
 
 "" omnicompletion functions
