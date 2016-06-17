@@ -71,7 +71,7 @@ PS1='\[\e[1;30m\]>>> \[\e[0m\e[0;36m\] \W\[\e[0m\] $(__git_ps1 "\[\e[0;31m\]@\[\
 #                           ALIASES
 #-----------------------------------------------------------------------
 
-alias dotfiles='cd ~/dotfiles/'
+alias dotfiles='cd ~/Repositories/dotfiles/'
 alias i3config='vim ~/.i3/config'
 alias vimrc='vim ~/.vimrc'
 alias bashrc='vim ~/.bashrc'
