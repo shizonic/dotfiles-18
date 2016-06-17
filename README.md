@@ -7,7 +7,7 @@ Screenshots
 #### Dirty
 ![Busy](http://imgur.com/ijbZLqr.png)
 
-[Old rices]
+[Previous]
 
 
-[Old rices]:http://imgur.com/a/LPyKb
+[Previous]:http://imgur.com/a/LPyKb
