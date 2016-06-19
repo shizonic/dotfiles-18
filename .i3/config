@@ -79,7 +79,7 @@ set $w4   4:medi
 set $w5   5:core
 set $w6   6:term
 set $w7   7:conf
-set $w8   8:chat
+set $w8   8:soci
 set $w9   9:netw
 set $w10  10:misc
 

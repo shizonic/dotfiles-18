@@ -1,4 +1,4 @@
-" autumn Vim colorscheme
+" pare Vim colorscheme
 " Author: mohabaks
 " Github: https://github.com/mohabaks/dotfiles/
 " SpecialThanks: https://github.com/ggalindezb/Vim-Colorscheme-Template
@@ -14,7 +14,7 @@ highlight clear
 if exists("syntax_on")
     syntax reset
 endif
-let g:colors_name="autumn"
+let g:colors_name="pare"
 
 "----------------------------------------------------------------
 " General settings                                              |

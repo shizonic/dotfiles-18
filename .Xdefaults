@@ -102,4 +102,4 @@ Xcursor.theme:             Paper
 !URxvt.pointerBlank:        true
 
 !! Colors
-#include "/home/mohabaks/.colors/autumn"
+#include "/home/mohabaks/.colors/pare"
