@@ -6,8 +6,3 @@ Screenshots
 
 #### Dirty
 ![Busy](http://imgur.com/ijbZLqr.png)
-
-[Previous]
-
-
-[Previous]:http://imgur.com/a/LPyKb
