@@ -2,7 +2,7 @@
 " 
 "           Github:https://github.com/mohabaks/dotfiles
 "           SpecialThanks:https://github.com/dougblack/dotfiles/.vimrc
-"           This config is a modification of dougblack.
+"          
 "
 "**********************************************************************
 python << EOF
@@ -89,13 +89,13 @@ filetype plugin indent on    " required
 " Set Colorscheme and Statusline{{{
 
 set background=dark
-colorscheme autumn
+colorscheme pare
 
 "" Status line
 set t_Co=16 " 16, 18, and 256
 "set laststatus=2 
 let g:lightline = {
-      \ 'colorscheme': 'autumn',
+      \ 'colorscheme': 'pare',
       \ }
       
 "" Vim-airline
