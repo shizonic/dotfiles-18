@@ -1,16 +1,16 @@
 !=======================================================================
 !                  Author: mohabaks
 !                  Github: https://github.com/mohabaks/dotfiles/
-!                  Description: autumn colorscheme
+!                  Description: pare colorscheme
 !=======================================================================
 
 ! special
 *.foreground:   #817d71
-*.background:   #100f0d
+*.background:   #0A0908
 *.cursorColor:  #817d71
 
 ! black
-*.color0:       #100f0d
+*.color0:       #0A0908
 *.color8:       #414e54
 
 ! red
@@ -30,12 +30,12 @@
 *.color12:      #44392f
 
 ! magenta
-*.color5:       #595548
-*.color13:      #595548
+*.color5:       #35332b
+*.color13:      #35332b
 
 ! cyan
-*.color6:       #7c6f4f
-*.color14:      #7c6f4f
+*.color6:       #595548
+*.color14:      #595548
 
 ! white
 *.color7:       #817d71
