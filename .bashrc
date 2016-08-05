@@ -9,9 +9,10 @@ export PATH=$HOME/scripts:$PATH
 export EDITOR=vim
 export BROWSER=luakit
 export TERM="rxvt-unicode-256color"
+export YAOURT_COLORS="nb=1:pkg=1:ver=1;32:lver=1;45:installed=1;42:grp=1;34:od=1;41;5:votes=1;44:dsc=0:other=1;35"
 export TZ=Africa/Nairobi
 
-source $HOME/.vim/bundle/gruvbox/gruvbox_256palette.sh
+
 source virtualenvwrapper.sh
 #source ~/.shell_prompt.sh
 source ~/.git-prompt.sh
