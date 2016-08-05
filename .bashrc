@@ -5,7 +5,7 @@
 #***********************************************************************
 
 export PROJECT_HOME=$HOME/Code/Projects/
-export PATH=$HOME/scripts:$PATH
+export PATH=$HOME/.bin:$PATH
 export EDITOR=vim
 export BROWSER=luakit
 export TERM="rxvt-unicode-256color"
