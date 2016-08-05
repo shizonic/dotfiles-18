@@ -28,13 +28,13 @@ xthickness = 1
 	fg[SELECTED]      	= "#89816a" # Metacity X when window selected
 	fg[INSENSITIVE]   	= "#222222" # Insensitive Text
 
-	bg[NORMAL]	  	= "#100f0d" # Normal Background, inactive Metacity bar, buttons
+	bg[NORMAL]	  	= "#0A0908" # Normal Background, inactive Metacity bar, buttons
 	bg[PRELIGHT]	  	= "#282828" # Mouseover buttons
 	bg[ACTIVE]	  	= "#1a1a1a" # Mouseclicking, Tabs, active window list
 	bg[SELECTED]	        = "#707070" # Metacity Bar
 	bg[INSENSITIVE]   	= "#1a1a1a" # Insensitive buttons
 	
-	base[NORMAL]	= "#100f0d" # Background, most
+	base[NORMAL]	= "#0A0908" # Background, most
 	base[PRELIGHT]	= "#1a1a1a" # Mouseover menu
 	base[ACTIVE]	  	= "#1a1a1a" # Menu active item in inactive window
 	base[SELECTED]	= "#1a1a1a" # Menu active item in active window
@@ -89,7 +89,7 @@ style "theme-entry" = "theme-wider"
 style "theme-button" = "theme-wider"
 {
   bg[NORMAL]        = "#222222"
-  bg[ACTIVE]      = "#100f0d"
+  bg[ACTIVE]      = "#0A0908"
  }
 
 style "theme-notebook" = "theme-wide"
@@ -107,7 +107,7 @@ style "theme-menu" = "theme-default"
 {
   xthickness = 2
   ythickness = 1
- bg[NORMAL] = "#100f0d" 
+ bg[NORMAL] = "#0A0908" 
 }
 
 style "theme-menu-item" = "theme-default"
@@ -120,7 +120,7 @@ style "theme-menu-item" = "theme-default"
 
 style "theme-menubar" = "theme-default"
 {
-  bg[NORMAL] = "#100f0d"
+  bg[NORMAL] = "#0A0908"
 }
 
 style "theme-menubar-item"
@@ -151,7 +151,7 @@ style "theme-progressbar" = "theme-wide"
 {
   xthickness = 1
   ythickness = 1
-  fg[PRELIGHT]  = "#100f0d"
+  fg[PRELIGHT]  = "#0A0908"
 }
 
 style "theme-combo" = "theme-button"
