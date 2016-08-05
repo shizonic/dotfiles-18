@@ -230,7 +230,7 @@ client.urgent             #595548   #595548       #ca814c   #C0C0C0
 
 # Start i3bar to display a workspace bar
 bar {
-          status_command  $HOME/scripts/conkyi3.sh
+          status_command  $HOME/.bin/conkyi3.sh
           position top
           font xft:tewi, FontAwesome 8
           strip_workspace_numbers yes
