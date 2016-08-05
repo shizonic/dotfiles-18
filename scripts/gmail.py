@@ -6,9 +6,10 @@
 ########################################################################
 
 from urllib.request import FancyURLopener
+from account import accounts
 
-email = 'yourmailhere' # @gmail.com can be left out
-password  = 'yourpasswordhere'
+email =  accounts.student_email # @gmail.com can be left out
+password  =  accounts.student_pass
 
 url = 'https://%s:%s@mail.google.com/mail/feed/atom' % (email, password)
 
