@@ -79,7 +79,7 @@ set $w4   4:medi
 set $w5   5:core
 set $w6   6:term
 set $w7   7:conf
-set $w8   8:soci
+set $w8   8:irc/feeds
 set $w9   9:netw
 set $w10  10:misc
 
@@ -147,7 +147,7 @@ bindsym $mod+minus scratchpad show
 
 #  i3-gaps settings 
 #  More info visit: https://github.com/Airblader/i3
-#smart_gaps on     # when only one container is in use no_gaps
+smart_gaps on     # when only one container is in use no_gaps
 smart_borders on  # no borders when one app is in use
 set $mode_gaps Gaps: (o) outer, (i) inner
 set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
@@ -220,15 +220,12 @@ bindsym Print exec scrot -e 'mv $f ~/Pictures/screenshots'
 
 # My apps shortcut
 bindsym $mod+p exec pcmanfm 
-bindsym $mod+b exec luakit
+bindsym $mod+b exec torify luakit
 
-# Colors themes ( to match my mywood Xresources colors)
-# Currently am using i3-style to switch to different colors.
-# https://github.com/acrisci/i3-style
 # Window colors           border    background    text      indicator
-client.focused            #44392f   #44392f       #100f0d   #ffaf5f
-client.focused_inactive   #1b1b1b   #1b1b1b       #414e54   #101010
-client.unfocused          #1b1b1b   #1b1b1b       #817d71   #101010
+client.focused            #44392f   #44392f       #000000   #ffaf5f
+client.focused_inactive   #1a1b1e   #1a1b1e       #414e54   #101010
+client.unfocused          #1a1b1e   #1a1b1e       #817d71   #101010
 client.urgent             #595548   #595548       #ca814c   #C0C0C0
 
 # Start i3bar to display a workspace bar
@@ -239,15 +236,15 @@ bar {
           strip_workspace_numbers yes
           
           colors {
-              separator          #1b1b1b
-              background         #100f0d
+              separator          #161615
+              background         #0A0908
               statusline         #111111
               
               # Bar colors       border    background    text 
-              focused_workspace  #44392f   #44392f       #100f0d
+              focused_workspace  #44392f   #44392f       #000000
               active_workspace   #595548   #595548       #ca814c
-              inactive_workspace #1b1b1b   #1b1b1b       #817d71
-              urgent_workspace   #573627   #573627       #100f0d 
+              inactive_workspace #0A0908   #0A0908       #817d71
+              urgent_workspace   #573627   #573627       #000000 
          }
 }
 
@@ -261,8 +258,8 @@ exec --no-startup-id nitrogen --restore
 #exec --no-startup-id $HOME/.conky/conky-startup.sh
 
 # Set per-application border
-for_window [class="^.*"] border pixel 3
-for_window [class="(?i)urxvt"] border pixel 3
+for_window [class="^.*"] border pixel 5
+for_window [class="(?i)urxvt"] border pixel 5
 
 # Global gaps size
 gaps inner 5
