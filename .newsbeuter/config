@@ -49,7 +49,7 @@ ignore-mode "display"
 
 articlelist-format "%4i %f %D  %?T?|%-17T| ?%t"
 
-highlight feedlist    "^  *[0-9]+  *N  "                    red      default
+highlight feedlist    "^  *[0-9]+  *N  "                    green      default
 highlight articlelist "^  *[0-9]+  *N  "                    green    white
 
 highlight article     "(^Feed:.*|^Title:.*|^Author:.*)"     green    default

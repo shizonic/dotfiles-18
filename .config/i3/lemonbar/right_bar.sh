@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# mohabaks,  
-# https://github.com/mohabaks
-# Right panel for lemonbar.
 
 source $HOME/.config/i3/lemonbar/config.sh
 

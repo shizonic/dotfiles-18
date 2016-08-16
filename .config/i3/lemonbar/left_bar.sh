@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# mohabaks,  
-# https://github.com/mohabaks
-# left panel for lemonbar;specifical for current workspace.
-
 source $HOME/.config/i3/lemonbar/config.sh
 
 # Panel 
