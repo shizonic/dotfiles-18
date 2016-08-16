@@ -44,11 +44,11 @@ URxvt*scrollTtyKeypress: true
 !URxvt*italicFont:       xft:Droid Sans Mono for Powerline:italic:autohint=true:size=8
 !URxvt*boldItalicFont:   xft:Droid Sans Mono for Powerline:bolditalic:italic:autohint=true:size=8
 
-! Tamsyn
-URxvt*font:              xft:Tamsyn:size=8, xft:DejaVu Sans Mono for Powerline:size=8:autohint=true
-URxvt*boldFont:          xft:Tamsyn:normal:size=8
-URxvt*italicFont:        xft:Tamsyn:italic:autohint=true:size=8
-URxvt*boldItalicFont:    xft:Tamsyn:bolditalic:italic:autohint=true:size=8
+! Tewi
+URxvt*font:              -*-tewi-medium-r-*-*-11-*-*-*-*-*-iso10646-*
+URxvt*boldFont:          xft:tewi:normal:size=8
+URxvt*italicFont:        xft:tewi:italic:autohint=true:size=8
+URxvt*boldItalicFont:    xft:tewi:bolditalic:italic:autohint=true:size=8
 
 URxvt.letterSpace:       true
 
@@ -79,7 +79,7 @@ URxvt.keysym.M-u: perl:     url-select:select_next
 URxvt.url-select.autocopy:  true
 URxvt.url-select.button:    2
 URxvt.url-select.underline: true
-URxvt.url-launcher:         /usr/bin/luakit
+URxvt.url-launcher:         /usr/bin/qutebrowser
 URxvt.matcher.button:       1
 
 !! CopyPaste Keys
@@ -95,11 +95,11 @@ URxvt.iso14755_52:         false
 !URxvt.cursorUnderline:    false
 !URxvt.cursorColor:        #c5c8c6
 !URxvt.borderColor:        #101010
-!URxvt.colorUL:            #c5c8c6
+URxvt.colorUL:             #d0d0d0
 Xcursor.theme:             Paper
 
 !! Pointer
 !URxvt.pointerBlank:        true
 
 !! Colors
-#include "/home/mohabaks/.colors/pare"
+#include "/home/mohabaks/.colors/fallen"

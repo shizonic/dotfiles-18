@@ -6,10 +6,10 @@
 
 export PROJECT_HOME=$HOME/Code/Projects/
 export PATH=$HOME/.bin:$PATH
+export RANGER_LOAD_DEFAULT_RC=FALSE
 export EDITOR=vim
-export BROWSER=luakit
+export BROWSER=qutebrowser
 export TERM="rxvt-unicode-256color"
-export YAOURT_COLORS="nb=1:pkg=1:ver=1;32:lver=1;45:installed=1;42:grp=1;34:od=1;41;5:votes=1;44:dsc=0:other=1;35"
 export TZ=Africa/Nairobi
 
 
@@ -61,7 +61,7 @@ bakcyn='\e[46m'   # Cyan
 bakwht='\e[47m'   # White
 txtrst='\e[0m'    # Text Reset
 
-PS1='\[\e[1;30m\]┌─\e[0m\e[34m[\[\e[0m\e[0;36m\] \w\[\e[0m\] \e[34m]\e[0m $(__git_ps1 "\[\e[0;31m\]@\[\e[0m\]\[\e[0;33m\]\[\e[5m \]%s\[\e[25m\]\[\e[0m\]")\n└─\[\e[0;35m>\e[0m\] '
+PS1='\[\e[1;37m\]┌─\e[0m\e[34m[\[\e[0m\e[0;33m\] \w\[\e[0m\] \e[34m]\e[0m $(__git_ps1 "\[\e[0;31m\]@\[\e[0m\]\[\e[1;32m\]\[\e[5m \]%s\[\e[25m\]\[\e[0m\]")\n└─>\[\e[0m\] '
 
 #-----------------------------------------------------------------------
 #                                           
@@ -69,12 +69,15 @@ PS1='\[\e[1;30m\]┌─\e[0m\e[34m[\[\e[0m\e[0;36m\] \w\[\e[0m\] \e[34m]\e[0m $(
 #-----------------------------------------------------------------------
 
 alias dotfiles='cd ~/Repositories/dotfiles/'
-alias i3config='vim ~/.i3/config'
+alias i3config='vim ~/.config/i3/config'
 alias vimrc='vim ~/.vimrc'
 alias bashrc='vim ~/.bashrc'
 alias xdefaults='vim ~/.Xdefaults'
 alias reload='source ~/.bashrc'
 alias htop='htop -u mohabaks'
+alias projects='cd ~/Code/Projects/'
+alias blog='cd ~/Code/MyBlog/'
+alias code='cd ~/Code'
 alias clock='tty-clock -csbBD -C 3'
 alias ls='ls --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto -hFX'
 alias ll='ls -l --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto -F'
@@ -106,10 +109,10 @@ vman() {
 #                      COLORS FOR MAN PAGES 
 #-----------------------------------------------------------------------
 
-export LESS_TERMCAP_mb=$'\e[0;33m'
-export LESS_TERMCAP_md=$'\e[0;34m'
+export LESS_TERMCAP_mb=$'\e[0;34m'
+export LESS_TERMCAP_md=$'\e[0;32m'
 export LESS_TERMCAP_me=$'\e[0m'
 export LESS_TERMCAP_se=$'\e[0m'
-export LESS_TERMCAP_so=$'\e[1;34;30m'
+export LESS_TERMCAP_so=$'\e[1;34;37m'
 export LESS_TERMCAP_ue=$'\e[0m'
-export LESS_TERMCAP_us=$'\e[0;31m'
+export LESS_TERMCAP_us=$'\e[0;33m'

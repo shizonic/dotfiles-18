@@ -5,7 +5,7 @@
 # ----------------------------------------------------------------------
 
 auto-reload yes
-browser w3m
+browser luakit
 cleanup-on-quit yes
 download-path "/home/mohabaks/Downloads/podcasts"
 feed-sort-order title-dec
@@ -49,20 +49,20 @@ ignore-mode "display"
 
 articlelist-format "%4i %f %D  %?T?|%-17T| ?%t"
 
-highlight feedlist    "^  *[0-9]+  *N  "                    color8   default
-highlight articlelist "^  *[0-9]+  *N  "                    red      default
+highlight feedlist    "^  *[0-9]+  *N  "                    red      default
+highlight articlelist "^  *[0-9]+  *N  "                    green    white
 
-highlight article     "(^Feed:.*|^Title:.*|^Author:.*)"     blue     default
-highlight article     "(^Link:.*|^Date:.*)"                 magenta  default
-highlight article     "^Podcast Download URL:.*"            cyan     default
-highlight article     "^Links:"                             color8   black    underline
-highlight article     "\\[[0-9][0-9]*\\]"                   white    default  bold
+highlight article     "(^Feed:.*|^Title:.*|^Author:.*)"     green    default
+highlight article     "(^Link:.*|^Date:.*)"                 white    default
+highlight article     "^Podcast Download URL:.*"            red      default
+highlight article     "^Links:"                             red      black    underline
+highlight article     "\\[[0-9][0-9]*\\]"                   magenta  default  bold
 highlight article     "\\[image [0-9][0-9]*\\]"             red      default  bold
-highlight article     "\\[embedded flash: [0-9][0-9]*\\]"   cyan     default  bold
-highlight article     ":.*\\(link\\)$"                      color8   default
-highlight article     ":.*\\(image\\)$"                     color6   default
-highlight article     ":.*\\(embedded flash\\)$"            color4   default
+highlight article     "\\[embedded flash: [0-9][0-9]*\\]"   green    default  bold
+highlight article     ":.*\\(link\\)$"                      color6   default
+highlight article     ":.*\\(image\\)$"                     color15  default
+highlight article     ":.*\\(embedded flash\\)$"            color9   default
 
-color listnormal                                            white    default
-color listfocus                                             black    blue
-color info                                                  white    color234
+color listnormal                                            color4   color8
+color listfocus                                             color8   color15
+color info                                                  color12  color00

@@ -6,10 +6,10 @@
 ########################################################################
 
 from urllib.request import FancyURLopener
-from account import accounts
+from accounts import accounts
 
-email =  accounts.student_email # @gmail.com can be left out
-password  =  accounts.student_pass
+email = accounts.student_email  # @gmail.com can be left out
+password = accounts.student_pass
 
 url = 'https://%s:%s@mail.google.com/mail/feed/atom' % (email, password)
 
@@ -19,7 +19,7 @@ page = opener.open(url)
 contents = page.read().decode('utf-8')
 
 ifrom = contents.index('<fullcount>') + 11
-ito   = contents.index('</fullcount>')
+ito = contents.index('</fullcount>')
 
 fullcount = contents[ifrom:ito]
 

@@ -16,41 +16,41 @@ style "theme-default"
   GtkTreeView    ::expander_size     = 14
   GtkExpander    ::expander_size     = 16
   GtkScale       ::slider-length     = 24
-  GtkWidget::cursor_color           		= "#ffffff"
-  GtkWidget::secondary_cursor_color 	= "#ffffff"
+  GtkWidget::cursor_color           		= "#808080"
+  GtkWidget::secondary_cursor_color 	= "#808080"
   
 xthickness = 1
   ythickness = 1
 
  	fg[NORMAL]		= "#BFBFBF" # Metacity and mouseover, Most text
-	fg[PRELIGHT]      	= "#d7d7d7" # Text when mouseover
-	fg[ACTIVE]	  	= "#89816a" # Text when mouseclicking button, Tabs, Active window list
-	fg[SELECTED]      	= "#89816a" # Metacity X when window selected
-	fg[INSENSITIVE]   	= "#222222" # Insensitive Text
+	fg[PRELIGHT]      	= "#32343a" # Text when mouseover
+	fg[ACTIVE]	  	= "#808080" # Text when mouseclicking button, Tabs, Active window list
+	fg[SELECTED]      	= "#808080" # Metacity X when window selected
+	fg[INSENSITIVE]   	= "#808080" # Insensitive Text
 
-	bg[NORMAL]	  	= "#0A0908" # Normal Background, inactive Metacity bar, buttons
-	bg[PRELIGHT]	  	= "#282828" # Mouseover buttons
-	bg[ACTIVE]	  	= "#1a1a1a" # Mouseclicking, Tabs, active window list
-	bg[SELECTED]	        = "#707070" # Metacity Bar
-	bg[INSENSITIVE]   	= "#1a1a1a" # Insensitive buttons
+	bg[NORMAL]	  	= "#020202" # Normal Background, inactive Metacity bar, buttons
+	bg[PRELIGHT]	  	= "#0d0c0c" # Mouseover buttons
+	bg[ACTIVE]	  	= "#080808" # Mouseclicking, Tabs, active window list
+	bg[SELECTED]	        = "#35332b" # Metacity Bar
+	bg[INSENSITIVE]   	= "#1e1d1d" # Insensitive buttons
 	
-	base[NORMAL]	= "#0A0908" # Background, most
-	base[PRELIGHT]	= "#1a1a1a" # Mouseover menu
-	base[ACTIVE]	  	= "#1a1a1a" # Menu active item in inactive window
-	base[SELECTED]	= "#1a1a1a" # Menu active item in active window
+	base[NORMAL]	= "#020202" # Background, most
+	base[PRELIGHT]	= "#1e1d1d" # Mouseover menu
+	base[ACTIVE]	  	= "#1e1d1d" # Menu active item in inactive window
+	base[SELECTED]	= "#1e1d1d" # Menu active item in active window
 	base[INSENSITIVE] 	= "#323232" # Background, insensitive
 	
-	text[NORMAL]	  	= "#89816a" # Text in window
-	text[PRELIGHT]	= "#d7d7d7" # Text on Mouseover
-	text[ACTIVE]	  	= "#89816a" # Active text in inactive window
-	text[SELECTED]    	= "#d7d7d7" # Active text in active window
-	text[INSENSITIVE] 	= "#89816a" # Unknown
+	text[NORMAL]	  	= "#808080" # Text in window
+	text[PRELIGHT]	= "#32343a" # Text on Mouseover
+	text[ACTIVE]	  	= "#808080" # Active text in inactive window
+	text[SELECTED]    	= "#32343a" # Active text in active window
+	text[INSENSITIVE] 	= "#808080" # Unknown
 
   
   engine "murrine" 
   {
 	menuitemstyle = 0 # 0 = flat, 1 = glassy, 2 = striped
-#	scrollbar_color = "#707070"
+#	scrollbar_color = "#35332b"
 	scrollbarstyle = 0
 	contrast = 1.0
 	menustyle = 0
@@ -88,8 +88,8 @@ style "theme-entry" = "theme-wider"
 
 style "theme-button" = "theme-wider"
 {
-  bg[NORMAL]        = "#222222"
-  bg[ACTIVE]      = "#0A0908"
+  bg[NORMAL]        = "#101010"
+  bg[ACTIVE]      = "#020202"
  }
 
 style "theme-notebook" = "theme-wide"
@@ -107,26 +107,26 @@ style "theme-menu" = "theme-default"
 {
   xthickness = 2
   ythickness = 1
- bg[NORMAL] = "#0A0908" 
+ bg[NORMAL] = "#020202" 
 }
 
 style "theme-menu-item" = "theme-default"
 {
   ythickness = 2
-    fg[PRELIGHT] = "#d7d7d7"
-  text[PRELIGHT] = "#d7d7d7"
-  bg[SELECTED] = "#323232" 
+    fg[PRELIGHT] = "#020202"
+  text[PRELIGHT] = "#020202"
+  bg[SELECTED] = "#b31010" 
 }
 
 style "theme-menubar" = "theme-default"
 {
-  bg[NORMAL] = "#0A0908"
+  bg[NORMAL] = "#020202"
 }
 
 style "theme-menubar-item"
 {
 	ythickness = 4
-	bg[PRELIGHT] = "#323232"
+	bg[PRELIGHT] = "#808080"
 }
 
 style "theme-tree" = "theme-default"
@@ -137,7 +137,7 @@ style "theme-tree" = "theme-default"
 
 style "theme-frame-title" = "theme-default"
 {
-  fg[NORMAL] = "#89816a"
+  fg[NORMAL] = "#808080"
 }
 
 style "theme-tooltips" = "theme-default"
@@ -151,7 +151,7 @@ style "theme-progressbar" = "theme-wide"
 {
   xthickness = 1
   ythickness = 1
-  fg[PRELIGHT]  = "#0A0908"
+  fg[PRELIGHT]  = "#020202"
 }
 
 style "theme-combo" = "theme-button"
