@@ -2,7 +2,7 @@ Screenshots
 ===========
 
 #### Current
-![Clean]( https://i.imgur.com/bkoORas.png)
+![Clean]( http://imgur.com/a/p1aHB)
 
 #### Old
 ![Busy](http://imgur.com/ijbZLqr.png)
