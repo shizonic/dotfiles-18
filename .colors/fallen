@@ -16,20 +16,20 @@
 *.color10:      #299156
 
 ! yellow
-*.color3:       #2f2f2f
-*.color11:      #2f2f2f
+*.color3:       #333333
+*.color11:      #333333
 
 ! blue
-*.color4:       #464646
-*.color12:      #464646
+*.color4:       #555555
+*.color12:      #555555
 
 ! magenta
-*.color5:       #5d5d5d
-*.color13:      #5d5d5d
+*.color5:       #299156
+*.color13:      #299156
 
 ! cyan
-*.color6:       #747474
-*.color14:      #747474
+*.color6:       #999999
+*.color14:      #999999
 
 ! white
 *.color7:       #8b8b8b
