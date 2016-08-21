@@ -5,7 +5,7 @@
 set adjust_open width
 set width 636
 set height 382
-set font "Tamsyn 8"
+set font "tewi 8"
 set show_inputbar false
 
 
@@ -38,7 +38,7 @@ set notification-bg             "#2d2a2a" #0B
 set notification-fg             "#000003" #00
 
 set recolor-lightcolor          "#020202" #00
-set recolor-darkcolor           "#8e8e8e" 
+set recolor-darkcolor           "#8b8b8b" 
 set recolor                     "true"
 
 # setting recolor-keep true will keep any color your pdf has.
