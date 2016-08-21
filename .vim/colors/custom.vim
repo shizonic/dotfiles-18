@@ -26,7 +26,7 @@ let g:colors_name="custom"
 " --------------------------------
 " Editor settings
 " --------------------------------
-hi Normal          ctermfg=06      ctermbg=08      cterm=none
+hi Normal          ctermfg=04      ctermbg=08      cterm=none
 hi Cursor          ctermfg=07      ctermbg=none    cterm=none
 hi CursorLine      ctermfg=07      ctermbg=00      cterm=none
 hi LineNr          ctermfg=235     ctermbg=00      cterm=none
@@ -158,7 +158,7 @@ hi SpellRare       ctermfg=02     ctermbg=none    cterm=none
 " Specific settings                                                 |
 "-------------------------------------------------------------------
 " PYTHON
-hi pythonInclude         ctermfg=04     ctermbg=none     cterm=none
+hi pythonInclude         ctermfg=09     ctermbg=none     cterm=none
 hi pythonRepeat          ctermfg=01     ctermbg=none     cterm=none
 hi pythonConditional     ctermfg=02     ctermbg=none     cterm=none
 hi pythonBuiltinObj      ctermfg=06     ctermbg=none     cterm=none
