@@ -24,67 +24,67 @@ TEXT
 # Mpd
 {"full_text":"","color":"\#d0d0d0","separator":false,"separator_block_width":6},\
 {"full_text":"${if_mpd_playing}"},\
-{"full_text":"${scroll 30 ${mpd_title}}","color":"\#464646","background":"\#101010","separator":false,"separator_block_width":6},\
+{"full_text":"${scroll 30 ${mpd_title}}","color":"\#839496","background":"\#080808","separator":false,"separator_block_width":6},\
 {"full_text":"${else}"},\
-{"full_text":"..:: MPD not running ::..","color":"\#464646","background":"\#101010","separator":false,"separator_block_width":6},\
+{"full_text":"..:: MPD not running ::..","color":"\#839496","background":"\#080808","separator":false,"separator_block_width":6},\
 {"full_text":"${endif}"},\
 
 # Mail
-{"full_text":"  ","color":"\#d0d0d0","separator":false,"separator_block_width":6},\
-{"full_text":"${execi 300 python ~/.bin/gmail.py} ","color":"\#464646","background":"\#101010","separator":false,"separator_block_width":6},\
+{"full_text":"  ","color":"\#299156","separator":false,"separator_block_width":6},\
+{"full_text":"${execi 300 python ~/.bin/gmail.py} ","color":"\#839496","background":"\#080808","separator":false,"separator_block_width":6},\
 
 # Finds current volume. May need modified depending on your setup"
 {"full_text":"  ","color":"\#d0d0d0","separator":false,"separator_block_width":6},\
-{"full_text":"${exec amixer -c 0 get Master | grep Mono: | cut -d " " -f6} ","color":"\#464646","background":"\#101010","separator":false,"separator_block_width":0},\
+{"full_text":"${exec amixer -c 0 get Master | grep Mono: | cut -d " " -f6} ","color":"\#839496","background":"\#080808","separator":false,"separator_block_width":0},\
 
 # Brighness
-{"full_text":"  ","color":"\#d0d0d0","separator":false,"separator_block_width":6},\
-{"full_text":"${exec xbacklight| awk '{printf("%d\n",$1 + 0.5)}'}% ","color":"\#464646","background":"\#101010","separator":false,"separator_block_width":0},\
+{"full_text":"  ","color":"\#299156","separator":false,"separator_block_width":6},\
+{"full_text":"${exec xbacklight| awk '{printf("%d\n",$1 + 0.5)}'}% ","color":"\#839496","background":"\#080808","separator":false,"separator_block_width":0},\
 
 # Download
 {"full_text":"  ","color":"\#d0d0d0","separator":false,"separator_block_width":6},\
-{"full_text":"${if_match ${downspeedf enp2s0}<100}${downspeed enp2s0}","color":"\#747474","background":"\#101010","separator":false,"separator_block_width":6},\
+{"full_text":"${if_match ${downspeedf enp2s0}<100}${downspeed enp2s0}","color":"\#839496","background":"\#080808","separator":false,"separator_block_width":6},\
 {"full_text":"${else}"},\
-{"full_text":"${if_match ${downspeedf enp2s0}<300}${downspeed enp2s0}","color":"\#181818","background":"\#101010","separator":false,"separator_block_width":6},\
+{"full_text":"${if_match ${downspeedf enp2s0}<300}${downspeed enp2s0}","color":"\#181818","background":"\#080808","separator":false,"separator_block_width":6},\
 {"full_text":"${else}"},\
-{"full_text":"${if_match ${downspeedf enp2s0}<700}${downspeed enp2s0}","color":"\#2f2f2f","background":"\#101010","separator":false,"separator_block_width":6},\
+{"full_text":"${if_match ${downspeedf enp2s0}<700}${downspeed enp2s0}","color":"\#2f2f2f","background":"\#080808","separator":false,"separator_block_width":6},\
 {"full_text":"${else}"},\
-{"full_text":"${if_match ${downspeedf enp2s0}<1000}${downspeed enp2s0}","color":"\#464646","background":"\#101010","separator":false,"separator_block_width":6},\
+{"full_text":"${if_match ${downspeedf enp2s0}<1000}${downspeed enp2s0}","color":"\#839496","background":"\#080808","separator":false,"separator_block_width":6},\
 {"full_text":"${else}"},\
-{"full_text":"${if_match ${downspeedf enp2s0}>=1000}${downspeed enp2s0}","color":"\#d0d0d0","background":"\#101010","separator":false,"separator_block_width":6},\
+{"full_text":"${if_match ${downspeedf enp2s0}>=1000}${downspeed enp2s0}","color":"\#d0d0d0","background":"\#080808","separator":false,"separator_block_width":6},\
 {"full_text":"${endif}${endif}${endif}${endif}${endif}"},\
 
 # Upload
-{"full_text":"  ","color":"\#d0d0d0","separator":false,"separator_block_width":6},\
-{"full_text":"${if_match ${upspeedf enp2s0}<15}${upspeed enp2s0}","background":"\#101010","color":"\#5d5d5d","separator":false,"separator_block_width":6},\
+{"full_text":"  ","color":"\#299156","separator":false,"separator_block_width":6},\
+{"full_text":"${if_match ${upspeedf enp2s0}<15}${upspeed enp2s0}","background":"\#080808","color":"\#839496","separator":false,"separator_block_width":6},\
 {"full_text":"${else}"},\
-{"full_text":"${if_match ${upspeedf enp2s0}<35}${upspeed enp2s0}","background":"\#101010","color":"\#2f2f2f","separator":false,"separator_block_width":6},\
+{"full_text":"${if_match ${upspeedf enp2s0}<35}${upspeed enp2s0}","background":"\#080808","color":"\#2f2f2f","separator":false,"separator_block_width":6},\
 {"full_text":"${else}"},\
-{"full_text":"${if_match ${upspeedf enp2s0}>=35}${upspeed enp2s0}","background":"\#101010","color":"\#d0d0d0","separator":false,"separator_block_width":6},\
+{"full_text":"${if_match ${upspeedf enp2s0}>=35}${upspeed enp2s0}","background":"\#080808","color":"\#d0d0d0","separator":false,"separator_block_width":6},\
 {"full_text":"${endif}${endif}${endif}"},\
 
 # Cpu
-{"full_text":"  ","color":"\#d0d0d0","separator":false,"separator_block_width":6},\
-{"full_text":"${if_match ${cpu cpu0}<25}${cpu cpu0}","color":"\#464646","background":"\#101010","separator":false,"separator_block_width":0},\
+{"full_text":"  ","color":"\#d0d0d0","separator":false,"separator_block_width":6},\
+{"full_text":"${if_match ${cpu cpu0}<25}${cpu cpu0}","color":"\#839496","background":"\#080808","separator":false,"separator_block_width":0},\
 {"full_text":"${else}"},\
-{"full_text":"${if_match ${cpu cpu0}<50}${cpu cpu0}","color":"\#181818","background":"\#101010","separator":false,"separator_block_width":0},\
+{"full_text":"${if_match ${cpu cpu0}<50}${cpu cpu0}","color":"\#181818","background":"\#080808","separator":false,"separator_block_width":0},\
 {"full_text":"${else}"},\
-{"full_text":"${if_match ${cpu cpu0}<75}${cpu cpu0}","color":"\#2f2f2f","background":"\#101010","separator":false,"separator_block_width":0},\
+{"full_text":"${if_match ${cpu cpu0}<75}${cpu cpu0}","color":"\#2f2f2f","background":"\#080808","separator":false,"separator_block_width":0},\
 {"full_text":"${else}"},\
-{"full_text":"${if_match ${cpu cpu0}<=100}${cpu cpu0}","color":"\#d0d0d0","background":"\#101010","separator":false,"separator_block_width":0},\
+{"full_text":"${if_match ${cpu cpu0}<=100}${cpu cpu0}","color":"\#d0d0d0","background":"\#080808","separator":false,"separator_block_width":0},\
 {"full_text":"${endif}${endif}${endif}${endif}"},\
-{"full_text":"%","color":"\#fdf6e3 ","background":"\#101010","separator":false,"separator_block_width":6},\
+{"full_text":"%","color":"\#fdf6e3 ","background":"\#080808","separator":false,"separator_block_width":6},\
 
 # Ram
-{"full_text":"  ","color":"\#d0d0d0","separator":false,"separator_block_width":6},\
-{"full_text":"${mem}","color":"\#b31010","background":"\#101010","separator":false,"separator_block_width":6},\
+{"full_text":" ","color":"\#299156","separator":false,"separator_block_width":6},\
+{"full_text":"${mem}","color":"\#839496","background":"\#080808","separator":false,"separator_block_width":6},\
 
 #Battery 
 {"full_text":"  ","color":"\#d0d0d0","separator":false,"separator_block_width":6},\
-{"full_text":"${battery_percent BAT1}%","color":"\#464646","background":"\#101010","separator":false,"separator_block_width":6},\
+{"full_text":"${battery_percent BAT1}%","color":"\#839496","background":"\#080808","separator":false,"separator_block_width":6},\
 
 # Date
-{"full_text":"  ","color":"\#d0d0d0","separator":false,"separator_block_width":6},\
-{"full_text":"${time %A %d %B %R}","color":"\#464646","background":"\#101010","separator":false,"separator_block_width":6}\
+{"full_text":"  ","color":"\#299156","separator":false,"separator_block_width":6},\
+{"full_text":"${time %A %d %B %R}","color":"\#839496","background":"\#080808","separator":false,"separator_block_width":6}\
 
 ]

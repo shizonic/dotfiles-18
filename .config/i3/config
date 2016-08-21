@@ -81,7 +81,7 @@ set $w6   6: term
 set $w7   7: conf
 set $w8   8: chat
 set $w9   9: netw
-set $w10  10: misc
+set $w10 10: misc
 
  
 # Switch to workspace
@@ -220,53 +220,53 @@ bindsym Print exec scrot -e 'mv $f ~/Pictures/screenshots'
 
 # My apps shortcut
 bindsym $mod+p exec pcmanfm 
-bindsym $mod+b exec torify qutebrowser
+bindsym $mod+b exec torify luakit
 
 # Window colors           border    background    text      indicator
-client.focused            #299156   #299156       #020202   #ffaf5f
-client.focused_inactive   #070707   #070707       #808080   #101010
-client.unfocused          #070707   #070707       #808080   #101010
-client.urgent             #b31010   #b31010       #808080   #C0C0C0
+client.focused            #101010   #101010       #020202   #ffaf5f
+client.focused_inactive   #080808   #080808       #808080   #101010
+client.unfocused          #080808   #080808       #839496   #101010
+client.urgent             #b31010   #b31010       #fdf6e3   #C0C0C0
 
 # Start i3bar to display a workspace bar
 #bar {      
 #    
 #          status_command  $HOME/.bin/conkyi3.sh      
-#          position bottom
+#          position top
 #          font xft:tewi, FontAwesome 8
 #          strip_workspace_numbers yes
 #          
 #          colors {
 #              separator          #161615
-#              background         #020202
+#              background         #080808
 #              statusline         #111111
 #              
 #              # Bar colors       border    background    text 
-#              active_workspace   #2d2a2a   #2d2a2a       #020202
-#              inactive_workspace #101010   #020202       #464646
-#              urgent_workspace   #b31010   #b31010       #020202
+#              focused_workspace  #299156   #299156       #020202
+#              active_workspace   #859900   #859900       #020202
+#              inactive_workspace #080808   #080808       #839496
+#              urgent_workspace   #d0d0d0   #d0d0d0       #020202
 #         }
 #}
 
-bar {
-  i3bar_command ~/.bin/panel.sh
-}
-
+#bar {
+#    i3bar_command ~/.bin/panel.sh
+#}
 #*************  My apps settings  *********************
 
 # Start apps during startup
 exec --no-startup-id nitrogen --restore 
-#exec --no-startup-id nm-applet
-#exec --no-startup-id compton --config ~/.compton.conf -b
+exec --no-startup-id compton --config ~/.compton.conf -b
 exec --no-startup-id $HOME/.conky/conky-startup.sh
+exec --no-startup-id $HOME/.bin/panel.sh
 
 # Set per-application border
-for_window [class="^.*"] border pixel 4
-for_window [class="(?i)urxvt"] border pixel 4
+for_window [class="^.*"] border pixel 5
+for_window [class="(?i)urxvt"] border pixel 5
 for_window [class="(?i)luakit"] border pixel 0
 
 # Global gaps size
-gaps inner 10
+gaps inner 5
 gaps outer 0
 
 # Enable or disable floating
