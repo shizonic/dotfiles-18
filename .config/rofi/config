@@ -4,17 +4,18 @@
 
 ! General
 rofi.font:                Tamsyn 8
-rofi.opacity:             80
+rofi.opacity:             90
 rofi.fake-transparency:   true
 rofi.hide-scrollbar:      true
 
 
 ! Layout
-rofi.width:              30
+rofi.width:              35
 rofi.column:             4
 rofi.location:           0
 rofi.lines:              10
-rofi.sidebar-mode:       false
+rofi.padding:            30
+rofi.sidebar-mode:       true
 rofi.fullscreen:         false
 
 ! ------------------------------------------------------------------------------
