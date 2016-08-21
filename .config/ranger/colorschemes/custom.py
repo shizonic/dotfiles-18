@@ -1,14 +1,16 @@
-# Joseph Tannhuber <sepp.tannhuber@yahoo.de>, 2013
+# This file is part of ranger, the console file manager.
+# License: GNU GPL version 3, see the file "AUTHORS" for details.
+# Author: Joseph Tannhuber <sepp.tannhuber@yahoo.de>, 2013
 # Solarized like colorscheme, similar to solarized-dircolors
 # from https://github.com/seebi/dircolors-solarized.
 # This is a modification of Roman Zimbelmann's default colorscheme.
-# This software is distributed under the terms of the GNU GPL version 3.
 
 from ranger.gui.colorscheme import ColorScheme
 from ranger.gui.color import *
 
-class Solarized(ColorScheme):
-    progress_bar_color = blue
+
+class Custom(ColorScheme):
+    progress_bar_color = 33
 
     def use(self, context):
         fg, bg, attr = default_colors
@@ -23,40 +25,41 @@ class Solarized(ColorScheme):
             else:
                 attr = normal
             if context.empty or context.error:
-                bg = 15
+                fg = 235
+                bg = 160
             if context.border:
                 fg = default
             if context.media:
                 if context.image:
-                    fg = 11
+                    fg = 136
                 else:
-                    fg = 14
+                    fg = 166
             if context.container:
                 fg = 61
             if context.directory:
-                fg = 13
-                # bg = 00
+                fg = 33
             elif context.executable and not \
                     any((context.media, context.container,
                         context.fifo, context.socket)):
-                fg = 10
+                fg = 64
                 attr |= bold
             if context.socket:
-                fg = 12
-                bg = 00
+                fg = 136
+                bg = 230
                 attr |= bold
             if context.fifo:
-                fg = 11
-                bg = 11
+                fg = 136
+                bg = 230
                 attr |= bold
             if context.device:
                 fg = 244
-                bg = 11
+                bg = 230
                 attr |= bold
             if context.link:
-                fg = context.good and red or blue
-                bg = context.bad and 235
+                fg = context.good and 37 or 160
                 attr |= bold
+                if context.bad:
+                    bg = 235
             if context.tag_marker and not context.selected:
                 attr |= bold
                 if fg in (red, magenta):
@@ -71,23 +74,26 @@ class Solarized(ColorScheme):
                     attr |= bold
                 if context.marked:
                     attr |= bold
-                    fg = 11
-                    bg = 8
+                    bg = 237
             if context.badinfo:
                 if attr & reverse:
                     bg = magenta
                 else:
                     fg = magenta
 
+            if context.inactive_pane:
+                fg = 241
+
         elif context.in_titlebar:
             attr |= bold
             if context.hostname:
-                fg = context.bad and 11 or 14
-                bg = context.bad and 00
+                fg = context.bad and 16 or 255
+                if context.bad:
+                    bg = 166
             elif context.directory:
-                fg = 10
+                fg = 33
             elif context.tab:
-                fg = context.good and 13 or 15
+                fg = context.good and 47 or 33
                 bg = 239
             elif context.link:
                 fg = cyan
@@ -95,16 +101,18 @@ class Solarized(ColorScheme):
         elif context.in_statusbar:
             if context.permissions:
                 if context.good:
-                    fg = 12
+                    fg = 93
                 elif context.bad:
-                    fg = red
+                    fg = 160
+                    bg = 235
             if context.marked:
                 attr |= bold | reverse
                 fg = 237
+                bg = 47
             if context.message:
                 if context.bad:
                     attr |= bold
-                    fg = 11
+                    fg = 160
                     bg = 235
             if context.loaded:
                 bg = self.progress_bar_color
@@ -115,7 +123,7 @@ class Solarized(ColorScheme):
 
         if context.in_taskview:
             if context.title:
-                fg = 15
+                fg = 93
 
             if context.selected:
                 attr |= reverse
@@ -127,3 +135,6 @@ class Solarized(ColorScheme):
                     bg = self.progress_bar_color
 
         return fg, bg, attr
+
+    Contact GitHub API Training Shop Blog About 
+
