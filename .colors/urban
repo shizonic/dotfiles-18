@@ -8,8 +8,8 @@
 *.color8:       #020202
 
 ! red
-*.color1:       #530a06
-*.color9:       #530a06
+*.color1:       #700c0e
+*.color9:       #700c0e
 
 ! green
 *.color2:       #5c472a
@@ -24,12 +24,12 @@
 *.color12:      #272526
 
 ! magenta
-*.color5:       #524630
-*.color13:      #524630
+*.color5:       #4b3f29
+*.color13:      #4b3f29
 
 ! cyan
-*.color6:       #f4eacb
-*.color14:      #f4eacb
+*.color6:       #9f998e
+*.color14:      #9f998e
 
 ! white
 *.color7:       #8b8b8b
