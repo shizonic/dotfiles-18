@@ -1,0 +1,6 @@
+#!/bin/bash
+#
+
+. $HOME/.config/admiral.d/config
+msg=`python ~/.local/bin/gmail.py`
+echo "%{F$BWHITE}  %{F$FG}${msg} "
