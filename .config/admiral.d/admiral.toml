@@ -11,7 +11,7 @@ path = "xtitle -s -t 100"
 
 [mail]
 path = "./mail"
-reload = 1
+reload = 10
 
 [volume]
 path = "./vol"

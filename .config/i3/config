@@ -254,7 +254,7 @@ client.urgent             #dc322f   #dc322f       #002b36   #C0C0C0
 # Start apps during startup
 exec --no-startup-id nitrogen --restore  &
 exec --no-startup-id compton --config ~/.compton.conf -b 
-exec --no-startup-id dunst -config $HOME/.config/dunst/dunstrc
+#exec --no-startup-id dunst -config $HOME/.config/dunst/dunstrc
 exec --no-startup-id $HOME/.local/bin/barstart &
 exec --no-startup-id $HOME/.local/bin/conky-startup.sh &
 
