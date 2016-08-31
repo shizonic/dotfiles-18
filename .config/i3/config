@@ -72,16 +72,16 @@ bindsym $mod+a focus parent
 
 # Initialize workspace
 #
-set $w1   1: surf
-set $w2   2: code
-set $w3   3: docs
-set $w4   4: medi
-set $w5   5: core
-set $w6   6: term
-set $w7   7: conf
-set $w8   8: chat
-set $w9   9: netw
-set $w10 10: misc
+set $w1   1 
+set $w2   2 
+set $w3   3 
+set $w4   4 
+set $w5   5 
+set $w6   6 
+set $w7   7 
+set $w8   8 
+set $w9   9 
+set $w10 10 
 
  
 # Switch to workspace
@@ -223,10 +223,10 @@ bindsym $mod+p exec pcmanfm
 bindsym $mod+b exec torify luakit
 
 # Window colors           border    background    text      indicator
-client.focused            #101010   #101010       #020202   #ffaf5f
-client.focused_inactive   #080808   #080808       #808080   #101010
-client.unfocused          #080808   #080808       #839496   #101010
-client.urgent             #b31010   #b31010       #fdf6e3   #C0C0C0
+client.focused            #fdf6e3   #fdf6e3       #002b36   #ffaf5f
+client.focused_inactive   #073642   #073642       #808080   #101010
+client.unfocused          #073642   #073642       #839496   #101010
+client.urgent             #dc322f   #dc322f       #002b36   #C0C0C0
 
 # Start i3bar to display a workspace bar
 #bar {      
@@ -249,24 +249,21 @@ client.urgent             #b31010   #b31010       #fdf6e3   #C0C0C0
 #         }
 #}
 
-#bar {
-#    i3bar_command ~/.bin/panel.sh
-#}
 #*************  My apps settings  *********************
 
 # Start apps during startup
-exec --no-startup-id nitrogen --restore 
-exec --no-startup-id compton --config ~/.compton.conf -b
-exec --no-startup-id $HOME/.conky/conky-startup.sh
-exec --no-startup-id $HOME/.bin/panel.sh
+exec --no-startup-id nitrogen --restore  &
+exec --no-startup-id compton --config ~/.compton.conf -b 
+exec --no-startup-id dunst -config $HOME/.config/dunst/dunstrc
+exec --no-startup-id $HOME/.local/bin/barstart &
+exec --no-startup-id $HOME/.local/bin/conky-startup.sh &
 
 # Set per-application border
 for_window [class="^.*"] border pixel 5
 for_window [class="(?i)urxvt"] border pixel 5
-for_window [class="(?i)luakit"] border pixel 0
 
 # Global gaps size
-gaps inner 5
+gaps inner 10
 gaps outer 0
 
 # Enable or disable floating

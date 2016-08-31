@@ -115,7 +115,7 @@ style "theme-menu-item" = "theme-default"
   ythickness = 2
     fg[PRELIGHT] = "#020202"
   text[PRELIGHT] = "#020202"
-  bg[SELECTED] = "#b31010" 
+  bg[SELECTED] = "#299156" 
 }
 
 style "theme-menubar" = "theme-default"

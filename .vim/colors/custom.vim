@@ -26,24 +26,24 @@ let g:colors_name="custom"
 " --------------------------------
 " Editor settings
 " --------------------------------
-hi Normal          ctermfg=04      ctermbg=08      cterm=none
-hi Cursor          ctermfg=07      ctermbg=none    cterm=none
-hi CursorLine      ctermfg=07      ctermbg=00      cterm=none
-hi LineNr          ctermfg=235     ctermbg=00      cterm=none
-hi CursorLineNR    ctermfg=07      ctermbg=00      cterm=none
+hi Normal          ctermfg=235      ctermbg=none    cterm=none
+hi Cursor          ctermfg=15      ctermbg=none    cterm=none
+hi CursorLine      ctermfg=15      ctermbg=00      cterm=none
+hi LineNr          ctermfg=237     ctermbg=00      cterm=none
+hi CursorLineNR    ctermfg=15      ctermbg=00      cterm=none
 
 " -----------------
 " - Number column -
 " -----------------
 hi CursorColumn    ctermfg=01      ctermbg=00      cterm=none
-hi FoldColumn      ctermfg=04      ctermbg=none    cterm=none
+hi FoldColumn      ctermfg=05      ctermbg=none    cterm=none
 hi SignColumn      ctermfg=06      ctermbg=none    cterm=none
-hi Folded          ctermfg=05      ctermbg=none    cterm=none
+hi Folded          ctermfg=02      ctermbg=none    cterm=none
 
 " -------------------------
 " - Window/Tab delimiters - 
 " -------------------------
-hi VertSplit       ctermfg=05      ctermbg=00      cterm=none
+hi VertSplit       ctermfg=235     ctermbg=00      cterm=none
 hi ColorColumn     ctermfg=none    ctermbg=00      cterm=none
 hi TabLine         ctermfg=none    ctermbg=00      cterm=none
 hi TabLineFill     ctermfg=04      ctermbg=none    cterm=none
@@ -54,7 +54,7 @@ hi TabLineSel      ctermfg=05      ctermbg=none    cterm=none
 " -------------------------------
 hi Directory       ctermfg=01      ctermbg=none    cterm=none
 hi Search          ctermfg=03      ctermbg=00      cterm=none
-hi IncSearch       ctermfg=13      ctermbg=none    cterm=none
+hi IncSearch       ctermfg=15      ctermbg=10      cterm=none
 
 " -----------------
 " - Prompt/Status -
@@ -73,7 +73,7 @@ hi MoreMsg         ctermfg=06      ctermbg=00      cterm=none
 hi MatchParen      ctermfg=03      ctermbg=00      cterm=none
 hi Visual          ctermfg=15      ctermbg=00      cterm=none
 hi VisualNOS       ctermfg=06      ctermbg=00      cterm=none
-hi NonText         ctermfg=05      ctermbg=none    cterm=none
+hi NonText         ctermfg=02      ctermbg=none    cterm=none
 
 hi Todo            ctermfg=08      ctermbg=03      cterm=none
 hi Underlined      ctermfg=06      ctermbg=none    cterm=none
@@ -100,14 +100,14 @@ hi Function        ctermfg=01      ctermbg=none    cterm=none
 " --------------------------------
 " Language constructs
 " --------------------------------
-hi Statement       ctermfg=02      ctermbg=none    cterm=none
-hi Conditional     ctermfg=09      ctermbg=none    cterm=none
+hi Statement       ctermfg=01      ctermbg=none    cterm=none
+hi Conditional     ctermfg=02      ctermbg=none    cterm=none
 hi Repeat          ctermfg=06      ctermbg=none    cterm=none
-hi Label           ctermfg=05      ctermbg=none    cterm=none
+hi Label           ctermfg=09      ctermbg=none    cterm=none
 hi Operator        ctermfg=04      ctermbg=none    cterm=none
 hi Keyword         ctermfg=09      ctermbg=none    cterm=none
 hi Exception       ctermfg=03      ctermbg=none    cterm=none
-hi Comment         ctermfg=234     ctermbg=00      cterm=none
+hi Comment         ctermfg=235     ctermbg=00      cterm=none
 
 hi Special         ctermfg=11      ctermbg=none    cterm=none
 hi SpecialChar     ctermfg=02      ctermbg=none    cterm=none
@@ -158,19 +158,19 @@ hi SpellRare       ctermfg=02     ctermbg=none    cterm=none
 " Specific settings                                                 |
 "-------------------------------------------------------------------
 " PYTHON
-hi pythonInclude         ctermfg=09     ctermbg=none     cterm=none
-hi pythonRepeat          ctermfg=01     ctermbg=none     cterm=none
+hi pythonInclude         ctermfg=05     ctermbg=none     cterm=none
+hi pythonRepeat          ctermfg=06     ctermbg=none     cterm=none
 hi pythonConditional     ctermfg=02     ctermbg=none     cterm=none
 hi pythonBuiltinObj      ctermfg=06     ctermbg=none     cterm=none
-hi pythonFunction        ctermfg=01    ctermbg=none     cterm=none
+hi pythonFunction        ctermfg=05     ctermbg=none     cterm=none
 hi pythonDecorator       ctermfg=03     ctermbg=none     cterm=none
 hi pythonImport          ctermfg=07     ctermbg=none     cterm=none
 hi pythonRun             ctermfg=15     ctermbg=none     cterm=none
 hi pythonCoding          ctermfg=05     ctermbg=none     cterm=none
-hi pythonOperator        ctermfg=03     ctermbg=none     cterm=none
-hi pythonExceptions      ctermfg=11     ctermbg=none     cterm=none
-hi pythonBoolean         ctermfg=01     ctermbg=none     cterm=none
-hi pythonDot             ctermfg=10     ctermbg=none     cterm=none
+hi pythonOperator        ctermfg=07     ctermbg=none     cterm=none
+hi pythonExceptions      ctermfg=03     ctermbg=none     cterm=none
+hi pythonBoolean         ctermfg=15     ctermbg=none     cterm=none
+hi pythonDot             ctermfg=15     ctermbg=none     cterm=none
 
 " JAVA
 hi javaexternal          ctermfg=08     ctermbg=none     cterm=none
