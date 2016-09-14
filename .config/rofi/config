@@ -3,7 +3,7 @@
 ! ------------------------------------------------------------------------------
 
 ! General
-rofi.font:                Tamsyn 8
+rofi.font:                tewi 8
 rofi.opacity:             90
 rofi.fake-transparency:   true
 rofi.hide-scrollbar:      true
@@ -14,8 +14,8 @@ rofi.width:              35
 rofi.column:             4
 rofi.location:           0
 rofi.lines:              10
-rofi.padding:            30
-rofi.sidebar-mode:       true
+rofi.padding:            20
+rofi.sidebar-mode:       false
 rofi.fullscreen:         false
 
 ! ------------------------------------------------------------------------------
@@ -23,8 +23,8 @@ rofi.fullscreen:         false
 ! ------------------------------------------------------------------------------
 rofi.color-enabled:      true
 ! State                  'bg'     'fg'     'bgalt'  'hlbg'   'hlfg'
-rofi.color-normal:       #002b36, #93a1a1, #073642, #fdf6e3, #002b36
-rofi.color-active:       #002b36, #8787af, #002b36, #268bd2, #002b36
-rofi.color-urgent:       #002b36, #2e2c2d, #002b36, #dc322f, #002b36
+rofi.color-normal:       #fdf6e3, #657b83, #eee8d5, #cb4b16, #fdf6e3
+rofi.color-active:       #fdf6e3, #8787af, #fdf6e3, #268bd2, #fdf6e3
+rofi.color-urgent:       #fdf6e3, #2e2c2d, #fdf6e3, #dc322f, #fdf6e3
 !                        'bg'     'bc'
-rofi.color-window:       #002b36, #03232c
+rofi.color-window:       #fdf6e3, #eee8d5

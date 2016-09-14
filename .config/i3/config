@@ -72,16 +72,16 @@ bindsym $mod+a focus parent
 
 # Initialize workspace
 #
-set $w1   1 
-set $w2   2 
-set $w3   3 
-set $w4   4 
-set $w5   5 
-set $w6   6 
-set $w7   7 
-set $w8   8 
-set $w9   9 
-set $w10 10 
+set $w1   1 
+set $w2   2 
+set $w3   3 
+set $w4   4 
+set $w5   5 
+set $w6   6 
+set $w7   7 
+set $w8   8 
+set $w9   9 
+set $w10 10 
 
  
 # Switch to workspace
@@ -223,9 +223,9 @@ bindsym $mod+p exec pcmanfm
 bindsym $mod+b exec torify luakit
 
 # Window colors           border    background    text      indicator
-client.focused            #fdf6e3   #fdf6e3       #002b36   #ffaf5f
-client.focused_inactive   #073642   #073642       #808080   #101010
-client.unfocused          #073642   #073642       #839496   #101010
+client.focused            #eee8d5   #eee8d5       #002b36   #ffaf5f
+client.focused_inactive   #eee8d5   #eee8d5       #808080   #101010
+client.unfocused          #eee8d5   #eee8d5       #839496   #101010
 client.urgent             #dc322f   #dc322f       #002b36   #C0C0C0
 
 # Start i3bar to display a workspace bar
@@ -263,7 +263,7 @@ for_window [class="^.*"] border pixel 5
 for_window [class="(?i)urxvt"] border pixel 5
 
 # Global gaps size
-gaps inner 10
+gaps inner 15
 gaps outer 0
 
 # Enable or disable floating

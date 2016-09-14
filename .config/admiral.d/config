@@ -6,10 +6,10 @@
 #
 
 # Panel 
-PW=1346
-PH=26
-PX=10
-PY=9
+PW=480
+PH=24
+PX=450
+PY=12
 
 # Fonts
 FONT1="-*-tewi-medium-r-*-*-11-*-*-*-*-*-iso10646-*"
@@ -17,7 +17,7 @@ FONT2="FontAwesome:size=8"
 
 
 # Color directory
-CD="$HOME/.colors/solarized.dark"
+CD="$HOME/.colors/solarized.light"
 
 # Fetch the Colors
 BG=`cat ${CD} | grep -i background: | tail -c 8`

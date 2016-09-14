@@ -10,11 +10,11 @@ set show_inputbar false
 
 
 ###### Colorscheme ############
-set default-bg                  "#002b36" #00
+set default-bg                  "#fdf6e3" #00
 set default-fg                  "#839496" #07
 
 set statusbar-fg                "#657b83" #07
-set statusbar-bg                "#fdf6e3" #00
+set statusbar-bg                "#eee8d5" #00
 
 set inputbar-bg                 "#073642" #00 currently not used
 set inputbar-fg                 "#839496" #02
@@ -37,8 +37,8 @@ set completion-fg               "#75B5AA" #0C
 set notification-bg             "#2d2a2a" #0B
 set notification-fg             "#000003" #00
 
-set recolor-lightcolor          "#002b36" #00
-set recolor-darkcolor           "#839496" 
+set recolor-lightcolor          "#fdf6e3" #00
+set recolor-darkcolor           "#657b83" 
 set recolor                     "true"
 
 # setting recolor-keep true will keep any color your pdf has.
