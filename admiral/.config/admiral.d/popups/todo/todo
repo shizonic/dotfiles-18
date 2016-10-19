@@ -1,0 +1,12 @@
+#!/bin/sh
+
+. $HOME/.config/admiral.d/config
+
+# Panel 
+PW=166
+PH=58
+PX=1182
+PY=55
+
+
+#n30f -d -x 12 -y 40 $HOME/.config/admiral.d/popups/todo/bg.png &

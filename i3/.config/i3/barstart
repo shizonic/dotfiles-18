@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+. $HOME/.config/admiral.d/config
+
+pkill admiral &>/dev/null
+pkill lemonbar &>/dev/null
+
+
+$HOME/.local/bin/admiral | lemonbar -g ${PW}x${PH}+${PX}+${PY} -f "$FONT1" -f "$FONT2" -f "Siji-7" -f "Symbola-8"  -B "$BBLACK" -F "$FG"  -p -d | sh
