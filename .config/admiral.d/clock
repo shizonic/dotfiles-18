@@ -1,6 +1,0 @@
-#!/bin/bash
-#
-
-. $HOME/.config/admiral.d/config
-clock=$(date "+%d %b %Y %H:%M")
-echo "%{F$FG} %{F$FG}${clock} "
