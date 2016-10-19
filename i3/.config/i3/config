@@ -230,6 +230,7 @@ client.unfocused          #073642   #073642       #839496   #101010
 client.urgent             #dc322f   #dc322f       #002b36   #C0C0C0
 
 # Start i3bar to display a workspace bar
+# Uncomment to use the default i3bar status
 #bar {      
 #    
 #          status_command  $HOME/.local/bin/conkyi3.sh      
