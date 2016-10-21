@@ -1,7 +1,5 @@
-Screenshots
+Current Screenshots
 ===========
-
-#Current
 ### Lemonbar and Rofi
 ![clean](http://imgur.com/uWl5jMP.png)
 ### Luakit 
