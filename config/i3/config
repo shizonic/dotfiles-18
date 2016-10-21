@@ -1,0 +1,309 @@
+# i3 version 4.12-8-gd7fd3c0 (2016-03-09, branch "gaps-next") © 2009 Michael Stapelberg and contributors
+# i3 config file.
+# Please see http://i3wm.org/docs/userguide.html for a complete reference!
+# Github https://github.com/mohabaks/dotfiles
+
+
+#*************** Keybindings ******************
+
+set $mod Mod4
+
+# Start a terminal
+bindsym $mod+Return exec i3-sensible-terminal
+
+# Kill focused window
+bindsym $mod+Shift+q kill
+
+# Start dmenu (a program launcher)
+# bindsym $mod+d exec  dmenu_run -b -nf dimgray -sb orangered -sf black -nb gray4
+
+# Start Rofi (a program launcher, ssh, window switcher)
+# https://davedavenport.github.io/rofi/
+bindsym $mod+d exec --no-startup-id rofi -show run
+
+# Change focus
+bindsym $mod+j focus left
+bindsym $mod+k focus down
+bindsym $mod+l focus up
+bindsym $mod+semicolon focus right
+
+# Alternatively, you can use the cursor keys:
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# Move focused window
+bindsym $mod+Shift+j move left
+bindsym $mod+Shift+k move down
+bindsym $mod+Shift+l move up
+bindsym $mod+Shift+semicolon move right
+
+# Alternatively, you can use the cursor keys:
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# Split in horizontal orientation
+bindsym $mod+h split h
+
+# Split in vertical orientation
+bindsym $mod+v split v
+
+# Enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+# Change container layout (stacked, tabbed, toggle split)
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# Toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+# Change focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
+
+# Focus the parent container
+bindsym $mod+a focus parent
+
+# Focus the child container
+#bindsym $mod+d focus child
+
+# Initialize workspace
+# 
+set $w1   1  surf
+set $w2   2  code
+set $w3   3  docs
+set $w4   4  medi
+set $w5   5  core
+set $w6   6  term
+set $w7   7  devs
+set $w8   8  soci
+set $w9   9  netw
+set $w10 10  rand
+
+ 
+# Switch to workspace
+bindsym $mod+1 workspace $w1
+bindsym $mod+2 workspace $w2
+bindsym $mod+3 workspace $w3
+bindsym $mod+4 workspace $w4
+bindsym $mod+5 workspace $w5
+bindsym $mod+6 workspace $w6
+bindsym $mod+7 workspace $w7
+bindsym $mod+8 workspace $w8
+bindsym $mod+9 workspace $w9 
+bindsym $mod+0 workspace $w10
+bindsym $mod+Tab workspace back_and_forth
+
+# Move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace $w1
+bindsym $mod+Shift+2 move container to workspace $w2
+bindsym $mod+Shift+3 move container to workspace $w3
+bindsym $mod+Shift+4 move container to workspace $w4
+bindsym $mod+Shift+5 move container to workspace $w5
+bindsym $mod+Shift+6 move container to workspace $w6  
+bindsym $mod+Shift+7 move container to workspace $w7
+bindsym $mod+Shift+8 move container to workspace $w8
+bindsym $mod+Shift+9 move container to workspace $w9
+bindsym $mod+Shift+0 move container to workspace $w10
+
+# Reload the configuration file
+bindsym $mod+Shift+c reload
+
+# Restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+
+# Resize window (you can also use the mouse for that)
+mode "resize" {
+        # These bindings trigger as soon as you enter the resize mode
+
+        # Pressing left will shrink the window’s width.
+        # Pressing right will grow the window’s width.
+        # Pressing up will shrink the window’s height.
+        # Pressing down will grow the window’s height.
+        bindsym j resize shrink width 10 px or 10 ppt
+        bindsym k resize grow height 10 px or 10 ppt
+        bindsym l resize shrink height 10 px or 10 ppt
+        bindsym semicolon resize grow width 10 px or 10 ppt
+
+        # same bindings, but for the arrow keys
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+
+        # back to normal: Enter or Escape
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+# Make the currently focused window a scratchpad
+bindsym $mod+Shift+minus move scratchpad
+
+# Show the first scratchpad window
+bindsym $mod+minus scratchpad show
+
+#  i3-gaps settings 
+#  More info visit: https://github.com/Airblader/i3
+#smart_gaps on     # when only one container is in use no_gaps
+smart_borders on  # no borders when one app is in use
+set $mode_gaps Gaps: (o) outer, (i) inner
+set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
+set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
+bindsym $mod+Shift+g mode "$mode_gaps"
+
+mode "$mode_gaps" {
+        bindsym o      mode "$mode_gaps_outer"
+        bindsym i      mode "$mode_gaps_inner"
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+mode "$mode_gaps_inner" {
+        bindsym plus  gaps inner current plus 5
+        bindsym minus gaps inner current minus 5
+        bindsym 0     gaps inner current set 0
+
+        bindsym Shift+plus  gaps inner all plus 5
+        bindsym Shift+minus gaps inner all minus 5
+        bindsym Shift+0     gaps inner all set 0
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+mode "$mode_gaps_outer" {
+        bindsym plus  gaps outer current plus 5
+        bindsym minus gaps outer current minus 5
+        bindsym 0     gaps outer current set 0
+
+        bindsym Shift+plus  gaps outer all plus 5
+        bindsym Shift+minus gaps outer all minus 5
+        bindsym Shift+0     gaps outer all set 0
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+bindsym $mod+r mode "resize"
+
+# Lock screen
+set $Locker i3lock-fancy
+
+# Shutdwon, Restart, Logout, Suspend, Hibernate, Reboot, Lock
+set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
+mode "$mode_system" {
+    bindsym l exec --no-startup-id $Locker, mode "default"
+    bindsym e exec --no-startup-id i3-msg exit, mode "default"
+    bindsym s exec --no-startup-id $Locker && systemctl suspend, mode "default"
+    bindsym h exec --no-startup-id $Locker && systemctl hibernate,mode "default"
+    bindsym r exec --no-startup-id systemctl reboot, mode "default"
+    bindsym Shift+s exec --no-startup-id systemctl poweroff -i, mode "default"  
+
+    # back to normal: Enter or Escape
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+F9 mode "$mode_system"
+
+# Volume control (Alt + F7 or Alt + F8)
+bindsym $mod+F7 exec amixer set Master 5%-
+bindsym $mod+F8 exec amixer set Master 5%+
+
+# Brightness control (Alt + F11 or Alt + F12)
+bindsym $mod+F2 exec xbacklight -10
+bindsym $mod+F3 exec xbacklight + 10
+
+# Screenshot with scrot
+bindsym Print exec scrot -e 'mv $f ~/Pictures/screenshots'
+
+# My apps shortcut
+bindsym $mod+p exec pcmanfm 
+bindsym $mod+b exec torify luakit
+
+# Window colors           border    background    text      indicator
+client.focused            #073642   #073642       #002b36   #ffaf5f
+client.focused_inactive   #073642   #073642       #808080   #101010
+client.unfocused          #073642   #073642       #839496   #101010
+client.urgent             #dc322f   #dc322f       #002b36   #C0C0C0
+
+# Start i3bar to display a workspace bar
+# Uncomment to use the default i3bar status
+#bar {      
+#    
+#          status_command  $HOME/.local/bin/conkyi3.sh      
+#          position top
+#          font xft:tewi, FontAwesome 8
+#          strip_workspace_numbers yes
+#          
+#          colors {
+#              separator          #161615
+#              background         #073642
+#              statusline         #111111
+#              
+#              # Bar colors       border    background    text 
+#              focused_workspace  #fdf6e3   #fdf6e3       #cb4b16
+#              active_workspace   #fdf6e3   #fdf6e3       #020202
+#              inactive_workspace #fdf6e3   #fdf6e3       #657b83
+#              urgent_workspace   #fdf6e3   #fdf6e3       #268bd2
+#         }
+#}
+
+#*************  My apps settings  *********************
+
+# Start apps during startup
+exec --no-startup-id nitrogen --restore  &
+exec --no-startup-id compton --config ~/.compton.conf -b 
+exec --no-startup-id dunst -config $HOME/.config/dunst/dunstrc
+exec --no-startup-id $HOME/.local/bin/barstart &
+exec --no-startup-id conky -c $HOME/.config/i3/conkybar &
+
+# Set per-application border
+for_window [class="^.*"] border pixel 1
+for_window [class="(?i)urxvt"] border pixel 1
+
+# Global gaps size
+gaps inner 10
+gaps outer 0
+
+# Enable or disable floating
+for_window [class="Arandr"] floating enable
+for_window [class="recordMyDesktop"] floating enable
+for_window [class="Lxappearance"] floating enable
+for_window [class="Nitrogen"] floating enable
+for_window [class="Artha"] floating enable
+for_window [instance="dukto"] floating enable
+for_window [class="Pcmanfm"] floating enable
+for_window [class="feh"] floating enable
+for_window [class="Zenmap"] floating enable
+for_window [class="Angry IP Scanner"] floating enable
+for_window [class="DB Browser for SQLite"] floating enable
+for_window [window_role="pop-up"] floating enable
+for_window [window_role="bubble"] floating enable
+for_window [window_role="task_dialog"] floating enable
+for_window [window_role="Preferences"] floating enable
+for_window [window_type="dialog"] floating enable
+for_window [window_type="menu"] floating enable
+for_window [class="Pavucontrol"] floating enable
+
+# Starting apps on aspecific workspace
+assign [class="^Tor Browser$"]    $w1
+assign [class="^Firefox$"]        $w1
+assign [class="^qutebrowser$"]    $w1
+assign [class="^luakit$"]         $w1
+assign [class="^Zathura"]         $w3
+assign [class="^TexMaker"]        $w3
+assign [class="^LibreOffice"]     $w3
+assign [class="^Gimp$"]           $w4
+assign [class="^Openshot$"]       $w4
+assign [class="^Blender$"]        $w4
+assign [class="^mpv$"]            $w4
+assign [class="^VirtualBox$"]     $w9
+assign [class="^Filezilla$"]      $w9
+assign [class="^Nmapfe"]          $w9
+assign [class="^Wireshark"]       $w9
+assign [class="^Geany$"]          $w10
+
+# vim:filetype=i3
