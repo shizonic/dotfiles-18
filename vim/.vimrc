@@ -23,6 +23,7 @@ path = [folder for folder in path if not contains_msvcr_lib(folder)]
 os.environ['PATH'] = ';'.join(path)
 EOF
 
+
 " Vundle Settings{{{
 
 "" set the runtime path to include Vundle and initialize
@@ -66,6 +67,7 @@ Plugin 'xolox/vim-easytags'
 Plugin 'xolox/vim-misc'
 Plugin 'jez/vim-superman'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'tmux-plugins/vim-tmux'
 
 "" All of your Plugins must be added before the following line
 call vundle#end()            " required

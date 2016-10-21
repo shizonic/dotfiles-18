@@ -7,9 +7,9 @@
 
 # Panel 
 PW=1346
-PH=22
-PX=10
-PY=9
+PH=20  
+PX=10   
+PY=9 
 
 # Fonts
 FONT1="-*-tewi-medium-r-*-*-11-*-*-*-*-*-iso10646-*"

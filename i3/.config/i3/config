@@ -74,14 +74,14 @@ bindsym $mod+a focus parent
 # Initialize workspace
 # 
 set $w1   1  surf
-set $w2   2  code 
+set $w2   2  code
 set $w3   3  docs
 set $w4   4  medi
-set $w5   5  core
+set $w5   5  core
 set $w6   6  term
-set $w7   7  conf
-set $w8   8  soci
-set $w9   9  netw
+set $w7   7  devs
+set $w8   8  soci
+set $w9   9  netw
 set $w10 10  rand
 
  
@@ -235,7 +235,7 @@ client.urgent             #dc322f   #dc322f       #002b36   #C0C0C0
 #    
 #          status_command  $HOME/.local/bin/conkyi3.sh      
 #          position top
-#          font xft:GohuFont, FontAwesome 8
+#          font xft:tewi, FontAwesome 8
 #          strip_workspace_numbers yes
 #          
 #          colors {
@@ -261,8 +261,8 @@ exec --no-startup-id $HOME/.local/bin/barstart &
 exec --no-startup-id conky -c $HOME/.config/i3/conkybar &
 
 # Set per-application border
-for_window [class="^.*"] border pixel 5
-for_window [class="(?i)urxvt"] border pixel 5
+for_window [class="^.*"] border pixel 1
+for_window [class="(?i)urxvt"] border pixel 1
 
 # Global gaps size
 gaps inner 10
@@ -304,6 +304,6 @@ assign [class="^VirtualBox$"]     $w9
 assign [class="^Filezilla$"]      $w9
 assign [class="^Nmapfe"]          $w9
 assign [class="^Wireshark"]       $w9
-assign [class="^Geany$"]          $w7
+assign [class="^Geany$"]          $w10
 
 # vim:filetype=i3

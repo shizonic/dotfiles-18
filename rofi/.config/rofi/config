@@ -4,7 +4,7 @@
 
 ! General
 rofi.font:                tewi 8
-rofi.opacity:             85
+rofi.opacity:             100
 rofi.fake-transparency:   true
 rofi.hide-scrollbar:      true
 
