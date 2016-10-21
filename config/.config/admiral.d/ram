@@ -1,0 +1,6 @@
+#!/bin/bash
+#
+
+. $HOME/.config/admiral.d/config
+ram=$(free -m | awk 'NR==2{printf "%s/%sMB", $3,$2}')
+echo "%{F$FG} %{F$FG}$ram "
