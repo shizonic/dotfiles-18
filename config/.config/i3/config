@@ -16,7 +16,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # Start dmenu (a program launcher)
-# bindsym $mod+d exec  dmenu_run -b -nf dimgray -sb orangered -sf black -nb gray4
+#bindsym $mod+d exec  dmenu_run -b -nf "#839496" -sb "#b58900" -sf "#002b36" -nb "#002b36" -fn "tewi-8"
 
 # Start Rofi (a program launcher, ssh, window switcher)
 # https://davedavenport.github.io/rofi/
@@ -73,17 +73,17 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # Initialize workspace
-# 
-set $w1   1  surf
-set $w2   2  code
-set $w3   3  docs
-set $w4   4  medi
-set $w5   5  core
-set $w6   6  term
-set $w7   7  devs
-set $w8   8  soci
-set $w9   9  netw
-set $w10 10  rand
+# 
+set $w1   1:0001
+set $w2   2:0010
+set $w3   3:0011
+set $w4   4:0100
+set $w5   5:0101
+set $w6   6:0110
+set $w7   7:0111
+set $w8   8:1000
+set $w9   9:1001
+set $w10 10:1010
 
  
 # Switch to workspace
@@ -225,32 +225,32 @@ bindsym $mod+p exec pcmanfm
 bindsym $mod+b exec torify luakit
 
 # Window colors           border    background    text      indicator
-client.focused            #073642   #073642       #002b36   #ffaf5f
-client.focused_inactive   #073642   #073642       #808080   #101010
-client.unfocused          #073642   #073642       #839496   #101010
-client.urgent             #dc322f   #dc322f       #002b36   #C0C0C0
+client.focused            #101010   #101010       #299156   #ffaf5f
+client.focused_inactive   #101010   #101010       #808080   #101010
+client.unfocused          #101010   #101010       #8b8b8b   #101010
+client.urgent             #101010   #101010       #002b36   #C0C0C0
 
-# Start i3bar to display a workspace bar
-# Uncomment to use the default i3bar status
-#bar {      
-#    
-#          status_command  $HOME/.local/bin/conkyi3.sh      
-#          position top
-#          font xft:tewi, FontAwesome 8
-#          strip_workspace_numbers yes
-#          
-#          colors {
-#              separator          #161615
-#              background         #073642
-#              statusline         #111111
-#              
-#              # Bar colors       border    background    text 
-#              focused_workspace  #fdf6e3   #fdf6e3       #cb4b16
-#              active_workspace   #fdf6e3   #fdf6e3       #020202
-#              inactive_workspace #fdf6e3   #fdf6e3       #657b83
-#              urgent_workspace   #fdf6e3   #fdf6e3       #268bd2
-#         }
-#}
+#Start i3bar to display a workspace bar
+#Uncomment to use the default i3bar status
+bar {      
+    
+          status_command  $HOME/.local/bin/conkyi3.sh     
+          position top
+          font xft:tewi, FontAwesome 8
+          strip_workspace_numbers yes
+          
+          colors {
+              separator          #161615
+              background         #040404
+              statusline         #111111
+              
+              # Bar colors       border    background    text 
+              focused_workspace  #516761   #516761       #020202
+              active_workspace   #268bd2   #268bd2       #020202
+              inactive_workspace #101010   #101010       #627061
+              urgent_workspace   #cf372c   #cf372c       #020202
+         }
+}
 
 #*************  My apps settings  *********************
 
@@ -259,8 +259,8 @@ exec --no-startup-id nitrogen --restore  &
 exec --no-startup-id compton --config ~/.compton.conf -b 
 exec --no-startup-id dunst -config $HOME/.config/dunst/dunstrc
 # Uncommet the line bellow to use lemonbar
-#exec --no-startup-id $HOME/.local/bin/barstart &
-#exec --no-startup-id conky -c $HOME/.config/i3/conkybar &
+# exec --no-startup-id $HOME/.local/bin/barstart &
+# exec --no-startup-id conky -c $HOME/.config/i3/conkybar &
 
 # Set per-application border
 for_window [class="^.*"] border pixel 1
