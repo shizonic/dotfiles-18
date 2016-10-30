@@ -74,16 +74,16 @@ bindsym $mod+a focus parent
 
 # Initialize workspace
 # 
-set $w1   1:0001
-set $w2   2:0010
-set $w3   3:0011
-set $w4   4:0100
-set $w5   5:0101
-set $w6   6:0110
-set $w7   7:0111
-set $w8   8:1000
-set $w9   9:1001
-set $w10 10:1010
+set $w1   1:[0001]
+set $w2   2:[0010]
+set $w3   3:[0011]
+set $w4   4:[0100]
+set $w5   5:[0101]
+set $w6   6:[0110]
+set $w7   7:[0111]
+set $w8   8:[1000]
+set $w9   9:[1001]
+set $w10 10:[1010]
 
  
 # Switch to workspace
@@ -245,10 +245,10 @@ bar {
               statusline         #111111
               
               # Bar colors       border    background    text 
-              focused_workspace  #5E468C   #5E468C       #020202
-              active_workspace   #268bd2   #268bd2       #020202
-              inactive_workspace #080808   #080808       #899CA1
-              urgent_workspace   #287373   #287373       #020202
+              focused_workspace  #101010   #020202       #5E468C
+              active_workspace   #101010   #020202       #268bd2
+              inactive_workspace #101010   #020202       #899CA1
+              urgent_workspace   #101010   #020202       #287373
          }
 }
 
