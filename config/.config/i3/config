@@ -149,7 +149,7 @@ bindsym $mod+minus scratchpad show
 
 #  i3-gaps settings 
 #  More info visit: https://github.com/Airblader/i3
-#smart_gaps on     # when only one container is in use no_gaps
+smart_gaps on     # when only one container is in use no_gaps
 smart_borders on  # no borders when one app is in use
 set $mode_gaps Gaps: (o) outer, (i) inner
 set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
@@ -225,10 +225,10 @@ bindsym $mod+p exec pcmanfm
 bindsym $mod+b exec torify luakit
 
 # Window colors           border    background    text      indicator
-client.focused            #101010   #101010       #299156   #ffaf5f
+client.focused            #101010   #101010       #5E468C   #ffaf5f
 client.focused_inactive   #101010   #101010       #808080   #101010
 client.unfocused          #101010   #101010       #8b8b8b   #101010
-client.urgent             #101010   #101010       #002b36   #C0C0C0
+client.urgent             #101010   #101010       #31658C   #C0C0C0
 
 #Start i3bar to display a workspace bar
 #Uncomment to use the default i3bar status
@@ -241,14 +241,14 @@ bar {
           
           colors {
               separator          #161615
-              background         #040404
+              background         #020202
               statusline         #111111
               
               # Bar colors       border    background    text 
-              focused_workspace  #516761   #516761       #020202
+              focused_workspace  #5E468C   #5E468C       #020202
               active_workspace   #268bd2   #268bd2       #020202
-              inactive_workspace #101010   #101010       #627061
-              urgent_workspace   #cf372c   #cf372c       #020202
+              inactive_workspace #080808   #080808       #899CA1
+              urgent_workspace   #287373   #287373       #020202
          }
 }
 
