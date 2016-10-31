@@ -74,16 +74,16 @@ bindsym $mod+a focus parent
 
 # Initialize workspace
 # 
-set $w1   1:[0001]
-set $w2   2:[0010]
-set $w3   3:[0011]
-set $w4   4:[0100]
-set $w5   5:[0101]
-set $w6   6:[0110]
-set $w7   7:[0111]
-set $w8   8:[1000]
-set $w9   9:[1001]
-set $w10 10:[1010]
+set $w1   1
+set $w2   2
+set $w3   3
+set $w4   4
+set $w5   5
+set $w6   6
+set $w7   7
+set $w8   8
+set $w9   9
+set $w10 10
 
  
 # Switch to workspace
@@ -232,25 +232,25 @@ client.urgent             #101010   #101010       #31658C   #C0C0C0
 
 #Start i3bar to display a workspace bar
 #Uncomment to use the default i3bar status
-bar {      
+# bar {      
     
-          status_command  $HOME/.local/bin/conkyi3.sh     
-          position top
-          font xft:tewi, FontAwesome 8
-          strip_workspace_numbers yes
+#           status_command  $HOME/.local/bin/conkyi3.sh     
+#           position top
+#           font xft:tewi, FontAwesome 8
+#           strip_workspace_numbers yes
           
-          colors {
-              separator          #161615
-              background         #020202
-              statusline         #111111
+#           colors {
+#               separator          #161615
+#               background         #020202
+#               statusline         #111111
               
-              # Bar colors       border    background    text 
-              focused_workspace  #101010   #020202       #5E468C
-              active_workspace   #101010   #020202       #268bd2
-              inactive_workspace #101010   #020202       #899CA1
-              urgent_workspace   #101010   #020202       #287373
-         }
-}
+#               # Bar colors       border    background    text 
+#               focused_workspace  #101010   #020202       #5E468C
+#               active_workspace   #101010   #020202       #268bd2
+#               inactive_workspace #101010   #020202       #899CA1
+#               urgent_workspace   #101010   #020202       #287373
+#          }
+# }
 
 #*************  My apps settings  *********************
 
@@ -259,8 +259,8 @@ exec --no-startup-id nitrogen --restore  &
 exec --no-startup-id compton --config ~/.compton.conf -b 
 exec --no-startup-id dunst -config $HOME/.config/dunst/dunstrc
 # Uncommet the line bellow to use lemonbar
-# exec --no-startup-id $HOME/.local/bin/barstart &
-# exec --no-startup-id conky -c $HOME/.config/i3/conkybar &
+exec --no-startup-id $HOME/.local/bin/barstart &
+exec --no-startup-id conky -c $HOME/.config/i3/conkybar &
 
 # Set per-application border
 for_window [class="^.*"] border pixel 1
