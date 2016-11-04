@@ -7,8 +7,8 @@ import i3ipc
 i3 = i3ipc.Connection()
 
 # Define colors
-coloractive = '%{F#477AB3}'
-colorinactive = '%{F#8b8585}'
+coloractive = '%{F#5E468C}'
+colorinactive = '%{F#555555}'
 colorwarning = '%{F#BF4D80}'
 
 # Define a callback to be called when you switch workspaces.
