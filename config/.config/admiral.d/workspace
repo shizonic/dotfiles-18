@@ -7,9 +7,9 @@ import i3ipc
 i3 = i3ipc.Connection()
 
 # Define colors
-coloractive = '%{U#d9671f}'
-colorinactive = '%{F#839496}'
-colorwarning = '%{U#6c71c4}'
+coloractive = '%{F#477AB3}'
+colorinactive = '%{F#8b8585}'
+colorwarning = '%{F#BF4D80}'
 
 # Define a callback to be called when you switch workspaces.
 def on_workspace_focus(self, e):
@@ -23,9 +23,9 @@ def on_workspace_focus(self, e):
 
     for n in range(len(ws_nums)):
         if focused == n:
-            workspace_string += coloractive + '%{+u}' + names[n] + '%{-u}%{U-}' + ' '
+            workspace_string += coloractive + names[n] + ' '
         elif n in urg:
-            workspace_string += colorwarning + '%{+u}' + names[n] + '%{-u}%{U-}' + ' '
+            workspace_string += colorwarning + names[n] + ' '
         else:
             workspace_string += colorinactive + names[n] + ' '
 
@@ -42,9 +42,9 @@ names = [''.join([i for i in n['name'] if not i.isdigit()]) for n in workspaces]
 
 for n in range(len(ws_nums)):
     if focused == n:
-        workspace_string += coloractive + '%{+u}' + names[n] + '%{-u }%{U-}' + ' '
+        workspace_string += coloractive  + names[n]  + ' '
     elif n in urg:
-        workspace_string += colorwarning + '%{+u}' + names[n] + '%{-u}%{U-}' + ' '
+        workspace_string += colorwarning + names[n] + ' '
     else:
         workspace_string += colorinactive + names[n] + ' '
 
