@@ -5,9 +5,9 @@
 # ----------------------------------------------------------------------
 
 auto-reload yes
-browser luakit
+browser firefox
 cleanup-on-quit yes
-download-path "/home/mohabaks/Downloads/podcasts"
+download-path "/home/mohabaks/Videos/Podcasts"
 feed-sort-order title-dec
 max-downloads 4
 notify-always yes
@@ -50,7 +50,7 @@ ignore-mode "display"
 articlelist-format "%4i %f %D  %?T?|%-17T| ?%t"
 
 highlight feedlist    "^  *[0-9]+  *N  "                    red      default
-highlight articlelist "^  *[0-9]+  *N  "                    yellow   white
+highlight articlelist "^  *[0-9]+  *N  "                    blue     white
 
 highlight article     "(^Feed:.*|^Title:.*|^Author:.*)"     green    default
 highlight article     "(^Link:.*|^Date:.*)"                 white    default
@@ -67,8 +67,8 @@ highlight article     ":.*\\(embedded flash\\)$"            color9   default
 
 color background                                            default   default
 color listnormal                                            default   default
-color listfocus                                             black     white
-color info                                                  default   black
+color listfocus                                             black     magenta
+color info                                                  blue      black
 color article                                               default   default
 
 
