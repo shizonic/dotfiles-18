@@ -1,10 +1,10 @@
 #!/bin/bash
 
 . $HOME/.config/admiral.d/config
-networkIcon=""
+networkIcon=""
 
 if ping -c 1 google.com >> /dev/null 2>&1; then
-	echo "%{F$BLUE}${networkIcon} %{F$FG}Online "
+	echo "%{F$BBLUE}${networkIcon}%{F$BYELLOW}Online "
 else
-	echo "%{F$FG}${networkIcon} %{F$FG}Offline "
+	echo "%{F$BYELLOW}${networkIcon}%{F$BYELLOW}Offline "
 fi	

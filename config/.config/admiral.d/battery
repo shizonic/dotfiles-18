@@ -10,25 +10,25 @@ if [[ -d /sys/class/power_supply/BAT1 ]]; then
 
         # Determine battery icon based on capacity and state.
         if [[ "${batteryState}" == "Discharging" && ${batteryPower} -le 20 ]]; then
-            batteryIcon=""
+            batteryIcon=""
             batteryColor=${RED}
         elif [[ "${batteryState}" == "Discharging" && ${batteryPower} -le 40 ]]; then
-            batteryIcon=""
-            batteryColor=${FG}
+            batteryIcon=""
+            batteryColor=${BYELLOW}
         elif [[ "${batteryState}" == "Discharging" && ${batteryPower} -le 60 ]]; then
-            batteryIcon=""
-            batteryColor=${FG}
+            batteryIcon=""
+            batteryColor=${BYELLOW}
         elif [[ "${batteryState}" == "Discharging" && ${batteryPower} -le 80 ]]; then
-            batteryIcon=""
-            batteryColor=${FG}
+            batteryIcon=""
+            batteryColor=${BYELLOW}
         elif [[ "${batteryState}" == "Discharging" && ${batteryPower} -le 100 ]]; then
-            batteryIcon=""
-            batteryColor=${FG}
+            batteryIcon=""
+            batteryColor=${BYELLOW}
         else
-            batteryIcon=""
-            batteryColor=${WHITE}
+            batteryIcon=""
+            batteryColor=${BWHITE}
         fi
-        echo "%{F$batteryColor}${batteryIcon} %{F$FG}${batteryPower}% "
+        echo "%{F$batteryColor}${batteryIcon}%{F$BYELLOW}${batteryPower}% "
     else
         echo "%{F$red}No Battery Detected "
 fi	

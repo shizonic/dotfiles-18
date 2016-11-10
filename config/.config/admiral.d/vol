@@ -7,17 +7,17 @@ volumeState=$(ponymix get-volume)
 
 # Determine volume icon depending on the level of volume.
 if [[ ${volumeState} -eq 0 ]]; then
-	volumeIcon=""
+	volumeIcon=""
 elif [[ ${volumeState} -le 50 ]]; then
-	volumeIcon=""
+	volumeIcon=""
 else
-	volumeIcon=""
+	volumeIcon=""
 fi
 
 if $(ponymix is-muted); then
-    volumeIcon=""
+    volumeIcon=""
 	volumeColor=${RED}
 else
-	volumeColor=${FG}
+	volumeColor=${CYAN}
 fi
-	echo "%{F$volumeColor}${volumeIcon} %{F$FG}${volumeState}% "
+	echo "%{F$volumeColor}${volumeIcon}%{F$BYELLOW}${volumeState}% "

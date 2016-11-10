@@ -1,0 +1,5 @@
+#!/bin/bash
+icon=''
+. $HOME/.config/admiral.d/config
+packages=`pacman -Q| wc -l`
+echo "%{F$MAGENTA}$icon%{F$BYELLOW}$packages "
