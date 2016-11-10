@@ -18,6 +18,7 @@ class Default(ColorScheme):
 				attr = normal
 			if context.empty or context.error:
 				bg = red
+				fg = black
 			if context.border:
 				attr = normal
 				fg = black
@@ -31,7 +32,7 @@ class Default(ColorScheme):
 				fg = cyan
 			if context.directory:
 				attr |= normal
-				fg = 10
+				fg = magenta
 			elif context.executable and not \
 					any((context.media, context.container,
 						context.fifo, context.socket)):
@@ -78,7 +79,7 @@ class Default(ColorScheme):
 				if context.good:
 					bg = green
 			elif context.link:
-				fg = cyan
+				fg = yellow
 
 		elif context.in_statusbar:
 			if context.permissions:
