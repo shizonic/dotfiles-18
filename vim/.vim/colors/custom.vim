@@ -2,7 +2,6 @@
 " Author: mohabaks
 " Github: https://github.com/mohabaks/dotfiles/
 " SpecialThanks: https://github.com/ggalindezb/Vim-Colorscheme-Template
-" Notes: To check the meaning of the highlight groups, :help 'highlight'
 
 " --------------------------------
 set background=dark
@@ -26,11 +25,11 @@ let g:colors_name="custom"
 " --------------------------------
 " Editor settings
 " --------------------------------
-hi Normal          ctermfg=235      ctermbg=none    cterm=none
+hi Normal          ctermfg=07      ctermbg=none    cterm=none
 hi Cursor          ctermfg=15      ctermbg=none    cterm=none
 hi CursorLine      ctermfg=15      ctermbg=00      cterm=none
-hi LineNr          ctermfg=237     ctermbg=00      cterm=none
-hi CursorLineNR    ctermfg=15      ctermbg=00      cterm=none
+hi LineNr          ctermfg=235     ctermbg=00      cterm=none
+hi CursorLineNR    ctermfg=05      ctermbg=00      cterm=none
 
 " -----------------
 " - Number column -
@@ -59,19 +58,19 @@ hi IncSearch       ctermfg=15      ctermbg=10      cterm=none
 " -----------------
 " - Prompt/Status -
 " -----------------
-hi StatusLine      ctermfg=235     ctermbg=00      cterm=none
-hi StatusLineNC    ctermfg=235     ctermbg=00      cterm=none
+hi StatusLine      ctermfg=07      ctermbg=00      cterm=none
+hi StatusLineNC    ctermfg=07      ctermbg=00      cterm=none
 hi WildMenu        ctermfg=08      ctermbg=03      cterm=none
 hi Question        ctermfg=02      ctermbg=00      cterm=none
-hi Title           ctermfg=07      ctermbg=00      cterm=none
+hi Title           ctermfg=04      ctermbg=00      cterm=none
 hi ModeMsg         ctermfg=09      ctermbg=00      cterm=none
 hi MoreMsg         ctermfg=06      ctermbg=00      cterm=none
 
 " --------------
 " - Visual aid -
 " --------------
-hi MatchParen      ctermfg=03      ctermbg=00      cterm=none
-hi Visual          ctermfg=15      ctermbg=00      cterm=none
+hi MatchParen      ctermfg=10      ctermbg=00      cterm=none
+hi Visual          ctermfg=235     ctermbg=00      cterm=none
 hi VisualNOS       ctermfg=06      ctermbg=00      cterm=none
 hi NonText         ctermfg=02      ctermbg=none    cterm=none
 
@@ -79,18 +78,18 @@ hi Todo            ctermfg=08      ctermbg=03      cterm=none
 hi Underlined      ctermfg=06      ctermbg=none    cterm=none
 hi Error           ctermfg=01      ctermbg=none    cterm=none
 hi ErrorMsg        ctermfg=01      ctermbg=none    cterm=none
-hi WarningMsg      ctermfg=03      ctermbg=none    cterm=none
+hi WarningMsg      ctermfg=09      ctermbg=none    cterm=none
 hi Ignore          ctermfg=05      ctermbg=none    cterm=none
-hi SpecialKey      ctermfg=11      ctermbg=none    cterm=none
+hi SpecialKey      ctermfg=06      ctermbg=none    cterm=none
 
 " --------------------------------
 " Variable types
 " --------------------------------
-hi Constant        ctermfg=11      ctermbg=none    cterm=none
-hi String          ctermfg=07      ctermbg=none    cterm=none
+hi Constant        ctermfg=06      ctermbg=none    cterm=none
+hi String          ctermfg=04      ctermbg=none    cterm=none
 hi StringDelimiter ctermfg=02      ctermbg=none    cterm=none
 hi Character       ctermfg=04      ctermbg=none    cterm=none
-hi Number          ctermfg=03      ctermbg=none    cterm=none
+hi Number          ctermfg=05      ctermbg=none    cterm=none
 hi Boolean         ctermfg=01      ctermbg=none    cterm=none
 hi Float           ctermfg=14      ctermbg=none    cterm=none
 
@@ -106,15 +105,15 @@ hi Repeat          ctermfg=06      ctermbg=none    cterm=none
 hi Label           ctermfg=09      ctermbg=none    cterm=none
 hi Operator        ctermfg=04      ctermbg=none    cterm=none
 hi Keyword         ctermfg=09      ctermbg=none    cterm=none
-hi Exception       ctermfg=03      ctermbg=none    cterm=none
+hi Exception       ctermfg=02      ctermbg=none    cterm=none
 hi Comment         ctermfg=235     ctermbg=00      cterm=none
 
-hi Special         ctermfg=11      ctermbg=none    cterm=none
+hi Special         ctermfg=06      ctermbg=none    cterm=none
 hi SpecialChar     ctermfg=02      ctermbg=none    cterm=none
 hi Tag             ctermfg=04      ctermbg=none    cterm=none
 hi Delimiter       ctermfg=09      ctermbg=none    cterm=none
 hi SpecialComment  ctermfg=04      ctermbg=none    cterm=none
-hi Debug           ctermfg=07      ctermbg=none    cterm=none
+hi Debug           ctermfg=05      ctermbg=none    cterm=none
 
 " ----------
 " - C like -
@@ -163,14 +162,14 @@ hi pythonRepeat          ctermfg=06     ctermbg=none     cterm=none
 hi pythonConditional     ctermfg=02     ctermbg=none     cterm=none
 hi pythonBuiltinObj      ctermfg=06     ctermbg=none     cterm=none
 hi pythonFunction        ctermfg=05     ctermbg=none     cterm=none
-hi pythonDecorator       ctermfg=03     ctermbg=none     cterm=none
-hi pythonImport          ctermfg=07     ctermbg=none     cterm=none
+hi pythonDecorator       ctermfg=06     ctermbg=none     cterm=none
+hi pythonImport          ctermfg=12     ctermbg=none     cterm=none
 hi pythonRun             ctermfg=15     ctermbg=none     cterm=none
 hi pythonCoding          ctermfg=05     ctermbg=none     cterm=none
-hi pythonOperator        ctermfg=07     ctermbg=none     cterm=none
-hi pythonExceptions      ctermfg=03     ctermbg=none     cterm=none
+hi pythonOperator        ctermfg=14     ctermbg=none     cterm=none
+hi pythonExceptions      ctermfg=09     ctermbg=none     cterm=none
 hi pythonBoolean         ctermfg=15     ctermbg=none     cterm=none
-hi pythonDot             ctermfg=15     ctermbg=none     cterm=none
+hi pythonDot             ctermfg=05     ctermbg=none     cterm=none
 
 " JAVA
 hi javaexternal          ctermfg=08     ctermbg=none     cterm=none
@@ -198,7 +197,7 @@ hi cmakeVariableValue    ctermfg=04     ctermbg=none     cterm=none
 hi cmakeArguments        ctermfg=03     ctermbg=none     cterm=none
 
 " SH
-hi shVariable            ctermfg=08     ctermbg=none     cterm=none
+hi shVariable            ctermfg=03     ctermbg=none     cterm=none
 hi shCommandSub          ctermfg=04     ctermbg=none     cterm=none
 hi shStatement           ctermfg=05     ctermbg=none     cterm=none
 hi shTestOpr             ctermfg=06     ctermbg=none     cterm=none
@@ -206,7 +205,7 @@ hi shRange               ctermfg=02     ctermbg=none     cterm=none
 hi shOption              ctermfg=01     ctermbg=none     cterm=none
 hi shDeref               ctermfg=03     ctermbg=none     cterm=none
 hi shCmdSubRegion        ctermfg=06     ctermbg=none     cterm=none
-hi shFor                 ctermfg=08     ctermbg=none     cterm=none
+hi shFor                 ctermfg=02     ctermbg=none     cterm=none
 
 " HTML
 hi htmltagname           ctermfg=05     ctermbg=none     cterm=none
