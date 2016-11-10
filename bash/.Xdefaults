@@ -20,8 +20,8 @@ Xft.hintstyle:          hintsfull
 !         URxvt settings 
 !-----------------------------------------------------------------------
 
-!URxvt.internalBorder:   3
-!URxvt.externalBorder:   3
+URxvt.internalBorder:    5
+URxvt.externalBorder:    5
 !URxvt.lineSpace:        0
 !urxvt*shading:          30
 URxvt.depth:             32
@@ -102,4 +102,4 @@ Xcursor.theme:             Paper
 !URxvt.pointerBlank:        true
 
 !! Colors
-#include "/home/mohabaks/.colors/kwasa"
+#include "/home/mohabaks/.colors/jwr-dark"
