@@ -1,15 +1,12 @@
 # Web Design
 http://webdevradio.com/feed/   webdev
-http://feeds.feedburner.com/Boagworldcom-ForThoseManagingWebsites
 
 # Unix/Linux
-http://feeds.feedburner.com/BsdNowMp3 unix
 http://sixgun.org/feed/gnr linux
 http://www.lugradio.org/episodes.rss linux
 
 
 # System Administartion, Security or Infrastructure
-http://feeds.feedburner.com/RunasRadio "~RunasRadio"
 http://feeds.feedburner.com/GibsonResearchNews  "~GibsonResearchNews"
 http://feeds.feedburner.com/SteveGibsonsBlog  "~SteveGibsonsBlog"
 http://feeds2.feedburner.com/hak5hd  "~Hack5"
@@ -19,16 +16,9 @@ http://feeds.twit.tv/sn_video_hd.xml    "~Security Now"
 http://feeds.twit.tv/twich_video_hd.xml "~Twich"
 http://securityweeklytv.swsgtv.libsynpro.com/rss "~Securityweekly"
 http://hntvvideo.swsgtv.libsynpro.com/rss "~Hack Nacked TV"
-http://eswvideo.swsgtv.libsynpro.com/rss "Enterprise Security Weekly"
 http://sswvideo.swsgtv.libsynpro.com/rss "~SecurityWeekly"
 http://feeds.feedburner.com/ProgrammingThrowdown   "~ Programming Throwdown"
-http://feeds.podtrac.com/VGAulpN7MY1U "~Arrested DevOps"
-http://simplecast.com/podcasts/279/rss "~Full Stack Radio"
-http://feeds.podtrac.com/q8s8ba9YtM6r "~CodeNewbie"
-http://cppcast.libsyn.com/rss "~CppCast"
 https://talkpython.fm/episodes "~Talk Python To Me"
-https://feeds.feedwrench.com/JavaScriptJabber.rss  "~JavaScriptJabber"
-http://feeds.feedburner.com/ElegantCode?format=xml "~Elegant Code"
 http://feeds.feedburner.com/HackerMedley?format=xml "~HackerMedley"
 http://feeds.feedburner.com/HerdingCode?format=xml  "~HerdingCode"
 https://pragprog.com/podcasts/feed.rss "~The PragmaticBookshelf"
