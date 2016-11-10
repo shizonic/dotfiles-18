@@ -6,8 +6,8 @@
 !#####################################
 
 *background:#020202
-*foreground:#555555
-*cursorColor:#555555
+*foreground:#8d8d8d
+*cursorColor:#8d8d8d
 
 ! Black
 *color0:   #080808
@@ -38,7 +38,7 @@
 *color14:  #6096BF
 
 ! White
-*color7:   #555555
-*color15:  #8b8585
+*color7:   #8d8d8d
+*color15:  #C0C0C0
 
 ! vim: et sw=2 syn=xdefaults
