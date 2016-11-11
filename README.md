@@ -1,8 +1,7 @@
 Current Screenshots
 ===========
-### Lemonbar and Rofi
-![clean](http://imgur.com/uWl5jMP.png)
-### Luakit 
-![luakit](http://imgur.com/qolQrqG.png)
+### Clean
+![clean](http://imgur.com/Zn67LNJ.png)
+
 ### Vim and Tmux
-![vim](http://imgur.com/ve3IBD9.png)
+![vim](http://imgur.com/xUJLqi8.png)
