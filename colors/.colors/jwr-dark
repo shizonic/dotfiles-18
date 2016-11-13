@@ -5,13 +5,13 @@
 !## ff6ffa 5F8BFF 490a47 1f0042    ###
 !#####################################
 
-*background:#020202
+*background:#020508
 *foreground:#8d8d8d
 *cursorColor:#8d8d8d
 
 ! Black
-*color0:   #080808
-*color8:   #020202
+*color0:   #07090d
+*color8:   #020508
 
 ! Red
 *color1:   #8C4665
