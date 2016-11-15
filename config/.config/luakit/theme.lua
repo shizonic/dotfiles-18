@@ -39,8 +39,8 @@ theme.proxy_inactive_menu_fg    = '#888'
 theme.proxy_inactive_menu_bg    = '#FFF'
 
 -- Statusbar specific
-theme.sbar_fg         = "#888888"
-theme.sbar_bg         = "#040404"
+theme.sbar_fg         = "#9e9ecd"
+theme.sbar_bg         = "#07090d"
 
 -- Downloadbar specific
 theme.dbar_fg         = "#808080"
