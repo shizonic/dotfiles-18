@@ -38,7 +38,7 @@
 *color14:  #6096BF
 
 ! White
-*color7:   #8d8d8d
+*color7:   #9E9ECB
 *color15:  #C0C0C0
 
 ! vim: et sw=2 syn=xdefaults
