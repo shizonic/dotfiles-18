@@ -7,7 +7,7 @@ import i3ipc
 i3 = i3ipc.Connection()
 
 # Define colors
-coloractive = '%{F#5E468C}'
+coloractive = '%{F#395573}'
 colorinactive = '%{F#9E9ECB}'
 colorwarning = '%{F#BF4D80}'
 
