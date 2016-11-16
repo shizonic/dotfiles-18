@@ -102,4 +102,4 @@ Xcursor.theme:             Paper
 !URxvt.pointerBlank:        true
 
 !! Colors
-#include "/home/mohabaks/.colors/jwr-dark"
+#include "/home/mohabaks/.colors/solarized.dark"
