@@ -14,21 +14,21 @@ if [[ -d /sys/class/power_supply/BAT1 ]]; then
             batteryColor=${RED}
         elif [[ "${batteryState}" == "Discharging" && ${batteryPower} -le 40 ]]; then
             batteryIcon=""
-            batteryColor=${BYELLOW}
+            batteryColor=${FG}
         elif [[ "${batteryState}" == "Discharging" && ${batteryPower} -le 60 ]]; then
             batteryIcon=""
-            batteryColor=${BYELLOW}
+            batteryColor=${FG}
         elif [[ "${batteryState}" == "Discharging" && ${batteryPower} -le 80 ]]; then
             batteryIcon=""
-            batteryColor=${BYELLOW}
+            batteryColor=${FG}
         elif [[ "${batteryState}" == "Discharging" && ${batteryPower} -le 100 ]]; then
             batteryIcon=""
-            batteryColor=${BYELLOW}
+            batteryColor=${FG}
         else
             batteryIcon=""
             batteryColor=${BWHITE}
         fi
-        echo "%{F$batteryColor}${batteryIcon}%{F$BYELLOW}${batteryPower}%"
+        echo "%{F$batteryColor}${batteryIcon}%{F$FG}${batteryPower}%"
     else
         echo "%{F$red}No Battery Detected "
 fi	
