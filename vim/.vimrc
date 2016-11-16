@@ -89,13 +89,13 @@ filetype plugin indent on    " required
 " Set Colorscheme and Statusline{{{
 
 set background=dark
-colorscheme custom
+colorscheme solarized
 
 "" Status line
 set t_Co=16 " 16, 18, and 256
 "set laststatus=2 
 let g:lightline = {
-      \ 'colorscheme': 'jellybeans',
+      \ 'colorscheme': 'solarized',
       \ }
       
 "" Vim-airline
