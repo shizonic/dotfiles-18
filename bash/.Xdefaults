@@ -95,7 +95,7 @@ URxvt.iso14755_52:         false
 !URxvt.cursorUnderline:    false
 !URxvt.cursorColor:        #c5c8c6
 !URxvt.borderColor:        #101010
-URxvt.colorUL:             #dc322f
+URxvt.colorUL:             #5E468C
 Xcursor.theme:             Paper
 
 !! Pointer
