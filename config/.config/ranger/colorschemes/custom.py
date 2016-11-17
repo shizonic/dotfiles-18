@@ -31,8 +31,8 @@ class Default(ColorScheme):
 				attr |= bold
 				fg = cyan
 			if context.directory:
-				attr |= normal
-				fg = 12
+				attr |= bold
+				fg = yellow
 			elif context.executable and not \
 					any((context.media, context.container,
 						context.fifo, context.socket)):
