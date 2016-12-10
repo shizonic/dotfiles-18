@@ -20,4 +20,4 @@ if $(ponymix is-muted); then
 else
 	volumeColor=${FG}
 fi
-	echo "%{F$volumeColor}${volumeIcon}%{F$FG}${volumeState}% "
+	echo "%{F$volumeColor}${volumeIcon}%{F$FG} ${volumeState}% "

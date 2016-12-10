@@ -3,4 +3,4 @@
 
 . $HOME/.config/admiral.d/config
 clock=$(date "+%a %d %b %Y %H:%M")
-echo "%{F-}%{B$BBLACK}  %{F$FG}${clock}  %{B-}%{F-}"
+echo "%{F-}%{B$BBLACK}%{F$RED} +++ %{F$FG}${clock} %{F$MAGENTA}+++ %{B-}%{F-}"
