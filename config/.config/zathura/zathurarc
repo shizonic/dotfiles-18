@@ -1,8 +1,8 @@
 # zathurarc-dark
 
 set font                        "Droid Sans 8"
-set default-bg                  "#C0C0C0" #00
-set default-fg                  "#020508" #01
+set default-bg                  "#020508" #00
+set default-fg                  "#9e9ecb" #01
 
 set statusbar-fg                "#9e9ecb" #04
 set statusbar-bg                "#07090d" #01
@@ -28,8 +28,8 @@ set completion-fg               "#657b83" #0C
 set notification-bg             "#020508" #0B
 set notification-fg             "#6c71c4" #00
 
-set recolor-lightcolor          "#C0C0C0" #00
-set recolor-darkcolor           "#020508" #06
+set recolor-lightcolor          "#020508" #00
+set recolor-darkcolor           "#9e9ecb" #06
 set recolor                     "true"
 
 # setting recolor-keep true will keep any color your pdf has.
