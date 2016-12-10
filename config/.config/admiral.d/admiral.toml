@@ -39,11 +39,11 @@ reload = 1
 
 # Clickable areas
 [pow]
-path = 'echo "%{A:. $HOME/.config/admiral.d/popups/power/power:}%{F#020508}%{B#020508}%{F#BF4D80}%{B-}%{A}"'
+path = 'echo "%{A:. $HOME/.config/admiral.d/popups/power/power:}%{B#020508}%{F#287373}%{B-}%{A}"'
 static = true
 
 [menu]
-path = 'echo "%{A:. $HOME/.config/admiral.d/popups/todo/todo:}%{B#020508}%{F#477AB3} %{B-}%{F#020508}%{A}"'
+path = 'echo "%{A:. $HOME/.config/admiral.d/popups/todo/todo:}%{B#020508}%{F#477AB3}%{F#BF4D80}%{F#472f57}moha%{F#545e71}baks%{B-}%{A}"'
 static = true
 
 # Used for formatting lemonbar
