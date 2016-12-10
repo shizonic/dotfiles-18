@@ -3,8 +3,8 @@
 ! ------------------------------------------------------------------------------
 
 ! General
-rofi.font:                tewi 8
-rofi.opacity:             100
+rofi.font:                GohuFont 8
+rofi.opacity:             95
 rofi.fake-transparency:   true
 rofi.hide-scrollbar:      true
 
