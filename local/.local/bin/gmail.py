@@ -18,4 +18,4 @@ ito = contents.index('</fullcount>')
 
 fullcount = contents[ifrom:ito]
 
-print(fullcount + ' new')
+print(fullcount + 'new')
