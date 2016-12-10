@@ -6,15 +6,15 @@
 #
 
 # Panel 
-PW=1366 
-PH=15   
+PW=1366
+PH=15 
 PX=0     
-PY=0 
+PY=0
 
 # Fonts
-FONT1="tewi:size=8"
+FONT1="Tewi:size=8"
 FONT2="FontAwesome:size=8"
-FONT3="Siji:size=10"
+FONT3="Siji:size=8"
 
 # Color directory
 CD="$HOME/.colors/jwr-dark"
