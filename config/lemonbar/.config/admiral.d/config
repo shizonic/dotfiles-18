@@ -1,0 +1,55 @@
+#!/bin/bash
+#
+# mohabaks, 21 Oct 2016 22:36
+# https://github.com/mohabaks
+# Lemonbar Configs
+#
+
+# Panel 
+PW=1366
+PH=15
+PX=0    
+PY=0
+
+# Fonts
+FONT1="Tewi:size=8"
+FONT2="FontAwesome:size=8"
+FONT3="Siji:size=8"
+
+# Color directory
+CD="$HOME/.colors/rejoin"
+
+# Char glyps for powerline fonts
+sep_left=""                        # Powerline separator left
+sep_right=""                       # Powerline separator right
+sep_l_left=""                      # Powerline light separator left
+sep_l_right="" # Powerline light sepatator right
+
+
+# Fetch the Colors
+BG=`cat ${CD} | grep -i background: | tail -c 8`
+FG=`cat ${CD} | grep -i foreground: | tail -c 8`
+
+BLACK=`cat ${CD} | grep -i color0: | tail -c 8`
+BBLACK=`cat ${CD} | grep -i color8: | tail -c 8`
+
+RED=`cat ${CD} | grep -i color1: | tail -c 8`
+BRED=`cat ${CD} | grep -i color9: | tail -c 8`
+
+GREEN=`cat ${CD} | grep -i color2: | tail -c 8`
+BGREEN=`cat ${CD} | grep -i color10: | tail -c 8`
+
+YELLOW=`cat ${CD} | grep -i color3: | tail -c 8`
+BYELLOW=`cat ${CD} | grep -i color11: | tail -c 8`
+
+BLUE=`cat ${CD} | grep -i color4: | tail -c 8`
+BBLUE=`cat ${CD} | grep -i color12: | tail -c 8`
+
+MAGENTA=`cat ${CD} | grep -i color5: | tail -c 8`
+BMAGENTA=`cat ${CD} | grep -i color13: | tail -c 8`
+
+CYAN=`cat ${CD} | grep -i color6: | tail -c 8`
+BCYAN=`cat ${CD} | grep -i color14: | tail -c 8`
+
+WHITE=`cat ${CD} | grep -i color7: | tail -c 8`
+BWHITE=`cat ${CD} | grep -i color15: | tail -c 8`

@@ -1,0 +1,66 @@
+#==============================================================================
+#                               conkyrc_seamod
+# Date    : 05/02/2012
+# Author  : SeaJey
+# Version : v0.1
+# License : Distributed under the terms of GNU GPL version 2 or later
+# 
+# This version is a modification of conkyrc_lunatico wich is modification of conkyrc_orange
+# 
+# conkyrc_orange:    http://gnome-look.org/content/show.php?content=137503&forumpage=0
+# conkyrc_lunatico:  http://gnome-look.org/content/show.php?content=142884
+#==============================================================================
+
+background no
+update_interval 1
+
+double_buffer yes
+no_buffers yes
+text_buffer_size 2048
+override_utf8_locale yes
+use_xft yes
+xftfont tewi:size=8
+xftalpha 0.5
+uppercase no
+
+gap_x 0
+gap_y 0
+minimum_size 1366 15
+maximum_width 1366
+
+own_window yes
+own_window_type panel
+own_window_transparent no
+own_window_argb_visual no
+own_window_argb_visual no
+own_window_colour 03232C
+own_window_argb_value 0
+own_window_hints undecorate,sticky,skip_taskbar,skip_pager,below
+
+border_inner_margin 0
+border_outer_margin 0
+alignment bottom_middle
+
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders no
+
+# Defining colors
+default_color 839496
+# Red
+color1 dc322f
+# Green
+color2 859900
+# Yellow
+color3 b58900
+# Blue
+color4 268bd2
+# Magenta
+color5 d33682
+# Cyan
+color6 2aa198
+## System information using conky capabilities
+
+TEXT
+${color4} Os: ${color}Arch Linux i686 ${color5}Kernel: ${color}$kernel${color} ${color2}Packages: ${color}${exec pacman -Qq | wc -l} ${color3}Cpu: ${color}${cpu}%${color} ${color6}Ram: ${color}${memperc}%${color} ${color5}Swap: ${color}${swapperc}%${color} ${color4}Disk: ${color}${fs_used_perc /}%${color} ${color1}Uptime: ${color}${uptime_short}${color} ${color4}Down: ${color}${downspeed enp2s0} Kb/s ${color2}Up: ${color}${upspeed enp2s0} Kb/s ${color5}Playing: ${color}${if_mpd_playing}${scroll 30 ${mpd_title}}${else}.:MPD not running:.${endif} ${color2}Mail: ${color}${execi 300 python ~/.local/bin/gmail.py} ${color3}Bat: ${color}${battery_percent BAT1}% ${color4}Date: ${color}${time %A %d %B %R} 
