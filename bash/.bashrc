@@ -3,12 +3,13 @@
 #   Github: https://github.com/mohabaks/dotfiles
 #
 #-----------------------------------------------
+
 export PROJECT_HOME=$HOME/Code/
 export PATH=$HOME/.local/bin:$PATH
 export RANGER_LOAD_DEFAULT_RC=FALSE
 export VISUAL=vim
 export EDITOR=vim
-export BROWSER=laukit
+export BROWSER=firefox
 export TERM="rxvt-unicode-256color"
 export TZ=Africa/Nairobi
 
