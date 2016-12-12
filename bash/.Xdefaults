@@ -45,10 +45,10 @@ URxvt*scrollTtyKeypress: true
 !URxvt*boldItalicFont:   xft:Droid Sans Mono for Powerline:bolditalic:italic:autohint=true:size=8
 
 ! Tewi
-URxvt*font:              xft:tewi:size=8
-URxvt*boldFont:          xft:tewi:normal:size=8
-URxvt*italicFont:        xft:tewi:italic:autohint=true:size=8
-URxvt*boldItalicFont:    xft:tewi:bolditalic:italic:autohint=true:size=8
+URxvt*font:              xft:GohuFont:size=8
+URxvt*boldFont:          xft:GohuFont:normal:size=8
+URxvt*italicFont:        xft:GohuFont:italic:autohint=true:size=8
+URxvt*boldItalicFont:    xft:GohuFont:bolditalic:italic:autohint=true:size=8
 
 URxvt.letterSpace:       true
 
@@ -79,7 +79,7 @@ URxvt.keysym.M-u: perl:     url-select:select_next
 URxvt.url-select.autocopy:  true
 URxvt.url-select.button:    2
 URxvt.url-select.underline: true
-URxvt.url-launcher:         /usr/bin/luakit
+URxvt.url-launcher:         /usr/bin/firefox
 URxvt.matcher.button:       1
 
 !! CopyPaste Keys
@@ -95,11 +95,11 @@ URxvt.iso14755_52:         false
 !URxvt.cursorUnderline:    false
 !URxvt.cursorColor:        #c5c10c6
 !URxvt.borderColor:         #07090d
-URxvt.colorUL:             #5E468C
+URxvt.colorUL:             #442216
 Xcursor.theme:             Paper
 
 !! Pointer
 !URxvt.pointerBlank:        true
 
 !! Colors
-#include "/home/mohabaks/.colors/jwr-dark"
+#include "/home/mohabaks/.colors/rejoin"
