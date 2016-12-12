@@ -34,6 +34,8 @@ call vundle#begin()
 "Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-markdown'
+Plugin 'cespare/vim-toml'
 Plugin 'kien/ctrlp.vim'
 Plugin 'rking/ag.vim'
 Plugin 'mileszs/ack.vim'
@@ -43,7 +45,6 @@ Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-repeat'
 Plugin 'groenewege/vim-less'
 Plugin 'kchmck/vim-coffee-script'
-Plugin 'tpope/vim-markdown'
 Plugin 'scrooloose/syntastic'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'easymotion/vim-easymotion'
@@ -71,9 +72,9 @@ Plugin 'tmux-plugins/vim-tmux'
 
 "" All of your Plugins must be added before the following line
 call vundle#end()            " required
-filetype plugin indent on    " required
+"filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
-"filetype plugin on
+filetype plugin on
 "
 " Brief help
 " :PluginList       - lists configured plugins
@@ -155,8 +156,6 @@ set autowrite                    " Save on buffer switch
 set mouse+=a
 set encoding=utf8
 set cursorline                   " highlight current line
-filetype indent on               " load filetype-specific indent files
-set wildmenu                     " visual autocomplete for command menu
 set lazyredraw                   " redraw only when we need to
 set showmatch                    " highlight matching [{()}]
 
