@@ -22,28 +22,28 @@ style "theme-default"
 xthickness = 1
   ythickness = 1
 
- 	fg[NORMAL]		= "#BFBFBF" # Metacity and mouseover, Most text
-	fg[PRELIGHT]      	= "#32343a" # Text when mouseover
+ 	fg[NORMAL]		= "#5c5959" # Metacity and mouseover, Most text
+	fg[PRELIGHT]      	= "#5c5959" # Text when mouseover
 	fg[ACTIVE]	  	= "#808080" # Text when mouseclicking button, Tabs, Active window list
-	fg[SELECTED]      	= "#808080" # Metacity X when window selected
+	fg[SELECTED]      	= "#888888" # Metacity X when window selected
 	fg[INSENSITIVE]   	= "#808080" # Insensitive Text
 
-	bg[NORMAL]	  	= "#020202" # Normal Background, inactive Metacity bar, buttons
+	bg[NORMAL]	  	= "#000000" # Normal Background, inactive Metacity bar, buttons
 	bg[PRELIGHT]	  	= "#0d0c0c" # Mouseover buttons
 	bg[ACTIVE]	  	= "#080808" # Mouseclicking, Tabs, active window list
 	bg[SELECTED]	        = "#35332b" # Metacity Bar
-	bg[INSENSITIVE]   	= "#1e1d1d" # Insensitive buttons
+	bg[INSENSITIVE]   	= "#080808" # Insensitive buttons
 	
-	base[NORMAL]	= "#020202" # Background, most
-	base[PRELIGHT]	= "#1e1d1d" # Mouseover menu
-	base[ACTIVE]	  	= "#1e1d1d" # Menu active item in inactive window
-	base[SELECTED]	= "#1e1d1d" # Menu active item in active window
+	base[NORMAL]	= "#000000" # Background, most
+	base[PRELIGHT]	= "#080808" # Mouseover menu
+	base[ACTIVE]	  	= "#080808" # Menu active item in inactive window
+	base[SELECTED]	= "#080808" # Menu active item in active window
 	base[INSENSITIVE] 	= "#323232" # Background, insensitive
 	
 	text[NORMAL]	  	= "#808080" # Text in window
-	text[PRELIGHT]	= "#32343a" # Text on Mouseover
+	text[PRELIGHT]	= "#5c5959" # Text on Mouseover
 	text[ACTIVE]	  	= "#808080" # Active text in inactive window
-	text[SELECTED]    	= "#32343a" # Active text in active window
+	text[SELECTED]    	= "#5c5959" # Active text in active window
 	text[INSENSITIVE] 	= "#808080" # Unknown
 
   
@@ -89,7 +89,7 @@ style "theme-entry" = "theme-wider"
 style "theme-button" = "theme-wider"
 {
   bg[NORMAL]        = "#101010"
-  bg[ACTIVE]      = "#020202"
+  bg[ACTIVE]      = "#000000"
  }
 
 style "theme-notebook" = "theme-wide"
@@ -107,20 +107,20 @@ style "theme-menu" = "theme-default"
 {
   xthickness = 2
   ythickness = 1
- bg[NORMAL] = "#020202" 
+ bg[NORMAL] = "#000000" 
 }
 
 style "theme-menu-item" = "theme-default"
 {
   ythickness = 2
-    fg[PRELIGHT] = "#020202"
-  text[PRELIGHT] = "#020202"
+    fg[PRELIGHT] = "#000000"
+  text[PRELIGHT] = "#000000"
   bg[SELECTED] = "#299156" 
 }
 
 style "theme-menubar" = "theme-default"
 {
-  bg[NORMAL] = "#020202"
+  bg[NORMAL] = "#000000"
 }
 
 style "theme-menubar-item"
@@ -151,7 +151,7 @@ style "theme-progressbar" = "theme-wide"
 {
   xthickness = 1
   ythickness = 1
-  fg[PRELIGHT]  = "#020202"
+  fg[PRELIGHT]  = "#000000"
 }
 
 style "theme-combo" = "theme-button"
