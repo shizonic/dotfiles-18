@@ -56,7 +56,7 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen toggle
 
 # Change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
+bindsym $mod+s layout stacking>
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
@@ -221,14 +221,34 @@ bindsym $mod+F3 exec xbacklight + 10
 bindsym Print exec scrot -e 'mv $f ~/Pictures/screenshots'
 
 # My apps shortcut
-bindsym $mod+p exec pcmanfm 
-bindsym $mod+b exec torify luakit
+# bindsym $mod+p exec pcmanfm 
+bindsym $mod+b exec firefox
 
-# Window colors           border    background    text      indicator
-client.focused            #101010   #101010       #b58900   #ffaf5f
-client.focused_inactive   #101010   #101010       #839496   #101010
-client.unfocused          #101010   #101010       #839496   #101010
-client.urgent             #101010   #101010       #cb4b16   #C0C0C0
+# Colors from Xresources
+set_from_resource $darkred     color1  #000000
+set_from_resource $red         color9  #000000
+set_from_resource $darkgreen   color2  #000000
+set_from_resource $green       color10 #000000
+set_from_resource $darkyellow  color3  #000000
+set_from_resource $yellow      color11 #000000
+set_from_resource $darkblue    color4  #000000
+set_from_resource $blue        color12 #000000
+set_from_resource $darkmagenta color5  #000000
+set_from_resource $magenta     color13 #000000
+set_from_resource $darkcyan    color6  #000000
+set_from_resource $cyan        color14 #000000
+set_from_resource $darkwhite   color7  #000000
+set_from_resource $white       color15 #000000
+
+# Custom colors
+set $black       #07090d
+set $darkblack   #000000
+
+# Window colors           border   background   text        indicator
+client.focused            $black   $black       $darkwhite  $darkblack
+client.focused_inactive   $black   $black       #blue       $darkblack
+client.unfocused          $black   $black       $darkwhite  $darkblack
+client.urgent             $black   $black       #red        $darkblack
 
 #Start i3bar to display a workspace bar
 #Uncomment to use the default i3bar status
@@ -245,12 +265,16 @@ client.urgent             #101010   #101010       #cb4b16   #C0C0C0
 #               statusline         #111111
               
 #               # Bar colors       border    background    text 
-#               focused_workspace  #101010   #020202       #5E468C
-#               active_workspace   #101010   #020202       #268bd2
-#               inactive_workspace #101010   #020202       #899CA1
-#               urgent_workspace   #101010   #020202       #287373
+#               focused_workspace  #07090d   #020202       #5E468C
+#               active_workspace   #07090d   #020202       #268bd2
+#               inactive_workspace #07090d   #020202       #899CA1
+#               urgent_workspace   #07090d   #020202       #287373
 #          }
 # }
+
+# Set font for window title bar
+# font pango:lemon 15
+# for_window [class=".*"] title_format "<span font='GohuFont 8'> ➤ %title</span>"
 
 #*************  My apps settings  *********************
 
@@ -265,6 +289,7 @@ exec --no-startup-id conky -c $HOME/.config/i3/conkybar &
 # Set per-application border
 for_window [class="^.*"] border pixel 1
 for_window [class="(?i)urxvt"] border pixel 1
+#for_window [class="^.*"] border normal 0
 
 # Global gaps size
 gaps inner 0
@@ -289,12 +314,11 @@ for_window [window_role="Preferences"] floating enable
 for_window [window_type="dialog"] floating enable
 for_window [window_type="menu"] floating enable
 for_window [class="Pavucontrol"] floating enable
+# for_window [class="^.*"] floating enable
 
 # Starting apps on aspecific workspace
 assign [class="^Tor Browser$"]    $w1
 assign [class="^Firefox$"]        $w1
-assign [class="^qutebrowser$"]    $w1
-assign [class="^luakit$"]         $w1
 assign [class="^Zathura"]         $w3
 assign [class="^TexMaker"]        $w3
 assign [class="^LibreOffice"]     $w3
@@ -306,6 +330,5 @@ assign [class="^VirtualBox$"]     $w9
 assign [class="^Filezilla$"]      $w9
 assign [class="^Nmapfe"]          $w9
 assign [class="^Wireshark"]       $w9
-assign [class="^Geany$"]          $w10
 
 # vim:filetype=i3
