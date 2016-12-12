@@ -7,9 +7,9 @@ import i3ipc
 i3 = i3ipc.Connection()
 
 # Define colors
-coloractive = '%{F#5E468C}'
-colorinactive = '%{F#9e9ecb}'
-colorwarning = '%{F#8C4665}'
+coloractive = '%{F#2a2f3b}'
+colorinactive = '%{F#5e5959}'
+colorwarning = '%{F#442216}'
 
 # Define a callback to be called when you switch workspaces.
 def on_workspace_focus(self, e):

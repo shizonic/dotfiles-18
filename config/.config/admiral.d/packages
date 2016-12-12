@@ -2,4 +2,4 @@
 icon=''
 . $HOME/.config/admiral.d/config
 packages=`pacman -Q| wc -l`
-echo "%{F$FG}$icon%{F$FG} $packages "
+echo "%{B$BLACK} %{F$FG}$icon %{B-}%{F$FG} $packages "

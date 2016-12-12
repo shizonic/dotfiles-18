@@ -28,7 +28,7 @@ if [[ -d /sys/class/power_supply/BAT1 ]]; then
             batteryIcon=""
             batteryColor=${BWHITE}
         fi
-        echo "%{F$batteryColor}${batteryIcon} %{F$FG}${batteryPower}% "
+        echo "%{B$BLACK} %{F$batteryColor}${batteryIcon} %{B-} %{F$FG}${batteryPower}% "
     else
         echo "%{F$red}No Battery Detected "
 fi	
