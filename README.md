@@ -34,9 +34,9 @@ Lately I've been using [GNU stow] to manage my dots. If interested with any
 of my config you can simply use stow to install them.
 
 1. Clone this repo.
-   *  git clone https://github.com/mohabaks/dotfiles
+   *  ``` git clone https://github.com/mohabaks/dotfiles ```
 2. Change directory to dotfiles
-   * cd dotfiles
+   * ``` cd dotfiles ```
 3. Install any config  using stow
 ```bash
    # Install tmux config
