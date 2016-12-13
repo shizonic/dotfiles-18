@@ -3,14 +3,15 @@ Welcome To My  Dotfiles
 
 ### Setup Description
 
-* Bar: lemonbar
-* Browser: firefox
-* Compositor: compiz
-* Font: gohufont
-* Program launcher: rofi
-* Text editor: vim
-* Terminal emulator: urxvt patched
-* Window manager: i3-gaps
+* Bar: ``` lemonbar ```
+* Browser: ``` firefox ```
+* Compositor: ``` compiz ```
+* Font: ``` gohufont ```
+* Program launcher: ``` rofi ```
+* PDF viewer: ``` zathura ```
+* Text editor: ``` vim ```
+* Terminal emulator: ``` urxvt patched ```
+* Window manager: ``` i3-gaps ```
 
 ### Directory Description
 
