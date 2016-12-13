@@ -5,7 +5,7 @@ Welcome To My  Dotfiles
 
 * Bar: ``` lemonbar ```
 * Browser: ``` firefox ```
-* Compositor: ``` compiz ```
+* Compositor: ``` compton ```
 * Font: ``` gohufont ```
 * Program launcher: ``` rofi ```
 * PDF viewer: ``` zathura ```
