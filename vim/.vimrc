@@ -5,24 +5,6 @@
 "          
 "
 "**********************************************************************
-python << EOF
-import os
-import re
-path = os.environ['PATH'].split(';')
-
-def contains_msvcr_lib(folder):
-    try:
-        for item in os.listdir(folder):
-            if re.match(r'msvcr\d+\.dll', item):
-                return True
-    except:
-        pass
-    return False
-
-path = [folder for folder in path if not contains_msvcr_lib(folder)]
-os.environ['PATH'] = ';'.join(path)
-EOF
-
 
 " Vundle Settings{{{
 
@@ -62,7 +44,7 @@ Plugin 'SirVer/ultisnips'
 Plugin 'itchyny/lightline.vim'
 Plugin 'rdnetto/YCM-Generator'
 Plugin 'sukima/xmledit'
-Plugin 'klen/python-mode'
+"Plugin 'klen/python-mode'
 Plugin 'Raimondi/delimitMate'
 Plugin 'xolox/vim-easytags'
 Plugin 'xolox/vim-misc'
@@ -70,19 +52,8 @@ Plugin 'jez/vim-superman'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'tmux-plugins/vim-tmux'
 
-"" All of your Plugins must be added before the following line
-call vundle#end()            " required
-"filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
+call vundle#end()       
+filetype plugin indent on  
 
 "}}}
 
@@ -91,21 +62,12 @@ filetype plugin on
 
 set background=dark
 colorscheme custom
-
 "" Status line
-set t_Co=16 " 16, 18, and 256
-"set laststatus=2 
+set t_Co=16 
 let g:lightline = {
       \ 'colorscheme': 'jellybeans',
       \ }
       
-"" Vim-airline
-"let g:airline_theme='gruvbox'
-"let g:airline_powerline_fonts = 2 " show powerline symbols
-"let g:airline#extensions#tabline#enabled = 1
-"let g:airline#extensions#tabline#left_alt_sep = '|'
-"let g:bufferline_echo = 0
-
 "}}}
 
 
@@ -146,7 +108,7 @@ nnoremap <C-H> <C-W><C-H>
 syntax on
 set number                       " show line numbers
 set showcmd                      " show command in bottom bar
-set tw=79                        " width of document (used by gd)
+set tw=80                        " width of document (used by gd)
 set nowrap                       " don't automatically wrap on load
 set smartindent
 set colorcolumn=80
@@ -170,7 +132,7 @@ set hlsearch              " highight matches
 "" turn off search highlight
 nnoremap <leader><space> :nohlsearch<CR> 
 
-"}}}
+"}}} 
 
 
 "" Folding{{{
@@ -184,26 +146,10 @@ set foldnestmax=10        " 10 nested fold max
 nnoremap <space> za
 set foldmethod=indent     " fold based on indent level
 
-"}}}
+ "}}}
 
 
-" Movement{{{
-
-"" move vertically by visual line
-nnoremap j gj
-nnoremap k gk
-
-"" move to beginning/end of line
-nnoremap B ^
-nnoremap E $
-
-"" $/^ doesn't do anything
-nnoremap $ <nop>
-nnoremap ^ <nop>
-
-"" highlight last inserted text
-nnoremap gV `[v`]
-
+"  Movement{{{
 
 "" easier moving of code blocks
 "" Try to go into visual mode (v), thenselect several lines of code here and
@@ -281,7 +227,7 @@ autocmd FileType vim              let b:comment_leader = '" '
 noremap <silent> ,cc :<C-B>silent <C-E>s/^/<C-R>=escape(b:comment_leader,'\/')<CR>/<CR>:nohlsearch<CR>
 noremap <silent> ,cu :<C-B>silent <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>//e<CR>:nohlsearch<CR>
 
-"}}}
+ "}}}
 
 
 " Backups{{{
@@ -292,10 +238,10 @@ set backupskip=/tmp/*,/private/tmp/*
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set writebackup
 
-"}}}
+"}}} 
 
 
-" Git Integration {{{
+" Git  Integration {{{
 
 
 "}}}
@@ -311,11 +257,6 @@ autocmd FileType python set sts=4
 "" enable all Python syntax highlighting feautures
 let python_highlight_all = 1
 
-"" omnicompletion functions
-autocmd FileType python set omnifunc=pythoncomplete#Complete
-autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
-autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 
 "" YouCompleteMe
 let g:ycm_collect_identifiers_from_tags_files = 1       " Let YCM read tags from Ctags file
@@ -325,13 +266,7 @@ let g:ycm_complete_in_comments = 1                      " Completion in comments
 let g:ycm_complete_in_strings = 1                       " Completion in string
 let g:ycm_global_ycm_extra_conf = '~/Code/.ycm_extra_conf.py'
 let g:ycm_confirm_extra_conf = 0
-"let g:ycm_python_binary_path = '/usr/bin/python3'
-
-"" Ultisnips.vim
-let g:UltiSnipsExpandTrigger       = "<c-j>"
-let g:UltiSnipsJumpForwardTrigger  = "<c-j>"
-let g:UltiSnipsJumpBackwardTrigger = "<c-p>"
-let g:UltiSnipsListSnippets        = "<c-k>"             "List possible snippets based on current file
+let g:ycm_python_binary_path = '/usr/bin/python3'
 
 "" python with virtualenv support
 py << EOF
@@ -356,20 +291,6 @@ let g:htmldjangocomplete_html_flavour = 'html5' "Set html flavour
 au FileType htmldjango inoremap {% {% %}<left><left><left>
 au FileType htmldjango inoremap {{ {{ }}<left><left><left>
 
-function! SuperCleverTab()
-    if strpart(getline('.'), 0, col('.') - 1) =~ '^\s*$'
-        return "\"
-    else
-        if &omnifunc != ''
-            return "\\"
-        elseif &dictionary != ''
-            return "\"
-        else
-            return "\"
-        endif
-    endif
-endfunction
-
 let g:last_relative_dir = ''
 nnoremap \1 :call RelatedFile ("models.py")<cr>
 nnoremap \2 :call RelatedFile ("views.py")<cr>
@@ -382,39 +303,14 @@ nnoremap \8 :call RelatedFile ( "management/" )<cr>
 nnoremap \T :e templates/<cr>
 nnoremap \0 :e settings.py<cr>
 nnoremap \9 :e urls.py<cr>
-
-fun! RelatedFile(file)
-    #This is to check that the directory looks djangoish
-    if filereadable(expand("%:h"). '/models.py') || isdirectory(expand("%:h") . "/templatetags/")
-        exec "edit %:h/" . a:file
-        let g:last_relative_dir = expand("%:h") . '/'
-        return ''
-    endif
-    if g:last_relative_dir != ''
-        exec "edit " . g:last_relative_dir . a:file
-        return ''
-    endif
-    echo "Cant determine where relative file is : " . a:file
-    return ''
-endfun
-
-fun SetAppDir()
-    if filereadable(expand("%:h"). '/models.py') || isdirectory(expand("%:h") . "/templatetags/")
-        let g:last_relative_dir = expand("%:h") . '/'
-        return ''
-    endif
-endfun
-autocmd BufEnter *.py call SetAppDir()
-
-inoremap <Tab> <C-R>=SuperCleverTab()<cr>
     
- "}}}
+ "}}} 
  
 
 " Java IDE Settings{{{
 
 let g:EclimCompletionMethod = 'omnifunc'
-
+ 
 "}}}
 
 
