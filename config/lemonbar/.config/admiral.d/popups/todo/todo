@@ -5,8 +5,8 @@ image='/home/mohabaks/Pictures/notify/todo/hack.png'
 
 notify-send  -i $image "
 
-<span foreground='#442216'>Weekday</span>
-<span foreground='#2a2f3b'>=======</span>
+<span foreground='#442216'>Todo Weekday</span>
+<span foreground='#2a2f3b'>============</span>
 <span foreground='#5c5959'>
 1. Bash
 2. Crypto
