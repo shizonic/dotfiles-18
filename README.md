@@ -13,32 +13,32 @@ Welcome To My  Dotfiles
 * Terminal emulator: ``` urxvt patched ```
 * Window manager: ``` i3-gaps ```
 
-### Directory Description
+<!-- ### Directory Description -->
 
-| Directory          |     Description                                   |
-| ---------          | :-----------------------------------------------: |
-| [bash]             | contains Xresources and bashrc files              |
-| [colors/.colors]   | all my Xresources colorschemes can be found here  |
-| [compton]          | compton.conf config file                          |
-| [config]           | contains .config files e.g i3,mpd,dunst,ncmpcpp   |
-| [homepage/homepage]| my custom startpage                               |
-| [local/.local]     | contains my all my scripts                        |
-| [newsbeuter/.newsbeuter] | urls and config files for newsbeuter        |
-| [themes/.themes/mywood] | modified gtk theme based on murrine          |
-| [tmux]             | tmux.conf file                                    |
-| [vim]              | contains my custom vim colorsheme and vimrc       |
-| [weechat/.weechat] | weechat.conf file                                 |
+<!-- | Directory          |     Description                                   | -->
+<!-- | ---------          | :-----------------------------------------------: | -->
+<!-- | [bash]             | contains Xresources and bashrc files              | -->
+<!-- | [colors/.colors]   | all my Xresources colorschemes can be found here  | -->
+<!-- | [compton]          | compton.conf config file                          | -->
+<!-- | [config]           | contains .config files e.g i3,mpd,dunst,ncmpcpp   | -->
+<!-- | [homepage/homepage]| my custom startpage                               | -->
+<!-- | [local/.local]     | contains my all my scripts                        | -->
+<!-- | [newsbeuter/.newsbeuter] | urls and config files for newsbeuter        | -->
+<!-- | [themes/.themes/mywood] | modified gtk theme based on murrine          | -->
+<!-- | [tmux]             | tmux.conf file                                    | -->
+<!-- | [vim]              | contains my custom vim colorsheme and vimrc       | -->
+<!-- | [weechat/.weechat] | weechat.conf file                                 | -->
 
 
 ### Installation
-Lately I've been using [GNU stow] to manage my dots. If interested with any
-of my config you can simply use stow to install them.
+Lately I've been using [GNU stow] to manage my dotfiles. If interested with any
+of my configs you can simply use stow to install.
 
 1. Clone this repo.
    *  ``` git clone https://github.com/mohabaks/dotfiles ```
 2. Change directory to dotfiles
    * ``` cd dotfiles ```
-3. Install any config  using stow
+3. Install using stow
 ```bash
    # Install tmux config
    stow tmux
