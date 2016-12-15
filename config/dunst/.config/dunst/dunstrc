@@ -66,7 +66,7 @@
     # the top and down respectevly.
     # The width can be negative.  In this case the actual width is the
     # screen width minus the width defined in within the geometry option.
-    geometry = "300x20-10+30"
+    geometry = "300x20-20+30"
     
     # Shrink window if it's smaller than the width.  Will be ignored if
     # width is 0.
@@ -144,14 +144,14 @@
     browser = /usr/bin/firefox -new-tab
 
     # Align icons left/right/off
-    icon_position = off
+    icon_position = left
 
     # Paths to default icons.
     icon_folders = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
 
 [frame]
     width = 5
-    color = "#07090d"
+    color = "#080808"
 
 [shortcuts]
 
@@ -177,18 +177,18 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#020508"
-    foreground = "#287373"
+    background = "#000000"
+    foreground = "#5c5959"
     timeout = 10
 
 [urgency_normal]
-    background = "#020508"
-    foreground = "#9e9ecb"
+    background = "#000000"
+    foreground = "#442216"
     timeout = 10
 
 [urgency_critical]
-    background = "#020508"
-    foreground = "#5E468C"
+    background = "#000000"
+    foreground = "#2a2f3b"
     timeout = 0
 
 
