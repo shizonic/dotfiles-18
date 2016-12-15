@@ -1,0 +1,90 @@
+#! /bin/bash
+DISPLAY=:0
+PATH=/home/mohabaks/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+
+# Get current time
+current_time=`date "+ %H:%M"`
+
+# load display image
+image='/home/mohabaks/Pictures/notify/prayer/nor.png'
+
+# fajr msg
+fajr_msg='
+
+<span foreground="#2a2f3b">Salah: Fajr</span> 
+<span foreground="#5c5959">
+<i>"Verily, the prayer is enjoined on the believers at a fixed hours"</i>.[Quran 4:103]
+</span>
+
+'
+# Dhuhr msg
+dhur_msg='
+
+<span foreground="#2a2f3b">Salah: Dhur</span> 
+<span foreground="#5c5959">
+<i>"Verily, the prayer is enjoined on the believers at a fixed hours"</i>.[Quran 4:103]
+</span>
+
+'
+
+# Asr msg
+asr_msg='
+
+<span foreground="#2a2f3b">Salah: Asr</span> 
+<span foreground="#5c5959">
+<i>"Verily, the prayer is enjoined on the believers at a fixed hours"</i>.[Quran 4:103]
+</span>
+
+'
+
+# Maghrib msg
+magh_msg='
+
+<span foreground="#2a2f3b">Salah: Maghrib</span> 
+<span foreground="#5c5959">
+<i>"Verily, the prayer is enjoined on the believers at a fixed hours"</i>.[Quran 4:103]
+</span>
+
+'
+
+# Isha'a
+isha_msg='
+
+<span foreground="#2a2f3b">Salah: Insha</span> 
+<span foreground="#5c5959">
+<i>"Verily, the prayer is enjoined on the believers at a fixed hours"</i>.[Quran 4:103]
+</span>
+
+'
+
+# Fajr Prayer
+if [ $current_time = 05:00 ];then
+        notify-send -i "$image" "$fajr_msg"
+ 
+fi
+
+# Dhuhr Prayer
+if [  $current_time = 12:45 ];then
+        notify-send -i "$image" "$dhur_msg"
+ 
+fi
+
+# Asr  Prayer
+if [ $current_time = 16:03 ];then
+        notify-send -i "$image" "$asr_msg"
+ 
+fi
+
+# Maghrib Prayer
+if [ $current_time = 18:30 ];then
+        notify-send -i "$image" "$magh_msg"
+ 
+fi
+
+# Fajr Prayer
+if [ $current_time = 20:00 ];then
+        notify-send -i "$image" "$isha_msg"
+ 
+fi
+
