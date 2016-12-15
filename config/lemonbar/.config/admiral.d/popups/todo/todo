@@ -1,12 +1,18 @@
 #!/bin/sh
+# A simple Todo List using notify-send
 
-. $HOME/.config/admiral.d/config
+image='/home/mohabaks/Pictures/notify/todo/hack.png'
 
-# Panel 
-PW=166
-PH=58
-PX=1182
-PY=55
+notify-send  -i $image "
+
+<span foreground='#442216'>Weekday</span>
+<span foreground='#2a2f3b'>=======</span>
+<span foreground='#5c5959'>
+1. Bash
+2. Crypto
+3. LinuxAdmin
+4. Project
+</span>
 
 
-#n30f -d -x 12 -y 40 $HOME/.config/admiral.d/popups/todo/bg.png &
+"
