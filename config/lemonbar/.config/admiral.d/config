@@ -17,7 +17,7 @@ FONT2="FontAwesome:size=8"
 FONT3="Siji:size=8"
 
 # Color directory
-CD="$HOME/.colors/rejoin"
+CD="$HOME/.colors/solarized.dark"
 
 # Char glyps for powerline fonts
 sep_left=""                        # Powerline separator left
