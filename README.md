@@ -55,7 +55,12 @@ of my configs you can simply use stow to install.
 ### Screenshots
 
 ##### Current
-![new](http://imgur.com/eaGZyv7.png)
+``` vim, weechat, ncmpcpp```
+
+![busy](http://imgur.com/R2JnGNM.png)
+
+``` rofi, notify-send ```
+![rofi,notify-send](http://imgur.com/ylXDOm6.png)
 
 ##### Previous
 ![old](http://imgur.com/gMbLwdo.png)
