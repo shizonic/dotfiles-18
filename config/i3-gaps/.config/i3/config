@@ -246,9 +246,9 @@ set $darkblack   #000000
 
 # Window colors           border   background   text        indicator
 client.focused            $black   $black       $darkwhite  $darkblack
-client.focused_inactive   $black   $black       #blue       $darkblack
+client.focused_inactive   $black   $black       $blue       $darkblack
 client.unfocused          $black   $black       $darkwhite  $darkblack
-client.urgent             $black   $black       #red        $darkblack
+client.urgent             $black   $black       $red        $darkblack
 
 #Start i3bar to display a workspace bar
 #Uncomment to use the default i3bar status
@@ -273,8 +273,8 @@ client.urgent             $black   $black       #red        $darkblack
 # }
 
 # Set font for window title bar
-# font pango:lemon 15
-# for_window [class=".*"] title_format "<span font='GohuFont 8'> ➤ %title</span>"
+font pango:lemon 15
+for_window [class=".*"] title_format "<span font='GohuFont 8'> ➤ %title</span>"
 
 #*************  My apps settings  *********************
 
@@ -289,7 +289,7 @@ exec --no-startup-id conky -c $HOME/.config/i3/conkybar &
 # Set per-application border
 for_window [class="^.*"] border pixel 1
 for_window [class="(?i)urxvt"] border pixel 1
-#for_window [class="^.*"] border normal 0
+# for_window [class="^.*"] border normal 0
 
 # Global gaps size
 gaps inner 0
