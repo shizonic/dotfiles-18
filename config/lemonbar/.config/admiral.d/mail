@@ -1,11 +1,10 @@
 #!/bin/bash
-#
 
 . $HOME/.config/admiral.d/config
 msg=`python ~/.local/bin/gmail.py`
 if [[ $msg =~ .*0.*  ]] || [[ $msg == '' ]]
 then
-     echo "%{B$BLACK} %{F$FG} %{B-}%{F$FG} ${msg} "
+     echo "%{B$RED} %{F$BBLACK} %{B-}%{F$FG} Mail: ${msg} "
 else
-     echo "%{B$BLACK} %{F$YELLOW} %{B-}%{F$FG} ${msg} "
+     echo "%{B$RED} %{F$BBLACK} %{B-}%{F$FG} Mail: ${msg} "
 fi
