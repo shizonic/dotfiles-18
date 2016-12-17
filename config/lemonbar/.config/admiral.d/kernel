@@ -1,0 +1,7 @@
+#!/bin/bash
+
+. $HOME/.config/admiral.d/config
+
+#Print kernel release
+kernel=`uname -r`
+echo "%{B$MAGENTA} %{F$BBLACK} %{B-} %{F$FG}Kernel: $kernel "

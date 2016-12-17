@@ -1,0 +1,10 @@
+#!/bin/bash
+
+. $HOME/.config/admiral.d/config
+
+# Get AUR updates
+# cower -u | wc -l
+
+# Get pacman updates
+pm=`pacman -Qqu | wc -l`
+echo "%{B$BLUE} %{F$BBLACK} %{B-}%{F$FG} Updates: $pm "

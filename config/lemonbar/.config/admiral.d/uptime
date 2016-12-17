@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# get uptime from /proc/uptime
+
+. $HOME/.config/admiral.d/config
+
+uptime=$(</proc/uptime)
+uptime=${uptime%%.*}
+
+# seconds=$(( uptime%60 ))
+minutes=$(( uptime/60%60 ))
+hours=$(( uptime/60/60%24 ))
+days=$(( uptime/60/60/24 ))
+
+echo "%{B$CYAN} %{F$BBLACK} %{B-} %{F$FG}Uptime: ${days//[[:blank:]]/}d ${hours//[[:blank:]]/}h ${minutes//[[:blank:]]/}m "
