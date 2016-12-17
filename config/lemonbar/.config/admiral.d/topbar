@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# top-panel for minor info
+# Date: Sat 17 Dec 2016 22:21
+
+. $HOME/.config/admiral.d/config
+
+
+menu(){
+     echo "%{A: bash $HOME/.config/admiral.d/popups/todo/todo:}%{F$BLUE}%{F$YELLOW}%{F$RED}moha%{F$MAGENTA}baks %{A}"   
+}
+
+pow(){
+    echo "%{A:. $HOME/.config/admiral.d/popups/power/power:}%{F$RED}%{A}"
+}
+
+clock(){
+    . $HOME/.config/admiral.d/clock
+}
+
+while :;do
+        echo "%{l}$(menu) %{c}$(clock) %{r}$(pow)"
+        sleep .5
+done | lemonbar -g ${PW}x${PH}+${PX}+${PY} -f "$FONT1" -f "$FONT2" -f "Siji-7" -f "Symbola-8" -B "$BBLACK" -F "$FG" -u 3 -p -d | \
+while :; do read line; eval $line; done &
