@@ -1,7 +1,7 @@
 [admiral]
-items = ["left", "menu",
-         "center", "clock",
-         "right", "mail", "packages", "volume", "ram", "net", "battery", "pow"]
+items = [
+         "center","kernel", "mail", "updates", "packages", "volume", "ram", "uptime", "net", "battery"
+        ]
 
 [workspaces]
 path = "./workspace"
@@ -16,6 +16,18 @@ reload = 30
 [packages]
 path = "./packages"
 reload = 80
+
+[updates]
+path = "./updates"
+reload = 120
+
+[uptime]
+path = "./uptime"
+static = true
+
+[kernel]
+path = "./kernel"
+static = true
 
 [volume]
 path = "./vol"
