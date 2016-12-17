@@ -52,6 +52,7 @@ Plugin 'jez/vim-superman'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'tmux-plugins/vim-tmux'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'morhetz/gruvbox'
 
 call vundle#end()       
 filetype plugin indent on  
@@ -64,9 +65,9 @@ filetype plugin indent on
 set background=dark
 colorscheme custom
 "" Status line
-set t_Co=16 
+set t_Co=256
 let g:lightline = {
-      \ 'colorscheme': 'jellybeans',
+      \ 'colorscheme': 'solarized',
       \ }
       
 "}}}
