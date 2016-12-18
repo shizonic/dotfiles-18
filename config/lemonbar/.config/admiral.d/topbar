@@ -6,11 +6,11 @@
 
 
 menu(){
-     echo "%{A: bash $HOME/.config/admiral.d/popups/todo/todo:}%{F$BLUE}%{F$YELLOW}%{F$RED}moha%{F$MAGENTA}baks %{A}"   
+     echo "%{A: bash $HOME/.config/admiral.d/popups/todo/todo:} %{F$BLUE}%{F$RED}moha%{F$MAGENTA}baks %{A}"   
 }
 
 pow(){
-    echo "%{A:. $HOME/.config/admiral.d/popups/power/power:}%{F$RED}%{A}"
+    echo "%{A:. $HOME/.config/admiral.d/popups/power/power:}%{F$RED} %{A}"
 }
 
 clock(){
