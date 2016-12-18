@@ -23,7 +23,7 @@ reload = 120
 
 [uptime]
 path = "./uptime"
-static = true
+reload = 1
 
 [kernel]
 path = "./kernel"
