@@ -225,16 +225,16 @@ bindsym Print exec scrot -e 'mv $f ~/Pictures/screenshots'
 bindsym $mod+b exec firefox
 
 # Custom colors
-set $black       #07090d
-set $darkblack   #080808
+set $black       #282828
+set $darkblack   #131313
 set $white       #5c5959
 set $blue        #2a2f3b
 set $red         #442216
 
 # Window colors           border       background   text        indicator
 client.focused            $black       $black       $blue       $darkblack
-client.focused_inactive   $darkblack   $darkblack   $white      $darkblack
-client.unfocused          $darkblack   $darkblack   $white      $darkblack
+client.focused_inactive   $black       $black       $white      $darkblack
+client.unfocused          $black       $black       $white      $darkblack
 client.urgent             $black       $black       $red        $darkblack
 
 #Start i3bar to display a workspace bar
