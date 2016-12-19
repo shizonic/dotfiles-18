@@ -27,9 +27,9 @@ let g:colors_name="custom"
 " --------------------------------
 hi Normal          ctermfg=07      ctermbg=none    cterm=none
 hi Cursor          ctermfg=15      ctermbg=none    cterm=none
-hi CursorLine      ctermfg=15      ctermbg=00      cterm=none
-hi LineNr          ctermfg=235     ctermbg=00      cterm=none
-hi CursorLineNR    ctermfg=05      ctermbg=00      cterm=none
+hi CursorLine      ctermfg=none    ctermbg=00      cterm=none
+hi LineNr          ctermfg=239     ctermbg=00      cterm=none
+hi CursorLineNR    ctermfg=02      ctermbg=00      cterm=none
 
 " -----------------
 " - Number column -
@@ -42,7 +42,7 @@ hi Folded          ctermfg=02      ctermbg=none    cterm=none
 " -------------------------
 " - Window/Tab delimiters - 
 " -------------------------
-hi VertSplit       ctermfg=235     ctermbg=00      cterm=none
+hi VertSplit       ctermfg=239     ctermbg=00      cterm=none
 hi ColorColumn     ctermfg=none    ctermbg=00      cterm=none
 hi TabLine         ctermfg=none    ctermbg=00      cterm=none
 hi TabLineFill     ctermfg=04      ctermbg=none    cterm=none
@@ -70,7 +70,7 @@ hi MoreMsg         ctermfg=06      ctermbg=00      cterm=none
 " - Visual aid -
 " --------------
 hi MatchParen      ctermfg=10      ctermbg=00      cterm=none
-hi Visual          ctermfg=235     ctermbg=00      cterm=none
+hi Visual          ctermfg=239     ctermbg=00      cterm=none
 hi VisualNOS       ctermfg=06      ctermbg=00      cterm=none
 hi NonText         ctermfg=02      ctermbg=none    cterm=none
 
@@ -106,7 +106,7 @@ hi Label           ctermfg=09      ctermbg=none    cterm=none
 hi Operator        ctermfg=04      ctermbg=none    cterm=none
 hi Keyword         ctermfg=09      ctermbg=none    cterm=none
 hi Exception       ctermfg=02      ctermbg=none    cterm=none
-hi Comment         ctermfg=235     ctermbg=00      cterm=none
+hi Comment         ctermfg=239     ctermbg=00      cterm=none
 
 hi Special         ctermfg=06      ctermbg=none    cterm=none
 hi SpecialChar     ctermfg=02      ctermbg=none    cterm=none

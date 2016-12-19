@@ -50,6 +50,7 @@ Plugin 'xolox/vim-easytags'
 Plugin 'xolox/vim-misc'
 Plugin 'jez/vim-superman'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'nanotech/jellybeans.vim'
 Plugin 'tmux-plugins/vim-tmux'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'morhetz/gruvbox'
@@ -67,7 +68,7 @@ colorscheme custom
 "" Status line
 set t_Co=256
 let g:lightline = {
-      \ 'colorscheme': 'solarized',
+      \ 'colorscheme': 'jellybeans',
       \ }
       
 "}}}
