@@ -3,7 +3,7 @@
 ! ------------------------------------------------------------------------------
 
 ! General
-rofi.font:                monofur for Powerline 10
+rofi.font:                tewi 8
 rofi.opacity:             90
 rofi.fake-transparency:   true
 rofi.hide-scrollbar:      true
@@ -23,8 +23,8 @@ rofi.fullscreen:         false
 ! ------------------------------------------------------------------------------
 rofi.color-enabled:      true
 ! State                  'bg'     'fg'     'bgalt'  'hlbg'   'hlfg'
-rofi.color-normal:       #010305, #5e5959, #010407, #323450, #010305
-rofi.color-active:       #010305, #4c544f, #010407, #4c544f, #010305
-rofi.color-urgent:       #010305, #442216, #010407, #442216, #010305
+rofi.color-normal:       #131313, #888888, #181818, #537c76, #131313
+rofi.color-active:       #131313, #4c544f, #181818, #4c544f, #131313
+rofi.color-urgent:       #131313, #442216, #181818, #442216, #131313
 !                        'bg'     'bc'
-rofi.color-window:       #010305, #010407
+rofi.color-window:       #131313, #181818
