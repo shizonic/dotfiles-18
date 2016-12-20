@@ -32,7 +32,7 @@ class Default(ColorScheme):
 				fg = cyan
 			if context.directory:
 				attr |= normal
-				fg = magenta
+				fg = blue
 			elif context.executable and not \
 					any((context.media, context.container,
 						context.fifo, context.socket)):
@@ -72,9 +72,9 @@ class Default(ColorScheme):
 			attr |= normal
 			if context.hostname:
 				attr |= bold
-				fg = context.bad and magenta or blue
+				fg = context.bad and magenta or green
 			elif context.directory:
-				fg = yellow
+				fg = red
 			elif context.tab:
 				if context.good:
 					bg = red
@@ -84,7 +84,7 @@ class Default(ColorScheme):
 		elif context.in_statusbar:
 			if context.permissions:
 				if context.good:
-					fg = white
+					fg = cyan
 				elif context.bad:
 					fg = magenta
 			if context.marked:
