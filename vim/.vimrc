@@ -53,6 +53,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'tmux-plugins/vim-tmux'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'lilydjwg/colorizer'
 Plugin 'morhetz/gruvbox'
 
 call vundle#end()       
@@ -109,7 +110,7 @@ nnoremap <C-H> <C-W><C-H>
 
 "" These are options that changes random visuals in Vim
 syntax on
-set number                       " show line numbers
+"set number                       " show line numbers
 set showcmd                      " show command in bottom bar
 set tw=80                        " width of document (used by gd)
 set nowrap                       " don't automatically wrap on load
