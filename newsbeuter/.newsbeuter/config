@@ -67,7 +67,7 @@ highlight article     ":.*\\(embedded flash\\)$"            color9   default
 
 color background                                            default   default
 color listnormal                                            default   default
-color listfocus                                             black     magenta
+color listfocus                                             black     green
 color info                                                  blue      black
 color article                                               default   default
 
