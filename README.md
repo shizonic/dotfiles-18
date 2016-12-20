@@ -57,7 +57,7 @@ of my configs you can simply use stow to install.
 ##### Current
 ``` ranger, cava, ncmpcpp```
 
-![busy](http://imgur.com/URkI5nY.png)
+![busy](http://imgur.com/Vpf6mug.png)
 
 [full album](http://imgur.com/a/dOyqM)
 
