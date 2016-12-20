@@ -12,18 +12,18 @@ image='/home/mohabaks/Pictures/notify/prayer/nor.png'
 # fajr msg
 fajr_msg='
 
-<span foreground="#323450">Salah: Fajr</span> 
+<span foreground="#537c76">Salah: Fajr</span> 
 <span foreground="#888888">
-<i>"Verily, the prayer is enjoined on the believers at a fixed hours"</i>.[Quran 4:103]
+"Verily, the prayer is enjoined on the believers at a fixed hours".[Quran 4:103]
 </span>
 
 '
 # Dhuhr msg
 dhur_msg='
 
-<span foreground="#323450">Salah: Dhur</span> 
+<span foreground="#537c76">Salah: Dhur</span> 
 <span foreground="#888888">
-<i>"Verily, the prayer is enjoined on the believers at a fixed hours"</i>.[Quran 4:103]
+"Verily, the prayer is enjoined on the believers at a fixed hours".[Quran 4:103]
 </span>
 
 '
@@ -31,9 +31,9 @@ dhur_msg='
 # Asr msg
 asr_msg='
 
-<span foreground="#323450">Salah: Asr</span> 
+<span foreground="#537c76">Salah: Asr</span> 
 <span foreground="#888888">
-<i>"Verily, the prayer is enjoined on the believers at a fixed hours"</i>.[Quran 4:103]
+"Verily, the prayer is enjoined on the believers at a fixed hours".[Quran 4:103]
 </span>
 
 '
@@ -41,9 +41,9 @@ asr_msg='
 # Maghrib msg
 magh_msg='
 
-<span foreground="#323450">Salah: Maghrib</span> 
+<span foreground="#537c76">Salah: Maghrib</span> 
 <span foreground="#888888">
-<i>"Verily, the prayer is enjoined on the believers at a fixed hours"</i>.[Quran 4:103]
+"Verily, the prayer is enjoined on the believers at a fixed hours".[Quran 4:103]
 </span>
 
 '
@@ -51,7 +51,7 @@ magh_msg='
 # Isha'a
 isha_msg='
 
-<span foreground="#323450">Salah: Insha</span> 
+<span foreground="#537c76">Salah: Insha</span> 
 <span foreground="#888888">
 <i>"Verily, the prayer is enjoined on the believers at a fixed hours"</i>.[Quran 4:103]
 </span>
