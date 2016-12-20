@@ -57,7 +57,7 @@ of my configs you can simply use stow to install.
 ##### Current
 ``` firefox, cava```
 
-![busy](http://imgur.com/Vpf6mug.png)
+![busy](http://imgur.com/cX36VzX.png)
 
 [full album](http://imgur.com/a/dOyqM)
 
