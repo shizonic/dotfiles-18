@@ -6,7 +6,7 @@ Welcome To My  Dotfiles
 * Bar: ``` lemonbar ```
 * Browser: ``` firefox ```
 * Compositor: ``` compton ```
-* Font: ``` gohufont ```
+* Font: ``` tewi ```
 * Program launcher: ``` rofi ```
 * PDF viewer: ``` zathura ```
 * Text editor: ``` vim ```
@@ -55,15 +55,11 @@ of my configs you can simply use stow to install.
 ### Screenshots
 
 ##### Current
-``` vim, weechat, ncmpcpp```
+``` ranger, cava, ncmpcpp```
 
-![busy](http://imgur.com/R2JnGNM.png)
+![busy](http://imgur.com/URkI5nY.png)
 
-``` rofi, notify-send ```
-![rofi,notify-send](http://imgur.com/ylXDOm6.png)
-
-##### Previous
-![old](http://imgur.com/gMbLwdo.png)
+[full album](http://imgur.com/a/dOyqM)
 
 
 [GNU stow]: https://www.gnu.org/s/stow/manual/stow.html
