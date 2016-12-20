@@ -9,7 +9,12 @@
 
 <!-- Internal Stylesheet -->
 <style type="text/css">
-	
+        
+*{
+ padding: 0px;
+ margin: 0px;
+}
+
 body
 {
   /* background-image: url(background.png);
@@ -19,43 +24,51 @@ body
    background-size: cover;*/
    background-color: #131313;
    color: #888888;
-   font-family: Tamsyn;
-   font-size: 11pt;
-   font-weight: normal;
-}
-
-.title{
-  color: #537c76;
-}
-
-.def-linux{
-        color: #556666;
-}
-
-.def-acc{
-  color: #7f3a2b;
-}
-
-.def-fav{
-  color: #63524e;
-}
-
-.def-oth{
-  color: #724f49;
 }
 
 h1{
    font-family: Fira Code;
-   font-size: 40pt;
+   font-size: 20pt;
    letter-spacing: 10px;
+   padding: 10px;
+   text-align: center;
 }
 
-td{
-   text-align: left;
-   font-family: Fira Code;
-   font-size: 14pt;
-   padding: 10px;
-   padding-left:120px;
+hr{
+  display: blocak;
+  height: 3px;
+  border: 0px;
+  border-top: 4px solid #282828;
+}
+
+ul{
+  list-style: none;
+
+}
+
+ul > li {
+  display: inline-block;
+  width: 100%;
+}
+
+ul > li > ul >li{
+  color: red;
+}
+
+.sections {
+    -webkit-column-count:4;
+    -moz-column-count:4;
+    -ms-column-count:4;
+    -o-column-count:4;
+    column-count:4;
+    -webkit-column-gap:15px;
+    -moz-column-gap:15px;
+    -ms-column-gap:15px;
+    -o-column-gap:15px;
+    column-gap:15px;
+    columns:4;
+    padding-top: 20px;
+    padding-left: 80px;
 }
 
 a{
@@ -70,68 +83,69 @@ a:hover{
    color: #C0C0C0;
 }
 
-a:visited{
-   color: #82625d;
-}
-
-a:active{
-   color: #7c7c99;
-}
-
-.container{
-    text-align: center;
-}
-
-.main{
-	
-   display: inline-block;
-   padding: 20px;
-   width: 780px;
-   padding-top: 15%;
-}
-
-.table{
-   padding-left: 80px;
-}
-
 </style>
 <!-- End stylesheet --->
 
 </head>
 <body>
-<div class="container">
-  <div class="main">
-	 
-        <h1><strong class="title">Startpage</strong></h1>
+        
+<! --- Homepage Header -->
+<hr>
+<h1><strong class="title">Startpage</strong></h1>
+<hr>
 
-        <table class="table">
-		<tr>
-		  <td>
-			<strong class="def-linux">   Linux: </strong>
-			<a target="_blank" href="https://www.archlinux.org/">archlinux</a>/<a target="_blank" href="https://distrowatch.com/">distrowatch</a>/<a target="_blank" href="https://www.linuxdistrocommunity.com/">ldc</a>/<a target="_blank" href="https://www.reddit.com/r/unixporn/">unixporn</a>/
-		  </td>
-		</tr>
-		<tr>
-		  <td>
-			<strong class="def-acc">   Accounts: </strong>  
-			<a target="_blank" href="https://bitbucket.org/mohabaks/">bitbucket</a>/<a target="_blank" href="https://github.com/mohabaks/">github</a>/<a target="_blank" href="https://plus.google.com/u/0/me?tab=wX&authuser=0">google+</a>/<a target="_blank" href="https://mobile.twitter.com/mohabaks">twitter</a>/
-		  </td>
-		</tr>
-		<tr>
-		  <td>
-			 <strong class="def-fav">  Favourite: </strong>
-			 <a target="_blank" href="https://www.youtube.com">youtube</a>/<a target="_blank" href="https://xkcd.com/1314/">xkcdcomic</a>/<a target="_blank" href="www.securitytube.net/">securitytube</a>/
-		  </td>
-		</tr>
-		<tr>
-		  <td>
-			 <strong class="def-oth">   Others: </strong>
-			  <a target="_blank" href="http://imgur.com/">imgur</a>/<a target="_blank" href="https://thepiratebay.org/">thepiratebay</a>/<a target="_blank" href="https://alpha.wallhaven.cc/latest">wallhaven</a>/
-		  </td>
-		</tr>
-	 </table>
-	 
-  </div>
+<! --- Main Contents --->
+
+<div class="sections">
+     <ul>
+           <!-- Account -->
+           <li><h3> Accounts</h3>
+              <ul> 
+                   <li><a target="_blank" href="https://bitbucket.org/mohabaks/"> Bitbucket</a></li> 
+                   <li><a target="_blank" href="https://github.com/mohabaks/"> Github</a></li> 
+                   <li><a target="_blank" href="https://plus.google.com/u/0/me?tab=wX&authuser=0"> Google+</a></li> 
+                   <li><a target="_blank" href="http://portal.jkuat.ac.ke/"> Student Portal</a></li> 
+              </ul>         
+           </li>
+            
+           <!-- Entertainment -->
+           <li><h3> Entertainment</h3>
+              <ul> 
+                   <li><a target="" href="http://www.i-am-bored.com/"> I Am Bored</a></li> 
+                   <li><a target="" href="http://reddit.com"> Reddit</a></li> 
+                   <li><a target="" href="http://netflix.com"> Netflix</a></li> 
+                   <li><a target="" href="https://xkcd.com/1314/"> Xkcdcomic</a></li> 
+                   <li><a target="" href="http://youtube.com"> Youtube</a></li> 
+              </ul>         
+          </li>
+
+          <!-- Updates -->
+          <li><h3> Updates</h3>
+              <ul> 
+                   <li><a target="" href="https://www.archlinux.org/"> Arch Linux</a></li> 
+                   <li><a target="" href="https://distrowatch.com/"> Distrowatch</a></li> 
+                   <li><a target="" href="http://hardware.no"> Hardware</a></li> 
+                   <li><a target="" href="https://www.linuxdistrocommunity.com/"> Linuxdistrocomunity</a></li> 
+                   <li><a target="" href="https://www.reddit.com/r/unixporn/"> Unixporn</a></li> 
+                   <li><a target="" href="https://"www.securitytube.net/> Securitytube</a></li> 
+                   <li><a target="" href="https://boards.4chan.org/g/catalog"> /g/ Technology</a></li> 
+              </ul>         
+          </li>
+
+          <!-- Misc -->
+          <li><h3> Miscellaneous</h3>
+              <ul> 
+                   <li><a target="_blank" href="http://deviantart.com/"> DeviantArt</a></li>
+                   <li><a target="_blank" href="http://imgur.com/"> Imgur</a></li> 
+                   <li><a target="_blank" href="http://pastebin.com/u/Twilypastes"> Pastebin</a></li> 
+                   <li><a target="_blank" href="https://thepiratebay.org/"> Piratebay</a></li> 
+                   <li><a target="_blank" href="http://wallgig.net"> Wallgig</a></li> 
+                   <li><a target="_blank" href="http://alpha.wallhaven.cc"> Wallhaven</a></li>
+                   <li><a target="_blank" href="http://userstyles.org/">  Userstyles</a></li> 
+                   <li><a target="_blank" href="http://torrentfreak.com"> TorrentFreak</a></li> 
+              </ul>         
+          </li>
+    </ul>
 </div>
 </body>
 </html>
