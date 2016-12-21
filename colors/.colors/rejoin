@@ -24,13 +24,13 @@
 *.color12:      #4a6666
 
 ! magenta
-*.color5:       #734a43
-*.color13:      #734a43
+*.color5:       #754a42
+*.color13:      #754a42
 
 ! cyan
-*.color6:       #836a59
-*.color14:      #836a59
+*.color6:       #836754
+*.color14:      #836754
 
 ! white
-*.color7:       #adadad
-*.color15:      #848484
+*.color7:       #848484
+*.color15:      #a5a5a5
