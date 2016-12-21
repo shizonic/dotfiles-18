@@ -2,22 +2,28 @@
 # top-panel for minor info
 # Date: Sat 17 Dec 2016 22:21
 
+# %{+u},%{-u}
+
 . $HOME/.config/admiral.d/config
 
 menu(){
-     echo "%{A: bash $HOME/.config/admiral.d/popups/todo/todo:} %{F$GREEN} %{F$BLUE}moha%{F$YELLOW}baks %{A}"   
+     echo "%{A:. $HOME/.config/admiral.d/popups/todo/todo:} %{F$RED} %{F$FG}$LOGNAME%{A}"   
 }
 
-pow(){
-    echo "%{A:. $HOME/.config/admiral.d/popups/power/power:}%{F$RED}%{A} "
-}
+# pow(){
+#     echo "%{A:. $HOME/.config/admiral.d/popups/power/power:}%{F$RED}%{A} "
+# }
 
 clock(){
     . $HOME/.config/admiral.d/clock
 }
 
+bat(){
+   . $HOME/.config/admiral.d/battery
+}
+
 while :;do
-        echo "%{l}$(menu) %{c}$(clock) %{r}$(pow)"
+        echo "%{l}$(menu) %{c}$(clock) %{r}$(bat)"
         sleep .5
-done | lemonbar -g ${PW}x${PH}+${PX}+${PY} -f "$FONT1" -f "$FONT2" -f "$FONT3" -f "Symbola-8" -B "$BBLACK" -F "$FG" -u 3 -p -d | \
+done | lemonbar -g ${PW}x${PH}+${PX}+${PY} -f "$FONT1" -f "$FONT2" -f "$FONT3" -f "Symbola-8" -B "$BLACK" -F "$FG" -u 3 -p -d | \
 while :; do read line; eval $line; done &

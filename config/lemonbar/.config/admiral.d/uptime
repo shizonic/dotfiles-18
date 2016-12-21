@@ -11,4 +11,4 @@ minutes=$(( uptime/60%60 ))
 hours=$(( uptime/60/60%24 ))
 days=$(( uptime/60/60/24 ))
 
-echo "%{F$CYAN}%{F$FG} Uptime: ${days//[[:blank:]]/}d ${hours//[[:blank:]]/}h ${minutes//[[:blank:]]/}m "
+echo "%{F$FG}%{F$CYAN} Uptime: ${days//[[:blank:]]/}d ${hours//[[:blank:]]/}h ${minutes//[[:blank:]]/}m "

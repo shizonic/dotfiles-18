@@ -14,7 +14,7 @@ PY=0
 # Fonts
 FONT1="tewi:size=8"
 FONT2="FontAwesome:size=8"
-FONT3="Siji:size=8"
+FONT3="Siji:size=7"
 
 # Color directory
 CD="$HOME/.colors/rejoin"

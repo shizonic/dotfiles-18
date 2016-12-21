@@ -1,6 +1,6 @@
 [admiral]
 items = [
-         "center","kernel", "mail", "updates", "packages", "volume", "ram", "uptime", "net", "battery"
+         "center","kernel", "mail", "updates", "packages", "volume", "ram", "uptime", "net"
         ]
 
 [workspaces]

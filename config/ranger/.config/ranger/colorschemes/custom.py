@@ -24,7 +24,7 @@ class Default(ColorScheme):
 				fg = black
 			if context.media:
 				if context.image:
-					fg = yellow
+					fg = cyan
 				else:
 					fg = 9
 			if context.container:

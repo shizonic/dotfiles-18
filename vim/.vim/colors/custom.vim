@@ -27,14 +27,14 @@ let g:colors_name="custom"
 " --------------------------------
 hi Normal          ctermfg=07      ctermbg=none    cterm=none
 hi Cursor          ctermfg=15      ctermbg=none    cterm=none
-hi CursorLine      ctermfg=none    ctermbg=00      cterm=none
-hi LineNr          ctermfg=239     ctermbg=00      cterm=none
-hi CursorLineNR    ctermfg=02      ctermbg=00      cterm=none
+hi CursorLine      ctermfg=none    ctermbg=08      cterm=none
+hi LineNr          ctermfg=239     ctermbg=08      cterm=none
+hi CursorLineNR    ctermfg=02      ctermbg=08      cterm=none
 
 " -----------------
 " - Number column -
 " -----------------
-hi CursorColumn    ctermfg=01      ctermbg=00      cterm=none
+hi CursorColumn    ctermfg=01      ctermbg=08      cterm=none
 hi FoldColumn      ctermfg=05      ctermbg=none    cterm=none
 hi SignColumn      ctermfg=06      ctermbg=none    cterm=none
 hi Folded          ctermfg=02      ctermbg=none    cterm=none
@@ -42,9 +42,9 @@ hi Folded          ctermfg=02      ctermbg=none    cterm=none
 " -------------------------
 " - Window/Tab delimiters - 
 " -------------------------
-hi VertSplit       ctermfg=239     ctermbg=00      cterm=none
-hi ColorColumn     ctermfg=none    ctermbg=00      cterm=none
-hi TabLine         ctermfg=none    ctermbg=00      cterm=none
+hi VertSplit       ctermfg=239     ctermbg=08      cterm=none
+hi ColorColumn     ctermfg=none    ctermbg=08      cterm=none
+hi TabLine         ctermfg=none    ctermbg=08      cterm=none
 hi TabLineFill     ctermfg=04      ctermbg=none    cterm=none
 hi TabLineSel      ctermfg=05      ctermbg=none    cterm=none
 
@@ -52,26 +52,26 @@ hi TabLineSel      ctermfg=05      ctermbg=none    cterm=none
 " - File Navigation / Searching -
 " -------------------------------
 hi Directory       ctermfg=01      ctermbg=none    cterm=none
-hi Search          ctermfg=03      ctermbg=00      cterm=none
+hi Search          ctermfg=03      ctermbg=08      cterm=none
 hi IncSearch       ctermfg=15      ctermbg=10      cterm=none
 
 " -----------------
 " - Prompt/Status -
 " -----------------
-hi StatusLine      ctermfg=07      ctermbg=00      cterm=none
-hi StatusLineNC    ctermfg=07      ctermbg=00      cterm=none
+hi StatusLine      ctermfg=07      ctermbg=08      cterm=none
+hi StatusLineNC    ctermfg=07      ctermbg=08      cterm=none
 hi WildMenu        ctermfg=08      ctermbg=03      cterm=none
-hi Question        ctermfg=02      ctermbg=00      cterm=none
-hi Title           ctermfg=04      ctermbg=00      cterm=none
-hi ModeMsg         ctermfg=09      ctermbg=00      cterm=none
-hi MoreMsg         ctermfg=06      ctermbg=00      cterm=none
+hi Question        ctermfg=02      ctermbg=08      cterm=none
+hi Title           ctermfg=04      ctermbg=08      cterm=none
+hi ModeMsg         ctermfg=09      ctermbg=08      cterm=none
+hi MoreMsg         ctermfg=06      ctermbg=08      cterm=none
 
 " --------------
 " - Visual aid -
 " --------------
-hi MatchParen      ctermfg=10      ctermbg=00      cterm=none
-hi Visual          ctermfg=239     ctermbg=00      cterm=none
-hi VisualNOS       ctermfg=06      ctermbg=00      cterm=none
+hi MatchParen      ctermfg=10      ctermbg=08      cterm=none
+hi Visual          ctermfg=239     ctermbg=08      cterm=none
+hi VisualNOS       ctermfg=06      ctermbg=08      cterm=none
 hi NonText         ctermfg=02      ctermbg=none    cterm=none
 
 hi Todo            ctermfg=08      ctermbg=03      cterm=none
@@ -106,7 +106,7 @@ hi Label           ctermfg=09      ctermbg=none    cterm=none
 hi Operator        ctermfg=04      ctermbg=none    cterm=none
 hi Keyword         ctermfg=09      ctermbg=none    cterm=none
 hi Exception       ctermfg=02      ctermbg=none    cterm=none
-hi Comment         ctermfg=239     ctermbg=00      cterm=none
+hi Comment         ctermfg=239     ctermbg=08      cterm=none
 
 hi Special         ctermfg=06      ctermbg=none    cterm=none
 hi SpecialChar     ctermfg=02      ctermbg=none    cterm=none
@@ -140,8 +140,8 @@ hi DiffText        ctermfg=05      ctermbg=none    cterm=none
 " --------------------------------
 " Completion menu
 " --------------------------------
-hi Pmenu           ctermfg=05      ctermbg=00      cterm=none
-hi PmenuSel        ctermfg=00      ctermbg=05      cterm=none
+hi Pmenu           ctermfg=05      ctermbg=08      cterm=none
+hi PmenuSel        ctermfg=08      ctermbg=05      cterm=none
 hi PmenuSbar       ctermfg=04      ctermbg=none    cterm=none
 hi PmenuThumb      ctermfg=06      ctermbg=none    cterm=none
 
