@@ -7,7 +7,7 @@
 . $HOME/.config/admiral.d/config
 
 menu(){
-     echo "%{A:. $HOME/.config/admiral.d/popups/todo/todo:} %{F$RED} %{F$FG}$LOGNAME%{A}"   
+     echo "%{A:. $HOME/.config/admiral.d/popups/todo/todo:} %{F$BLUE} %{F$BYELLOW}$LOGNAME%{A}"   
 }
 
 # pow(){
@@ -25,5 +25,5 @@ bat(){
 while :;do
         echo "%{l}$(menu) %{c}$(clock) %{r}$(bat)"
         sleep .5
-done | lemonbar -g ${PW}x${PH}+${PX}+${PY} -f "$FONT1" -f "$FONT2" -f "$FONT3" -f "Symbola-8" -B "$BLACK" -F "$FG" -u 3 -p -d | \
+done | lemonbar -g ${PW}x${PH}+${PX}+${PY} -f "$FONT1" -f "$FONT2" -f "$FONT3" -f "Symbola-8" -B "$BWHITE" -F "$BYELLOW" -u 3 -p -d | \
 while :; do read line; eval $line; done &
