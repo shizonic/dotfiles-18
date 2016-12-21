@@ -225,11 +225,11 @@ bindsym Print exec scrot -e 'mv $f ~/Pictures/screenshots'
 bindsym $mod+b exec firefox
 
 # Custom colors
-set $black       #282828
-set $darkblack   #131313
-set $white       #5c5959
-set $blue        #2a2f3b
-set $red         #442216
+set $black       #073642
+set $darkblack   #002b36
+set $white       #839496
+set $blue        #268bd2
+set $red         #cb4b16
 
 # Window colors           border       background   text        indicator
 client.focused            $black       $black       $blue       $darkblack
