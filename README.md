@@ -55,9 +55,9 @@ of my configs you can simply use stow to install.
 ### Screenshots
 
 ##### Current
-``` firefox, cava```
+``` ranger, ncmpcpp, cava```
 
-![busy](http://imgur.com/cX36VzX.png)
+![busy](http://imgur.com/V6ZxlEF.png)
 
 [full album](http://imgur.com/a/dOyqM)
 
