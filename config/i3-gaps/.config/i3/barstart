@@ -6,4 +6,5 @@ pkill admiral &>/dev/null
 pkill lemonbar &>/dev/null
 
 
-$HOME/.local/bin/admiral | lemonbar -g ${PW}x${PH}+${PX}+${PY} -f "$FONT1" -f "$FONT2" -f "Siji-7" -f "Symbola-8"  -B "$BBLACK" -F "$FG" -u 3 -p -d | sh
+$HOME/.local/bin/admiral | lemonbar -g ${PW}x${PH}+${PX}+${PY} -f "$FONT1" -f "$FONT2" -f "$FONT3" -B "$BBLACK" -F "$WHITE" -p -d -b | sh &
+. $HOME/.config/admiral.d/topbar
