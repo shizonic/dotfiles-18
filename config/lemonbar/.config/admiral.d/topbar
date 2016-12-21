@@ -5,7 +5,7 @@
 . $HOME/.config/admiral.d/config
 
 menu(){
-     echo "%{A: bash $HOME/.config/admiral.d/popups/todo/todo:} %{F$BLUE} %{F$GREEN}moha%{F$MAGENTA}baks %{A}"   
+     echo "%{A: bash $HOME/.config/admiral.d/popups/todo/todo:} %{F$GREEN} %{F$BLUE}moha%{F$YELLOW}baks %{A}"   
 }
 
 pow(){

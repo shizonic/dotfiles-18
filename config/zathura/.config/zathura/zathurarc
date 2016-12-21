@@ -2,13 +2,13 @@
 
 set font                        "Droid Sans Mono 8"
 set default-bg                  "#131313" #00
-set default-fg                  "#888888" #01
+set default-fg                  "#a5a5a5" #01
 
-set statusbar-fg                "#888888" #04
+set statusbar-fg                "#a5a5a5" #04
 set statusbar-bg                "#1e1d1d" #01
 
 set inputbar-bg                 "#131313" #00 currently not used
-set inputbar-fg                 "#888888" #02
+set inputbar-fg                 "#a5a5a5" #02
 
 set notification-error-bg       "#7f3a2b" #08
 set notification-error-fg       "#131313" #00
@@ -23,13 +23,13 @@ set completion-highlight-fg     "#131313" #02
 set completion-highlight-bg     "#537c76" #0C
 
 set completion-bg               "#1e1d1d" #02
-set completion-fg               "#888888" #0C
+set completion-fg               "#a5a5a5" #0C
 
 set notification-bg             "#131313" #0B
 set notification-fg             "#4c544f" #00
 
 set recolor-lightcolor          "#131313" #00
-set recolor-darkcolor           "#888888" #06
+set recolor-darkcolor           "#a5a5a5" #06
 set recolor                     "true"
 
 # setting recolor-keep true will keep any color your pdf has.
