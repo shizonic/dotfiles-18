@@ -6,24 +6,44 @@
 
 . $HOME/.config/admiral.d/config
 
-menu(){
-     echo "%{A:. $HOME/.config/admiral.d/popups/todo/todo:} %{F$BLUE} %{F$BYELLOW}$LOGNAME%{A}"   
+kernel(){
+    . $HOME/.config/admiral.d/kernel
 }
 
-# pow(){
-#     echo "%{A:. $HOME/.config/admiral.d/popups/power/power:}%{F$RED}%{A} "
-# }
+mail(){
+   . $HOME/.config/admiral.d/mail 
+}
+
+updates(){
+  . $HOME/.config/admiral.d/updates 
+}
+
+packages(){
+ . $HOME/.config/admiral.d/packages 
+}
+
+vol(){
+  . $HOME/.config/admiral.d/vol 
+}
+
+ram(){
+ . $HOME/.config/admiral.d/ram 
+}
+
+uptime(){
+ . $HOME/.config/admiral.d/uptime 
+}
+
+net(){
+ . $HOME/.config/admiral.d/net 
+}
 
 clock(){
-    . $HOME/.config/admiral.d/clock
-}
-
-bat(){
-   . $HOME/.config/admiral.d/battery
+   . $HOME/.config/admiral.d/clock 
 }
 
 while :;do
-        echo "%{l}$(menu) %{c}$(clock) %{r}$(bat)"
+        echo " %{l}$(kernel)$(updates)$(packages) %{c}$(mail)$(vol)$(ram)$(uptime) %{r}$(net)$(clock)"
         sleep .5
-done | lemonbar -g ${PW}x${PH}+${PX}+${PY} -f "$FONT1" -f "$FONT2" -f "$FONT3" -f "Symbola-8" -B "$BWHITE" -F "$BYELLOW" -u 3 -p -d | \
+done | lemonbar -g ${PW}x${PH}+${PX}+${PY} -f "$FONT1" -f "$FONT2" -f "$FONT3" -f "Symbola-8" -B "$BG" -F "$FG" -u 3 -p -d -b | \
 while :; do read line; eval $line; done &
