@@ -4,7 +4,7 @@
 networkIcon=""
 
 if ping -c 1 google.com >> /dev/null 2>&1; then
-	echo "%{F$BLUE}${networkIcon}%{F$FG} Online "
+	echo "%{F$BLUE}[ %{F$BLUE}${networkIcon}%{F$FG} Online %{F$BLUE}] "
 else
-	echo "%{F$WHITE}${networkIcon}%{F$FG} Offline "
+	echo "%{F$BLUE}[ %{F$WHITE}${networkIcon}%{F$FG} Offline %{F$BLUE}] "
 fi	
