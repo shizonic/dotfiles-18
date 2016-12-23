@@ -44,11 +44,11 @@ URxvt*scrollTtyKeypress: true
 !URxvt*italicFont:       xft:Droid Sans Mono for Powerline:italic:autohint=true:size=8
 !URxvt*boldItalicFont:   xft:Droid Sans Mono for Powerline:bolditalic:italic:autohint=true:size=8
 
-! tewi
-URxvt*font:              xft:tewi:size=8
-URxvt*boldFont:          xft:tewi:normal:size=8
-URxvt*italicFont:        xft:tewi:italic:autohint=true:size=8
-URxvt*boldItalicFont:    xft:tewi:bolditalic:italic:autohint=true:size=8
+! GohuFont
+URxvt*font:              xft:GohuFont:size=8
+URxvt*boldFont:          xft:GohuFont:normal:size=8
+URxvt*italicFont:        xft:GohuFont:italic:autohint=true:size=8
+URxvt*boldItalicFont:    xft:GohuFont:bolditalic:italic:autohint=true:size=8
 
 URxvt.letterSpace:       true
 
