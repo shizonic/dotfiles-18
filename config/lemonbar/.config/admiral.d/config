@@ -12,7 +12,7 @@ PX=0
 PY=0
 
 # Fonts
-FONT1="tewi:size=8"
+FONT1="GohuFont:size=8"
 FONT2="FontAwesome:size=8"
 FONT3="Siji:size=7"
 

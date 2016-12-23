@@ -57,7 +57,7 @@ path = 'echo "%{A:. $HOME/.config/admiral.d/popups/power/power:}%{F#442216}%{
 static = true
 
 [menu]
-path = 'echo "%{A:. $HOME/.config/admiral.d/popups/todo/todo:}%{F#5b6976}  %{F#8c8ca0}$LOGNAME%{A}"'
+path = 'echo "%{A:. $HOME/.config/admiral.d/popups/todo/todo:}%{F#5b6976}  %{F#755a5b}$LOGNAME%{A}"'
 static = true
 
 # Used for formatting lemonbar
