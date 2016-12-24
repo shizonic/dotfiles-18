@@ -19,42 +19,42 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-markdown'
 Plugin 'cespare/vim-toml'
 Plugin 'kien/ctrlp.vim'
-Plugin 'rking/ag.vim'
+"Plugin 'rking/ag.vim'
 Plugin 'mileszs/ack.vim'
-Plugin 'tpope/vim-projectionist'
+"Plugin 'tpope/vim-projectionist'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-repeat'
 Plugin 'groenewege/vim-less'
-Plugin 'kchmck/vim-coffee-script'
+"Plugin 'kchmck/vim-coffee-script'
 Plugin 'scrooloose/syntastic'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'mattn/emmet-vim'
 Plugin 'nvie/vim-flake8'
-Plugin 'jistr/vim-nerdtree-tabs'
-Plugin 'jmcomets/vim-pony'
-Plugin 'mjbrownie/vim-htmldjango_omnicomplete'
+"Plugin 'jistr/vim-nerdtree-tabs'
+"Plugin 'jmcomets/vim-pony'
+"Plugin 'mjbrownie/vim-htmldjango_omnicomplete'
 Plugin 'othree/html5.vim'
 Plugin 'PotatoesMaster/i3-vim-syntax'
-Plugin 'twe4ked/vim-colorscheme-switcher'
+"Plugin 'twe4ked/vim-colorscheme-switcher'
 Plugin 'jmcantrell/vim-virtualenv'
 Plugin 'ervandew/supertab'
 Plugin 'SirVer/ultisnips'
 Plugin 'itchyny/lightline.vim'
-Plugin 'rdnetto/YCM-Generator'
+"Plugin 'rdnetto/YCM-Generator'
 Plugin 'sukima/xmledit'
 "Plugin 'klen/python-mode'
 Plugin 'Raimondi/delimitMate'
 Plugin 'xolox/vim-easytags'
 Plugin 'xolox/vim-misc'
-Plugin 'jez/vim-superman'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'nanotech/jellybeans.vim'
-Plugin 'tmux-plugins/vim-tmux'
+"Plugin 'jez/vim-superman'
+"Plugin 'altercation/vim-colors-solarized'
+"Plugin 'nanotech/jellybeans.vim'
+"Plugin 'tmux-plugins/vim-tmux'
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'lilydjwg/colorizer'
-Plugin 'morhetz/gruvbox'
+"Plugin 'lilydjwg/colorizer'
+"Plugin 'morhetz/gruvbox'
 
 call vundle#end()       
 filetype plugin indent on  
@@ -62,14 +62,15 @@ filetype plugin indent on
 "}}}
 
 
-" Set Colorscheme and Statusline{{{
+"  Set Colorscheme and Statusline{{{
 
 set background=dark
-colorscheme custom
+colorscheme hybrid
+let g:hybrid_custom_term_colors = 1
 "" Status line
 set t_Co=256
 let g:lightline = {
-      \ 'colorscheme': 'jellybeans',
+      \ 'colorscheme': 'Tomorrow_Night',
       \ }
       
 "}}}
@@ -86,7 +87,7 @@ set expandtab             " tabs are spaces
 
 " System clipboard{{{
 
-"" cut/copy/paste to/from other application
+""cut/copy/paste to/from other application
 set clipboard=unnamed     " access your system clipboard
 
 "}}}
@@ -94,10 +95,10 @@ set clipboard=unnamed     " access your system clipboard
 
 " Split Layouts{{{
 
-"" specify different areas of the screen
+""specify different areas of the screen
 set splitbelow
 set splitright
-"" split navigations
+""split navigations
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
@@ -110,7 +111,7 @@ nnoremap <C-H> <C-W><C-H>
 
 "" These are options that changes random visuals in Vim
 syntax on
-"set number                       " show line numbers
+set number                       " show line numbers
 set showcmd                      " show command in bottom bar
 set tw=80                        " width of document (used by gd)
 set nowrap                       " don't automatically wrap on load

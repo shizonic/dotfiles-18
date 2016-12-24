@@ -7,17 +7,17 @@
 
 # Panel 
 PW=1366
-PH=18
+PH=15
 PX=0    
 PY=0
 
 # Fonts
-FONT1="GohuFont:size=8"
+FONT1="tewi:size=7"
 FONT2="FontAwesome:size=8"
 FONT3="Siji:size=7"
 
 # Color directory
-CD="$HOME/.colors/rejoin"
+CD="$HOME/.colors/solarized.dark"
 
 # Fetch the Colors
 BG=`cat ${CD} | grep -i background: | tail -c 8`

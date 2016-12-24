@@ -1,6 +1,6 @@
 [admiral]
 items = [
-         "right", "battery",
+         "right", "clock", "battery",
          "center", "workspaces",
          "left", "menu"
         ]
@@ -57,7 +57,7 @@ path = 'echo "%{A:. $HOME/.config/admiral.d/popups/power/power:}%{F#442216}%{
 static = true
 
 [menu]
-path = 'echo "%{A:. $HOME/.config/admiral.d/popups/todo/todo:}%{F#5b6976}  %{F#755a5b}$LOGNAME%{A}"'
+path = 'echo "%{A:. $HOME/.config/admiral.d/popups/todo/todo:}%{F#268bd2}  %{F#b58900}$LOGNAME%{A}"'
 static = true
 
 # Used for formatting lemonbar
