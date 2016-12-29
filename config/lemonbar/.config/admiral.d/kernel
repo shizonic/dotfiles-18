@@ -4,4 +4,4 @@
 
 #Print kernel release
 kernel=`uname -r`
-echo "%{F$MAGENTA} [ %{F$RED}%{F$FG} $kernel%{F$MAGENTA} ] "
+echo " %{F$BBLACK}%{F$FG} $kernel "
