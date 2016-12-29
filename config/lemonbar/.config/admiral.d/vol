@@ -18,6 +18,6 @@ if $(ponymix is-muted); then
     volumeIcon=""
 	volumeColor=${RED}
 else
-	volumeColor=${BLUE}
+	volumeColor=${BBLACK}
 fi
-	echo "%{F$GREEN}[ %{F$volumeColor}${volumeIcon}%{F$FG} ${volumeState}% %{F$GREEN}] "
+	echo " %{F$volumeColor}${volumeIcon}%{F$FG} ${volumeState}% "

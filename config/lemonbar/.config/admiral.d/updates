@@ -7,4 +7,4 @@
 
 # Get pacman updates
 pm=`pacman -Qqu | wc -l`
-echo "%{F$MAGENTA}[ %{F$BLUE}%{F$FG} $pm%{F$MAGENTA} ] "
+echo " %{F$BBLACK}%{F$FG} $pm "

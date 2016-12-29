@@ -3,4 +3,4 @@
 
 . $HOME/.config/admiral.d/config
 ram=$(free -m | awk 'NR==2{printf "%s/%sMB", $3,$2}')
-echo "%{F$GREEN}[ %{F$MAGENTA}%{F$FG} $ram %{F$GREEN}] "
+echo " %{F$BBLACK}%{F$FG} $ram "
