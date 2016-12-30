@@ -4,7 +4,7 @@
 
 ! General
 rofi.font:                tewi 8
-rofi.opacity:             90
+rofi.opacity:             95
 rofi.fake-transparency:   true
 rofi.hide-scrollbar:      true
 
@@ -23,8 +23,8 @@ rofi.fullscreen:         false
 ! ------------------------------------------------------------------------------
 rofi.color-enabled:      true
 ! State                  'bg'     'fg'     'bgalt'  'hlbg'   'hlfg'
-rofi.color-normal:       #1d1f21, #888888, #282a2e, #85678f, #1d1f21
-rofi.color-active:       #1d1f21, #4c544f, #282a2e, #4c544f, #1d1f21
-rofi.color-urgent:       #1d1f21, #442216, #282a2e, #442216, #1d1f21
+rofi.color-normal:       #171717, #b2a191, #202020, #75507b, #171717
+rofi.color-active:       #171717, #4c544f, #202020, #4c544f, #171717
+rofi.color-urgent:       #171717, #442216, #202020, #442216, #171717
 !                        'bg'     'bc'
-rofi.color-window:       #1d1f21, #282a2e
+rofi.color-window:       #171717, #202020

@@ -95,11 +95,11 @@ URxvt.iso14755_52:         false
 !URxvt.cursorUnderline:    false
 !URxvt.cursorColor:        #c5c10c
 !URxvt.borderColor:        #07090d
-URxvt.colorUL:             #287373
+URxvt.colorUL:             #757978
 Xcursor.theme:             Adwaita
 
 !! Pointer
 !URxvt.pointerBlank:        true
 
 !! Colors
-#include "/home/mohabaks/.colors/jwr-dark"
+#include "/home/mohabaks/.colors/mashup"

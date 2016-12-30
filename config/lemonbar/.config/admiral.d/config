@@ -12,12 +12,12 @@ PX=0
 PY=0
 
 # Fonts
-FONT1="tewi:size=7"
+FONT1="tewi:size=8"
 FONT2="FontAwesome:size=8"
 FONT3="Siji:size=7"
 
 # Color directory
-CD="$HOME/.colors/solarized.dark"
+CD="$HOME/.colors/mashup"
 
 # Fetch the Colors
 BG=`cat ${CD} | grep -i background: | tail -c 8`

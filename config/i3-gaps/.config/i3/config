@@ -74,16 +74,16 @@ bindsym $mod+a focus parent
 
 # Initialize workspace
 # 
-set $w1   1
-set $w2   2
-set $w3   3
-set $w4   4
-set $w5   5
-set $w6   6
-set $w7   7
-set $w8   8
-set $w9   9
-set $w10 10
+set $w1   1
+set $w2   2
+set $w3   3
+set $w4   4
+set $w5   5
+set $w6   6
+set $w7   7 
+set $w8   8
+set $w9   9
+set $w10 10
 
  
 # Switch to workspace
@@ -151,7 +151,7 @@ bindsym $mod+minus scratchpad show
 #  More info visit: https://github.com/Airblader/i3
 
 smart_gaps on     
-smart_borders on
+#smart_borders on
 
 # Global gaps size
 gaps inner 0
@@ -246,8 +246,8 @@ set_from_resource $darkwhite   color7  #000000
 set_from_resource $white       color15 #000000
 
 # Custom colors
-set $black       #282a2e
-set $darkblack   #1d1f21
+set $black       #202020
+set $darkblack   #171717
 
 # Window colors           border       background   text        indicator
 client.focused            $black       $black       $magenta    $darkblack
@@ -289,13 +289,13 @@ exec --no-startup-id nitrogen --restore  &
 exec --no-startup-id compton --config ~/.compton.conf -b 
 exec --no-startup-id dunst -config $HOME/.config/dunst/dunstrc
 exec --no-startup-id $HOME/.local/bin/barstart &
-#exec --no-startup-id conky -c $HOME/.config/i3/conkybar-bottom &
-#exec --no-startup-id conky -c $HOME/.config/i3/conkybar-top &
+exec --no-startup-id conky -c $HOME/.config/i3/conkybar-bottom &
+exec --no-startup-id conky -c $HOME/.config/i3/conkybar-top &
 exec --no-startup-id xrdb -merge -I$HOME ~/.Xresources
 
 # Set per-application border
-for_window [class="^.*"] border pixel 2
-for_window [class="(?i)urxvt"] border pixel 2
+for_window [class="^.*"] border pixel 1
+for_window [class="(?i)urxvt"] border pixel 1
 #for_window [class="^.*"] border normal 0
 
 

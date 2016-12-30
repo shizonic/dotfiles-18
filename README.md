@@ -3,10 +3,10 @@ Welcome To My  Dotfiles
 
 ### Setup Description
 
-* Bar: ``` polybar ```
+* Bar: ``` lemonbar ```
 * Browser: ``` firefox ```
 * Compositor: ``` compton ```
-* Font: ``` gohufont ```
+* Font: ``` tewi ```
 * Program launcher: ``` rofi ```
 * PDF viewer: ``` zathura ```
 * Text editor: ``` vim ```
@@ -54,9 +54,9 @@ of my configs you can simply use stow to install.
 
 ### Screenshot
 
-``` mpv, ranger, vim, arch-wiki-man, weechat```
+``` ncmpcpp, notify-send, vim, , weechat```
 
-![busy](http://imgur.com/7HK3Jis.png)
+![busy](http://imgur.com/xOdIyDF.png)
 
 
 [GNU stow]: https://www.gnu.org/s/stow/manual/stow.html

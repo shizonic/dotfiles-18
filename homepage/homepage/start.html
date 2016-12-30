@@ -17,13 +17,13 @@
 
 body
 {
-   background-image: url(index.png);
-   background-repeat: no-repeat;
-   background-position: center center;
+   background-image: url(background.png);
+   background-repeat: repeat-x repeat-y;
+   /*background-position:center center;
    background-attachment: fixed;
    background-size: cover;
-   /*background-color: #111111;*/
-   color: #c5c8c6;
+   background-color: #171717;*/
+   color: #e8d0c3;
 }
 
 h1{
@@ -32,14 +32,14 @@ h1{
    letter-spacing: 10px;
    padding: 10px;
    text-align: center;
-   color: #85678f;
+   color: #75507b;
 }
 
 hr{
   display: block;
   height: 3px;
   border: 0px;
-  border-top: 4px solid #282828;
+  border-top: 4px solid #333333;
 }
 
 ul{
@@ -50,7 +50,7 @@ ul{
 ul > li {
   display: inline-block;
   width: 100%;
-  background-color: #1d1d21;
+  /*background-color: #333333;*/
 }
 
 ul > li > ul >li{
@@ -58,31 +58,31 @@ ul > li > ul >li{
 }
 
 .sections {
-    -webkit-column-count:4;
-    -moz-column-count:4;
-    -ms-column-count:4;
-    -o-column-count:4;
-    column-count:4;
+    -webkit-column-count:5;
+    -moz-column-count:5;
+    -ms-column-count:5;
+    -o-column-count:5;
+    column-count:5;
     -webkit-column-gap:15px;
     -moz-column-gap:15px;
     -ms-column-gap:15px;
     -o-column-gap:15px;
     column-gap:15px;
-    columns:4;
+    columns:5;
     padding-top: 20px;
-    padding-left: 80px;
+    padding-left: 40px;
 }
 
 a{
    font-family: Hack;
    font-size: 8pt;
    font-weight: medium; 
-   color: #707880;
+   color: #b2a191;
    text-decoration: none;
 }
 
 a:hover{
-   color: #C0C0C0;
+   color: #75507b;
 }
 
 </style>
@@ -101,7 +101,7 @@ a:hover{
 <div class="sections">
      <ul>
            <!-- Account -->
-           <li><h3> <span style="color:#a54242">Accounts</span></h3>
+           <li><h3> <span style="color:#bf3f34">Accounts</span></h3>
               <ul> 
                    <li><a target="_blank" href="https://bitbucket.org/mohabaks/"> Bitbucket</a></li> 
                    <li><a target="_blank" href="https://github.com/mohabaks/"> Github</a></li> 
@@ -111,7 +111,7 @@ a:hover{
            </li>
             
            <!-- Entertainment -->
-           <li><h3> <span style="color:#8c9440">Entertainment</span></h3>
+           <li><h3> <span style="color:#707d22">Entertainment</span></h3>
               <ul> 
                    <li><a target="_blank" href="http://netflix.com"> Netflix</a></li> 
                    <li><a target="_blank" href="https://xkcd.com/1314/"> Xkcdcomic</a></li> 
@@ -120,18 +120,29 @@ a:hover{
           </li>
 
           <!-- Updates -->
-          <li><h3> <span  style="color:#de935f">Updates</span></h3>
+          <li><h3> <span  style="color:#bf7a29">Updates</span></h3>
               <ul> 
                    <li><a target="_blank" href="https://www.archlinux.org/"> Arch Linux</a></li> 
-                   <li><a target="_blank" href="https://distrowatch.com/"> Distrowatch</a></li> 
+                   <li><a target="_blank" href="https://distrowatch.com/"> Distrowatch</a></li>
+                   <li><a target="_blank" href="https://islamqa.info/en"> Islamqa</a></li> 
                    <li><a target="_blank" href="https://www.reddit.com/r/unixporn/"> Unixporn</a></li> 
                    <li><a target="_blank" href="https://www.securitytube.net/"> Securitytube</a></li> 
                    <li><a target="_blank" href="https://boards.4chan.org/g/catalog"> /g/ Technology</a></li> 
               </ul>         
           </li>
+         
+          <!-- War games -->
+          <li><h3> <span  style="color:#ad7fa8">Wargames</span></h3>
+              <ul> 
+                   <li><a target="_blank" href="https://exploit-exercises.com/"> Exploit exercises</a></li>
+                   <li><a target="_blank" href="http://overthewire.org/"> OverTheWire</a></li> 
+                   <li><a target="_blank" href="http://smashthestack.org/"> SmashTheStack</a></li> 
+                   <li><a target="_blank" href="https://www.vulnhub.com/"> Vulnhub</a></li> 
+              </ul>         
+          </li>
 
           <!-- Misc -->
-          <li><h3> <span  style="color:#5f819d">Miscellaneous</span></h3>
+          <li><h3> <span  style="color:#757978">Miscellaneous</span></h3>
               <ul> 
                    <li><a target="_blank" href="http://deviantart.com/"> DeviantArt</a></li>
                    <li><a target="_blank" href="http://imgur.com/"> Imgur</a></li> 

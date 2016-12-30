@@ -65,7 +65,7 @@ filetype plugin indent on
 "  Set Colorscheme and Statusline{{{
 
 set background=dark
-colorscheme hybrid
+colorscheme custom
 let g:hybrid_custom_term_colors = 1
 "" Status line
 set t_Co=256

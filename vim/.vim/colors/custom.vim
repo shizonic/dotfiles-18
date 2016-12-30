@@ -28,7 +28,7 @@ let g:colors_name="custom"
 hi Normal          ctermfg=none    ctermbg=none    cterm=none
 hi Cursor          ctermfg=15      ctermbg=none    cterm=none
 hi CursorLine      ctermfg=none    ctermbg=00      cterm=none
-hi LineNr          ctermfg=08     ctermbg=00      cterm=none
+hi LineNr          ctermfg=08      ctermbg=00      cterm=none
 hi CursorLineNR    ctermfg=02      ctermbg=00      cterm=none
 
 " -----------------
@@ -42,7 +42,7 @@ hi Folded          ctermfg=02      ctermbg=none    cterm=none
 " -------------------------
 " - Window/Tab delimiters - 
 " -------------------------
-hi VertSplit       ctermfg=08     ctermbg=00      cterm=none
+hi VertSplit       ctermfg=08      ctermbg=00      cterm=none
 hi ColorColumn     ctermfg=none    ctermbg=00      cterm=none
 hi TabLine         ctermfg=none    ctermbg=00      cterm=none
 hi TabLineFill     ctermfg=04      ctermbg=none    cterm=none

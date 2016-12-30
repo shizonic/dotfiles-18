@@ -506,7 +506,7 @@ color2 = red
 #
 main_window_highlight_color = green
 #
-progressbar_color = 239
+progressbar_color = black
 #
 progressbar_elapsed_color = green
 #

@@ -5,13 +5,13 @@ image='/home/mohabaks/Pictures/notify/todo/hack.png'
 
 notify-send  -i $image "
 
-<span foreground='#7f3a2b'>  Todo Weekday</span>
-<span foreground='#537c76'>  ============</span>
-<span foreground='#888888'>
-  1. Netw T-D
+<span foreground='#75507b'>  Todo Weekday</span>
+<span foreground='#627a92'>  ============</span>
+<span foreground='#b2a191'>
+  1. Netw
   2. Crypto
   3. LinuxAdmin
-  4. FYProject
+  4. Project
 </span>
 
 
