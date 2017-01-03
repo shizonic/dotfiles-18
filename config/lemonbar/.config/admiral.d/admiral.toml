@@ -1,7 +1,7 @@
 [admiral]
 items = [
          "right", "battery",
-         "center", "workspaces",
+         "center", "clock",
          "left", "menu"
         ]
 

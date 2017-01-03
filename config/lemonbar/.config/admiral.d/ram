@@ -3,4 +3,10 @@
 
 . $HOME/.config/admiral.d/config
 ram=$(free -m | awk 'NR==2{printf "%s/%sMB", $3,$2}')
-echo " %{F$BBLACK}%{F$FG} $ram "
+
+if [[ ${ram%/*} -gt 1000 ]];then
+
+        echo " %{F$RED}%{F$FG} $ram "
+else
+        echo " %{F$BBLACK}%{F$FG} $ram "
+fi

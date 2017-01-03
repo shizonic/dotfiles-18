@@ -71,7 +71,7 @@ if [  $current_time = 12:45 ];then
 fi
 
 # Asr  Prayer
-if [ $current_time = 16:03 ];then
+if [ $current_time = 15:45 ];then
         notify-send -i "$image" "$asr_msg"
  
 fi

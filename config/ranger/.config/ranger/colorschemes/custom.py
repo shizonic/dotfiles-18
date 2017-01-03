@@ -24,9 +24,9 @@ class Default(ColorScheme):
 				fg = black
 			if context.media:
 				if context.image:
-					fg = red
+					fg = magenta
 				else:
-					fg = 9
+					fg = red
 			if context.container:
 				attr |= bold
 				fg = cyan
@@ -61,7 +61,7 @@ class Default(ColorScheme):
 				if context.marked:
 					#attr |= bold
 					bg = black
-					fg = yellow
+					fg = cyan
 			if context.badinfo:
 				if attr & reverse:
 					bg = magenta
@@ -71,10 +71,10 @@ class Default(ColorScheme):
 		elif context.in_titlebar:
 			attr |= normal
 			if context.hostname:
-				attr |= bold
-				fg = context.bad and red or magenta
+				# attr |= bold
+				fg = context.bad and magenta or red
 			elif context.directory:
-				fg = yellow
+				fg = green
 			elif context.tab:
 				if context.good:
 					bg = red

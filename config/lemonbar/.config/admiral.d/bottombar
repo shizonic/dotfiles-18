@@ -43,7 +43,7 @@ clock(){
 }
 
 while :;do
-        echo " %{l}$(kernel)$(updates)$(packages) %{c}$(mail)$(vol)$(ram)$(uptime) %{r}$(net)$(clock)"
+        echo " %{l}$(updates)$(packages) %{c}$(mail)$(vol)$(ram)$(uptime) %{r}$(net) "
         sleep .5
 done | lemonbar -g ${PW}x${PH}+${PX}+${PY} -f "$FONT1" -f "$FONT2" -f "$FONT3" -f "Symbola-8" -B "$BG" -F "$BBLACK" -u 3 -p -d -b | \
 while :; do read line; eval $line; done &

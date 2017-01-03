@@ -1,10 +1,16 @@
-!-----------------------------------------------------------------------
-!           Github: https://github.com/mohabaks/dotfiles
-!-----------------------------------------------------------------------
 
+!    ░█  █░                                                               
+!     ▓▒▒▓   █▒██▒  ███   ▒███▒   ███   █   █   █▒██▒  ▓██▒   ███   ▒███▒ 
+!      ██    ██  █ ▓▓ ▒█  █▒ ░█  █▓ ▓█  █   █   ██  █ ▓█  ▓  ▓▓ ▒█  █▒ ░█ 
+!      ██    █     █   █  █▒░    █   █  █   █   █     █░     █   █  █▒░   
+!     ▒██░   █     █████  ░███▒  █   █  █   █   █     █      █████  ░███▒ 
+!     █▒▒█   █     █         ▒█  █   █  █   █   █     █░     █         ▒█ 
+!    ▒█  █░  █     ▓▓  █  █░ ▒█  █▓ ▓█  █▒ ▓█   █     ▓█  ▓  ▓▓  █  █░ ▒█ 
+!    █▒  ▒█  █      ███▒  ▒███▒   ███   ▒██▒█   █      ▓██▒   ███▒  ▒███▒                                                                       
+                                                                      
 
 !-----------------------------------------------------------------------
-!           Xft settings
+!                         Xft settings
 !-----------------------------------------------------------------------
 
 Xft.dpi:                96
@@ -17,11 +23,11 @@ Xft.hintstyle:          hintsfull
 
 
 !-----------------------------------------------------------------------
-!         URxvt settings 
+!                        URxvt settings 
 !-----------------------------------------------------------------------
 
-URxvt.internalBorder:    10
-URxvt.externalBorder:    10
+URxvt.internalBorder:    15
+URxvt.externalBorder:    15
 !URxvt.lineSpace:        0
 !urxvt*shading:          30
 URxvt.depth:             32
@@ -95,11 +101,11 @@ URxvt.iso14755_52:         false
 !URxvt.cursorUnderline:    false
 !URxvt.cursorColor:        #c5c10c
 !URxvt.borderColor:        #07090d
-URxvt.colorUL:             #757978
+URxvt.colorUL:             #75507b
 Xcursor.theme:             Adwaita
 
 !! Pointer
 !URxvt.pointerBlank:        true
 
 !! Colors
-#include "/home/mohabaks/.colors/mashup"
+#include "/home/mohabaks/.colors/mashup"                                                                     

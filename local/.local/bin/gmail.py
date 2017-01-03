@@ -6,16 +6,21 @@ from accounts import accounts
 email = accounts.student_email 
 password = accounts.student_pass
 
-url = 'https://%s:%s@mail.google.com/mail/feed/atom' % (email, password)
+try:
+    url = 'https://%s:%s@mail.google.com/mail/feed/atom' % (email, password)
+    opener = FancyURLopener()
+    page = opener.open(url)
 
-opener = FancyURLopener()
-page = opener.open(url)
+except OSError:
+    pass
 
-contents = page.read().decode('utf-8')
+else:
+    contents = page.read().decode('utf-8')
 
-ifrom = contents.index('<fullcount>') + 11
-ito = contents.index('</fullcount>')
+    ifrom = contents.index('<fullcount>') + 11
+    ito = contents.index('</fullcount>')
 
-fullcount = contents[ifrom:ito]
+    fullcount = contents[ifrom:ito]
 
-print(fullcount + 'new')
+    print(fullcount)
+

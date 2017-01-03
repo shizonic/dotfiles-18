@@ -1,10 +1,9 @@
-"*********************** Description **********************************
-" 
-"           Github:https://github.com/mohabaks/dotfiles
-"           SpecialThanks:https://github.com/dougblack/dotfiles/.vimrc
-"          
+"                                   
+"   ░█░█░█▀▀░█░░░█▀▀░█▀█░█▄█░█▀▀░░░▀█▀░█▀█░░░█▄█░█░█░░░█░█░▀█▀░█▄█░█▀▄░█▀▀
+"   ░█▄█░█▀▀░█░░░█░░░█░█░█░█░█▀▀░░░░█░░█░█░░░█░█░░█░░░░▀▄▀░░█░░█░█░█▀▄░█░░
+"   ░▀░▀░▀▀▀░▀▀▀░▀▀▀░▀▀▀░▀░▀░▀▀▀░░░░▀░░▀▀▀░░░▀░▀░░▀░░░░░▀░░▀▀▀░▀░▀░▀░▀░▀▀▀
 "
-"**********************************************************************
+
 
 " Vundle Settings{{{
 
@@ -65,9 +64,10 @@ filetype plugin indent on
 "  Set Colorscheme and Statusline{{{
 
 set background=dark
-colorscheme custom
-let g:hybrid_custom_term_colors = 1
+colorscheme custom 
+
 "" Status line
+"set laststatus=2
 set t_Co=256
 let g:lightline = {
       \ 'colorscheme': 'Tomorrow_Night',
@@ -75,39 +75,8 @@ let g:lightline = {
       
 "}}}
 
-
-" Spaces & Tabs{{{
-
-set tabstop=4             " number of visual spaces per TAB
-set softtabstop=4         " number of spaces in tab when editing
-set expandtab             " tabs are spaces
-
-"}}}
-
-
-" System clipboard{{{
-
-""cut/copy/paste to/from other application
-set clipboard=unnamed     " access your system clipboard
-
-"}}}
-
-
-" Split Layouts{{{
-
-""specify different areas of the screen
-set splitbelow
-set splitright
-""split navigations
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
-
-"}}}
-
-
-" UI Config {{{
+                        
+" UI Config {{{ 
 
 "" These are options that changes random visuals in Vim
 syntax on
@@ -125,6 +94,38 @@ set encoding=utf8
 set cursorline                   " highlight current line
 set lazyredraw                   " redraw only when we need to
 set showmatch                    " highlight matching [{()}]
+set spell                        " Turn on spell checker
+set spellsuggest=5               " Limit the number of suggested words
+
+"}}}
+
+
+" Spaces & Tabs{{{
+
+set tabstop=4             " number of visual spaces per TAB
+set softtabstop=4         " number of spaces in tab when editing
+set expandtab             " tabs are spaces
+
+ "}}}
+
+
+" System clipboard{{{
+
+""cut/copy/paste to/from other application
+set clipboard=unnamed     " access your system clipboard
+
+" }}}
+
+"  Split Layouts{{{
+
+""specify different areas of the screen
+set splitbelow
+set splitright
+""split navigations
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
 "}}}
 
@@ -137,7 +138,7 @@ set hlsearch              " highight matches
 "" turn off search highlight
 nnoremap <leader><space> :nohlsearch<CR> 
 
-"}}} 
+"}} } 
 
 
 "" Folding{{{
@@ -154,7 +155,7 @@ set foldmethod=indent     " fold based on indent level
  "}}}
 
 
-"  Movement{{{
+"  Movement{{{ 
 
 "" easier moving of code blocks
 "" Try to go into visual mode (v), thenselect several lines of code here and
@@ -250,9 +251,16 @@ set writebackup
 
 
 "}}}
+
+
+" Match Valid Ip Address {{{
+
+syn match ipaddr /\(\(25\_[0-5]\|2\_[0-4]\_[0-9]\|\_[01]\?\_[0-9]\_[0-9]\?\)\.\)\{3\}\(25\_[0-5]\|2\_[0-4]\_[0-9]\|\_[01]\?\_[0-9]\_[0-9]\?\)/
+hi link ipaddr Identifier
+
+" }}}
  
- 
-" Python/Django IDE Setup {{{
+" Python/Django  IDE Setup {{{
  
 "" Tab Settings
 autocmd FileType python set sw=4

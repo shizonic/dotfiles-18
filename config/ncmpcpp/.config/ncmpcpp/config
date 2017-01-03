@@ -1,7 +1,19 @@
-##############################################################
-## This is the example configuration file. Copy it to       ##
-## $HOME/.ncmpcpp/config or $XDG_CONFIG_HOME/ncmpcpp/config ##
-## and set up your preferences.                             ##
+##################################################################                                                                            
+#                                                 
+#         █▒██▒   ▓██▒  ██▓█▓  █▓██    ▓██▒  █▓██   █▓██  
+#         █▓ ▒█  ▓█  ▓  █▒█▒█  █▓ ▓█  ▓█  ▓  █▓ ▓█  █▓ ▓█ 
+#         █   █  █░     █ █ █  █   █  █░     █   █  █   █ 
+#         █   █  █      █ █ █  █   █  █      █   █  █   █ 
+#         █   █  █░     █ █ █  █   █  █░     █   █  █   █ 
+#         █   █  ▓█  ▓  █ █ █  █▓ ▓█  ▓█  ▓  █▓ ▓█  █▓ ▓█ 
+#         █   █   ▓██▒  █ █ █  █▓██    ▓██▒  █▓██   █▓██  
+#                              █             █      █     
+#                              █             █      █     
+#                              █             █      █    
+#                      
+# This is the example configuration file. Copy it to       
+# $HOME/.ncmpcpp/config or $XDG_CONFIG_HOME/ncmpcpp/config
+# and set up your preferences.                             
 ##############################################################
 #
 ##### directories ######
@@ -269,7 +281,7 @@ now_playing_suffix = $/b
 ##   not available.
 ##
 #
-song_columns_list_format = (20)[red]{a} (6f)[green]{NE} (50)[blue]{t|f:Title} (20)[yellow]{b} (7f)[magenta]{l}
+song_columns_list_format = (20)[red]{a} (7f)[green]{NE} (50)[blue]{t|f:Title} (20)[yellow]{b} (7f)[magenta]{l}
 #
 ##### various settings #####
 #
@@ -490,9 +502,9 @@ colors_enabled = yes
 #
 #empty_tag_color = cyan
 #
-header_window_color = white
+header_window_color = cyan
 #
-volume_color = green
+volume_color = blue
 #
 state_line_color = red
 #
@@ -512,7 +524,7 @@ progressbar_elapsed_color = green
 #
 statusbar_color = green
 #
-alternative_ui_separator_color = 239
+alternative_ui_separator_color = black
 #
 active_column_color = red
 #
@@ -520,4 +532,3 @@ window_border_color = magenta
 #
 active_window_border = green
 #
-
