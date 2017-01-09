@@ -17,7 +17,7 @@ FONT2="FontAwesome:size=8"
 FONT3="Siji:size=7"
 
 # Color directory
-CD="$HOME/.colors/mashup"
+CD="$HOME/.colors/fallen"
 
 # Fetch the Colors
 BG=`cat ${CD} | grep -i background: | tail -c 8`

@@ -504,13 +504,13 @@ colors_enabled = yes
 #
 header_window_color = cyan
 #
-volume_color = blue
+volume_color = red
 #
 state_line_color = red
 #
 #state_flags_color = default
 #
-main_window_color = magenta
+main_window_color = blue
 #
 color1 = green
 #

@@ -57,7 +57,7 @@ reload = 1
 # static = true
 
 [menu]
-path = 'echo "%{A:. $HOME/.config/admiral.d/popups/todo/todo:}%{F#627a92}  %{F#b2a191}$LOGNAME%{A}"'
+path = 'echo "%{A:. $HOME/.config/admiral.d/popups/todo/todo:}%{F#299156}  %{F#8b8b8b}$LOGNAME%{A}"'
 static = true
 
 # Used for formatting lemonbar

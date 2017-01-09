@@ -230,30 +230,18 @@ bindsym Print exec scrot -e 'mv $f ~/Pictures/screenshots'
 # bindsym $mod+p exec pcmanfm 
 bindsym $mod+b exec firefox
 
-set_from_resource $darkred     color1  #000000
-set_from_resource $red         color9  #000000
-set_from_resource $darkgreen   color2  #000000
-set_from_resource $green       color10 #000000
-set_from_resource $darkyellow  color3  #000000
-set_from_resource $yellow      color11 #000000
-set_from_resource $darkblue    color4  #000000
-set_from_resource $blue        color12 #000000
-set_from_resource $darkmagenta color5  #000000
-set_from_resource $magenta     color13 #000000
-set_from_resource $darkcyan    color6  #000000
-set_from_resource $cyan        color14 #000000
-set_from_resource $darkwhite   color7  #000000
-set_from_resource $white       color15 #000000
-
 # Custom colors
-set $black       #202020
-set $darkblack   #171717
+set $black       #080808
+set $gray        #202020
+set $darkblack   #020202
+set $white       #8b8b8b
+set $darkwhite   #b2a191
 
 # Window colors           border       background   text        indicator
-client.focused            $black       $black       $magenta    $darkblack
-client.focused_inactive   $black       $black       $white      $darkblack
-client.unfocused          $black       $black       $white      $darkblack
-client.urgent             $black       $black       $red        $darkblack
+client.focused            $black       $black       $white      $black
+client.focused_inactive   $black       $black       $gray       $black
+client.unfocused          $black       $black       $gray       $black
+client.urgent             $black       $black       $red        $black
 
 #Start i3bar to display a workspace bar
 #Uncomment to use the default i3bar status

@@ -54,6 +54,7 @@ Plugin 'xolox/vim-misc'
 Plugin 'Valloric/YouCompleteMe'
 "Plugin 'lilydjwg/colorizer'
 "Plugin 'morhetz/gruvbox'
+Plugin 'vim-perl/vim-perl'
 
 call vundle#end()       
 filetype plugin indent on  

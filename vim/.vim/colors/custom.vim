@@ -25,7 +25,7 @@ let g:colors_name="custom"
 " --------------------------------
 " Editor settings
 " --------------------------------
-hi Normal          ctermfg=none    ctermbg=none    cterm=none
+hi Normal          ctermfg=07      ctermbg=none    cterm=none
 hi Cursor          ctermfg=15      ctermbg=none    cterm=none
 hi CursorLine      ctermfg=none    ctermbg=00      cterm=none
 hi LineNr          ctermfg=08      ctermbg=00      cterm=none
@@ -70,9 +70,9 @@ hi MoreMsg         ctermfg=06      ctermbg=00      cterm=none
 " - Visual aid -
 " --------------
 hi MatchParen      ctermfg=10      ctermbg=00      cterm=none
-hi Visual          ctermfg=08     ctermbg=00      cterm=none
+hi Visual          ctermfg=08      ctermbg=00      cterm=none
 hi VisualNOS       ctermfg=06      ctermbg=00      cterm=none
-hi NonText         ctermfg=02      ctermbg=none    cterm=none
+hi NonText         ctermfg=08      ctermbg=none    cterm=none
 
 hi Todo            ctermfg=00      ctermbg=03      cterm=none
 hi Underlined      ctermfg=06      ctermbg=none    cterm=none
@@ -106,7 +106,7 @@ hi Label           ctermfg=09      ctermbg=none    cterm=none
 hi Operator        ctermfg=04      ctermbg=none    cterm=none
 hi Keyword         ctermfg=09      ctermbg=none    cterm=none
 hi Exception       ctermfg=02      ctermbg=none    cterm=none
-hi Comment         ctermfg=08      ctermbg=none    cterm=none
+hi Comment         ctermfg=08      ctermbg=00      cterm=none
 
 hi Special         ctermfg=06      ctermbg=none    cterm=none
 hi SpecialChar     ctermfg=02      ctermbg=none    cterm=none
@@ -196,7 +196,7 @@ hi cmakeStatement        ctermfg=02     ctermbg=none     cterm=none
 hi cmakeVariableValue    ctermfg=04     ctermbg=none     cterm=none
 hi cmakeArguments        ctermfg=03     ctermbg=none     cterm=none
 
-" SH
+" BASH
 hi shVariable            ctermfg=03     ctermbg=none     cterm=none
 hi shCommandSub          ctermfg=04     ctermbg=none     cterm=none
 hi shStatement           ctermfg=05     ctermbg=none     cterm=none

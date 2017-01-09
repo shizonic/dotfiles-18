@@ -8,5 +8,5 @@ if [[ ${ram%/*} -gt 1000 ]];then
 
         echo " %{F$RED}%{F$FG} $ram "
 else
-        echo " %{F$BBLACK}%{F$FG} $ram "
+        echo " %{F$BLUE}%{F$FG} $ram "
 fi

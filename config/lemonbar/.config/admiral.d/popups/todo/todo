@@ -1,16 +1,16 @@
 #!/bin/sh
 # A simple Todo List using notify-send
 
-image='/home/mohabaks/Pictures/notify/todo/hack.png'
+image='/home/mohabaks/Pictures/notify/todo/hello.png'
 
 notify-send  -i $image "
 
-<span foreground='#75507b'>  Todo Weekday</span>
-<span foreground='#627a92'>  ============</span>
-<span foreground='#b2a191'>
-  1. Netw
+<span foreground='#299156'>  Todo Weekday</span>
+<span foreground='#657056'>  ============</span>
+<span foreground='#8b8b8b'>
+  1. HTAE
   2. Crypto
-  3. LinuxAdmin
+  3. vim/git
   4. Project
 </span>
 

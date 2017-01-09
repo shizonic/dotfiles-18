@@ -5,11 +5,11 @@
 
 ! black
 *.color0:       #080808
-*.color8:       #020202
+*.color8:       #282828
 
 ! red
-*.color1:       #657056
-*.color9:       #657056
+*.color1:       #4F473A
+*.color9:       #4F473A
 
 ! green
 *.color2:       #299156
@@ -24,8 +24,8 @@
 *.color12:      #555555
 
 ! magenta
-*.color5:       #299156
-*.color13:      #299156
+*.color5:       #657056
+*.color13:      #657056
 
 ! cyan
 *.color6:       #999999
@@ -33,4 +33,5 @@
 
 ! white
 *.color7:       #8b8b8b
-*.color15:      #d0d0d0
+*.color15:      #a5a5a5
+

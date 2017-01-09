@@ -4,7 +4,7 @@
 msg=`python ~/.local/bin/gmail.py`
 if [[ $msg =~ .*0.*  ]] || [[ $msg == '' ]]
 then
-     echo " %{F$BBLACK}%{F$BBLACK} ${msg} "
+     echo " %{F$BLUE}%{F$BLUE} ${msg} "
 else
-     echo " %{F$RED}%{F$FG} ${msg} "
+     echo " %{F$GREEN}%{F$FG} ${msg} "
 fi

@@ -1,0 +1,13 @@
+#! /usr/bin/env bash
+
+. $HOME/.config/admiral.d/config
+
+temp=$(cat /sys/class/hwmon/hwmon0/temp1_input)
+
+new_temp=$(( temp / 1000 ))
+
+if [[ new_temp -gt 85 ]]; then
+        echo "%{F$RED}  %{F$FG}$new_temp% "
+else
+         echo "%{F$BLUE}  %{F$FG}$new_temp% "
+fi
