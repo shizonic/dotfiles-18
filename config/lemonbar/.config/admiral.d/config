@@ -12,18 +12,20 @@ PX=0
 PY=0
 
 # Fonts
-FONT1="tewi:size=8"
+FONT1="tewi:size=9"
 FONT2="FontAwesome:size=8"
-FONT3="Siji:size=7"
+FONT3="Siji:size=9"
+FONT4="Powerline Extra Symbols:size=9"
 
 # Color directory
-CD="$HOME/.colors/fallen"
+CD="$HOME/.colors/jwr-dark"
 
 # Fetch the Colors
 BG=`cat ${CD} | grep -i background: | tail -c 8`
 FG=`cat ${CD} | grep -i foreground: | tail -c 8`
 
-BLACK=`cat ${CD} | grep -i color0: | tail -c 8`
+#BLACK=`cat ${CD} | grep -i color0: | tail -c 8`
+BLACK='#121212'
 BBLACK=`cat ${CD} | grep -i color8: | tail -c 8`
 
 RED=`cat ${CD} | grep -i color1: | tail -c 8`

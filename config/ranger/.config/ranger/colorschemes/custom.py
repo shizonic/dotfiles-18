@@ -24,15 +24,15 @@ class Default(ColorScheme):
 				fg = black
 			if context.media:
 				if context.image:
-					fg = magenta
+					fg = yellow
 				else:
-					fg = red
+					fg = cyan
 			if context.container:
 				attr |= bold
 				fg = cyan
 			if context.directory:
 				attr |= normal
-				fg = blue
+				fg = magenta
 			elif context.executable and not \
 					any((context.media, context.container,
 						context.fifo, context.socket)):
@@ -61,7 +61,7 @@ class Default(ColorScheme):
 				if context.marked:
 					#attr |= bold
 					bg = black
-					fg = cyan
+					fg = yellow
 			if context.badinfo:
 				if attr & reverse:
 					bg = magenta

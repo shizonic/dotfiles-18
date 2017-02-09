@@ -281,7 +281,7 @@ now_playing_suffix = $/b
 ##   not available.
 ##
 #
-song_columns_list_format = (20)[red]{a} (7f)[green]{NE} (50)[blue]{t|f:Title} (20)[yellow]{b} (7f)[magenta]{l}
+song_columns_list_format = (20)[red]{a} (4f)[green]{NE} (50)[magenta]{t|f:Title} (20)[yellow]{b} (7f)[blue]{l}
 #
 ##### various settings #####
 #
@@ -502,7 +502,7 @@ colors_enabled = yes
 #
 #empty_tag_color = cyan
 #
-header_window_color = cyan
+header_window_color = magenta
 #
 volume_color = red
 #

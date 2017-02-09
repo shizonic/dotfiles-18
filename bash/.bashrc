@@ -14,9 +14,11 @@
 export PROJECT_HOME=$HOME/Code/
 export PATH=$HOME/.local/bin:$PATH
 export RANGER_LOAD_DEFAULT_RC=FALSE
+export LD_PRELOAD=/usr/lib/libharfbuzz.so.0
+export LD_PRELOAD=/usr/lib/libv4l/v4l2convert.so
 export VISUAL=vim
 export EDITOR=vim
-export BROWSER=firefox
+export BROWSER=qutebrowser
 export TERM="rxvt-unicode-256color"
 export TZ=Africa/Nairobi
 
@@ -110,9 +112,9 @@ alias modem_stop='sudo netctl stop modem'
 #-----------------------------------------------------------------------
 
 export LESS_TERMCAP_mb=$'\e[0;36m'
-export LESS_TERMCAP_md=$'\e[0;32m'
+export LESS_TERMCAP_md=$'\e[0;35m'
 export LESS_TERMCAP_me=$'\e[0m'
 export LESS_TERMCAP_se=$'\e[0m'
-export LESS_TERMCAP_so=$'\e[0;34;34m'
+export LESS_TERMCAP_so=$'\e[0;34;31m'
 export LESS_TERMCAP_ue=$'\e[0m'
-export LESS_TERMCAP_us=$'\e[0;31m'
+export LESS_TERMCAP_us=$'\e[0;32m'

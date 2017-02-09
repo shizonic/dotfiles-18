@@ -5,14 +5,13 @@ image='/home/mohabaks/Pictures/notify/todo/hello.png'
 
 notify-send  -i $image "
 
-<span foreground='#299156'>  Todo Weekday</span>
-<span foreground='#657056'>  ============</span>
-<span foreground='#8b8b8b'>
-  1. HTAE
-  2. Crypto
-  3. vim/git
-  4. Project
+<span foreground='#5e468c'>Todo Weekday</span>
+<span foreground='#287373'>=========</span>
+<span foreground='#9e9ecb'>
+  1. Crypto
+  2. HackArt
+  3. FinalProject
+  4. PracticalVim
 </span>
-
 
 "

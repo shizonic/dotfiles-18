@@ -74,16 +74,16 @@ bindsym $mod+a focus parent
 
 # Initialize workspace
 # 
-set $w1   1 surf
-set $w2   2 code
-set $w3   3 docs
-set $w4   4 medi
-set $w5   5 core
-set $w6   6 term
-set $w7   7 netw
-set $w8   8 chat
-set $w9   9 proc
-set $w10 10 misc
+set $w1   1surf
+set $w2   2code
+set $w3   3read
+set $w4   4vide
+set $w5   5core
+set $w6   6term
+set $w7   7vbox
+set $w8   8apps
+set $w9   9proc
+set $w10 10misc
 
  
 # Switch to workspace
@@ -150,7 +150,7 @@ bindsym $mod+minus scratchpad show
 #  i3-gaps settings 
 #  More info visit: https://github.com/Airblader/i3
 
-smart_gaps on     
+#smart_gaps on     
 #smart_borders on
 
 # Global gaps size
@@ -228,13 +228,13 @@ bindsym Print exec scrot -e 'mv $f ~/Pictures/screenshots'
 
 # My apps shortcut
 # bindsym $mod+p exec pcmanfm 
-bindsym $mod+b exec firefox
+bindsym $mod+b exec qutebrowser
 
 # Custom colors
-set $black       #080808
+set $black       #101010
 set $gray        #202020
-set $darkblack   #020202
-set $white       #8b8b8b
+set $darkblack   #171717
+set $white       #9e9ecb
 set $darkwhite   #b2a191
 
 # Window colors           border       background   text        indicator
@@ -311,16 +311,17 @@ for_window [class="Pavucontrol"] floating enable
 # Starting apps on aspecific workspace
 assign [class="^Tor Browser$"]    $w1
 assign [class="^Firefox$"]        $w1
+assign [class="^qutebrowser"]     $w1
 assign [class="^Zathura"]         $w3
 assign [class="^TexMaker"]        $w3
 assign [class="^LibreOffice"]     $w3
-assign [class="^Gimp$"]           $w4
-assign [class="^Openshot$"]       $w4
-assign [class="^Blender$"]        $w4
 assign [class="^mpv$"]            $w4
 assign [class="^VirtualBox$"]     $w7
-assign [class="^Filezilla$"]      $w7
-assign [class="^Nmapfe"]          $w7
-assign [class="^Wireshark"]       $w7
+assign [class="^Gimp$"]           $w8
+assign [class="^Openshot$"]       $w8
+assign [class="^Blender$"]        $w8
+assign [class="^Filezilla$"]      $w10
+assign [class="^Nmapfe"]          $w10
+assign [class="^Wireshark"]       $w10
 
 # vim:filetype=i3

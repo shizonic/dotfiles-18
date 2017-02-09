@@ -43,7 +43,7 @@ Plugin 'SirVer/ultisnips'
 Plugin 'itchyny/lightline.vim'
 "Plugin 'rdnetto/YCM-Generator'
 Plugin 'sukima/xmledit'
-"Plugin 'klen/python-mode'
+Plugin 'klen/python-mode'
 Plugin 'Raimondi/delimitMate'
 Plugin 'xolox/vim-easytags'
 Plugin 'xolox/vim-misc'
@@ -83,7 +83,7 @@ let g:lightline = {
 syntax on
 set number                       " show line numbers
 set showcmd                      " show command in bottom bar
-set tw=80                        " width of document (used by gd)
+set tw=79                        " width of document (used by gd)
 set nowrap                       " don't automatically wrap on load
 set smartindent
 set colorcolumn=80
@@ -95,8 +95,8 @@ set encoding=utf8
 set cursorline                   " highlight current line
 set lazyredraw                   " redraw only when we need to
 set showmatch                    " highlight matching [{()}]
-set spell                        " Turn on spell checker
-set spellsuggest=5               " Limit the number of suggested words
+"set spell                        " Turn on spell checker
+"set spellsuggest=5               " Limit the number of suggested words
 
 "}}}
 

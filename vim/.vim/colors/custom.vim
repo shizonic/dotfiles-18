@@ -52,7 +52,7 @@ hi TabLineSel      ctermfg=05      ctermbg=none    cterm=none
 " - File Navigation / Searching -
 " -------------------------------
 hi Directory       ctermfg=01      ctermbg=none    cterm=none
-hi Search          ctermfg=03      ctermbg=00      cterm=none
+hi Search          ctermfg=07      ctermbg=04      cterm=none
 hi IncSearch       ctermfg=15      ctermbg=10      cterm=none
 
 " -----------------
@@ -86,7 +86,7 @@ hi SpecialKey      ctermfg=06      ctermbg=none    cterm=none
 " Variable types
 " --------------------------------
 hi Constant        ctermfg=06      ctermbg=none    cterm=none
-hi String          ctermfg=04      ctermbg=none    cterm=none
+hi String          ctermfg=07      ctermbg=none    cterm=none
 hi StringDelimiter ctermfg=02      ctermbg=none    cterm=none
 hi Character       ctermfg=04      ctermbg=none    cterm=none
 hi Number          ctermfg=05      ctermbg=none    cterm=none
@@ -185,7 +185,7 @@ hi javaConstant          ctermfg=02     ctermbg=none     cterm=none
 hi javaexceptions        ctermfg=01     ctermbg=none     cterm=none
 
 " C/C++
-hi cInclude              ctermfg=05     ctermbg=none     cterm=none
+hi cInclude              ctermfg=04     ctermbg=none     cterm=none
 hi cIncluded             ctermfg=03     ctermbg=none     cterm=none
 hi cPreCondit            ctermfg=02     ctermbg=none     cterm=none
 hi cDefine               ctermfg=05     ctermbg=none     cterm=none
@@ -200,7 +200,7 @@ hi cmakeArguments        ctermfg=03     ctermbg=none     cterm=none
 hi shVariable            ctermfg=03     ctermbg=none     cterm=none
 hi shCommandSub          ctermfg=04     ctermbg=none     cterm=none
 hi shStatement           ctermfg=05     ctermbg=none     cterm=none
-hi shTestOpr             ctermfg=06     ctermbg=none     cterm=none
+hi shTestOpr             ctermfg=07     ctermbg=none     cterm=none
 hi shRange               ctermfg=02     ctermbg=none     cterm=none
 hi shOption              ctermfg=01     ctermbg=none     cterm=none
 hi shDeref               ctermfg=03     ctermbg=none     cterm=none

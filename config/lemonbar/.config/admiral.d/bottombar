@@ -43,7 +43,7 @@ temp(){
 }
 
 while :;do
-        echo " %{l}$(updates)$(packages) %{c}$(mail)$(vol)$(ram)$(temp)$(uptime) %{r}$(net) "
+        echo " %{l}$(updates) %{c}$(mail)$(vol)$(ram)$(temp)$(uptime) %{r}$(net) "
         sleep .5
-done | lemonbar -g ${PW}x${PH}+${PX}+${PY} -f "$FONT1" -f "$FONT2" -f "$FONT3" -f "Symbola-8" -B "$BG" -F "$BBLACK" -u 3 -p -d -b | \
+done | lemonbar -g ${PW}x${PH}+${PX}+${PY} -f "$FONT4" -f "$FONT1" -f "$FONT2" -f "$FONT3" -f "Symbola-8" -B "$BG" -F "$BBLACK" -u 3 -p -d -b | \
 while :; do read line; eval $line; done &
