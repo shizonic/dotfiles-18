@@ -13,7 +13,7 @@
                                                  
                                                  
 [global]
-    font = Droid Sans 8
+    font = tewi 8
     
     # Allow a small subset of html markup:
     #   <b>bold</b>
@@ -165,7 +165,7 @@
 
 [frame]
     width = 5
-    color = "#080808"
+    color = "#3C3836"
 
 [shortcuts]
 
@@ -191,18 +191,18 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#000000"
-    foreground = "#5e468c"
+    background = "#282828"
+    foreground = "#a89984"
     timeout = 10
 
 [urgency_normal]
-    background = "#000000"
-    foreground = "#9e9ecb"
+    background = "#282828"
+    foreground = "#689d6a"
     timeout = 10
 
 [urgency_critical]
-    background = "#000000"
-    foreground = "#31658c"
+    background = "#282828"
+    foreground = "#d79921"
     timeout = 0
 
 

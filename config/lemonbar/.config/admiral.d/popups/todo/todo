@@ -5,9 +5,9 @@ image='/home/mohabaks/Pictures/notify/todo/hello.png'
 
 notify-send  -i $image "
 
-<span foreground='#5e468c'>Todo Weekday</span>
-<span foreground='#287373'>=========</span>
-<span foreground='#9e9ecb'>
+<span foreground='#b16286'>Todo Weekday</span>
+<span foreground='#689d6a'>============</span>
+<span foreground='#ebdbb2'>
   1. Crypto
   2. HackArt
   3. FinalProject

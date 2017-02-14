@@ -1,35 +1,35 @@
 # zathurarc-dark
 
 set font                        "Droid Sans Mono 8"
-set default-bg                  "#000000" #00
-set default-fg                  "#9e9ecb" #01
+set default-bg                  "#1d2021" #00
+set default-fg                  "#ebdbb2" #01
 
-set statusbar-fg                "#9e9ecb" #04
-set statusbar-bg                "#080808" #01
+set statusbar-fg                "#ebdbb2" #04
+set statusbar-bg                "#282828" #01
 
-set inputbar-bg                 "#000000" #00 currently not used
-set inputbar-fg                 "#9e9ecb" #02
+set inputbar-bg                 "#1d2021" #00 currently not used
+set inputbar-fg                 "#ebdbb2" #02
 
 set notification-error-bg       "#657056" #08
-set notification-error-fg       "#000000" #00
+set notification-error-fg       "#1d2021" #00
 
 set notification-warning-bg     "#4f473a" #08
-set notification-warning-fg     "#000000" #00
+set notification-warning-fg     "#1d2021" #00
 
-set highlight-color             "#080808" #0A
-set highlight-active-color      "#9e9ecb" #0D
+set highlight-color             "#282828" #0A
+set highlight-active-color      "#ebdbb2" #0D
 
-set completion-highlight-fg     "#000000" #02
-set completion-highlight-bg     "#5e468c" #0C
+set completion-highlight-fg     "#1d2021" #02
+set completion-highlight-bg     "#b16286" #0C
 
-set completion-bg               "#080808" #02
-set completion-fg               "#9e9ecb" #0C
+set completion-bg               "#282828" #02
+set completion-fg               "#ebdbb2" #0C
 
-set notification-bg             "#000000" #0B
+set notification-bg             "#1d2021" #0B
 set notification-fg             "#4c544f" #00
 
-set recolor-lightcolor          "#000000" #00
-set recolor-darkcolor           "#9e9ecb" #06
+set recolor-lightcolor          "#1d2021" #00
+set recolor-darkcolor           "#ebdbb2" #06
 set recolor                     "true"
 
 # setting recolor-keep true will keep any color your pdf has.

@@ -45,16 +45,16 @@ URxvt*scrollTtyKeypress: true
 
 !! Fonts
 ! Droid Sans Mono for Powerline Mono
-URxvt*font:             xft:Droid Sans Mono for Powerline:size=8, xft:Droid Mono Dotted for Powerline:size=8
-URxvt*boldFont:         xft:Droid Sans Mono for Powerline:normal:size=8
-URxvt*italicFont:       xft:Droid Sans Mono for Powerline:italic:autohint=true:size=8
-URxvt*boldItalicFont:   xft:Droid Sans Mono for Powerline:bolditalic:italic:autohint=true:size=8
+!URxvt*font:             xft:Droid Sans Mono for Powerline:size=8, xft:Droid Mono Dotted for Powerline:size=8
+!URxvt*boldFont:         xft:Droid Sans Mono for Powerline:normal:size=8
+!URxvt*italicFont:       xft:Droid Sans Mono for Powerline:italic:autohint=true:size=8
+!URxvt*boldItalicFont:   xft:Droid Sans Mono for Powerline:bolditalic:italic:autohint=true:size=8
 
 ! tewi
-!URxvt*font:              xft:tewi:size=8
-!URxvt*boldFont:          xft:tewi:normal:size=8
-!URxvt*italicFont:        xft:tewi:italic:autohint=true:size=8
-!URxvt*boldItalicFont:    xft:tewi:bolditalic:italic:autohint=true:size=8
+URxvt*font:              xft:tewi:size=8
+URxvt*boldFont:          xft:tewi:normal:size=8
+URxvt*italicFont:        xft:tewi:italic:autohint=true:size=8
+URxvt*boldItalicFont:    xft:tewi:bolditalic:italic:autohint=true:size=8
 
 URxvt.letterSpace:       true
 
@@ -108,4 +108,4 @@ Xcursor.theme:             Adwaita
 !URxvt.pointerBlank:        true
 
 !! Colors
-#include "/home/mohabaks/.colors/jwr-dark"                                                                     
+#include "/home/mohabaks/.colors/gruvbox"                                                                     

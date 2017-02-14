@@ -11,5 +11,5 @@ pm=`pacman -Qqu | wc -l`
 if [[ $pm -eq 0 ]]; then
    echo " %{F$BBLACK} %{F$BLACK}%{B$BLACK} %{F$FG}$pm %{B-}%{F$BLACK}"
 else
-   echo " %{F$GREEN} %{F$BLACK}%{B$BLACK} %{F$FG}$pm %{B-}%{F$BLACK} "
+   echo " %{F$BBLACK} %{F$BLACK}%{B$BLACK} %{F$FG}$pm %{B-}%{F$BLACK} "
 fi

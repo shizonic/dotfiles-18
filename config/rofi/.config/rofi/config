@@ -3,7 +3,7 @@
 ! ------------------------------------------------------------------------------
 
 ! General
-rofi.font:                Fira Code 8
+rofi.font:                tewi 8
 rofi.fake-transparency:   true
 rofi.hide-scrollbar:      true
 
@@ -22,8 +22,8 @@ rofi.fullscreen:         false
 ! ------------------------------------------------------------------------------
 rofi.color-enabled:      true
 ! State                  'bg'     'fg'     'bgalt'  'hlbg'   'hlfg'
-rofi.color-normal:       #000000, #9e9ecb, #080808, #5e468c, #000000
-rofi.color-active:       #000000, #4c544f, #080808, #4c544f, #000000
-rofi.color-urgent:       #000000, #442216, #080808, #442216, #000000
+rofi.color-normal:       #282828, #a89984, #303030, #D9353E, #303030
+rofi.color-active:       #282828, #4c544f, #303030, #4c544f, #303030
+rofi.color-urgent:       #282828, #442216, #303030, #442216, #303030
 !                        'bg'     'bc'
-rofi.color-window:       #000000, #080808
+rofi.color-window:       #282828, #303030

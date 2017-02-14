@@ -53,7 +53,7 @@ Plugin 'xolox/vim-misc'
 "Plugin 'tmux-plugins/vim-tmux'
 Plugin 'Valloric/YouCompleteMe'
 "Plugin 'lilydjwg/colorizer'
-"Plugin 'morhetz/gruvbox'
+Plugin 'morhetz/gruvbox'
 Plugin 'vim-perl/vim-perl'
 
 call vundle#end()       
@@ -65,13 +65,14 @@ filetype plugin indent on
 "  Set Colorscheme and Statusline{{{
 
 set background=dark
-colorscheme custom 
+colorscheme gruvbox
+let g:gruvbox_contrast_dark = 'medium'
 
 "" Status line
 "set laststatus=2
 set t_Co=256
 let g:lightline = {
-      \ 'colorscheme': 'Tomorrow_Night',
+      \ 'colorscheme': 'gruvbox',
       \ }
       
 "}}}
@@ -81,7 +82,7 @@ let g:lightline = {
 
 "" These are options that changes random visuals in Vim
 syntax on
-set number                       " show line numbers
+"set number                       " show line numbers
 set showcmd                      " show command in bottom bar
 set tw=79                        " width of document (used by gd)
 set nowrap                       " don't automatically wrap on load

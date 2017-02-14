@@ -157,7 +157,7 @@ hi SpellRare       ctermfg=02     ctermbg=none    cterm=none
 " Specific settings                                                 |
 "-------------------------------------------------------------------
 " PYTHON
-hi pythonInclude         ctermfg=05     ctermbg=none     cterm=none
+hi pythonInclude         ctermfg=04     ctermbg=none     cterm=none
 hi pythonRepeat          ctermfg=06     ctermbg=none     cterm=none
 hi pythonConditional     ctermfg=02     ctermbg=none     cterm=none
 hi pythonBuiltinObj      ctermfg=06     ctermbg=none     cterm=none

@@ -154,7 +154,7 @@ bindsym $mod+minus scratchpad show
 #smart_borders on
 
 # Global gaps size
-gaps inner 0
+gaps inner 10
 gaps outer 0
 
 set $mode_gaps Gaps: (o) outer, (i) inner
@@ -194,6 +194,15 @@ mode "$mode_gaps_outer" {
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
+
+# Specify gaps for specific workspace
+# workspace $w5 gaps inner 10
+# workspace $w6 gaps inner 10
+# workspace $w7 gaps inner 10
+# workspace $w8 gaps inner 10
+# workspace $w9 gaps inner 10
+# workspace $w10 gaps inner 10
+
 bindsym $mod+r mode "resize"
 
 # Lock screen
@@ -231,17 +240,16 @@ bindsym Print exec scrot -e 'mv $f ~/Pictures/screenshots'
 bindsym $mod+b exec qutebrowser
 
 # Custom colors
-set $black       #101010
-set $gray        #202020
-set $darkblack   #171717
-set $white       #9e9ecb
-set $darkwhite   #b2a191
+set $black       #3C3836
+set $darkblack   #282828
+set $white       #ebdbb2
+set $darkwhite   #d3869b
 
 # Window colors           border       background   text        indicator
-client.focused            $black       $black       $white      $black
-client.focused_inactive   $black       $black       $gray       $black
-client.unfocused          $black       $black       $gray       $black
-client.urgent             $black       $black       $red        $black
+client.focused            $black       $black       $darkwhite  $black
+client.focused_inactive   $black       $black       $white      $black
+client.unfocused          $black       $black       $white      $black
+client.urgent             $black       $black       $white      $black
 
 #Start i3bar to display a workspace bar
 #Uncomment to use the default i3bar status
@@ -277,7 +285,7 @@ exec --no-startup-id nitrogen --restore  &
 exec --no-startup-id compton --config ~/.compton.conf -b 
 exec --no-startup-id dunst -config $HOME/.config/dunst/dunstrc
 exec --no-startup-id $HOME/.local/bin/barstart &
-exec --no-startup-id conky -c $HOME/.config/i3/conkybar-bottom &
+#exec --no-startup-id conky -c $HOME/.config/i3/conkybar-bottom &
 exec --no-startup-id conky -c $HOME/.config/i3/conkybar-top &
 exec --no-startup-id xrdb -merge -I$HOME ~/.Xresources
 
