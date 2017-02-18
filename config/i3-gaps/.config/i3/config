@@ -288,6 +288,7 @@ exec --no-startup-id $HOME/.local/bin/barstart &
 #exec --no-startup-id conky -c $HOME/.config/i3/conkybar-bottom &
 exec --no-startup-id conky -c $HOME/.config/i3/conkybar-top &
 exec --no-startup-id xrdb -merge -I$HOME ~/.Xresources
+exec --no-startup-id . $HOME/.local/bin/urxvt_daemon &
 
 # Set per-application border
 for_window [class="^.*"] border pixel 1

@@ -101,7 +101,7 @@ URxvt.iso14755_52:         false
 !URxvt.cursorUnderline:    false
 !URxvt.cursorColor:        #c5c10c
 !URxvt.borderColor:        #07090d
-URxvt.colorUL:             #31658c
+URxvt.colorUL:             #689d6a
 Xcursor.theme:             Adwaita
 
 !! Pointer

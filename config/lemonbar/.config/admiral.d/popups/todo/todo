@@ -8,10 +8,11 @@ notify-send  -i $image "
 <span foreground='#b16286'>Todo Weekday</span>
 <span foreground='#689d6a'>============</span>
 <span foreground='#ebdbb2'>
-  1. Crypto
-  2. HackArt
-  3. FinalProject
-  4. PracticalVim
+  1. C 1hr
+  2. Netw 1hr
+  3. Project 2hr
+  4. HLW 1hr
+  5. OS 1hr
 </span>
 
 "
