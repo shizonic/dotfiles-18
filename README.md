@@ -4,7 +4,7 @@ Welcome To My  Dotfiles
 ### Setup Description
 
 * Bar: ``` lemonbar ```
-* Browser: ``` firefox ```
+* Browser: ``` qutebrowser ```
 * Compositor: ``` compton ```
 * Font: ``` tewi ```
 * Program launcher: ``` rofi ```
@@ -50,11 +50,19 @@ of my configs you can simply use stow to install.
 
    # Install zathura config
    stow zathura
+
+   # Unstow zathura config
+   stow -D zathura
 ```
 
-### Screenshot
+# Screenshots
 
-``` ncmpcpp, notify-send, vim, , weechat```
+##### Current
+
+![Gruvbox colors](http://imgur.com/cPI5Hww.png)
+
+
+##### Previous
 
 ![busy](http://imgur.com/xOdIyDF.png)
 
