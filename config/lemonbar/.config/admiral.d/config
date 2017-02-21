@@ -18,7 +18,7 @@ FONT3="Powerline Extra Symbols:size=9"
 FONT4="FontAwesome:size=8"
 
 # Color directory
-CD="$HOME/.colors/gruvbox"
+CD="$HOME/.colors/zodo"
 
 # Fetch the Colors
 BG=`cat ${CD} | grep -i background: | tail -c 8`

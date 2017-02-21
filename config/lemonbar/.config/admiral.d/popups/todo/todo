@@ -5,14 +5,13 @@ image='/home/mohabaks/Pictures/notify/todo/hello.png'
 
 notify-send  -i $image "
 
-<span foreground='#b16286'>Todo Weekday</span>
-<span foreground='#689d6a'>============</span>
-<span foreground='#ebdbb2'>
-  1. C 1hr
+<span foreground='#755b76'>Todo Weekday</span>
+<span foreground='#756e5a'>============</span>
+<span foreground='#8b8b8b'>
+  1. HLW 1hr
   2. Netw 1hr
   3. Project 2hr
-  4. HLW 1hr
-  5. OS 1hr
+  4. C 1hr
 </span>
 
 "

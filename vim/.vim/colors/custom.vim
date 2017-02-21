@@ -28,7 +28,7 @@ let g:colors_name="custom"
 hi Normal          ctermfg=07      ctermbg=none    cterm=none
 hi Cursor          ctermfg=15      ctermbg=none    cterm=none
 hi CursorLine      ctermfg=none    ctermbg=00      cterm=none
-hi LineNr          ctermfg=08      ctermbg=00      cterm=none
+hi LineNr          ctermfg=08      ctermbg=none    cterm=none
 hi CursorLineNR    ctermfg=02      ctermbg=00      cterm=none
 
 " -----------------
@@ -106,7 +106,7 @@ hi Label           ctermfg=09      ctermbg=none    cterm=none
 hi Operator        ctermfg=04      ctermbg=none    cterm=none
 hi Keyword         ctermfg=09      ctermbg=none    cterm=none
 hi Exception       ctermfg=02      ctermbg=none    cterm=none
-hi Comment         ctermfg=08      ctermbg=00      cterm=none
+hi Comment         ctermfg=08      ctermbg=none    cterm=none
 
 hi Special         ctermfg=06      ctermbg=none    cterm=none
 hi SpecialChar     ctermfg=02      ctermbg=none    cterm=none

@@ -38,12 +38,15 @@ net(){
  . $HOME/.config/admiral.d/net 
 }
 
+bat(){
+ . $HOME/.config/admiral.d/battery
+}
 temp(){
    . $HOME/.config/admiral.d/temp 
 }
 
 while :;do
-        echo " %{l}$(updates) %{c}$(mail)$(vol)$(ram)$(temp)$(uptime) %{r}$(net) "
+        echo " %{l} $(updates) %{c}$(mail)$(vol)$(ram)$(temp)$(uptime) %{r}$(net) "
         sleep .5
 done | lemonbar -g ${PW}x${PH}+${PX}+${PY} -f "$FONT3" -f "$FONT1" -f "$FONT2" -B "$BG" -F "$BBLACK" -u 3 -p -d -b | \
 while :; do read line; eval $line; done &
