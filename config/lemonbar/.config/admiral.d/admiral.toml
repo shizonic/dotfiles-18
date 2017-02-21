@@ -1,15 +1,15 @@
 [admiral]
 items = [
-         "right", "battery",
+         "right", "mail", "ram", "temp", "net", "battery", "pow",
          "center", "clock",
-         "left", "menu"
+         "left", "menu", "pow_begin", "workspaces", "pow_end", "uptime"
         ]
 
 [workspaces]
 path = "./workspace"
 
 [title]
-path = "xtitle -s -t 100"
+path = "xtitle -s -t 40"
 
 [mail]
 path = "./mail"
@@ -56,11 +56,11 @@ path = "./temp"
 reload = 0.5
 
 [pow_begin]
-path = 'echo "%{F#3c3836}%{B#3c3836}"'
+path = 'echo "%{F#2a2a2f}%{B#2a2a2f}"'
 static = true
 
 [pow_end]
-path = 'echo "%{B-}%{F#3c3836}"'
+path = 'echo "%{B-}%{F#2a2a2f}"'
 static = true
 
 # Clickable areas
