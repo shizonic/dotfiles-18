@@ -154,7 +154,7 @@ bindsym $mod+minus scratchpad show
 #smart_borders on
 
 # Global gaps size
-gaps inner 0
+gaps inner 5
 gaps outer 0
 
 set $mode_gaps Gaps: (o) outer, (i) inner
@@ -280,14 +280,14 @@ exec --no-startup-id nitrogen --restore  &
 exec --no-startup-id compton --config ~/.compton.conf -b 
 exec --no-startup-id dunst -config $HOME/.config/dunst/dunstrc
 exec --no-startup-id $HOME/.local/bin/barstart &
-exec --no-startup-id conky -c $HOME/.config/i3/conkybar-bottom &
+#exec --no-startup-id conky -c $HOME/.config/i3/conkybar-bottom &
 exec --no-startup-id conky -c $HOME/.config/i3/conkybar-top &
 exec --no-startup-id xrdb -merge -I$HOME ~/.Xresources
 exec --no-startup-id . $HOME/.local/bin/urxvt_daemon &
 
 # Set per-application border
-for_window [class="^.*"] border pixel 1
-for_window [class="(?i)urxvt"] border pixel 1
+for_window [class="^.*"] border pixel 4
+for_window [class="(?i)urxvt"] border pixel 4
 #for_window [class="^.*"] border normal 0
 
 
