@@ -6,6 +6,7 @@ Welcome To My  Dotfiles
 * Bar: ``` lemonbar ```
 * Browser: ``` qutebrowser ```
 * Compositor: ``` compton ```
+* File Manager: ``` ranger ```
 * Font: ``` tewi ```
 * Program launcher: ``` rofi ```
 * PDF viewer: ``` zathura ```
