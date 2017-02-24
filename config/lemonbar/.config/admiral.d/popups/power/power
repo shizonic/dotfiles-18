@@ -3,16 +3,16 @@
 . $HOME/.config/admiral.d/config
 
 # Panel 
-PW=166
-PH=58
-PX=1177
-PY=51
+PW=180
+PH=68
+PX=1175
+PY=47
 
 
-n30f -d -x 1170 -y 36 $HOME/.config/admiral.d/popups/power/bg.png &
+n30f -d -x 1175 -y 36 $HOME/.config/admiral.d/popups/power/bg.png &
 
 
-echo " %{F$RED}%{F-} %{A:s:}Suspend%{A} %{F$GREEN} %{F-}%{A:l:}Lock%{A} %{F$BLUE} %{F-}%{A:e:}Exit%{A}" | lemonbar -g ${PW}x${PH}+${PX}+${PY} -f "$FONT1" -f "$FONT4" -B "$BG" -F "$FG" -dp | \
+echo "  %{F$RED}%{F-} %{A:s:}Suspend%{A}  %{F$GREEN} %{F-}%{A:l:}Lock%{A}  %{F$BLUE} %{F-}%{A:e:}Exit%{A}" | lemonbar -g ${PW}x${PH}+${PX}+${PY} -f "$FONT1" -f "$FONT3" -B "$BG" -F "$FG" -dp | \
     while :; do
         read line
         case $line in 

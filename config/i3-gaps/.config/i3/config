@@ -235,10 +235,10 @@ bindsym Print exec scrot -e 'mv $f ~/Pictures/screenshots'
 bindsym $mod+b exec qutebrowser
 
 # Custom colors
-set $black       #2a2b30
-set $darkblack   #1f1f22
-set $white       #8e8e8e
-set $darkwhite   #756e5a
+set $black       #282828
+set $darkblack   #1d2021
+set $white       #ebdbb2
+set $darkwhite   #458588
 
 # Window colors           border       background   text        indicator
 client.focused            $black       $black       $darkwhite  $black
@@ -286,8 +286,8 @@ exec --no-startup-id xrdb -merge -I$HOME ~/.Xresources
 exec --no-startup-id . $HOME/.local/bin/urxvt_daemon &
 
 # Set per-application border
-for_window [class="^.*"] border pixel 4
-for_window [class="(?i)urxvt"] border pixel 4
+for_window [class="^.*"] border pixel 2
+for_window [class="(?i)urxvt"] border pixel 2
 #for_window [class="^.*"] border normal 0
 
 

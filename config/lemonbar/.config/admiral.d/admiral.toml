@@ -2,7 +2,7 @@
 items = [
          "right", "mail", "ram", "temp", "net", "battery", "pow",
          "center", "clock",
-         "left", "menu", "pow_begin", "workspaces", "pow_end", "uptime"
+         "left", "menu", "workspaces"
         ]
 
 [workspaces]
@@ -55,21 +55,13 @@ reload = 1
 path = "./temp"
 reload = 0.5
 
-[pow_begin]
-path = 'echo "%{F#2a2a2f}%{B#2a2a2f}"'
-static = true
-
-[pow_end]
-path = 'echo "%{B-}%{F#2a2a2f}"'
-static = true
-
 # Clickable areas
 [pow]
-path = 'echo "%{A:. $HOME/.config/admiral.d/popups/power/power:}%{F#755a5b}%{A} "'
+path = 'echo "%{A:. $HOME/.config/admiral.d/popups/power/power:}%{F#cc241d}%{A}"'
 static = true
 
 [menu]
-path = 'echo "%{A:. $HOME/.config/admiral.d/popups/todo/todo:}%{F#5b6976}  %{A}"'
+path = 'echo "%{A:. $HOME/.config/admiral.d/popups/todo/todo:}%{F#458588}%{A}"'
 static = true
 
 # Used for formatting lemonbar

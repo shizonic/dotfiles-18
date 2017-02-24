@@ -1,35 +1,35 @@
 # zathurarc-dark
 
 set font                        "tewi 8"
-set default-bg                  "#1f1f22" #00
-set default-fg                  "#8e8e8e" #01
+set default-bg                  "#1d2021" #00
+set default-fg                  "#a89984" #01
 
-set statusbar-fg                "#8e8e8e" #04
-set statusbar-bg                "#2a2a2f" #01
+set statusbar-fg                "#a89984" #04
+set statusbar-bg                "#282828" #01
 
-set inputbar-bg                 "#1f1f22" #00 currently not used
-set inputbar-fg                 "#8e8e8e" #02
+set inputbar-bg                 "#1d2021" #00 currently not used
+set inputbar-fg                 "#a89984" #02
 
 set notification-error-bg       "#657056" #08
-set notification-error-fg       "#1f1f22" #00
+set notification-error-fg       "#1d2021" #00
 
 set notification-warning-bg     "#4f473a" #08
-set notification-warning-fg     "#1f1f22" #00
+set notification-warning-fg     "#1d2021" #00
 
-set highlight-color             "#2a2a2f" #0A
-set highlight-active-color      "#8e8e8e" #0D
+set highlight-color             "#282828" #0A
+set highlight-active-color      "#a89984" #0D
 
-set completion-highlight-fg     "#1f1f22" #02
-set completion-highlight-bg     "#755b76" #0C
+set completion-highlight-fg     "#1d2021" #02
+set completion-highlight-bg     "#458588" #0C
 
-set completion-bg               "#2a2a2f" #02
-set completion-fg               "#8e8e8e" #0C
+set completion-bg               "#282828" #02
+set completion-fg               "#a89984" #0C
 
-set notification-bg             "#1f1f22" #0B
+set notification-bg             "#1d2021" #0B
 set notification-fg             "#4c544f" #00
 
-set recolor-lightcolor          "#1f1f22" #00
-set recolor-darkcolor           "#8e8e8e" #06
+set recolor-lightcolor          "#1d2021" #00
+set recolor-darkcolor           "#a89984" #06
 set recolor                     "true"
 
 # setting recolor-keep true will keep any color your pdf has.

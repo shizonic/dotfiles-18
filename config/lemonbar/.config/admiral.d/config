@@ -7,18 +7,17 @@
 
 # Panel 
 PW=1366
-PH=15
+PH=17
 PX=0    
 PY=0
 
 # Fonts
 FONT1="tewi:size=8"
 FONT2="Siji:size=8"
-FONT3="Powerline Extra Symbols:size=9"
-FONT4="FontAwesome:size=8"
+FONT3="FontAwesome:size=8"
 
 # Color directory
-CD="$HOME/.colors/zodo"
+CD="$HOME/.colors/gruvbox"
 
 # Fetch the Colors
 BG=`cat ${CD} | grep -i background: | tail -c 8`

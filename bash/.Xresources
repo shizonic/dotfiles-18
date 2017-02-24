@@ -108,4 +108,4 @@ Xcursor.theme:             Adwaita
 !URxvt.pointerBlank:        true
 
 !! Colors
-#include "/home/mohabaks/.colors/zodo"                                                                     
+#include "/home/mohabaks/.colors/gruvbox"                                                                     

@@ -5,8 +5,9 @@
 ram=$(free -m | awk 'NR==2{printf "%s/%sMB", $3,$2}')
 
 if [[ ${ram%/*} -gt 1000 ]];then
-
-        echo "%{F$RED} %{F$BLACK}%{B$BLACK} %{F$FG}$ram %{B-}%{F$BLACK} "
+        echo "%{F$BRED} %{F$FG}$ram "
+elif [[ ${ram%/*} -gt 600 ]];then
+        echo "%{F$GREEN} %{F$BGREEN}$ram "
 else
-        echo "%{F$BBLACK} %{F$BLACK}%{B$BLACK} %{F$FG}$ram %{B-}%{F$BLACK} "
+        echo "%{F$BBLACK} %{F$BBLACK}$ram "
 fi
