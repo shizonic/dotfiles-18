@@ -5,17 +5,29 @@
 # Lemonbar Configs
 #
 
-# Panel 
+
+#************** Panel ****************** 
 PW=1366
 PH=17
-PX=0    
+PX=0
 PY=0
 
-# Fonts
-FONT1="tewi:size=8"
+
+#*************** Fonts *****************
+FONT1="Fixed:size=8"
 FONT2="Siji:size=8"
 FONT3="FontAwesome:size=8"
 
+
+#*************** Icons ******************
+MPREV=""
+MNEXT=""
+MPLAY=""
+MPAUSE=""
+MUSIC=""
+
+
+#************** Colors ******************
 # Color directory
 CD="$HOME/.colors/gruvbox"
 

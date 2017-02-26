@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 
 import i3ipc
 
@@ -9,6 +10,7 @@ i3 = i3ipc.Connection()
 # Define colors
 coloractive = '%{F#689d6a}'
 coloractive_bg = '%{B#090909}'
+current='%{F#cc241d}'
 coloractive_u = ''
 colorinactive = '%{F#928374}'
 colorwarning = '%{F#458588}'
@@ -25,14 +27,17 @@ def on_workspace_focus(self, e):
 
     for n in range(len(ws_nums)):
         if focused == n:
-            workspace_string += coloractive + '*' + names[n]  + ' '
+            workspace_string += current + coloractive + names[n]  + ' '
         elif n in urg:
             workspace_string += colorwarning + names[n] + ' '
         else:
             workspace_string += colorinactive + names[n] + ' '
+    try:
 
-    workspace_string += ' '
-    print(workspace_string, flush=True)
+        workspace_string += ' '
+        print(workspace_string, flush=True)
+    except BrokenPipeError:
+        pass
 
 workspace_string = ' '
 workspaces = i3.get_workspaces()
@@ -44,7 +49,7 @@ names = [''.join([i for i in n['name'] if not i.isdigit()]) for n in workspaces]
 
 for n in range(len(ws_nums)):
     if focused == n:
-        workspace_string += coloractive + '*' + names[n] + ' '
+        workspace_string += current + coloractive + names[n] + ' '
     elif n in urg:
         workspace_string += colorwarning + names[n] + ' '
     else:

@@ -1,10 +1,18 @@
 #!/bin/bash
 
 . $HOME/.config/admiral.d/config
+
 networkIcon=""
+wifiIcon=""
+myssid=$(iwgetid -r)
 
 if ping -c 1 google.com >> /dev/null 2>&1; then
-	echo "%{F$BLUE}${networkIcon} %{F$BBLUE}Online "
+        # Return a ssid if connected to wifi
+        if [[ -n $myssid ]];then
+                echo "%{F$CYAN}${wifiIcon} %{F$CYAN}$myssid "
+        else
+            	echo "%{F$BLUE}${networkIcon} %{F$BLUE}Connected "
+        fi
 else
 	echo "%{F$BBLACK}${networkIcon} %{F$BBLACK}Offline "
 fi	

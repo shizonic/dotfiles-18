@@ -3,6 +3,8 @@
 
 . $HOME/.config/admiral.d/config
 
+color=${BBLACK}
+
 if [[ -d /sys/class/power_supply/BAT1 ]]; then
 
         batteryState=$(cat /sys/class/power_supply/BAT1/status)
@@ -27,8 +29,9 @@ if [[ -d /sys/class/power_supply/BAT1 ]]; then
         else
             batteryIcon=""
             batteryColor=${MAGENTA}
+            color=${MAGENTA}
         fi
-        echo "%{F$batteryColor}${batteryIcon} %{F$BBLACK}${batteryPower}% "
+        echo "%{F$batteryColor}${batteryIcon} %{F$BBLACK}%{F$color}${batteryPower}% "
     else
         echo "%{F$red}No Battery Detected "
 fi	

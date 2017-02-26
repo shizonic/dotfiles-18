@@ -1,59 +1,64 @@
 [admiral]
 items = [
-         "right", "mail", "ram", "temp", "net", "battery", "pow",
+         "right", "uptime", "updates", "mail", "volume", "ram", "temp", "net", "battery", "pow",
          "center", "clock",
-         "left", "menu", "workspaces"
+         "left", "menu", "workspaces", "music", "music_control"
         ]
 
 [workspaces]
-path = "./workspace"
+path = "python $HOME/.config/admiral.d/workspace"
 
 [title]
 path = "xtitle -s -t 40"
 
 [mail]
-path = "./mail"
+path = ". $HOME/.config/admiral.d/mail"
 reload = 30
 
 [packages]
-path = "./packages"
+path = ". $HOME/.config/admiral.d/packages"
 reload = 80
 
 [updates]
-path = "./updates"
+path = ". $HOME/.config/admiral.d/updates"
 reload = 120
 
 [uptime]
-path = "./uptime"
+path = ". $HOME/.config/admiral.d/uptime"
 reload = 1
 
 [kernel]
-path = "./kernel"
+path = ". $HOME/.config/admiral.d/kernel"
 static = true
 
 [volume]
-path = "./vol"
+path = ". $HOME/.config/admiral.d/vol"
 reload = 0.1
 
 [ram]
-path = "./ram"
+path = ". $HOME/.config/admiral.d/ram"
 reload = 0.5
 
 [net]
-path = "./net"
+path = ". $HOME/.config/admiral.d/net"
 reload = 20
 
 [battery]
-path = "./battery"
+path = ". $HOME/.config/admiral.d/battery"
 reload = 10
 
 [clock]
-path = "./clock"
+path = ". $HOME/.config/admiral.d/clock"
 reload = 1
 
 [temp]
-path = "./temp"
+path = ". $HOME/.config/admiral.d/temp"
 reload = 0.5
+
+[music]
+path = ". $HOME/.config/admiral.d/music"
+reload = 0.5
+
 
 # Clickable areas
 [pow]
@@ -63,6 +68,10 @@ static = true
 [menu]
 path = 'echo "%{A:. $HOME/.config/admiral.d/popups/todo/todo:}%{F#458588}%{A}"'
 static = true
+
+[music_control]
+path = 'echo "%{F#928374}%{A:mpc prev &> /dev/null:}%{A}%{A:mpc play &> /dev/null:}%{A}%{A:mpc pause &> /dev/null:}%{A}%{A:mpc next &> /dev/null:}%{A} "'
+static=true
 
 # Used for formatting lemonbar
 [left]

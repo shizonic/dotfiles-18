@@ -13,7 +13,7 @@
                                                  
                                                  
 [global]
-    font = tewi 8
+    font = Fixed 8
     
     # Allow a small subset of html markup:
     #   <b>bold</b>

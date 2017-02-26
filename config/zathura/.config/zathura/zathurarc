@@ -1,6 +1,6 @@
 # zathurarc-dark
 
-set font                        "tewi 8"
+set font                        "Fira Code 8"
 set default-bg                  "#1d2021" #00
 set default-fg                  "#a89984" #01
 
