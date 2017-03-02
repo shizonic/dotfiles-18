@@ -1,8 +1,8 @@
 [admiral]
 items = [
-         "right", "uptime", "updates", "mail", "volume", "ram", "temp", "net", "battery", "pow",
-         "center", "clock",
-         "left", "menu", "workspaces", "music", "music_control"
+         "right","uptime", "clock", "net",
+         "center", "workspaces",
+         "left", "menu", "mail", "volume", "ram", "temp", "battery",
         ]
 
 [workspaces]
@@ -55,23 +55,23 @@ reload = 1
 path = ". $HOME/.config/admiral.d/temp"
 reload = 0.5
 
-[music]
-path = ". $HOME/.config/admiral.d/music"
-reload = 0.5
+# [music]
+# path = ". $HOME/.config/admiral.d/music"
+# reload = 0.5
 
 
 # Clickable areas
-[pow]
-path = 'echo "%{A:. $HOME/.config/admiral.d/popups/power/power:}%{F#cc241d}%{A}"'
-static = true
+# [pow]
+# path = 'echo "%{A:. $HOME/.config/admiral.d/popups/power/power:}%{F#cc241d}%{A} "'
+# static = true
 
 [menu]
-path = 'echo "%{A:. $HOME/.config/admiral.d/popups/todo/todo:}%{F#458588}%{A}"'
+path = 'echo "%{A:. $HOME/.config/admiral.d/popups/todo/todo:}%{F#458588}  %{F#458588}$USER%{A} "'
 static = true
 
-[music_control]
-path = 'echo "%{F#928374}%{A:mpc prev &> /dev/null:}%{A}%{A:mpc play &> /dev/null:}%{A}%{A:mpc pause &> /dev/null:}%{A}%{A:mpc next &> /dev/null:}%{A} "'
-static=true
+# [music_control]
+# path = 'echo "%{F#928374}%{A:mpc prev &> /dev/null:}%{A}%{A:mpc play &> /dev/null:}%{A}%{A:mpc pause &> /dev/null:}%{A}%{A:mpc next &> /dev/null:}%{A} "'
+# static=true
 
 # Used for formatting lemonbar
 [left]

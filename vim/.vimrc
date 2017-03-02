@@ -25,7 +25,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-repeat'
 Plugin 'groenewege/vim-less'
-"Plugin 'kchmck/vim-coffee-script'
+Plugin 'kchmck/vim-coffee-script'
 Plugin 'scrooloose/syntastic'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'easymotion/vim-easymotion'
@@ -41,20 +41,19 @@ Plugin 'jmcantrell/vim-virtualenv'
 Plugin 'ervandew/supertab'
 Plugin 'SirVer/ultisnips'
 Plugin 'itchyny/lightline.vim'
-"Plugin 'rdnetto/YCM-Generator'
 Plugin 'sukima/xmledit'
 Plugin 'klen/python-mode'
 Plugin 'Raimondi/delimitMate'
 Plugin 'xolox/vim-easytags'
 Plugin 'xolox/vim-misc'
 "Plugin 'jez/vim-superman'
-"Plugin 'altercation/vim-colors-solarized'
-"Plugin 'nanotech/jellybeans.vim'
 Plugin 'tmux-plugins/vim-tmux'
 Plugin 'Valloric/YouCompleteMe'
+
+""" Colorscheme
+"Plugin 'altercation/vim-colors-solarized'
 "Plugin 'lilydjwg/colorizer'
 Plugin 'morhetz/gruvbox'
-Plugin 'vim-perl/vim-perl'
 
 call vundle#end()       
 filetype plugin indent on  
@@ -66,7 +65,7 @@ filetype plugin indent on
 
 set background=dark
 colorscheme gruvbox
-let g:gruvbox_contrast_dark = 'hard'
+let g:gruvbox_contrast_dark = 'medium'
 
 "" Status line
 "set laststatus=2
@@ -281,7 +280,7 @@ let g:ycm_complete_in_comments = 0                      " Completion in comments
 let g:ycm_complete_in_strings = 0                       " Completion in string
 let g:ycm_global_ycm_extra_conf = '~/Code/.ycm_extra_conf.py'
 let g:ycm_confirm_extra_conf = 0
-let g:ycm_python_binary_path = '/usr/bin/python3'
+let g:ycm_python_binary_path = '/usr/bin/python2.7'
 
 "" python with virtualenv support
 py << EOF

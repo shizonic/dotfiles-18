@@ -76,13 +76,13 @@ bindsym $mod+a focus parent
 # 
 set $w1   1surf
 set $w2   2code
-set $w3   3read
-set $w4   4vide
+set $w3   3docs
+set $w4   4flix
 set $w5   5core
 set $w6   6term
 set $w7   7vbox
 set $w8   8apps
-set $w9   9proc
+set $w9   9info
 set $w10 10misc
 
  
@@ -154,7 +154,7 @@ bindsym $mod+minus scratchpad show
 #smart_borders on
 
 # Global gaps size
-gaps inner 10
+gaps inner 0
 gaps outer 0
 
 set $mode_gaps Gaps: (o) outer, (i) inner
@@ -235,8 +235,8 @@ bindsym Print exec scrot -e 'mv $f ~/Pictures/screenshots'
 bindsym $mod+b exec qutebrowser
 
 # Custom colors
-set $black       #282828
-set $darkblack   #1d2021
+set $black       #323232
+set $darkblack   #282828
 set $white       #ebdbb2
 set $darkwhite   #458588
 
@@ -293,19 +293,11 @@ for_window [class="(?i)urxvt"] border pixel 1
 
 # Enable or disable floating
 for_window [class="Arandr"] floating enable
-for_window [class="recordMyDesktop"] floating enable
 for_window [class="Lxappearance"] floating enable
 for_window [class="Nitrogen"] floating enable
 for_window [class="Artha"] floating enable
 for_window [instance="dukto"] floating enable
-for_window [class="Pcmanfm"] floating enable
 for_window [class="feh"] floating enable
-for_window [class="Zenmap"] floating enable
-for_window [class="Angry IP Scanner"] floating enable
-for_window [class="DB Browser for SQLite"] floating enable
-for_window [window_role="pop-up"] floating enable
-for_window [window_role="bubble"] floating enable
-for_window [window_role="task_dialog"] floating enable
 for_window [window_role="Preferences"] floating enable
 for_window [window_type="dialog"] floating enable
 for_window [window_type="menu"] floating enable

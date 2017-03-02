@@ -14,6 +14,15 @@ mail(){
    . $HOME/.config/admiral.d/mail 
 }
 
+music(){
+  . $HOME/.config/admiral.d/music
+}
+
+music_control(){
+echo "%{F#928374}%{A:mpc prev &> /dev/null:}%{A}%{A:mpc play &> /dev/null:}%{A}%{A:mpc pause &> /dev/null:}%{A}%{A:mpc next &> /dev/null:}%{A} "
+
+}
+
 updates(){
   . $HOME/.config/admiral.d/updates 
 }
@@ -46,7 +55,7 @@ temp(){
 }
 
 while :;do
-        echo " %{l} $(updates) %{c}$(mail)$(vol)$(ram)$(temp)$(uptime) %{r}$(net) "
+        echo " %{l} $(music) $(music_control) %{c}$(mail) $(vol) $(ram) $(temp) $(uptime) %{r}$(net) "
         sleep .5
-done | lemonbar -g ${PW}x${PH}+${PX}+${PY} -f "$FONT3" -f "$FONT1" -f "$FONT2" -B "$BG" -F "$BBLACK" -u 3 -p -d -b | \
+done | lemonbar -g ${PW}x${PH}+${PX}+${PY} -f "$FONT3" -f "$FONT1" -f "$FONT2" -B "$BG" -F "$BBLACK" -u 3 -p  -b | \
 while :; do read line; eval $line; done &

@@ -28,8 +28,8 @@ if [[ -d /sys/class/power_supply/BAT1 ]]; then
             batteryColor=${BBLACK}
         else
             batteryIcon=""
-            batteryColor=${MAGENTA}
-            color=${MAGENTA}
+            batteryColor=${BWHITE}
+            color=${BWHITE}
         fi
         echo "%{F$batteryColor}${batteryIcon} %{F$BBLACK}%{F$color}${batteryPower}% "
     else
