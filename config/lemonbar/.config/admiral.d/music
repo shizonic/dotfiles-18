@@ -13,9 +13,9 @@ musicname_s=${musicname:0:30}
 
 if [[ "$mpc_status" != "" ]]; then
         if [[ "$artist" == "" || "$musicname" == "" ]]; then
-                echo "%{F$BLUE}$music_icon Unknown-Artist "
+                echo "%{F$CYAN}$music_icon Unknown-Artist "
         else
-                echo "%{F$CYAN}$music_icon %{F$BLUE}${artist_s} %{F$BBLACK}- %{F$MAGENTA}${musicname_s} "
+                echo "%{F$RED}$music_icon %{F$BLUE}${artist_s} %{F$BBLACK}- %{F$MAGENTA}${musicname_s} "
         fi
 else
         echo "%{F$BBLACK}$music_icon ..:Stopped:.. "

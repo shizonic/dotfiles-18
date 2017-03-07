@@ -13,7 +13,7 @@ coloractive_bg = '%{B#090909}'
 current='%{F#cc241d}'
 coloractive_u = ''
 colorinactive = '%{F#928374}'
-colorwarning = '%{F#d79921}'
+colorwarning = '%{F#689d6a}'
 
 # Define a callback to be called when you switch workspaces.
 def on_workspace_focus(self, e):
