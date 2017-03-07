@@ -60,7 +60,7 @@ of my configs you can simply use stow to install.
 
 ##### Current
 
-![Gruvbox colors](http://imgur.com/mT1rkrS.png)
+![Gruvbox colors](http://imgur.com/4Nm1vjQ.png)
 
 
 ##### Previous
