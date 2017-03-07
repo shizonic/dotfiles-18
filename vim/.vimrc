@@ -65,10 +65,10 @@ filetype plugin indent on
 
 set background=dark
 colorscheme gruvbox
-let g:gruvbox_contrast_dark = 'medium'
+let g:gruvbox_contrast_dark = 'hard'
 
 "" Status line
-"set laststatus=2
+set laststatus=2
 set t_Co=256
 let g:lightline = {
       \ 'colorscheme': 'gruvbox',

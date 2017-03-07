@@ -26,8 +26,8 @@ Xft.hintstyle:          hintsfull
 !                        URxvt settings 
 !-----------------------------------------------------------------------
 
-URxvt.internalBorder:    5
-URxvt.externalBorder:    5
+URxvt.internalBorder:    10
+URxvt.externalBorder:    10
 !URxvt.lineSpace:        0
 !urxvt*shading:          30
 URxvt.depth:             32

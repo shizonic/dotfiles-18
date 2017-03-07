@@ -8,10 +8,10 @@ notify-send  -i $image "
 <span foreground='#458588'>Todo Weekday</span>
 <span foreground='#cc241d'>============</span>
 <span foreground='#a89984'>
-  1. HTA 2hr
-  2. LADM 2hr
-  3. Project 3hr
-  4. Crypto 2hr
-</span>
+1. HTA 2hr
+2. Ass 2hr
+3. Project 2hr
+4. Premier 2hr
 
+</span>
 "

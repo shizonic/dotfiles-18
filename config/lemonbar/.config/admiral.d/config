@@ -14,7 +14,7 @@ PY=0
 
 
 #*************** Fonts *****************
-FONT1="Fixed:size=8"
+FONT1="ProFont:size=8"
 FONT2="Siji:size=8"
 FONT3="FontAwesome:size=8"
 

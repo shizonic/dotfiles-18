@@ -6,5 +6,5 @@ if [[ $msg =~ .*0.*  ]] || [[ $msg == '' ]]
 then
      echo "%{F$BBLACK} %{F$BBLACK}0 "
 else
-     echo "%{F$MAGENTA} %{F$MAGENTA}${msg} new "
+     echo "%{F$RED} %{F$RED}${msg} new "
 fi

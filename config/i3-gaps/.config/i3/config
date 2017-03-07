@@ -235,8 +235,8 @@ bindsym Print exec scrot -e 'mv $f ~/Pictures/screenshots'
 bindsym $mod+b exec qutebrowser
 
 # Custom colors
-set $black       #323232
-set $darkblack   #282828
+set $black       #282828
+set $darkblack   #1d2021
 set $white       #ebdbb2
 set $darkwhite   #458588
 

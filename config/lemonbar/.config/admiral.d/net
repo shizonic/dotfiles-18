@@ -9,9 +9,9 @@ myssid=$(iwgetid -r)
 if ping -c 1 google.com >> /dev/null 2>&1; then
         # Return a ssid if connected to wifi
         if [[ -n $myssid ]];then
-                echo "%{F$CYAN}${wifiIcon} %{F$CYAN}$myssid "
+                echo "%{F$CYAN}${wifiIcon} $myssid "
         else
-            	echo "%{F$BLUE}${networkIcon} %{F$BLUE}Connected "
+            	echo "%{F$BLUE}${networkIcon} Connected "
         fi
 else
 	echo "%{F$BBLACK}${networkIcon} %{F$BBLACK}Offline "
