@@ -291,6 +291,7 @@ exec --no-startup-id . $HOME/.local/bin/urxvt_daemon &
 # for_window [class="(?i)urxvt"] border pixel 1
 for_window [class="^.*"] border normal 0
 for_window [class="(?i)qutebrowser"] border pixel 0
+for_window [class="(?i)Vivaldi-stable"] border pixel 0
 
 
 
