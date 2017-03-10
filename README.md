@@ -29,7 +29,7 @@ Welcome To My  Dotfiles
 <!-- | [tmux]             | tmux.conf file                                    | -->
 <!-- | [vim]              | contains my custom vim colorsheme and vimrc       | -->
 <!-- | [weechat/.weechat] | weechat.conf file                                 | -->
-
+<!-- -->
 
 ### Installation
 Lately I've been using [GNU stow] to manage my dotfiles. If interested with any
