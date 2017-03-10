@@ -57,7 +57,7 @@ Welcome To My  Dotfiles
 # Screenshots
 
 ##### Current: ``` solarized-colors ```
-![Solarized](http://imgur.com/gkrSVsJ.png)
+![Solarized](http://imgur.com/HQMMyMF.png)
 
 
 ##### Previous: ``` gruvbox-colors ```
