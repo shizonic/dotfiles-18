@@ -32,14 +32,12 @@ Welcome To My  Dotfiles
 <!-- -->
 
 ### Installation
-Lately I've been using [GNU stow] to manage my dotfiles. If interested with any
-of my configs you can simply use stow to install.
 
 1. Clone this repo.
    *  ``` git clone https://github.com/mohabaks/dotfiles ```
 2. Change directory to dotfiles
    * ``` cd dotfiles ```
-3. Install using stow
+3. Install using [GNU stow]
 ```bash
    # Install tmux config
    stow tmux
@@ -58,11 +56,11 @@ of my configs you can simply use stow to install.
 
 # Screenshots
 
-##### Current
-![Solarized](http://imgur.com/WDAQc8v.png)
+##### Current: ``` solarized-colors ```
+![Solarized](http://imgur.com/gkrSVsJ.png)
 
 
-##### Previous
+##### Previous: ``` gruvbox-colors ```
 
 ![Gruvbox colors](http://imgur.com/4Nm1vjQ.png)
 
