@@ -154,7 +154,7 @@ bindsym $mod+minus scratchpad show
 #smart_borders on
 
 # Global gaps size
-gaps inner 0
+gaps inner 15
 gaps outer 0
 
 set $mode_gaps Gaps: (o) outer, (i) inner
@@ -235,16 +235,17 @@ bindsym Print exec scrot -e 'mv $f ~/Pictures/screenshots'
 bindsym $mod+b exec qutebrowser
 
 # Custom colors
-set $black       #282828
-set $darkblack   #1d2021
-set $white       #ebdbb2
-set $darkwhite   #458588
+set $black       #002b36
+set $fg          #657b83
+set $darkblack   #002b36
+set $white       #fdf6e3
+set $darkwhite   #839496
 
-# Window colors           border       background   text        indicator
-client.focused            $black       $black       $darkwhite  $black
-client.focused_inactive   $black       $black       $white      $black
-client.unfocused          $black       $black       $white      $black
-client.urgent             $black       $black       $white      $black
+# Window colors           border       background   text            indicator
+client.focused            $white       $white       $fg             $darkblack
+client.focused_inactive   $black       $black       $darkwhite      $darkblack
+client.unfocused          $black       $black       $darkwhite      $darkblack
+client.urgent             $black       $black       $darkwhite      $darkblack
 
 #Start i3bar to display a workspace bar
 #Uncomment to use the default i3bar status
@@ -269,8 +270,8 @@ client.urgent             $black       $black       $white      $black
 # }
 
 # Set font for window title bar
-# font pango:lemon 15
-# for_window [class=".*"] title_format "<span font='GohuFont 8'> ➤ %title</span>"
+font pango:lemon 15
+for_window [class=".*"] title_format "<span font='GohuFont 8'> ➤ %title</span>"
 
 
 #*************  My apps settings  *********************
@@ -281,14 +282,15 @@ exec --no-startup-id compton --config ~/.compton.conf -b
 exec --no-startup-id dunst -config $HOME/.config/dunst/dunstrc
 exec --no-startup-id $HOME/.local/bin/barstart &
 #exec --no-startup-id conky -c $HOME/.config/i3/conkybar-bottom &
-#exec --no-startup-id conky -c $HOME/.config/i3/conkybar-top &
+exec --no-startup-id conky -c $HOME/.config/i3/conkybar-top &
 exec --no-startup-id xrdb -merge -I$HOME ~/.Xresources
 exec --no-startup-id . $HOME/.local/bin/urxvt_daemon &
 
 # Set per-application border
-for_window [class="^.*"] border pixel 1
-for_window [class="(?i)urxvt"] border pixel 1
-#for_window [class="^.*"] border normal 0
+# for_window [class="^.*"] border pixel 1
+for_window [class="(?i)urxvt"] border normal 0
+for_window [class="(?i)qutebrowser"] border pixel 0
+# for_window [class="^.*"] border normal 0
 
 
 # Enable or disable floating
@@ -302,7 +304,7 @@ for_window [window_role="Preferences"] floating enable
 for_window [window_type="dialog"] floating enable
 for_window [window_type="menu"] floating enable
 for_window [class="Pavucontrol"] floating enable
-#for_window [class="^.*"] floating enable
+# for_window [class="^.*"] floating enable
 
 # Starting apps on aspecific workspace
 assign [class="^Tor Browser$"]    $w1

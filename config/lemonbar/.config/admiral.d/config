@@ -7,10 +7,10 @@
 
 
 #************** Panel ****************** 
-PW=1366
-PH=17
-PX=0
-PY=0
+PW=428
+PH=24
+PX=462
+PY=8
 
 
 #*************** Fonts *****************
@@ -29,7 +29,7 @@ MUSIC=""
 
 #************** Colors ******************
 # Color directory
-CD="$HOME/.colors/gruvbox"
+CD="$HOME/.colors/solarized.light"
 
 # Fetch the Colors
 BG=`cat ${CD} | grep -i background: | tail -c 8`

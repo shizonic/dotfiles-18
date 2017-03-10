@@ -59,13 +59,12 @@ of my configs you can simply use stow to install.
 # Screenshots
 
 ##### Current
-
-![Gruvbox colors](http://imgur.com/4Nm1vjQ.png)
+![Solarized](http://imgur.com/WDAQc8v.png)
 
 
 ##### Previous
 
-![busy](http://imgur.com/xOdIyDF.png)
+![Gruvbox colors](http://imgur.com/4Nm1vjQ.png)
 
 
 [GNU stow]: https://www.gnu.org/s/stow/manual/stow.html

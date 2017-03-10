@@ -2,7 +2,7 @@
 
 alignment top_middle
 background no
-minimum_size 1366  9
+minimum_size 1366  24
 border_width 0
 own_window yes
 own_window_type panel
@@ -13,7 +13,7 @@ update_interval 2000
 short_units yes
 
 gap_x 0
-gap_y 0
+gap_y 24
 own_window_argb_value 0
 own_window_colour 000000
 TEXT

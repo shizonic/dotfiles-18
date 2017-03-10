@@ -5,9 +5,9 @@ image='/home/mohabaks/Pictures/notify/todo/hello.png'
 
 notify-send  -i $image "
 
-<span foreground='#458588'>Todo Weekday</span>
-<span foreground='#cc241d'>============</span>
-<span foreground='#a89984'>
+<span foreground='#b58900'>Todo Weekday</span>
+<span foreground='#cb4b16'>============</span>
+<span foreground='#839496'>
 1. HTA 2hr
 2. Ass 2hr
 3. Project 2hr

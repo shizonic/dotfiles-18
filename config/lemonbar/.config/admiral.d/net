@@ -14,5 +14,5 @@ if ping -c 1 google.com >> /dev/null 2>&1; then
             	echo "%{F$BLUE}${networkIcon} Connected "
         fi
 else
-	echo "%{F$BBLACK}${networkIcon} %{F$BBLACK}Offline "
+	echo "%{F$FG}${networkIcon} %{F$FG}Offline "
 fi	

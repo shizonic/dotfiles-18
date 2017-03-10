@@ -1,15 +1,15 @@
-gtk-color-scheme = "base_color:#282828\nbg_color:#1d2021"
+gtk-color-scheme = "base_color:#002b36\nbg_color:#073642"
 gtk-color-scheme = "text_color:#dcdcdc\nfg_color:#bdbdbd"
-gtk-color-scheme = "tooltip_bg_color:#161616\ntooltip_fg_color:#ffffff\nlink_color:#4a90f9"
+gtk-color-scheme = "tooltip_bg_color:#073642\ntooltip_fg_color:#ffffff\nlink_color:#4a90f9"
 
 ## Dark-Framed 
 #gtk-color-scheme = "theme_bg_dark_color:#575757\ntheme_fg_dark_color:#DCDCDC\ntheme_text_dark_color:#F5F5F5"
 
 ## Dark-Flat
-gtk-color-scheme = "theme_bg_dark_color:#1d2021\ntheme_fg_dark_color:#C0C0C0\ntheme_text_dark_color:#E0E0E0"
+gtk-color-scheme = "theme_bg_dark_color:#073642\ntheme_fg_dark_color:#C0C0C0\ntheme_text_dark_color:#E0E0E0"
 
 #  selection text color
-gtk-color-scheme = "selected_fg_color:#E9E9E9"
+gtk-color-scheme = "selected_fg_color:#fdf6e3"
 
 ## selection background color #####################################
 #  selection_wood		#7a6642;
@@ -23,7 +23,7 @@ gtk-color-scheme = "selected_fg_color:#E9E9E9"
 #  selection_mono		#646464;
 ###################################################################
 #  should be the same color that you have set in the file gtk.css #
-gtk-color-scheme = "selected_bg_color:#458588"
+gtk-color-scheme = "selected_bg_color:#b58900"
 ###################################################################
 
 gtk-auto-mnemonics	= 1

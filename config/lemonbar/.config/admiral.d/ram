@@ -9,5 +9,5 @@ if [[ ${ram%/*} -gt 1000 ]];then
 elif [[ ${ram%/*} -gt 600 ]];then
         echo "%{F$CYAN} %{F$CYAN}$ram "
 else
-        echo "%{F$BBLACK} %{F$BBLACK}$ram "
+        echo "%{F$FG} %{F$FG}$ram "
 fi

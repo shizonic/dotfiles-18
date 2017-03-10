@@ -4,12 +4,12 @@
 
 # Panel 
 PW=180
-PH=68
-PX=1175
-PY=47
+PH=70
+PX=710
+PY=45
 
 
-n30f -d -x 1175 -y 36 $HOME/.config/admiral.d/popups/power/bg.png &
+n30f -d -x 710 -y 36 $HOME/.config/admiral.d/popups/power/bg.png &
 
 
 echo "  %{F$RED}%{F-} %{A:s:}Suspend%{A}  %{F$GREEN} %{F-}%{A:l:}Lock%{A}  %{F$BLUE} %{F-}%{A:e:}Exit%{A}" | lemonbar -g ${PW}x${PH}+${PX}+${PY} -f "$FONT1" -f "$FONT3" -B "$BG" -F "$FG" -dp | \

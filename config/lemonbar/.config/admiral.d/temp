@@ -7,7 +7,7 @@ temp=$(cat /sys/class/hwmon/hwmon0/temp1_input)
 new_temp=$(( temp / 1000 ))
 
 if [[ new_temp -gt 80 ]]; then
-        echo "%{F#d65d0e} %{F#d65d0e}$new_temp°C "
+        echo "%{F$BRED} %{F$BRED}$new_temp°C "
 else
-         echo "%{F$BBLACK} %{F$BBLACK}$new_temp°C "
+         echo "%{F$FG} %{F$FG}$new_temp°C "
 fi
