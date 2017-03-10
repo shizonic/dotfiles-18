@@ -4,4 +4,4 @@
 . $HOME/.config/admiral.d/config
 clock_date=$(date "+%H:%M %Z")
 clock=$(date "+%a %d %b %Y")
-echo "%{F$FG} %{F$FG}${clock_date} "
+echo "%{F$FG} ${clock} %{F$FG} %{F$FG}${clock_date} "

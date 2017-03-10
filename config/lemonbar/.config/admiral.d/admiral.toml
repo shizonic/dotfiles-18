@@ -1,8 +1,8 @@
 [admiral]
 items = [
-         "right", "pow",
-         "center", "mail", "ram", "temp", "net", "clock",  "battery",
-         "left", "menu"
+         "right", "uptime", "clock", "battery", "pow",
+         "center", "mail","volume", "ram", "temp", "net",
+         "left", "menu", "workspaces"
         ]
 
 [workspaces]
@@ -61,11 +61,11 @@ path = ". $HOME/.config/admiral.d/music"
 
 # Clickable areas
 [pow]
-path = 'echo "%{A:. $HOME/.config/admiral.d/popups/power/power:}%{B#6c71c4}%{F#fdf6e3}    %{A}%{B-}"'
+path = 'echo "%{A:. $HOME/.config/admiral.d/popups/power/power:}%{F#d33682}  %{A}"'
 static = true
 
 [menu]
-path = 'echo "%{A:. $HOME/.config/admiral.d/popups/todo/todo:}%{B#268bd2}%{F#fdf6e3}    %{A}%{B-}"'
+path = 'echo "%{A:. $HOME/.config/admiral.d/popups/todo/todo:}%{F#268bd2}  %{A}"'
 static = true
 
 # [music_control]
