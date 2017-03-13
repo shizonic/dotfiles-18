@@ -212,7 +212,7 @@ song_status_format = {{%a{ "%b"{ (%y)}} - }{%t}}|{%f}
 song_library_format = {%n - }{%t}|{%f}
 #
 #
-alternative_header_first_line_format = $b$1$aqqu$/a$5 {%t}|{%f} $1$atqq$/a$9$/b
+alternative_header_first_line_format = $b$(12)$aqqu$/a$5 {%t}|{%f} $(12)$atqq$/a$9$/b
 alternative_header_second_line_format = {{$2$b%a$/b$9}{ - $4%b$9}{ ($4%y$9)}}|{%D}
 now_playing_prefix = "$b$8▶ "
 now_playing_suffix = $/b
@@ -484,7 +484,7 @@ header_window_color = magenta
 volume_color = magenta
 state_line_color = magenta
 state_flags_color = black
-main_window_color = green
+main_window_color = cyan
 color1 = black
 color2 = red
 main_window_highlight_color = blue

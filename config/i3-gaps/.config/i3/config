@@ -56,7 +56,7 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen toggle
 
 # Change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking>
+bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
@@ -74,16 +74,16 @@ bindsym $mod+a focus parent
 
 # Initialize workspace
 # 
-set $w1   1surf
-set $w2   2code
-set $w3   3docs
-set $w4   4flix
-set $w5   5core
-set $w6   6term
-set $w7   7vbox
-set $w8   8apps
-set $w9   9info
-set $w10 10misc
+set $w1   1Surf
+set $w2   2Code
+set $w3   3Docs
+set $w4   4Flix
+set $w5   5Core
+set $w6   6Term
+set $w7   7Vbox
+set $w8   8Apps
+set $w9   9Info
+set $w10 10Misc
 
  
 # Switch to workspace
@@ -154,7 +154,7 @@ bindsym $mod+minus scratchpad show
 #smart_borders on
 
 # Global gaps size
-gaps inner 15
+gaps inner 0
 gaps outer 0
 
 set $mode_gaps Gaps: (o) outer, (i) inner
@@ -196,7 +196,7 @@ mode "$mode_gaps_outer" {
 }
 
 # Specify gaps for specific workspace
-# workspace $w5 gaps inner 10
+workspace $w5 gaps inner 15
 
 bindsym $mod+r mode "resize"
 
@@ -219,13 +219,17 @@ mode "$mode_system" {
 }
 bindsym $mod+F9 mode "$mode_system"
 
-# Volume control (Alt + F7 or Alt + F8)
-bindsym $mod+F7 exec amixer set Master 5%-
-bindsym $mod+F8 exec amixer set Master 5%+
+# Volume control
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
 
-# Brightness control (Alt + F11 or Alt + F12)
-bindsym $mod+F2 exec xbacklight -10
-bindsym $mod+F3 exec xbacklight + 10
+# Brightness control
+bindsym XF86MonBrightnessUp exec xbacklight -inc 20
+bindsym XF86MonBrightnessDown exec xbacklight -dec 20
+
+# Touchpad controls
+bindsym XF86TouchpadToggle exec /some/path/toggletouchpad.sh
 
 # Screenshot with scrot
 bindsym Print exec scrot -e 'mv $f ~/Pictures/screenshots'
@@ -235,17 +239,31 @@ bindsym Print exec scrot -e 'mv $f ~/Pictures/screenshots'
 bindsym $mod+b exec qutebrowser
 
 # Custom colors
-set $black       #002b36
-set $fg          #657b83
-set $darkblack   #002b36
-set $white       #fdf6e3
-set $darkwhite   #839496
+set_from_resource $darkred     color1  #000000
+set_from_resource $red         color9  #000000
+set_from_resource $darkgreen   color2  #000000
+set_from_resource $green       color10 #000000
+set_from_resource $darkyellow  color3  #000000
+set_from_resource $yellow      color11 #000000
+set_from_resource $darkblue    color4  #000000
+set_from_resource $blue        color12 #000000
+set_from_resource $darkmagenta color5  #000000
+set_from_resource $magenta     color13 #000000
+set_from_resource $darkcyan    color6  #000000
+set_from_resource $cyan        color14 #000000
+set_from_resource $darkwhite   color7  #000000
+set_from_resource $white       color15 #000000
 
-# Window colors           border       background   text            indicator
-client.focused            $white       $white       $fg             $darkblack
-client.focused_inactive   $black       $black       $darkwhite      $darkblack
-client.unfocused          $black       $black       $darkwhite      $darkblack
-client.urgent             $black       $black       $darkwhite      $darkblack
+# Use custom colors for black
+set $black       #002b36
+set $darkblack   #073642
+
+
+# Window colors           border    background   text            indicator    child_border
+client.focused            $black    $black       $blue           $darkblack   $darkblack
+client.focused_inactive   $black    $black       $darkwhite      $darkblack   $darkblack
+client.unfocused          $black    $black       $darkwhite      $darkblack   $darkblack
+client.urgent             $black    $black       $darkwhite      $darkblack   $darkblack
 
 #Start i3bar to display a workspace bar
 #Uncomment to use the default i3bar status
@@ -270,8 +288,8 @@ client.urgent             $black       $black       $darkwhite      $darkblack
 # }
 
 # Set font for window title bar
-font pango:lemon 15
-for_window [class=".*"] title_format "<span font='GohuFont 8'> ➤ %title</span>"
+# font pango:lemon 15
+# for_window [class=".*"] title_format "<span font='GohuFont 8'> ➤ %title</span>"
 
 
 #*************  My apps settings  *********************
@@ -280,18 +298,16 @@ for_window [class=".*"] title_format "<span font='GohuFont 8'> ➤ %title</span>
 exec --no-startup-id nitrogen --restore  &
 exec --no-startup-id compton --config ~/.compton.conf -b 
 exec --no-startup-id dunst -config $HOME/.config/dunst/dunstrc
-exec --no-startup-id $HOME/.local/bin/barstart &
-#exec --no-startup-id conky -c $HOME/.config/i3/conkybar-bottom &
-# exec --no-startup-id conky -c $HOME/.config/i3/conkybar-top &
-exec --no-startup-id xrdb -merge -I$HOME ~/.Xresources
+exec --no-startup-id xrdb -load -I$HOME ~/.Xresources
+exec --no-startup-id . $HOME/.local/bin/barstart &
 exec --no-startup-id . $HOME/.local/bin/urxvt_daemon &
 
 # Set per-application border
-# for_window [class="^.*"] border pixel 1
-# for_window [class="(?i)urxvt"] border pixel 1
-for_window [class="^.*"] border normal 0
-for_window [class="(?i)qutebrowser"] border pixel 0
-for_window [class="(?i)Vivaldi-stable"] border pixel 0
+for_window [class="^.*"] border pixel 1
+for_window [class="(?i)urxvt"] border pixel 1
+# for_window [class="^.*"] border normal 0
+# for_window [class="(?i)qutebrowser"] border pixel 0
+# for_window [class="(?i)Vivaldi-stable"] border pixel 0
 
 
 
@@ -308,7 +324,7 @@ for_window [window_type="menu"] floating enable
 for_window [class="Pavucontrol"] floating enable
 # for_window [class="^.*"] floating enable
 
-# Starting apps on aspecific workspace
+# Starting apps on a specific workspace
 assign [class="^Tor Browser$"]    $w1
 assign [class="^Firefox$"]        $w1
 assign [class="^qutebrowser"]     $w1
