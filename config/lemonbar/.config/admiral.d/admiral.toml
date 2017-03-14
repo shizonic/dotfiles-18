@@ -65,7 +65,7 @@ path = 'echo "%{A:. $HOME/.config/admiral.d/popups/power/power:}%{F#d33682}  
 static = true
 
 [menu]
-path = 'echo "%{A:. $HOME/.config/admiral.d/popups/todo/todo:}%{F#268bd2}  %{A}"'
+path = 'echo "%{A:. $HOME/.config/admiral.d/popups/todo/todo:}%{F#268bd2} %{A}"'
 static = true
 
 # [music_control]
