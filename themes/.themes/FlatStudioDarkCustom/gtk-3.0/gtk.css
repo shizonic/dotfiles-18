@@ -1,11 +1,11 @@
 /******************[ FlatStudioDark ]**********************/
 /* Default color scheme */
-@define-color base_color #002b36;
-@define-color bg_color #073642;
+@define-color base_color #32302f;
+@define-color bg_color #282828;
 @define-color text_color #e0e0e0;
 @define-color fg_color #c0c0c0;
-@define-color selected_bg_color #b58900;
-@define-color selected_fg_color #e9e9e9;
+@define-color selected_bg_color #458588;
+@define-color selected_fg_color #a89984;
 @define-color tooltip_bg_color #040404;
 @define-color tooltip_fg_color #ffffff;
 
@@ -22,7 +22,7 @@
 /* Here you can set the color selection, I recommend one of the above,
    but you can put the one you like */
 @define-color theme_selected_bg_color 		@selection_blue;
-@define-color theme_selected_fg_color 		#e9e9e9;
+@define-color theme_selected_fg_color 		#a89984;
 @define-color theme_selected_shadow_color 	alpha(#000, 0.12);
 /*******************************************************************/
 

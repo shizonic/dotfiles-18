@@ -22,8 +22,8 @@ rofi.fullscreen:         false
 ! ------------------------------------------------------------------------------
 rofi.color-enabled:      true
 ! State                  'bg'     'fg'     'bgalt'  'hlbg'   'hlfg'
-rofi.color-normal:       #002b36, #839496, #002b36, #b58900, #002b36
-rofi.color-active:       #002b36, #4c544f, #002b36, #4c544f, #002b36
-rofi.color-urgent:       #002b36, #442216, #002b36, #442216, #002b36
+rofi.color-normal:       #282828, #a89984, #282828, #458588, #ebdbb2
+rofi.color-active:       #282828, #458588, #282828, #b16286, #282828
+rofi.color-urgent:       #282828, #689d6a, #282828, #689d6a, #282828
 !                        'bg'     'bc'
-rofi.color-window:       #002b36, #073642
+rofi.color-window:       #282828, #3c3836

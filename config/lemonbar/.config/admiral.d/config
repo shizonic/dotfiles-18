@@ -29,7 +29,7 @@ MUSIC=""
 
 #************** Colors ******************
 # Color directory
-CD="$HOME/.colors/solarized.light"
+CD="$HOME/.colors/gruvbox"
 
 # Fetch the Colors
 BG=`cat ${CD} | grep -i background: | tail -c 8`

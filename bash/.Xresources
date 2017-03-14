@@ -44,17 +44,13 @@ URxvt*scrollWithBuffer:  true
 URxvt*scrollTtyKeypress: true
 
 !! Fonts
-! Droid Sans Mono for Powerline Mono
-!URxvt*font:             xft:Droid Sans Mono for Powerline:size=8, xft:Droid Mono Dotted for Powerline:size=8
-!URxvt*boldFont:         xft:Droid Sans Mono for Powerline:normal:size=8
-!URxvt*italicFont:       xft:Droid Sans Mono for Powerline:italic:autohint=true:size=8
-!URxvt*boldItalicFont:   xft:Droid Sans Mono for Powerline:bolditalic:italic:autohint=true:size=8
+#define myFont myFont
+#define fontSize 8
 
-! tewi
-URxvt*font:              xft:tewi:size=8
-URxvt*boldFont:          xft:tewi:normal:size=8
-URxvt*italicFont:        xft:tewi:italic:autohint=true:size=8
-URxvt*boldItalicFont:    xft:tewi:bolditalic:italic:autohint=true:size=8
+URxvt*font:              xft:myFont:size=fontSize
+URxvt*boldFont:          xft:myFont:normal:size=fontSize
+URxvt*italicFont:        xft:myFont:italic:autohint=true:size=fontSize
+URxvt*boldItalicFont:    xft:myFont:bolditalic:italic:autohint=true:size=fontSize
 
 URxvt.letterSpace:       true
 
@@ -97,15 +93,11 @@ URxvt.iso14755:            false
 URxvt.iso14755_52:         false
 
 !! Cursor
-!URxvt.cursorBlink:        true
-!URxvt.cursorUnderline:    false
-!URxvt.cursorColor:        #c5c10c
-!URxvt.borderColor:        #07090d
-URxvt.colorUL:             #6c71c4
+URxvt.colorUL:             #83a598
 Xcursor.theme:             Adwaita
 
 !! Pointer
 !URxvt.pointerBlank:        true
 
 !! Colors
-#include "/home/mohabaks/.colors/solarized.dark"                                                                     
+#include "/home/mohabaks/.colors/gruvbox"                                                                     

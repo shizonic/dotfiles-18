@@ -51,7 +51,7 @@ Plugin 'tmux-plugins/vim-tmux'
 Plugin 'Valloric/YouCompleteMe'
 
 """ Colorscheme
-Plugin 'altercation/vim-colors-solarized'
+"Plugin 'altercation/vim-colors-solarized'
 "Plugin 'lilydjwg/colorizer'
 Plugin 'morhetz/gruvbox'
 
@@ -64,17 +64,17 @@ filetype plugin indent on
 "  Set Colorscheme and Statusline{{{
 
 set background=dark
-colorscheme solarized
-"let g:gruvbox_contrast_dark = 'hard'
+colorscheme gruvbox
+let g:gruvbox_contrast_dark = 'medium'
 
 "" Status line
 set laststatus=2
 set t_Co=256
 let g:lightline = {
-      \ 'colorscheme': 'solarized',
+      \ 'colorscheme': 'gruvbox',
       \ }
       
-"}}}
+" }}}
 
                         
 " UI Config {{{ 

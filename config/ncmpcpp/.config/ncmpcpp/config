@@ -212,7 +212,7 @@ song_status_format = {{%a{ "%b"{ (%y)}} - }{%t}}|{%f}
 song_library_format = {%n - }{%t}|{%f}
 #
 #
-alternative_header_first_line_format = $b$(12)$aqqu$/a$5 {%t}|{%f} $(12)$atqq$/a$9$/b
+alternative_header_first_line_format = $b$(239)$aqqu$/a$5 {%t}|{%f} $(239)$atqq$/a$9$/b
 alternative_header_second_line_format = {{$2$b%a$/b$9}{ - $4%b$9}{ ($4%y$9)}}|{%D}
 now_playing_prefix = "$b$8▶ "
 now_playing_suffix = $/b
@@ -279,7 +279,7 @@ now_playing_suffix = $/b
 ##
 #
 #song_columns_list_format = (20)[red]{a} (4f)[green]{NE} (50)[magenta]{t|f:Title} (20)[yellow]{b} (7f)[blue]{l}
-song_columns_list_format = (50)[blue]{t|f:Title} (7f)[12]{l}
+song_columns_list_format = (50)[blue]{t|f:Title} (7f)[white]{l}
 #
 ##### various settings #####
 #
@@ -488,10 +488,10 @@ main_window_color = cyan
 color1 = black
 color2 = red
 main_window_highlight_color = blue
-progressbar_color = yellow
-progressbar_elapsed_color = white
+progressbar_color = 239
+progressbar_elapsed_color = blue
 statusbar_color = blue
-alternative_ui_separator_color = black
+alternative_ui_separator_color = 239
 active_column_color = red
 window_border_color = magenta
 active_window_border = green

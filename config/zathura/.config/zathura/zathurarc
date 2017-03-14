@@ -1,35 +1,35 @@
 # zathurarc-dark
 
 set font                        "Fira Code 8"
-set default-bg                  "#002b36" #00
-set default-fg                  "#839496" #01
+set default-bg                  "#282828" #00
+set default-fg                  "#a89984" #01
 
-set statusbar-fg                "#839496" #04
-set statusbar-bg                "#002b36" #01
+set statusbar-fg                "#a89984" #04
+set statusbar-bg                "#282828" #01
 
-set inputbar-bg                 "#002b36" #00 currently not used
-set inputbar-fg                 "#839496" #02
+set inputbar-bg                 "#282828" #00 currently not used
+set inputbar-fg                 "#a89984" #02
 
 set notification-error-bg       "#657056" #08
-set notification-error-fg       "#002b36" #00
+set notification-error-fg       "#282828" #00
 
 set notification-warning-bg     "#4f473a" #08
-set notification-warning-fg     "#002b36" #00
+set notification-warning-fg     "#282828" #00
 
-set highlight-color             "#002b36" #0A
-set highlight-active-color      "#839496" #0D
+set highlight-color             "#282828" #0A
+set highlight-active-color      "#a89984" #0D
 
-set completion-highlight-fg     "#002b36" #02
-set completion-highlight-bg     "#b58900" #0C
+set completion-highlight-fg     "#282828" #02
+set completion-highlight-bg     "#458588" #0C
 
-set completion-bg               "#002b36" #02
-set completion-fg               "#839496" #0C
+set completion-bg               "#282828" #02
+set completion-fg               "#a89984" #0C
 
-set notification-bg             "#002b36" #0B
+set notification-bg             "#282828" #0B
 set notification-fg             "#4c544f" #00
 
-set recolor-lightcolor          "#002b36" #00
-set recolor-darkcolor           "#839496" #06
+set recolor-lightcolor          "#282828" #00
+set recolor-darkcolor           "#a89984" #06
 set recolor                     "true"
 
 # setting recolor-keep true will keep any color your pdf has.

@@ -61,11 +61,11 @@ path = ". $HOME/.config/admiral.d/music"
 
 # Clickable areas
 [pow]
-path = 'echo "%{A:. $HOME/.config/admiral.d/popups/power/power:}%{F#d33682}  %{A}"'
+path = 'echo "%{A:. $HOME/.config/admiral.d/popups/power/power:}%{F#d65d0e}  %{A}"'
 static = true
 
 [menu]
-path = 'echo "%{A:. $HOME/.config/admiral.d/popups/todo/todo:}%{F#268bd2} %{A}"'
+path = 'echo "%{A:. $HOME/.config/admiral.d/popups/todo/todo:}%{F#458588} %{A}"'
 static = true
 
 # [music_control]

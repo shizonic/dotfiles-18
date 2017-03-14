@@ -21,18 +21,18 @@ unset stop_msg
 # image="$HOME/Pictures/notify/todo/r00t.png"
 
 start_msg='
-<span foreground="#dc322f">             Do Not Disturb</span> 
-<span foreground="#268bd2">             **************</span>
-<span foreground="#657b83">
+<span foreground="#cc241d">             Do Not Disturb</span> 
+<span foreground="#83a598">             **************</span>
+<span foreground="#a89984">
 " A day without learning is a day wasted. "
 
 </span>
 '
 
 stop_msg='
-<span foreground="#dc322f">Break Time</span> 
-<span foreground="#268bd2">=>=>=>=>=></span>
-<span foreground="#657b83">
+<span foreground="#cc241d">Break Time</span> 
+<span foreground="#83a598">=>=>=>=>=></span>
+<span foreground="#a89984">
 Hello friend .. stand up and take a little break ..
 </span>
 '
