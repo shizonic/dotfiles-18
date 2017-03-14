@@ -18,21 +18,21 @@ unset stop_msg
 # Initialize some variables
 # Uncomment this line if you have dunst installed
 # Make sure to use a different path of your image
-image="$HOME/Pictures/notify/todo/r00t.png"
+# image="$HOME/Pictures/notify/todo/r00t.png"
 
 start_msg='
-<span foreground="#5e468c">Do Not Disturb</span> 
-<span foreground="#287373">**************</span>
-<span foreground="#9e9e9e">
+<span foreground="#dc322f">             Do Not Disturb</span> 
+<span foreground="#268bd2">             **************</span>
+<span foreground="#657b83">
 " A day without learning is a day wasted. "
 
 </span>
 '
 
 stop_msg='
-<span foreground="#5e468c">Break Time</span> 
-<span foreground="#287373">=>=>=>=>=></span>
-<span foreground="#9e9e9e">
+<span foreground="#dc322f">Break Time</span> 
+<span foreground="#268bd2">=>=>=>=>=></span>
+<span foreground="#657b83">
 Hello friend .. stand up and take a little break ..
 </span>
 '
