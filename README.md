@@ -57,6 +57,9 @@ Welcome To My  Dotfiles
 # Screenshots
 
 ##### Current: ``` solarized-colors ```
+
+![startpage](http://imgur.com/e5ITHsI.png)
+
 ![Solarized](http://imgur.com/HQMMyMF.png)
 
 
