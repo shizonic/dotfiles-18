@@ -74,42 +74,42 @@ bindsym $mod+a focus parent
 
 # Initialize workspace
 # 
-set $w1   1Surf
-set $w2   2Code
-set $w3   3Docs
-set $w4   4Flix
-set $w5   5Core
-set $w6   6Term
-set $w7   7Vbox
-set $w8   8Apps
-set $w9   9Info
-set $w10 10Misc
+# set $w1   1Surf
+# set $w2   2Code
+# set $w3   3Docs
+# set $w4   4Flix
+# set $w5   5Core
+# set $w6   6Term
+# set $w7   7Vbox
+# set $w8   8Apps
+# set $w9   9Info
+# set $w10 10Misc
 
  
 # Switch to workspace
-bindsym $mod+1 workspace $w1
-bindsym $mod+2 workspace $w2
-bindsym $mod+3 workspace $w3
-bindsym $mod+4 workspace $w4
-bindsym $mod+5 workspace $w5
-bindsym $mod+6 workspace $w6
-bindsym $mod+7 workspace $w7
-bindsym $mod+8 workspace $w8
-bindsym $mod+9 workspace $w9 
-bindsym $mod+0 workspace $w10
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+bindsym $mod+6 workspace 6
+bindsym $mod+7 workspace 7
+bindsym $mod+8 workspace 8
+bindsym $mod+9 workspace 9 
+bindsym $mod+0 workspace 10
 bindsym $mod+Tab workspace back_and_forth
 
 # Move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace $w1
-bindsym $mod+Shift+2 move container to workspace $w2
-bindsym $mod+Shift+3 move container to workspace $w3
-bindsym $mod+Shift+4 move container to workspace $w4
-bindsym $mod+Shift+5 move container to workspace $w5
-bindsym $mod+Shift+6 move container to workspace $w6  
-bindsym $mod+Shift+7 move container to workspace $w7
-bindsym $mod+Shift+8 move container to workspace $w8
-bindsym $mod+Shift+9 move container to workspace $w9
-bindsym $mod+Shift+0 move container to workspace $w10
+bindsym $mod+Shift+1 move container to workspace 1
+bindsym $mod+Shift+2 move container to workspace 2
+bindsym $mod+Shift+3 move container to workspace 3
+bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+5 move container to workspace 5
+bindsym $mod+Shift+6 move container to workspace 6  
+bindsym $mod+Shift+7 move container to workspace 7
+bindsym $mod+Shift+8 move container to workspace 8
+bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+0 move container to workspace 10
 
 # Reload the configuration file
 bindsym $mod+Shift+c reload
@@ -255,8 +255,8 @@ set_from_resource $darkwhite   color7  #000000
 set_from_resource $white       color15 #000000
 
 # Use custom colors for black
-set $black       #282828
-set $darkblack   #3c3836
+set $black       #1d2021
+set $darkblack   #282828
 
 
 # Window colors           border      background   text            indicator    child_border
@@ -325,19 +325,19 @@ for_window [class="Pavucontrol"] floating enable
 # for_window [class="^.*"] floating enable
 
 # Starting apps on a specific workspace
-assign [class="^Tor Browser$"]    $w1
-assign [class="^Firefox$"]        $w1
-assign [class="^qutebrowser"]     $w1
-assign [class="^Zathura"]         $w3
-assign [class="^TexMaker"]        $w3
-assign [class="^LibreOffice"]     $w3
-assign [class="^mpv$"]            $w4
-assign [class="^VirtualBox$"]     $w7
-assign [class="^Gimp$"]           $w8
-assign [class="^Openshot$"]       $w8
-assign [class="^Blender$"]        $w8
-assign [class="^Filezilla$"]      $w10
-assign [class="^Nmapfe"]          $w10
-assign [class="^Wireshark"]       $w10
+assign [class="^Tor Browser$"]    1
+assign [class="^Firefox$"]        1
+assign [class="^qutebrowser"]     1
+assign [class="^Zathura"]         3
+assign [class="^TexMaker"]        3
+assign [class="^LibreOffice"]     3
+assign [class="^mpv$"]            4
+assign [class="^VirtualBox$"]     7
+assign [class="^Gimp$"]           8
+assign [class="^Openshot$"]       8
+assign [class="^Blender$"]        8
+assign [class="^Filezilla$"]      10
+assign [class="^Nmapfe"]          10
+assign [class="^Wireshark"]       10
 
 # vim:filetype=i3

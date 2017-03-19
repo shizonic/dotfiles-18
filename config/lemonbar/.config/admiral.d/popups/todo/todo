@@ -10,8 +10,8 @@ notify-send  -i $image "
 <span foreground='#a89984'>
 1. ClassW  2hr
 2. Crypto  2hr
-3. Complr  1hr
-4. ModernC 1hr
-5. CompOrg 1hr
+3. Admin   1hr
+4. Assmbly 1hr
+5. Git/Vim 1hr
 </span>
 "

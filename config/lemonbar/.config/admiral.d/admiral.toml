@@ -2,7 +2,7 @@
 items = [
          "right", "uptime", "clock", "battery", "pow",
          "center", "mail","volume", "ram", "temp", "net",
-         "left", "menu", "workspaces"
+         "left", "menu"
         ]
 
 [workspaces]
@@ -15,29 +15,27 @@ path = "python $HOME/.config/admiral.d/workspace"
 path = ". $HOME/.config/admiral.d/mail"
 reload = 30
 
-[packages]
-path = ". $HOME/.config/admiral.d/packages"
-reload = 80
+# [packages]
+# path = ". $HOME/.config/admiral.d/packages"
+# reload = 80
 
-[updates]
-path = ". $HOME/.config/admiral.d/updates"
-reload = 120
+# [updates]
+# path = ". $HOME/.config/admiral.d/updates"
+# reload = 120
 
 [uptime]
 path = ". $HOME/.config/admiral.d/uptime"
-reload = 1
 
-[kernel]
-path = ". $HOME/.config/admiral.d/kernel"
-static = true
+
+# [kernel]
+# path = ". $HOME/.config/admiral.d/kernel"
+# static = true
 
 [volume]
 path = ". $HOME/.config/admiral.d/vol"
-reload = 0.1
 
 [ram]
 path = ". $HOME/.config/admiral.d/ram"
-reload = 0.5
 
 [net]
 path = ". $HOME/.config/admiral.d/net"
@@ -49,14 +47,12 @@ reload = 10
 
 [clock]
 path = ". $HOME/.config/admiral.d/clock"
-reload = 1
 
 [temp]
 path = ". $HOME/.config/admiral.d/temp"
-reload = 0.5
 
-[music]
-path = ". $HOME/.config/admiral.d/music"
+# [music]
+# path = ". $HOME/.config/admiral.d/music"
 
 
 # Clickable areas

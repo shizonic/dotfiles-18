@@ -1,10 +1,16 @@
 #!/usr/bin/env bash
 
-. $HOME/.config/admiral.d/config
+# . $HOME/.config/admiral.d/config
 
 pkill admiral &>/dev/null
 pkill lemonbar &>/dev/null
+killall -q polybar
 
 
-$HOME/.local/bin/admiral | lemonbar -g ${PW}x${PH}+${PX}+${PY} -f "$FONT1" -f "$FONT2" -f "$FONT3" -B "$BG" -F "$WHITE" -p | sh &
+# $HOME/.local/bin/admiral | lemonbar -g ${PW}x${PH}+${PX}+${PY} -f "$FONT1" -f "$FONT2" -f "$FONT3" -B "$BG" -F "$WHITE" -p | sh &
 #. $HOME/.config/admiral.d/topbar
+
+while pgrep -x polybar >/dev/null; do sleep 1; done
+
+# Launch top bar
+polybar top &
