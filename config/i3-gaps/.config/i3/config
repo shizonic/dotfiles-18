@@ -10,7 +10,7 @@
 set $mod Mod4
 
 # Start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec urxvtc
 
 # Kill focused window
 bindsym $mod+Shift+q kill
@@ -74,42 +74,42 @@ bindsym $mod+a focus parent
 
 # Initialize workspace
 # 
-# set $w1   1Surf
-# set $w2   2Code
-# set $w3   3Docs
-# set $w4   4Flix
-# set $w5   5Core
-# set $w6   6Term
-# set $w7   7Vbox
-# set $w8   8Apps
-# set $w9   9Info
-# set $w10 10Misc
+set $w1   1:surf
+set $w2   2:code
+set $w3   3:docs
+set $w4   4:flix
+set $w5   5:core
+set $w6   6:term
+set $w7   7:vbox
+set $w8   8:apps
+set $w9   9:expl
+set $w10  10:misc
 
  
 # Switch to workspace
-bindsym $mod+1 workspace 1
-bindsym $mod+2 workspace 2
-bindsym $mod+3 workspace 3
-bindsym $mod+4 workspace 4
-bindsym $mod+5 workspace 5
-bindsym $mod+6 workspace 6
-bindsym $mod+7 workspace 7
-bindsym $mod+8 workspace 8
-bindsym $mod+9 workspace 9 
-bindsym $mod+0 workspace 10
+bindsym $mod+1 workspace $w1
+bindsym $mod+2 workspace $w2
+bindsym $mod+3 workspace $w3
+bindsym $mod+4 workspace $w4
+bindsym $mod+5 workspace $w5
+bindsym $mod+6 workspace $w6
+bindsym $mod+7 workspace $w7
+bindsym $mod+8 workspace $w8
+bindsym $mod+9 workspace $w9
+bindsym $mod+0 workspace $w10
 bindsym $mod+Tab workspace back_and_forth
 
 # Move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace 1
-bindsym $mod+Shift+2 move container to workspace 2
-bindsym $mod+Shift+3 move container to workspace 3
-bindsym $mod+Shift+4 move container to workspace 4
-bindsym $mod+Shift+5 move container to workspace 5
-bindsym $mod+Shift+6 move container to workspace 6  
-bindsym $mod+Shift+7 move container to workspace 7
-bindsym $mod+Shift+8 move container to workspace 8
-bindsym $mod+Shift+9 move container to workspace 9
-bindsym $mod+Shift+0 move container to workspace 10
+bindsym $mod+Shift+1 move container to workspace $w1
+bindsym $mod+Shift+2 move container to workspace $w2
+bindsym $mod+Shift+3 move container to workspace $w3
+bindsym $mod+Shift+4 move container to workspace $w4
+bindsym $mod+Shift+5 move container to workspace $w5
+bindsym $mod+Shift+6 move container to workspace $w6
+bindsym $mod+Shift+7 move container to workspace $w7
+bindsym $mod+Shift+8 move container to workspace $w8
+bindsym $mod+Shift+9 move container to workspace $w9
+bindsym $mod+Shift+0 move container to workspace $w10
 
 # Reload the configuration file
 bindsym $mod+Shift+c reload
@@ -235,8 +235,8 @@ bindsym XF86TouchpadToggle exec /some/path/toggletouchpad.sh
 bindsym Print exec scrot -e 'mv $f ~/Pictures/screenshots'
 
 # My apps shortcut
-# bindsym $mod+p exec pcmanfm 
-bindsym $mod+b exec qutebrowser
+bindsym $mod+p exec pcmanfm 
+bindsym $mod+b exec firefox
 
 # Custom colors
 set_from_resource $darkred     color1  #000000
@@ -325,19 +325,19 @@ for_window [class="Pavucontrol"] floating enable
 # for_window [class="^.*"] floating enable
 
 # Starting apps on a specific workspace
-assign [class="^Tor Browser$"]    1
-assign [class="^Firefox$"]        1
-assign [class="^qutebrowser"]     1
-assign [class="^Zathura"]         3
-assign [class="^TexMaker"]        3
-assign [class="^LibreOffice"]     3
-assign [class="^mpv$"]            4
-assign [class="^VirtualBox$"]     7
-assign [class="^Gimp$"]           8
-assign [class="^Openshot$"]       8
-assign [class="^Blender$"]        8
-assign [class="^Filezilla$"]      10
-assign [class="^Nmapfe"]          10
-assign [class="^Wireshark"]       10
+assign [class="^Tor Browser$"]    $w1
+assign [class="^Firefox$"]        $w1
+assign [class="^qutebrowser"]     $w1
+assign [class="^Zathura"]         $w3
+assign [class="^TexMaker"]        $w3
+assign [class="^LibreOffice"]     $w3
+assign [class="^mpv$"]            $w4
+assign [class="^VirtualBox$"]     $w7
+assign [class="^Gimp$"]           $w8
+assign [class="^Openshot$"]       $w8
+assign [class="^Blender$"]        $w8
+assign [class="^Filezilla$"]      $w8
+assign [class="^Nmapfe"]          $w8
+assign [class="^Wireshark"]       $w8
 
 # vim:filetype=i3

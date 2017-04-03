@@ -4,14 +4,12 @@
 image='/home/mohabaks/Pictures/notify/todo/hello.png'
 
 notify-send  -i $image "
-
 <span foreground='#458588'>Todo Weekday</span>
 <span foreground='#cc241d'>============</span>
 <span foreground='#a89984'>
-1. ClassW  2hr
-2. Crypto  2hr
-3. Admin   1hr
-4. Assmbly 1hr
-5. Git/Vim 1hr
+1. ClassW   2hr
+2. OverWire 1hr
+3. Cryptopa 1hr
+4. HackExpl 1hr
 </span>
 "

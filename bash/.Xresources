@@ -44,7 +44,7 @@ URxvt*scrollWithBuffer:  true
 URxvt*scrollTtyKeypress: true
 
 !! Fonts
-#define myFont tewi
+#define myFont lucy tewi
 #define fontSize 8
 
 URxvt*font:              xft:myFont:size=fontSize

@@ -60,7 +60,7 @@ clock(){
 }
 
 while :;do
-        echo " %{l} $(music) $(music_control) %{c}$(mail)$(vol)$(ram)$(temp)$(uptime) %{r}$(clock)$(net)$(bat) "
-        sleep .5
-done | lemonbar -g ${PW}x${PH}+${PX}+${PY} -f "$FONT3" -f "$FONT1" -f "$FONT2" -B "$BG" -F "$BBLACK" -u 3 -p  -b | \
+        echo " %{l} $(kernel) %{c}$(clock) %{r}$(mail)$(ram)$(temp)$(net)$(bat) "
+        sleep 20
+done | lemonbar -g ${PW}x${PH}+${PX}+${PY} -f "$FONT3" -f "$FONT1" -f "$FONT2" -B "$BG" -F "$BBLACK" -u 3 -p | \
 while :; do read line; eval $line; done &
