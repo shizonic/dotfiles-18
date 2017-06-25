@@ -26,8 +26,8 @@ Xft.hintstyle:          hintsfull
 !                        URxvt settings 
 !-----------------------------------------------------------------------
 
-URxvt.internalBorder:    10
-URxvt.externalBorder:    10
+URxvt.internalBorder:    5
+URxvt.externalBorder:    5
 !URxvt.lineSpace:        0
 !urxvt*shading:          30
 URxvt.depth:             32
@@ -44,7 +44,7 @@ URxvt*scrollWithBuffer:  true
 URxvt*scrollTtyKeypress: true
 
 !! Fonts
-#define myFont lucy tewi
+#define myFont tewi
 #define fontSize 8
 
 URxvt*font:              xft:myFont:size=fontSize
@@ -81,7 +81,7 @@ URxvt.keysym.M-u: perl:     url-select:select_next
 URxvt.url-select.autocopy:  true
 URxvt.url-select.button:    2
 URxvt.url-select.underline: true
-URxvt.url-launcher:         /usr/bin/qutebrowser
+URxvt.url-launcher:         /usr/bin/firefox
 URxvt.matcher.button:       1
 
 !! CopyPaste Keys

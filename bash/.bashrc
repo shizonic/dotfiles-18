@@ -18,11 +18,12 @@ export LD_PRELOAD=/usr/lib/libharfbuzz.so.0
 export LD_PRELOAD=/usr/lib/libv4l/v4l2convert.so
 export VISUAL=vim
 export EDITOR=vim
-export BROWSER=qutebrowser
+export BROWSER=firefox
 export TERM="rxvt-unicode-256color"
 export TZ=Africa/Nairobi
+export LFS=/mnt/lfs
 
-source virtualenvwrapper.sh
+#source virtualenvwrapper.sh
 source ~/.git-prompt.sh
 source "$HOME/.vim/bundle/gruvbox/gruvbox_256palette.sh"
 
@@ -87,7 +88,8 @@ alias xresources='vim ~/.Xresources'
 alias reload='source ~/.bashrc'
 alias htop='htop -u mohabaks'
 alias blog='cd ~/Code/MyBlog/'
-alias code='cd ~/Code'
+alias code='cd ~/Code/DjangoProjects'
+alias django='workon DjangoProjects'
 alias ls='ls --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto -hFX'
 alias ll='ls -l --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto -F'
 alias la='ls -la --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto -F'

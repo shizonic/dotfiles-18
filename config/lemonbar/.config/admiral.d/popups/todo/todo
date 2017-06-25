@@ -7,9 +7,9 @@ notify-send  -i $image "
 <span foreground='#458588'>Todo Weekday</span>
 <span foreground='#cc241d'>============</span>
 <span foreground='#a89984'>
-1. ClassW   2hr
-2. OverWire 1hr
-3. Cryptopa 1hr
-4. HackExpl 1hr
+<span foreground='#b16286'>1. </span>Crypto  <span foreground='#689d6a'>2hr</span>
+<span foreground='#b16286'>2. </span>NANDT   <span foreground='#689d6a'>1hr</span>
+<span foreground='#b16286'>3. </span>WebS    <span foreground='#689d6a'>1hr</span>
+<span foreground='#b16286'>4. </span>AdvC    <span foreground='#689d6a'>1hr</span>
 </span>
 "

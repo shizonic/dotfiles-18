@@ -75,12 +75,12 @@ bindsym $mod+a focus parent
 # Initialize workspace
 # 
 set $w1   1:surf
-set $w2   2:code
+set $w2   2:devs
 set $w3   3:docs
 set $w4   4:flix
 set $w5   5:core
 set $w6   6:term
-set $w7   7:vbox
+set $w7   7:labs
 set $w8   8:apps
 set $w9   9:expl
 set $w10  10:misc
@@ -196,7 +196,7 @@ mode "$mode_gaps_outer" {
 }
 
 # Specify gaps for specific workspace
-workspace $w5 gaps inner 10
+#workspace $w5 gaps inner 10
 
 bindsym $mod+r mode "resize"
 
@@ -335,7 +335,6 @@ assign [class="^mpv$"]            $w4
 assign [class="^VirtualBox$"]     $w7
 assign [class="^Gimp$"]           $w8
 assign [class="^Openshot$"]       $w8
-assign [class="^Blender$"]        $w8
 assign [class="^Filezilla$"]      $w8
 assign [class="^Nmapfe"]          $w8
 assign [class="^Wireshark"]       $w8
