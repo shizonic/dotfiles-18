@@ -3,8 +3,8 @@ Welcome To My  Dotfiles
 
 ### Setup Description
 
-* Bar: ``` lemonbar ```
-* Browser: ``` qutebrowser ```
+* Bar: ``` polybar ```
+* Browser: ``` firefox ```
 * Compositor: ``` compton ```
 * File Manager: ``` ranger ```
 * Font: ``` tewi ```
@@ -56,16 +56,12 @@ Welcome To My  Dotfiles
 
 # Screenshots
 
-##### Current: ``` solarized-colors ```
+##### Current: ``` gruvbox-colors ```
 
-![startpage](http://imgur.com/e5ITHsI.png)
+![Gruvbox colors](http://imgur.com/rKr9hjV.png)
+##### Previous: ``` solarized-colors ```
 
 ![Solarized](http://imgur.com/HQMMyMF.png)
-
-
-##### Previous: ``` gruvbox-colors ```
-
-![Gruvbox colors](http://imgur.com/4Nm1vjQ.png)
 
 
 [GNU stow]: https://www.gnu.org/s/stow/manual/stow.html
