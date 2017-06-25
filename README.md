@@ -58,7 +58,7 @@ Welcome To My  Dotfiles
 
 ##### Current: ``` gruvbox-colors ```
 
-![Gruvbox colors](http://imgur.com/rKr9hjV.png)
+![Gruvbox colors](http://imgur.com/BgAa1bU.png)
 ##### Previous: ``` solarized-colors ```
 
 ![Solarized](http://imgur.com/HQMMyMF.png)
