@@ -78,9 +78,9 @@ ws-icon-default = 
 
 strip-wsnumbers = true
 
-label-focused = %name%
+label-focused = %{F#cc241d}%{F-}%{F#458588}%name%%{F-}
 label-focused-underline = ${colors.primary}
-label-focused-foreground = ${colors.white}
+#label-focused-foreground = ${colors.white}
 label-focused-padding = 1
 
 label-unfocused = %name%

@@ -26,8 +26,8 @@ Xft.hintstyle:          hintsfull
 !                        URxvt settings 
 !-----------------------------------------------------------------------
 
-URxvt.internalBorder:    5
-URxvt.externalBorder:    5
+URxvt.internalBorder:    15
+URxvt.externalBorder:    15
 !URxvt.lineSpace:        0
 !urxvt*shading:          30
 URxvt.depth:             32
@@ -44,13 +44,13 @@ URxvt*scrollWithBuffer:  true
 URxvt*scrollTtyKeypress: true
 
 !! Fonts
-#define myFont tewi
-#define fontSize 8
+#define fonts xft:Tewi:pixelsize=8,\
+               xft:Siji:pixelsize=8
 
-URxvt*font:              xft:myFont:size=fontSize
-URxvt*boldFont:          xft:myFont:normal:size=fontSize
-URxvt*italicFont:        xft:myFont:italic:autohint=true:size=fontSize
-URxvt*boldItalicFont:    xft:myFont:bolditalic:italic:autohint=true:size=fontSize
+URxvt*font:              fonts
+URxvt*boldFont:          fonts
+URxvt*italicFont:        fonts
+URxvt*boldItalicFont:    fonts
 
 URxvt.letterSpace:       true
 

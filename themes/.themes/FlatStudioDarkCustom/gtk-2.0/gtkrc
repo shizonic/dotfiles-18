@@ -9,7 +9,7 @@ gtk-color-scheme = "tooltip_bg_color:#1d2021\ntooltip_fg_color:#ffffff\nlink_col
 gtk-color-scheme = "theme_bg_dark_color:#1d2021\ntheme_fg_dark_color:#C0C0C0\ntheme_text_dark_color:#E0E0E0"
 
 #  selection text color
-gtk-color-scheme = "selected_fg_color:#ebdbb2"
+gtk-color-scheme = "selected_fg_color:#fff"
 
 ## selection background color #####################################
 #  selection_wood		#7a6642;

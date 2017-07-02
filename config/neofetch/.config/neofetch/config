@@ -301,9 +301,14 @@ disk_display="off"
 # Image Options {{{
 
 
+# Image Backend
+# --backend ascii, caca, catimg, jp2a, iterm2, off, sixel, tycat, w3m
+backend="w3m"
+
 # Image Source
 # --image wall, ascii, /path/to/img, /path/to/dir/, off
 image="$HOME/Pictures/wallpapers/fs.png"
+w3m="$HOME/Pictures/wallpapers/fs.png"
 
 # Thumbnail directory
 thumbnail_dir="$HOME/.cache/thumbnails/neofetch"
