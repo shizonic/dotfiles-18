@@ -14,8 +14,6 @@
 export PROJECT_HOME=$HOME/Code/
 export PATH=$HOME/.local/bin:$PATH
 export RANGER_LOAD_DEFAULT_RC=FALSE
-export LD_PRELOAD=/usr/lib/libharfbuzz.so.0
-export LD_PRELOAD=/usr/lib/libv4l/v4l2convert.so
 export VISUAL=vim
 export EDITOR=vim
 export BROWSER=firefox

@@ -8,7 +8,7 @@ notify-send  -i $image "
 <span foreground='#cc241d'>============</span>
 <span foreground='#a89984'>
 <span foreground='#b16286'>1. </span>HackTheArt <span foreground='#689d6a'>2hr</span>
-<span foreground='#b16286'>2. </span>NandTT     <span foreground='#689d6a'>1hr</span>
+<span foreground='#b16286'>2. </span>LFS        <span foreground='#689d6a'>1hr</span>
 <span foreground='#b16286'>3. </span>Wargames   <span foreground='#689d6a'>1hr</span>
 <span foreground='#b16286'>4. </span>WebScrap   <span foreground='#689d6a'>1hr</span>
 </span>

@@ -49,7 +49,7 @@ module-margin-left = 1
 module-margin-right = 1
 
 font-0 = Fixed:pixelsize=8;0
-font-1 = unifont:size=8:Tewi:fontformat=truetype;-2
+font-1 = unifont:size=8:Fixed:fontformat=truetype;-2
 font-2 = Siji:pixelsize=8;0
 
 modules-left = menu i3
@@ -129,7 +129,7 @@ ramp-signal-1 = 
 ramp-signal-2 = 
 ramp-signal-3 = 
 ramp-signal-4 = 
-ramp-signal-foreground = ${colors.alert}
+ramp-signal-foreground = #b16286
 
 [module/eth]
 type = internal/network

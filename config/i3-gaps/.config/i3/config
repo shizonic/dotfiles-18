@@ -76,7 +76,7 @@ bindsym $mod+a focus parent
 # 
 set $w1   1:surf
 set $w2   2:devs
-set $w3   3:docs
+set $w3   3:read
 set $w4   4:flix
 set $w5   5:core
 set $w6   6:term
@@ -151,7 +151,7 @@ bindsym $mod+minus scratchpad show
 #  More info visit: https://github.com/Airblader/i3
 
 #smart_gaps on     
-#smart_borders on
+smart_borders on
 
 # Global gaps size
 gaps inner 0
@@ -260,10 +260,10 @@ set $darkblack   #282828
 
 
 # Window colors           border      background   text            indicator    child_border
-client.focused            $darkblack  $darkblack   $darkblue       $darkblack   $darkblack
-client.focused_inactive   $black      $black       $darkwhite      $darkblack   $darkblack
-client.unfocused          $black      $black       $darkwhite      $darkblack   $darkblack
-client.urgent             $black      $black       $darkwhite      $darkblack   $darkblack
+client.focused            $darkblue   $darkblue    $white          $darkblack   $darkblack
+client.focused_inactive   $darkblack  $darkblack   $darkwhite      $darkblack   $darkblack
+client.unfocused          $darkblack  $darkblack   $darkwhite      $darkblack   $darkblack
+client.urgent             $darkblack  $darkblack   $darkwhite      $darkblack   $darkblack
 
 #Start i3bar to display a workspace bar
 #Uncomment to use the default i3bar status
