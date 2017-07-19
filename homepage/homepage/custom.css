@@ -1,0 +1,74 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 0px;
+  background-color: #1d2021;
+  font-family: lobster;
+}
+
+img{
+   display: inline-block;
+   border-radius: 50%;
+}
+
+/*
+ * Main content
+ */
+
+.header{
+ font-family: lobster;
+ font-size: 30pt!important;
+ color: #458588;
+}
+
+.main {
+  padding: 40px;
+}
+
+.text-muted{
+color: #504945!important;
+
+}
+hr{
+  display: block;
+  height: 3px;
+  border: 0px;
+  border-top: 4px solid #282828 !important;
+ 
+}
+
+ul li{
+text-align: left;
+text-indent: none;
+list-style: none;
+}
+
+ul li a{
+color: #a89984;
+}
+
+a:hover{
+color: #ebdbb2;
+}
+
+/*
+ * Placeholder ideas
+ */
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
