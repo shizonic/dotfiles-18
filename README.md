@@ -59,7 +59,7 @@ Welcome To My  Dotfiles
 ##### Current: ``` gruvbox-colors ```
 
 
-![Gruvbox](http://i.imgur.com/4lGV7Pm.png)
+![Gruvbox](http://i.imgur.com/2pOPhIA.png)
 ##### Previous: ``` solarized-colors ```
 
 ![Solarized](http://imgur.com/HQMMyMF.png)
