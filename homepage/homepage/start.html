@@ -1,146 +1,187 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>Startpage</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Personal startpage">
-    <meta name="keywords" content="entertainment, account, updates, misc">
-    <meta name="author" content="Mohammed Bakari">
+<title>Startpage</title>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<meta name="description" content="Personal startpage">
+<meta name="keywords" content="entertainment, account, updates, misc">
+<meta name="author" content="Mohammed Bakari">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 
-    <!-- Bootstrapcdn -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-      crossorigin="anonymous">
+<!-- Internal Stylesheet -->
+<style type="text/css">
+        
+*{
+ padding: 0px;
+ margin: 0px;
+}
 
-    <!-- Custom styles for this template -->
-    <link href="custom.css" rel="stylesheet">
+body
+{
+   /*background-image: url(background.png);
+   background-repeat: repeat-x repeat-y;
+   background-position:center center;
+   background-attachment: fixed;
+   background-size: cover;*/
+   background-color: #1d2021 !important;
+   color: #ebdbb2 !important;
+}
 
+h1{
+   font-size: 30pt !important;
+   font-family: 'Lobster', cursive !important; 
+   padding: 10px;
+   text-align: center;
+   color: #458588 !important;
+}
+
+hr{
+  display: block;
+  height: 3px;
+  border: 0px;
+  border-top: 4px solid #282828 !important;
+}
+
+ul{
+  list-style: none;
+
+}
+
+ul > li {
+  display: inline-block;
+  width: 100%;
+  /*background-color: #333333;*/
+}
+
+ul > li > ul >li{
+  color: red;
+}
+
+.sections {
+    -webkit-column-count:6;
+    -moz-column-count:6;
+    -ms-column-count:6;
+    -o-column-count:6;
+    column-count:6;
+    -webkit-column-gap:15px;
+    -moz-column-gap:15px;
+    -ms-column-gap:15px;
+    -o-column-gap:15px;
+    column-gap:15px;
+    columns:6;
+    padding-top: 20px;
+    padding-left: 40px;
+}
+
+a{
+   font-family: Hack !important;
+   font-size: 8pt;
+   font-weight: medium; 
+   color: #a89984 !important;
+   text-decoration: none;
+}
+
+a:hover{
+   background-color: #a89984 !important;
+   color: #1d2021 !important;
+}
+
+</style>
+<!-- End stylesheet --->
+
+</head>
 <body>
-    
-  
+        
+<! --- Homepage Header -->
 
-        <! --Begin Main -->
-        <div class="col-sm-12 col-md-12 main">
-          <div class="row">
-            <div class="col-md-3">
-               <img src="imgs/logo.jpg" height="56" width="56" class="img-responsive img">
-            </div>   
-            <div class="col-md-4 col-md-offset-1">
-               <h1 class="header text-center">Startpage</h1>
-            </div>
-          </div>
-          <hr>
-          <div class="row placeholders">
-            <!-- Accounts -->
-            <div class="col-xs-6 col-sm-2 placeholder">
-              <img src="imgs/ac.jpg" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4 style="color:#b16286">Accounts</h4>
-              <span class="text-muted">Online Accounts</span>
-                <ul>
+<h1><strong class="title">Startpage</strong></h1>
+<hr>
+
+<! --- Main Contents --->
+
+<div class="sections">
+     <ul>
+           <!-- Account -->
+           <li><h3> <span style="color:#cc241d">Accounts</span></h3>
+              <ul> 
                    <li><a target="_blank" href="https://bitbucket.org/mohabaks/"> Bitbucket</a></li> 
-                   <li><a target="_blank" href="https://mohabaks.github.io"> Blog</a></li> 
                    <li><a target="_blank" href="https://github.com/mohabaks/"> Github</a></li> 
                    <li><a target="_blank" href="https://plus.google.com/u/0/me?tab=wX&authuser=0"> Google+</a></li> 
-                   <li><a target="_blank" href="http://portal.jkuat.ac.ke/"> Student Portal</a></li>      
-                </ul>
-            </div>
+                   <li><a target="_blank" href="http://portal.jkuat.ac.ke/"> Student Portal</a></li> 
+              </ul>         
+           </li>
 
-            <!-- Documentations -->
-            <div class="col-xs-6 col-sm-2 placeholder">
-              <img src="imgs/doc.jpg" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4 style="color:#98971a">Documentations</h4>
-              <span class="text-muted">Wiki & Manuals</span>
-              <ul>
-                   <li><a target="_blank" href="http://mywiki.wooledge.org/BashFAQ"> BashFAQ</a></li> 
+           <!-- Doc -->
+            <li><h3> <span style="color:#98971a">Docs</span></h3>
+              <ul> 
+                   <li><a target="_blank" href="http://mywiki.wooledge.org/BashFAQ">  BashFAQ</a></li> 
+                   <li><a target="_blank" href="http://devdocs.io"> DevDocs</a></li> 
+                   <li><a target="_blank" href="http://www.django-rest-framework.org/"> DjangoREST</a></li> 
                    <li><a target="_blank" href="https://docs.python.org/"> Python</a></li> 
                    <li><a target="_blank" href="https://weechat.org/files/doc/devel/weechat_user.en.html"> Weechat</a></li> 
                    <li><a target="_blank" href="https://weechat.org/files/doc/weechat_faq.en.html"> WeechatFAQ</a></li>
                    <li><a target="_blank" href="http://en.tldp.org/HOWTO/"> HOWTO</a></li>
-              </ul>
-            </div>
+              </ul>         
+           </li>
+            
+           <!-- Entertainment -->
+           <li><h3> <span style="color:#d79921">Security</span></h3>
+              <ul> 
+                   <li><a target="_blank" href="http://www.cs.fsu.edu/~redwood/OffensiveComputerSecurity/lectures.html"> OffensiveSecurity</a></li> 
+                   <li><a target="_blank" href="http://www.offensive-security.com/metasploit-unleashed/Main_Page"> MetasploitUnleashed</a></li> 
+                   <li><a target="_blank" href="http://opensecuritytraining.info/Training.html"> OpenSec</a></li> 
+                   <li><a target="_blank" href="https://www.reddit.com/r/netsec/"> netsec</a></li> 
+                   <li><a target="_blank" href="http://www.nsa.gov/ia/mitigation_guidance/security_configuration_guides/operating_systems.shtml"> NSA</a></li> 
+                   <li><a target="_blank" href="http://www.reddit.com/r/netsecstudents/wiki/index"> netsecstudents</a></li> 
+                   <li><a target="_blank" href="https://www.reddit.com/r/sysadmin"> sysadmin</a></li> 
+                   <li><a target="_blank" href="https://www.exploit-db.com/"> ExploitDatabase</a></li> 
+                   <li><a target="_blank" href="http://seclists.org/"> SecLists</a></li> 
+                   <li><a target="_blank" href="http://www.dvwa.co.uk/">
+                       DVWA</a></li>  
+              </ul>         
+          </li>
 
-            <!-- Security -->
-            <div class="col-xs-6 col-sm-2 placeholder">
-              <img src="imgs/sec.jpg" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4  style="color:#fb4934">Security</h4>
-              <span class="text-muted">About InfoSec</span>
-              <ul>
-                   <li><a target="_blank" href="http://www.cs.fsu.edu/~redwood/OffensiveComputerSecurity/lectures.html"> OffensiveSecurity</a></li>
-                   <li><a target="_blank" href="http://www.offensive-security.com/metasploit-unleashed/Main_Page"> Metasploit</a></li>
-                   <li><a target="_blank" href="http://opensecuritytraining.info/Training.html"> OpenSec</a></li>
-                   <li><a target="_blank" href="http://www.nsa.gov/ia/mitigation_guidance/security_configuration_guides/operating_systems.shtml"> NSA</a></li>
-                   <li><a target="_blank" href="https://www.exploit-db.com/"> ExploitDatabase</a></li>
-                   <li><a target="_blank" href="http://seclists.org/"> SecLists</a></li>
-                   <li><a target="_blank" href="http://www.dvwa.co.uk/"> DVWA</a></li>
-             </ul> 
-            </div>
-
-            <!-- Linux -->
-            <div class="col-xs-6 col-sm-2 placeholder">
-              <img src="imgs/linux.jpg" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4 style="color:#689d6a">GNU/Linux</h4>
-              <span class="text-muted">UN*X | *NIX</span>
-                <ul>
-                   <li><a target="_blank" href="https://www.archlinux.org/"> Arch Linux</a></li>
+          <!-- Updates -->
+          <li><h3> <span  style="color:#b16286">Linux</span></h3>
+              <ul> 
+                   <li><a target="_blank" href="https://www.archlinux.org/"> Arch Linux</a></li> 
+                   <li><a target="_blank" href="https://blackarch.org/"> BlackArch</a></li> 
+                   <li><a target="_blank" href="https://www.reddit.com/r/unixporn/"> Unixporn</a></li> 
                    <li><a target="_blank" href=" https://linuxjourney.com/"> LinuxJourney</a></li>
                    <li><a target="_blank" href=" http://linuxfromscratch.org/index.html"> Linuxfomscratch</a></li>
                    <li><a target="_blank" href="http://www.opsschool.org/en/latest/ "> Opsschool</a></li>
                    <li><a target="_blank" href="http://www.theunixschool.com/p/awk-sed.html"> awk&sed</a></li>
-                </ul> 
-              </div> 
-
-            <!-- Wargames -->
-            <div class="col-xs-6 col-sm-2 placeholder">
-              <img src="imgs/wg.png" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4 style="color:#83a598">Wargames</h4>
-              <span class="text-muted">Labs & Challenges</span>
-               <ul>
+              </ul>         
+          </li>
+         
+          <!-- War games -->
+          <li><h3> <span  style="color:#689d6a">Wargames</span></h3>
+              <ul> 
                    <li><a target="_blank" href="https://exploit-exercises.com/"> Exploit exercises</a></li>
                    <li><a target="_blank" href="http://cryptopals.com/"> Cryptopals</a></li>
                    <li><a target="_blank" href=" https://potatopla.net/crypto/"> CryptoPuzzle</a></li>
-                   <li><a target="_blank" href="http://overthewire.org/"> OverTheWire</a></li>
-                   <li><a target="_blank" href="http://smashthestack.org/"> SmashTheStack</a></li>
-                   <li><a target="_blank" href="https://www.vulnhub.com/"> Vulnhub</a></li>
+                   <li><a target="_blank" href="http://overthewire.org/"> OverTheWire</a></li> 
+                   <li><a target="_blank" href="http://smashthestack.org/"> SmashTheStack</a></li> 
+                   <li><a target="_blank" href="https://www.vulnhub.com/"> Vulnhub</a></li> 
                    <li><a target="_blank" href="http://eudyptula-challenge.org/"> Euduptula</a></li>
-                   <li><a target="_blank" href="https://www.wechall.net/"> WeChall</a></li>
-              </ul> 
-            </div>
+                   <li><a target="_blank" href="https://www.wechall.net/"> WeChall</a></li> 
+              </ul>         
+          </li>
 
-            <!-- Miscellaneous -->
-            <div class="col-xs-6 col-sm-2 placeholder">
-              <img src="imgs/mis.png" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4 style="color:#fe8019">Miscellaneous</h4>
-              <span class="text-muted">Other Links</span>
-               <ul>
+          <!-- Misc -->
+          <li><h3> <span  style="color:#fe8019">Miscellaneous</span></h3>
+              <ul> 
                    <li><a target="_blank" href="http://deviantart.com/"> DeviantArt</a></li>
-                   <li><a target="_blank" href="http://imgur.com/"> Imgur</a></li>
-                   <li><a target="_blank" href="https://www.reddit.com/r/unixporn/"> Unixporn</a></li> 
-                   <li><a target="_blank" href="http://pastebin.com/u/Twilypastes"> Pastebin</a></li>
-                   <li><a target="_blank" href="https://thepiratebay.org/"> Piratebay</a></li>
+                   <li><a target="_blank" href="http://imgur.com/"> Imgur</a></li> 
+                   <li><a target="_blank" href="http://pastebin.com/u/Twilypastes"> Pastebin</a></li> 
+                   <li><a target="_blank" href="https://thepiratebay.org/"> Piratebay</a></li> 
                    <li><a target="_blank" href="http://alpha.wallhaven.cc"> Wallhaven</a></li>
-                   <li><a target="_blank" href="http://userstyles.org/">  Userstyles</a></li>
-                   <li><a target="_blank" href="http://torrentfreak.com"> TorrentFreak</a></li>
-              </ul> 
-            </div>
-          </div>
-
-        
-        </div>
-      </div>
-    </div>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-     integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-     crossorigin="anonymous">
-   </script>
+                   <li><a target="_blank" href="http://userstyles.org/">  Userstyles</a></li> 
+                   <li><a target="_blank" href="http://torrentfreak.com"> TorrentFreak</a></li> 
+              </ul>         
+          </li>
+    </ul>
+</div>
 </body>
 </html>
