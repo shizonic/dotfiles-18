@@ -98,6 +98,8 @@ alias free='free -m'                      # show sizes in MB
 alias rm='rm -i'
 alias modem_start='sudo netctl start modem'
 alias modem_stop='sudo netctl stop modem'
+alias hacks="cd ~/HackStuffs"
+alias pastebin="nc termbin.com 9999"
 
 
 #-----------------------------------------------------------------------

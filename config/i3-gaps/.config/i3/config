@@ -74,16 +74,16 @@ bindsym $mod+a focus parent
 
 # Initialize workspace
 # 
-set $w1   1:surf
-set $w2   2:devs
-set $w3   3:read
-set $w4   4:flix
-set $w5   5:core
-set $w6   6:term
-set $w7   7:labs
-set $w8   8:apps
-set $w9   9:expl
-set $w10  10:misc
+set $w1   1:Surf
+set $w2   2:Devs
+set $w3   3:Read
+set $w4   4:Flix
+set $w5   5:Core
+set $w6   6:Term
+set $w7   7:Hlab
+set $w8   8:Apps
+set $w9   9:Expl
+set $w10  10:Misc
 
  
 # Switch to workspace

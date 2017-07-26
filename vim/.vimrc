@@ -66,7 +66,10 @@ filetype plugin indent on
 
 set background=dark
 colorscheme gruvbox
+
+
 let g:gruvbox_contrast_dark = 'hard'
+
 
 "" Status line
 set laststatus=2
@@ -409,6 +412,9 @@ let g:EclimCompletionMethod = 'omnifunc'
  
 "}}}
 
+" Enabling transpacency for gruvbox
+hi NonText ctermbg=NONE 
+hi Normal guibg=NONE ctermbg=NONE
 
 " Organization{{{
 set modelines=1
