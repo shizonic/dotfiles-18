@@ -54,15 +54,11 @@ Welcome To My  Dotfiles
    stow -D zathura
 ```
 
-# Screenshots
+# Screenshot
 
-##### Current: ``` gruvbox-colors ```
+`ranger` `vim` `cava` `weechat`
 
-
-![Gruvbox](http://i.imgur.com/2pOPhIA.png)
-##### Previous: ``` solarized-colors ```
-
-![Solarized](http://imgur.com/HQMMyMF.png)
+![current](http://i.imgur.com/eQGVf5r.png)
 
 
 [GNU stow]: https://www.gnu.org/s/stow/manual/stow.html
