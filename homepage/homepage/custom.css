@@ -1,0 +1,100 @@
+@import url('file:///home/mohabaks/.cache/wal/colors.css');
+
+*{
+ padding: 0px;
+ margin: 0px;
+}
+
+body
+{
+   /*background-image: url(var(--wallpaper));
+   background-repeat: repeat-x repeat-y;
+   background-position:center center;
+   background-attachment: fixed;
+   background-size: cover;*/
+   background-color: var(--background) !important;
+   color: var(--foreground) !important;
+}
+
+h1{
+   font-size: 30pt !important;
+   font-family: 'Lobster', cursive !important; 
+   padding: 10px;
+   text-align: center;
+   color: var(--color4) !important;
+}
+
+hr{
+  display: block;
+  height: 3px;
+  border: 0px;
+  border-top: 4px solid var(--color8) !important;
+}
+
+ul{
+  list-style: none;
+
+}
+
+ul > li {
+  display: inline-block;
+  width: 100%;
+  /*background-color: #333333;*/
+}
+
+ul > li > ul >li{
+  color: red;
+}
+
+.sections {
+    -webkit-column-count:6;
+    -moz-column-count:6;
+    -ms-column-count:6;
+    -o-column-count:6;
+    column-count:6;
+    -webkit-column-gap:15px;
+    -moz-column-gap:15px;
+    -ms-column-gap:15px;
+    -o-column-gap:15px;
+    column-gap:15px;
+    columns:6;
+    padding-top: 20px;
+    padding-left: 40px;
+}
+
+a{
+   font-family: Hack !important;
+   font-size: 8pt;
+   font-weight: medium; 
+   color: var(--color8) !important;
+   text-decoration: none;
+}
+
+a:hover{
+   background-color: var(--color4) !important;
+   color: var(--color15) !important;
+}
+
+.ac{
+  color: var(--color1) !important;
+}
+
+.doc{
+  color: var(--color2);
+}
+
+.sec{
+  color: var(--color3);
+}
+
+.lin{
+  color: var(--color5);
+}
+
+.war{
+  color: var(--color6);
+}
+
+.mis{
+  color: var(--color4);
+}
