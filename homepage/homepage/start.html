@@ -10,86 +10,7 @@
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 
 <!-- Internal Stylesheet -->
-<style type="text/css">
-        
-*{
- padding: 0px;
- margin: 0px;
-}
-
-body
-{
-   /*background-image: url(background.png);
-   background-repeat: repeat-x repeat-y;
-   background-position:center center;
-   background-attachment: fixed;
-   background-size: cover;*/
-   background-color: #1d2021 !important;
-   color: #ebdbb2 !important;
-}
-
-h1{
-   font-size: 30pt !important;
-   font-family: 'Lobster', cursive !important; 
-   padding: 10px;
-   text-align: center;
-   color: #458588 !important;
-}
-
-hr{
-  display: block;
-  height: 3px;
-  border: 0px;
-  border-top: 4px solid #282828 !important;
-}
-
-ul{
-  list-style: none;
-
-}
-
-ul > li {
-  display: inline-block;
-  width: 100%;
-  /*background-color: #333333;*/
-}
-
-ul > li > ul >li{
-  color: red;
-}
-
-.sections {
-    -webkit-column-count:6;
-    -moz-column-count:6;
-    -ms-column-count:6;
-    -o-column-count:6;
-    column-count:6;
-    -webkit-column-gap:15px;
-    -moz-column-gap:15px;
-    -ms-column-gap:15px;
-    -o-column-gap:15px;
-    column-gap:15px;
-    columns:6;
-    padding-top: 20px;
-    padding-left: 40px;
-}
-
-a{
-   font-family: Hack !important;
-   font-size: 8pt;
-   font-weight: medium; 
-   color: #a89984 !important;
-   text-decoration: none;
-}
-
-a:hover{
-   background-color: #a89984 !important;
-   color: #1d2021 !important;
-}
-
-</style>
-<!-- End stylesheet --->
-
+<link rel="stylesheet" type="text/css" href="custom.css" />
 </head>
 <body>
         
@@ -103,7 +24,7 @@ a:hover{
 <div class="sections">
      <ul>
            <!-- Account -->
-           <li><h3> <span style="color:#cc241d">Accounts</span></h3>
+           <li><h3> <span class="ac">Accounts</span></h3>
               <ul> 
                    <li><a target="_blank" href="https://bitbucket.org/mohabaks/"> Bitbucket</a></li> 
                    <li><a target="_blank" href="https://github.com/mohabaks/"> Github</a></li> 
@@ -113,7 +34,7 @@ a:hover{
            </li>
 
            <!-- Doc -->
-            <li><h3> <span style="color:#98971a">Docs</span></h3>
+            <li><h3> <span class="doc">Docs</span></h3>
               <ul> 
                    <li><a target="_blank" href="http://mywiki.wooledge.org/BashFAQ">  BashFAQ</a></li> 
                    <li><a target="_blank" href="http://devdocs.io"> DevDocs</a></li> 
@@ -126,7 +47,7 @@ a:hover{
            </li>
             
            <!-- Entertainment -->
-           <li><h3> <span style="color:#d79921">Security</span></h3>
+           <li><h3> <span class="sec">Security</span></h3>
               <ul> 
                    <li><a target="_blank" href="http://www.cs.fsu.edu/~redwood/OffensiveComputerSecurity/lectures.html"> OffensiveSecurity</a></li> 
                    <li><a target="_blank" href="http://www.offensive-security.com/metasploit-unleashed/Main_Page"> MetasploitUnleashed</a></li> 
@@ -143,7 +64,7 @@ a:hover{
           </li>
 
           <!-- Updates -->
-          <li><h3> <span  style="color:#b16286">Linux</span></h3>
+          <li><h3> <span  class="lin">Linux</span></h3>
               <ul> 
                    <li><a target="_blank" href="https://www.archlinux.org/"> Arch Linux</a></li> 
                    <li><a target="_blank" href="https://blackarch.org/"> BlackArch</a></li> 
@@ -156,7 +77,7 @@ a:hover{
           </li>
          
           <!-- War games -->
-          <li><h3> <span  style="color:#689d6a">Wargames</span></h3>
+          <li><h3> <span  class="war">Wargames</span></h3>
               <ul> 
                    <li><a target="_blank" href="https://exploit-exercises.com/"> Exploit exercises</a></li>
                    <li><a target="_blank" href="http://cryptopals.com/"> Cryptopals</a></li>
@@ -172,7 +93,7 @@ a:hover{
           </li>
 
           <!-- Misc -->
-          <li><h3> <span  style="color:#fe8019">Miscellaneous</span></h3>
+          <li><h3> <span  class="mis">Miscellaneous</span></h3>
               <ul> 
                    <li><a target="_blank" href="http://deviantart.com/"> DeviantArt</a></li>
                    <li><a target="_blank" href="http://imgur.com/"> Imgur</a></li> 

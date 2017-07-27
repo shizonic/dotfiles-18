@@ -254,10 +254,10 @@ set_from_resource $cyan        color14 #000000
 set_from_resource $darkwhite   color7  #000000
 set_from_resource $white       color15 #000000
 
-# Use custom colors for black
-set $black       #1d2021
-set $darkblack   #282828
 
+# Use custom colors for black
+set $black       #050505
+set $darkblack   #171717
 
 # Window colors           border      background   text            indicator    child_border
 client.focused            $darkblue   $darkblue    $white          $darkblack   $darkblack
@@ -331,7 +331,7 @@ assign [class="^qutebrowser"]     $w1
 assign [class="^Zathura"]         $w3
 assign [class="^TexMaker"]        $w3
 assign [class="^LibreOffice"]     $w3
-assign [class="^mpv$"]            $w4
+#assign [class="^mpv$"]            $w4
 assign [class="^VirtualBox$"]     $w7
 assign [class="^Gimp$"]           $w8
 assign [class="^Openshot$"]       $w8

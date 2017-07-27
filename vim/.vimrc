@@ -40,7 +40,7 @@ Plugin 'PotatoesMaster/i3-vim-syntax'
 Plugin 'jmcantrell/vim-virtualenv'
 Plugin 'ervandew/supertab'
 Plugin 'SirVer/ultisnips'
-Plugin 'itchyny/lightline.vim'
+" Plugin 'itchyny/lightline.vim'
 Plugin 'sukima/xmledit'
 Plugin 'python-mode/python-mode'
 Plugin 'Raimondi/delimitMate'
@@ -55,28 +55,29 @@ Plugin 'vim-scripts/indentpython.vim'
 "Plugin 'altercation/vim-colors-solarized'
 "Plugin 'lilydjwg/colorizer'
 Plugin 'morhetz/gruvbox'
+Plugin 'dylanaraps/wal.vim'
 
 call vundle#end()       
 filetype plugin indent on  
 
-"}}}
+ "}}}
 
 
 "  Set Colorscheme and Statusline{{{
 
 set background=dark
-colorscheme gruvbox
+colorscheme wal
 
 
-let g:gruvbox_contrast_dark = 'hard'
+"let g:gruvbox_contrast_dark = 'hard'
 
 
 "" Status line
-set laststatus=2
-set t_Co=256
-let g:lightline = {
-      \ 'colorscheme': 'gruvbox',
-      \ }
+set laststatus=0
+set t_Co=16
+" let g:lightline = {
+"       \ 'colorscheme': 'wall',
+"       \ }
       
 " }}}
 
@@ -86,7 +87,7 @@ let g:lightline = {
 "" These are options that changes random visuals in Vim
 syntax on
 filetype on
-set number                       " show line numbers
+"set number                       " show line numbers
 set showcmd                      " show command in bottom bar
 set tw=79                        " width of document (used by gd)
 set nowrap                       " don't automatically wrap on load
@@ -107,7 +108,7 @@ set splitright
 "set spell                        " Turn on spell checker
 "set spellsuggest=5               " Limit the number of suggested words
 
-"}}}
+"}}} 
 
 
 " Spaces & Tabs{ {{

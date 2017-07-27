@@ -26,7 +26,7 @@
     # If markup is not allowed, those tags will be stripped out of the
     # message.
     
-    allow_markup = yes
+    markup = yes
     
     # The format of the message.  Possible variables are:
     #   %a  appname
@@ -164,8 +164,8 @@
     icon_folders = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
 
 [frame]
-    width = 5
-    color = "#282828"
+    frame_width = 5
+    frame_color = "#282828"
 
 [shortcuts]
 
