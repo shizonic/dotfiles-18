@@ -58,7 +58,7 @@ Welcome To My  Dotfiles
 
 `ranger` `vim` `cava` `weechat`
 
-![current](http://i.imgur.com/eQGVf5r.png)
+![current](http://i.imgur.com/KyWzzwb.png)
 
 
 [GNU stow]: https://www.gnu.org/s/stow/manual/stow.html
