@@ -279,7 +279,7 @@ now_playing_suffix = $/b
 ##
 #
 #song_columns_list_format = (20)[red]{a} (4f)[green]{NE} (50)[magenta]{t|f:Title} (20)[yellow]{b} (7f)[blue]{l}
-song_columns_list_format = (50)[blue]{t|f:Title} (7f)[red]{l}
+song_columns_list_format = (50)[green]{t|f:Title} (7f)[red]{l}
 #
 ##### various settings #####
 #

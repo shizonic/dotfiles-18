@@ -7,12 +7,12 @@
 
 body
 {
-   /*background-image: url(var(--wallpaper));
+   background-image: var(--wallpaper);
    background-repeat: repeat-x repeat-y;
    background-position:center center;
    background-attachment: fixed;
-   background-size: cover;*/
-   background-color: var(--background) !important;
+   background-size: cover;
+   /*background-color: var(--background) !important;*/
    color: var(--foreground) !important;
 }
 
@@ -21,7 +21,7 @@ h1{
    font-family: 'Lobster', cursive !important; 
    padding: 10px;
    text-align: center;
-   color: var(--color4) !important;
+   color: var(--color1) !important;
 }
 
 hr{
@@ -60,18 +60,21 @@ ul > li > ul >li{
     columns:6;
     padding-top: 20px;
     padding-left: 40px;
+    background-color: var(--background) !important;
+    box-shadow: 0 0 10px 6px #000;
+    opacity: .9;
 }
 
 a{
    font-family: Hack !important;
    font-size: 8pt;
    font-weight: medium; 
-   color: var(--color8) !important;
+   color: var(--foreground) !important;
    text-decoration: none;
 }
 
 a:hover{
-   background-color: var(--color4) !important;
+   background-color: var(--color1) !important;
    color: var(--color15) !important;
 }
 

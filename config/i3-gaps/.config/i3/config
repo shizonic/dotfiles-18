@@ -251,16 +251,16 @@ set_from_resource $darkmagenta color5  #000000
 set_from_resource $magenta     color13 #000000
 set_from_resource $darkcyan    color6  #000000
 set_from_resource $cyan        color14 #000000
-set_from_resource $darkwhite   color7  #000000
+set_from_resource $darkwhite   color8  #000000
 set_from_resource $white       color15 #000000
 
 
 # Use custom colors for black
-set $black       #050505
-set $darkblack   #171717
+set $black       #251f26
+set $darkblack   #242025
 
 # Window colors           border      background   text            indicator    child_border
-client.focused            $darkblue   $darkblue    $white          $darkblack   $darkblack
+client.focused            $darkred    $darkred     $white          $darkblack   $darkblack
 client.focused_inactive   $darkblack  $darkblack   $darkwhite      $darkblack   $darkblack
 client.unfocused          $darkblack  $darkblack   $darkwhite      $darkblack   $darkblack
 client.urgent             $darkblack  $darkblack   $darkwhite      $darkblack   $darkblack
@@ -288,8 +288,8 @@ client.urgent             $darkblack  $darkblack   $darkwhite      $darkblack   
 # }
 
 # Set font for window title bar
-# font pango:lemon 15
-# for_window [class=".*"] title_format "<span font='tewi 8'> ➤ %title</span>"
+font pango:lemon 15
+for_window [class=".*"] title_format "<span font='tewi 8'> ➤ %title</span>"
 
 
 #*************  My apps settings  *********************
@@ -299,15 +299,15 @@ exec --no-startup-id nitrogen --restore  &
 exec --no-startup-id compton --config ~/.compton.conf -b 
 exec --no-startup-id dunst -config $HOME/.config/dunst/dunstrc
 exec --no-startup-id xrdb -load -I$HOME ~/.Xresources
-exec --no-startup-id . $HOME/.local/bin/barstart &
+# exec --no-startup-id . $HOME/.local/bin/barstart &
 exec --no-startup-id . $HOME/.local/bin/urxvt_daemon &
 
 # Set per-application border
-for_window [class="^.*"] border pixel 1
-for_window [class="(?i)urxvt"] border pixel 1
-# for_window [class="^.*"] border normal 0
-# for_window [class="(?i)qutebrowser"] border pixel 0
-# for_window [class="(?i)Vivaldi-stable"] border pixel 0
+# for_window [class="^.*"] border pixel 1
+# for_window [class="(?i)urxvt"] border pixel 1
+for_window [class="^.*"] border normal 0
+for_window [class="(?i)qutebrowser"] border pixel 0
+for_window [class="(?i)Vivaldi-stable"] border pixel 0
 
 
 
@@ -327,16 +327,10 @@ for_window [class="Pavucontrol"] floating enable
 # Starting apps on a specific workspace
 assign [class="^Tor Browser$"]    $w1
 assign [class="^Firefox$"]        $w1
-assign [class="^qutebrowser"]     $w1
 assign [class="^Zathura"]         $w3
-assign [class="^TexMaker"]        $w3
-assign [class="^LibreOffice"]     $w3
-#assign [class="^mpv$"]            $w4
+assign [class="^mpv$"]            $w4
 assign [class="^VirtualBox$"]     $w7
 assign [class="^Gimp$"]           $w8
-assign [class="^Openshot$"]       $w8
-assign [class="^Filezilla$"]      $w8
-assign [class="^Nmapfe"]          $w8
 assign [class="^Wireshark"]       $w8
 
 # vim:filetype=i3

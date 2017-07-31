@@ -36,12 +36,13 @@ margin-bottom = 0
 
 [bar/top]
 monitor = ${env:MONITOR:LVDS1}
-width = 100%
-height = 18
-offset-x = 0
-offset-y = 0
+width = 15%
+height = 30
+offset-x = 45%
+offset-y = 15
+override-redirect = true
 
-background = ${colors.bg}
+background = ${colors.green}
 foreground = ${colors.fg}
 
 border-bottom-size = 0
@@ -53,16 +54,15 @@ padding-right = 1
 module-margin-left = 1
 module-margin-right = 1
 
-font-0 = lemon:pixelsize=7;0
-font-1 = unifont:size=7:lemon:fontformat=truetype;-2
-font-2 = Siji:pixelsize=8;0
+font-0 = Tewi:size=8
+font-1 = Siji:antialias=false
 
-modules-left = menu i3
+modules-left = 
 modules-center = date
-modules-right = cpu memory temperature wlan battery
+modules-right = 
 
-tray-position = right
-tray-padding = 1
+;tray-position = right
+;tray-padding = 1
 
 ;**********************************************************
 ;
@@ -164,7 +164,7 @@ time-alt = %H:%M:%S
 ;format-prefix-foreground = ${colors.fg-alt}
 
 label = %date% %time%
-label-foreground = ${colors.red}
+label-foreground = ${colors.bg}
 
 [module/battery]
 type = internal/battery
@@ -215,7 +215,7 @@ menu-0-0-foreground = ${colors.magenta}
 menu-0-0-exec = $HOME/.config/admiral.d/popups/todo/todo
 
 label-open = 
-label-open-foreground = ${colors.blue}
+label-open-foreground = ${colors.yellow}
 label-close = <<
 label-close-foreground = ${colors.green}
 

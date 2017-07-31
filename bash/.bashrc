@@ -20,6 +20,7 @@ export BROWSER=firefox
 export TERM="rxvt-unicode-256color"
 export TZ=Africa/Nairobi
 export LFS=/mnt/lfs
+export MSF_DATABASE_CONFIG=~/.msf4/database.yml
 
 source virtualenvwrapper.sh
 source ~/.git-prompt.sh
@@ -116,9 +117,9 @@ alias pastebin="nc termbin.com 9999"
 #-----------------------------------------------------------------------
 
 export LESS_TERMCAP_mb=$'\e[0;31m'
-export LESS_TERMCAP_md=$'\e[0;34m'
+export LESS_TERMCAP_md=$'\e[0;31m'
 export LESS_TERMCAP_me=$'\e[0m'
 export LESS_TERMCAP_se=$'\e[0m'
-export LESS_TERMCAP_so=$'\e[0;34;36m'
+export LESS_TERMCAP_so=$'\e[0;34;33m'
 export LESS_TERMCAP_ue=$'\e[0m'
-export LESS_TERMCAP_us=$'\e[0;31m'
+export LESS_TERMCAP_us=$'\e[0;32m'

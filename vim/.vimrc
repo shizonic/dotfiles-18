@@ -50,6 +50,7 @@ Plugin 'xolox/vim-misc'
 Plugin 'tmux-plugins/vim-tmux'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-scripts/indentpython.vim'
+Plugin 'junegunn/goyo.vim'
 
 """ Colorscheme
 "Plugin 'altercation/vim-colors-solarized'
@@ -88,6 +89,7 @@ set t_Co=16
 syntax on
 filetype on
 "set number                       " show line numbers
+set noshowmode                   " Hide UI
 set showcmd                      " show command in bottom bar
 set tw=79                        " width of document (used by gd)
 set nowrap                       " don't automatically wrap on load
