@@ -54,7 +54,9 @@ Welcome To My  Dotfiles
    stow -D zathura
 ```
 
-# Screenshot
+# Screenshots
+`firefox` `custom-startpage`
+![startpage](http://i.imgur.com/ARW34SQ.png)
 
 `ranger` `vim` `cava` `weechat` `ranger`
 
