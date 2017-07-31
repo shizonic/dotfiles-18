@@ -58,7 +58,7 @@ Welcome To My  Dotfiles
 `firefox` `custom-startpage`
 ![startpage](http://i.imgur.com/ARW34SQ.png)
 
-`ranger` `vim` `cava` `weechat` `ranger`
+`vim` `cava` `weechat` `ranger`
 
 ![current](http://i.imgur.com/8scYy3u.png)
 
