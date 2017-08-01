@@ -36,30 +36,30 @@ margin-bottom = 0
 
 [bar/top]
 monitor = ${env:MONITOR:LVDS1}
-width = 15%
-height = 30
-offset-x = 45%
-offset-y = 15
-override-redirect = true
+width = 100%
+height = 20
+offset-x = 0
+offset-y = 0
+;override-redirect = true
 
-background = ${colors.green}
+background = ${colors.bg}
 foreground = ${colors.fg}
 
 border-bottom-size = 0
 border-bottom-color = ${colors.bg-alt}
 
 spacing = 1
-padding-left = 1
-padding-right = 1
+padding-left = 2
+padding-right = 2
 module-margin-left = 1
 module-margin-right = 1
 
-font-0 = Tewi:size=8
+font-0 = lemon:size=7
 font-1 = Siji:antialias=false
 
-modules-left = 
+modules-left = menu i3
 modules-center = date
-modules-right = 
+modules-right = temperature cpu memory wlan battery
 
 ;tray-position = right
 ;tray-padding = 1
@@ -126,16 +126,16 @@ interval = 3.0
 format-connected = <ramp-signal> <label-connected>
 
 label-connected = %essid%
-label-connected-foreground = ${colors.green}
-label-disconnected = %ifname% disconnected
-label-disconnected-foreground = ${colors.fg-alt}
+label-connected-foreground = ${colors.red}
+;label-disconnected = %ifname% disconnected
+;label-disconnected-foreground = ${colors.fg-alt}
 
 ramp-signal-0 = 
 ramp-signal-1 = 
 ramp-signal-2 = 
 ramp-signal-3 = 
 ramp-signal-4 = 
-ramp-signal-foreground = ${colors.blue}
+ramp-signal-foreground = ${colors.green}
 
 [module/eth]
 type = internal/network
@@ -143,7 +143,7 @@ interface = enp2s0
 interval = 3.0
 
 format-connected-prefix = " "
-format-connected-foreground-foreground = ${colors.foreground-alt}
+format-connected-foreground-foreground = ${colors.fg-alt}
 label-connected = %local_ip%
 
 ;format-disconnected-underline = ${self.format-connected-underline}
@@ -160,24 +160,24 @@ date-alt = %a %d %b %Y
 time = %H:%M
 time-alt = %H:%M:%S
 
-; format-prefix = 
-;format-prefix-foreground = ${colors.fg-alt}
+;format-prefix = 
+;format-prefix-foreground = ${colors.bg}
 
 label = %date% %time%
-label-foreground = ${colors.bg}
+label-foreground = ${colors.yellow}
 
 [module/battery]
 type = internal/battery
 battery = BAT1
 adapter = ADP1
-full-at = 80
+full-at = 100
 
 format-charging = <animation-charging> <label-charging>
 
 format-discharging = <ramp-capacity> <label-discharging>
 
 format-full-prefix = " "
-format-full-prefix-foreground = ${colors.fg}
+format-full-prefix-foreground = ${colors.red}
 
 ramp-capacity-0 = 
 ramp-capacity-1 = 
@@ -187,7 +187,7 @@ ramp-capacity-foreground = ${colors.fg-alt}
 animation-charging-0 = 
 animation-charging-1 = 
 animation-charging-2 = 
-animation-charging-foreground = ${colors.yellow}
+animation-charging-foreground = ${colors.white}
 animation-charging-framerate = 750
 
 [module/temperature]
@@ -217,6 +217,6 @@ menu-0-0-exec = $HOME/.config/admiral.d/popups/todo/todo
 label-open = 
 label-open-foreground = ${colors.yellow}
 label-close = <<
-label-close-foreground = ${colors.green}
+label-close-foreground = ${colors.red}
 
 ; vim:ft=dosini
