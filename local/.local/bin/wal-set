@@ -15,8 +15,9 @@ reload_dunst() {
         -lf "${color15:=#000000}" \
         -bf "$color15" \
         -cf "$color15" \
+        -nfr "$color1" \
         -nf "$color15" \
-        -geometry "${DUNST_SIZE:-300x20-20+30}" &
+        -geometry "${DUNST_SIZE:-300x20-20+10}" &
 }
 
 generate_zathurarc(){

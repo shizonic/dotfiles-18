@@ -27,7 +27,7 @@ Xft.hintstyle:          hintsfull
 !-----------------------------------------------------------------------
 
 URxvt.internalBorder:    15
-URxvt.externalBorder:    15
+!URxvt.externalBorder:    15
 !URxvt.lineSpace:        0
 !urxvt*shading:          30
 URxvt.depth:             32
@@ -92,7 +92,7 @@ URxvt.iso14755:            false
 URxvt.iso14755_52:         false
 
 !! Cursor
-URxvt.colorUL:             #957B8A
+URxvt.colorUL:             #7B846C
 !Xcursor.theme:             Adwaita
 
 !! Pointer

@@ -75,7 +75,7 @@ bindsym $mod+a focus parent
 # Initialize workspace
 # 
 set $w1   1:Surf
-set $w2   2:Devs
+set $w2   2:Code
 set $w3   3:Read
 set $w4   4:Flix
 set $w5   5:Core
@@ -196,7 +196,8 @@ mode "$mode_gaps_outer" {
 }
 
 # Specify gaps for specific workspace
-#workspace $w5 gaps inner 10
+workspace $w1 gaps outer 15
+workspace $w2 gaps outer 15
 
 bindsym $mod+r mode "resize"
 
@@ -256,8 +257,8 @@ set_from_resource $white       color15 #000000
 
 
 # Use custom colors for black
-set $black       #251f26
-set $darkblack   #242025
+set $black       #1c1115
+set $darkblack   #21161a
 
 # Window colors           border      background   text            indicator    child_border
 client.focused            $darkred    $darkred     $white          $darkblack   $darkblack
@@ -288,8 +289,8 @@ client.urgent             $darkblack  $darkblack   $darkwhite      $darkblack   
 # }
 
 # Set font for window title bar
-# font pango:lemon 15
-# for_window [class=".*"] title_format "<span font='tewi 8'> ➤ %title</span>"
+font pango:lemon 15
+for_window [class=".*"] title_format "<span font='tewi 8'> ➤ %title</span>"
 
 
 #*************  My apps settings  *********************
@@ -299,15 +300,13 @@ exec --no-startup-id nitrogen --restore  &
 exec --no-startup-id compton --config ~/.compton.conf -b 
 exec --no-startup-id dunst -config $HOME/.config/dunst/dunstrc
 exec --no-startup-id xrdb -load -I$HOME ~/.Xresources
-# exec --no-startup-id . $HOME/.local/bin/barstart &
+exec --no-startup-id . $HOME/.local/bin/barstart &
 exec --no-startup-id . $HOME/.local/bin/urxvt_daemon &
 
 # Set per-application border
-for_window [class="^.*"] border pixel 1
-for_window [class="(?i)urxvt"] border pixel 1
-# for_window [class="^.*"] border normal 0
-# for_window [class="(?i)qutebrowser"] border pixel 0
-# for_window [class="(?i)Vivaldi-stable"] border pixel 0
+#for_window [class="^.*"] border pixel 1
+#for_window [class="(?i)urxvt"] border pixel 1
+for_window [class="^.*"] border normal 0
 
 
 

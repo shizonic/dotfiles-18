@@ -164,8 +164,8 @@
     icon_folders = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
 
 [frame]
-    frame_width = 5
-    frame_color = "#242025"
+    width = 5
+    color = "#916A66"
 
 [shortcuts]
 

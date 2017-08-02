@@ -339,7 +339,7 @@ let g:ycm_complete_in_comments = 0                      " Completion in comments
 let g:ycm_complete_in_strings = 0                       " Completion in string
 let g:ycm_global_ycm_extra_conf = '~/Code/.ycm_extra_conf.py'
 let g:ycm_confirm_extra_conf = 0
-let g:ycm_python_binary_path = '/usr/bin/python3.6'
+let g:ycm_python_binary_path = '/usr/bin/python2.7'
 map <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 "" Ultisnips.vim

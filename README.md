@@ -54,13 +54,11 @@ Welcome To My  Dotfiles
    stow -D zathura
 ```
 
-# Screenshots
-`firefox` `custom-startpage`
-![startpage](http://i.imgur.com/ARW34SQ.png)
+# Screenshot
 
-`vim` `cava` `weechat` `ranger`
+`ncmpcpp` `cava` `weechat` `ranger` `tmux`
 
-![current](http://i.imgur.com/8scYy3u.png)
+![Current](http://i.imgur.com/51Dlxi6.png)
 
 
 [GNU stow]: https://www.gnu.org/s/stow/manual/stow.html

@@ -24,15 +24,15 @@ class Default(ColorScheme):
 				fg = black
 			if context.media:
 				if context.image:
-					fg = cyan
+					fg = yellow
 				else:
-					fg =  magenta
+					fg =  blue
 			if context.container:
 				attr |= bold
-				fg = cyan
+				fg = green
 			if context.directory:
 				attr |= normal
-				fg = blue
+				fg = red
 			elif context.executable and not \
 					any((context.media, context.container,
 						context.fifo, context.socket)):
@@ -72,9 +72,9 @@ class Default(ColorScheme):
 			attr |= normal
 			if context.hostname:
 				# attr |= bold
-				fg = context.bad and magenta or red
+				fg = context.bad and magenta or green
 			elif context.directory:
-				fg = cyan
+                fg = blue
 			elif context.tab:
 				if context.good:
 					bg = red

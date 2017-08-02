@@ -1,35 +1,35 @@
 # zathurarc
 
 set font                        "Cantarell 8"
-set default-bg                  "#1F1922" #00
-set default-fg                  "#D9D5CD" #01
+set default-bg                  "#150E11" #00
+set default-fg                  "#E1D3A4" #01
 
-set statusbar-fg                "#A69E97" #04
-set statusbar-bg                "#1F1922"  #01
+set statusbar-fg                "#AA926A" #04
+set statusbar-bg                "#150E11"  #01
 
-set inputbar-bg                 "#1F1922" #00 currently not used
+set inputbar-bg                 "#150E11" #00 currently not used
 set inputbar-fg                 "#666666" #02
 
-set notification-error-bg       "#C5BCB6" #08
-set notification-error-fg       "#D9D5CD" #00
+set notification-error-bg       "#C8AC75" #08
+set notification-error-fg       "#E1D3A4" #00
 
-set notification-warning-bg     "#948976" #08
-set notification-warning-fg     "#D9D5CD" #00
+set notification-warning-bg     "#914536" #08
+set notification-warning-fg     "#E1D3A4" #00
 
 set highlight-color             "#666666" #0A
-set highlight-active-color      "#D9D5CD" #0D
+set highlight-active-color      "#E1D3A4" #0D
 
-set completion-highlight-fg     "#D9D5CD" #02
-set completion-highlight-bg     "#957B8A" #0C
+set completion-highlight-fg     "#E1D3A4" #02
+set completion-highlight-bg     "#7B846C" #0C
 
-set completion-bg               "#1F1922" #02
-set completion-fg               "#D9D5CD" #0C
+set completion-bg               "#150E11" #02
+set completion-fg               "#E1D3A4" #0C
 
-set notification-bg             "#70718B" #0B
-set notification-fg             "#D9D5CD" #00
+set notification-bg             "#8E6E55" #0B
+set notification-fg             "#E1D3A4" #00
 
-set recolor-lightcolor          "#1F1922" #00
-set recolor-darkcolor           "#D9D5CD" #06
+set recolor-lightcolor          "#150E11" #00
+set recolor-darkcolor           "#E1D3A4" #06
 set recolor                     "true"
 
 # setting recolor-keep true will keep any color your pdf has.

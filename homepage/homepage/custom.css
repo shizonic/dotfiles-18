@@ -7,12 +7,12 @@
 
 body
 {
-   background-image: var(--wallpaper);
+   /*background-image: var(--wallpaper);
    background-repeat: repeat-x repeat-y;
    background-position:center center;
    background-attachment: fixed;
-   background-size: cover;
-   /*background-color: var(--background) !important;*/
+   background-size: cover;*/
+   background-color: var(--background) !important;
    color: var(--foreground) !important;
 }
 
@@ -28,7 +28,7 @@ hr{
   display: block;
   height: 3px;
   border: 0px;
-  border-top: 4px solid var(--color8) !important;
+  border-top: 4px solid #242025 !important;
 }
 
 ul{
@@ -60,16 +60,16 @@ ul > li > ul >li{
     columns:6;
     padding-top: 20px;
     padding-left: 40px;
-    background-color: var(--background) !important;
+   /* background-color: var(--background) !important;
     box-shadow: 0 0 10px 6px #000;
-    opacity: .9;
+    opacity: .9;*/
 }
 
 a{
    font-family: Hack !important;
    font-size: 8pt;
    font-weight: medium; 
-   color: var(--foreground) !important;
+   color: var(--color8) !important;
    text-decoration: none;
 }
 
